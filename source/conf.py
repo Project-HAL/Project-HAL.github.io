@@ -9,7 +9,7 @@ import pathlib
 import sys
 import os
 
-sys.path.insert(0, os.path.abspath("../../bin/lib/py_src"))
+sys.path.insert(0, os.path.abspath("/home/mxwbio/Desktop/HAL/bin/lib/py_src"))
 
 project = 'Project HAL'
 copyright = '2024, Wesley Clawson, Nathan Wu, Trevor Sullivan, and Viraj Chhajed'
