@@ -48,10 +48,7 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="overview.html">Project Overview</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#data-storage">Data Storage</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#folder-structure">Folder Structure</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="#folder-structure">Folder Structure</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="results.html">Experiment Results</a></li>
@@ -84,11 +81,48 @@
              
   <section id="getting-started">
 <h1>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading"></a></h1>
-<section id="data-storage">
-<h2>Data Storage<a class="headerlink" href="#data-storage" title="Link to this heading"></a></h2>
 <section id="folder-structure">
-<h3>Folder Structure<a class="headerlink" href="#folder-structure" title="Link to this heading"></a></h3>
-</section>
+<h2>Folder Structure<a class="headerlink" href="#folder-structure" title="Link to this heading"></a></h2>
+<p>Each trial of an experiment has a variety of data stored along with it (h5,
+csv, etc.), and it is all saved in a specific folder system. When an experiment
+is created and run, the folling folder structure is created:</p>
+<div class="line-block">
+<div class="line">(parent_folder)</div>
+<div class="line-block">
+<div class="line">└&gt;(experiment_name)</div>
+<div class="line-block">
+<div class="line">└&gt;(chip_ID)</div>
+<div class="line-block">
+<div class="line">└&gt;experiment_name.json</div>
+<div class="line">└&gt;(date)</div>
+<div class="line-block">
+<div class="line">└&gt;(trial_number)</div>
+<div class="line-block">
+<div class="line">└&gt;(wellN)</div>
+<div class="line-block">
+<div class="line">└&gt; experiment_name.h5</div>
+<div class="line">└&gt; experiment_name_well_N.cfg</div>
+<div class="line">└&gt; arguments.json</div>
+<div class="line">└&gt; other data files</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>experiment_name, parent_folder and chip_ID are values that are taken in the GUI and are
+stored in experiment_name.json. If an experiment with the same name and
+parent folder but a different chip ID is selected, then another subdirectory
+named with the new chip ID is created under experiment_name.</p>
+<p>Each time an experiment runs, a new trial folder is created (and date folder
+for the first trial of the day), with a folder for each selected well to store
+associated data. There are 3 files that are guaranteed to be in each well
+folder: the h5 file that hold the recording data, the config that was used for
+the well (and passed to the closed-loop C++ program), and arguments.json, a
+copy of the original experiment json. The path of the well folder is passed to
+the C++ program, so any data created in a closed-loop program can be saved
+accordingly.</p>
 </section>
 </section>
 
