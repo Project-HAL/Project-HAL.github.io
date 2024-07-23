@@ -52,6 +52,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="py-modules.html">Python Modules</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="stimulation.html"><code class="docutils literal notranslate"><span class="pre">stimulation</span></code></a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">hal</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#hal.make_trial_folders"><code class="docutils literal notranslate"><span class="pre">make_trial_folders()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#hal.make_trial_folders_raw"><code class="docutils literal notranslate"><span class="pre">make_trial_folders_raw()</span></code></a></li>
 </ul>
 </li>
@@ -89,6 +90,25 @@
 <h1><code class="docutils literal notranslate"><span class="pre">hal</span></code><a class="headerlink" href="#hal" title="Link to this heading"></a></h1>
 <p>Find the folder structure here: <a class="reference internal" href="getting-started.html#folder-structure"><span class="std std-ref">Folder Structure</span></a>.</p>
 <dl class="py function" id="module-hal">
+<dt class="sig sig-object py" id="hal.make_trial_folders">
+<span class="sig-prename descclassname"><span class="pre">hal.</span></span><span class="sig-name descname"><span class="pre">make_trial_folders</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">experiment_parameters</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hal.make_trial_folders" title="Link to this definition"></a></dt>
+<dd><p>Creates folders for saving data based on a dict, generated from an 
+experiment <code class="docutils literal notranslate"><span class="pre">json</span></code> file (see: <a class="reference internal" href="getting-started.html#folder-structure"><span class="std std-ref">Folder Structure</span></a>)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>experiment_parameters</strong> (<code class="docutils literal notranslate"><span class="pre">HAL.json.dict{}</span></code>) – Holds the experiment paremeters; the following elements are <strong>required</strong>:
+<code class="docutils literal notranslate"><span class="pre">'FOLDER'</span></code>, <code class="docutils literal notranslate"><span class="pre">'NAME'</span></code>, <code class="docutils literal notranslate"><span class="pre">'WELLS'</span></code></p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Returns the full path of the <em>trial folder</em></p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
 <dt class="sig sig-object py" id="hal.make_trial_folders_raw">
 <span class="sig-prename descclassname"><span class="pre">hal.</span></span><span class="sig-name descname"><span class="pre">make_trial_folders_raw</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">experiment_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chip_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wells</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hal.make_trial_folders_raw" title="Link to this definition"></a></dt>
 <dd><p>Creates folders for saving data without using a dict, in the HAL 
