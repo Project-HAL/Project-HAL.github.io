@@ -1,5 +1,5 @@
-world\_stimulation module
-=========================
+``world_stimulation``
+=====================
 
 .. automodule:: world_stimulation
    :members:

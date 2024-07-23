@@ -1,6 +1,5 @@
-==================
-Stimulation Module
-==================
+``stimulation``
+===============
 
 .. automodule:: stimulation
    :members:
