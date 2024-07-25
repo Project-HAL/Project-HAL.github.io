@@ -12,6 +12,7 @@ Welcome to Project HAL's documentation!
    getting-started
    results
    py-modules
+   c-modules
 
 
 

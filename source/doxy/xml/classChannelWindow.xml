@@ -1,0 +1,497 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classChannelWindow" kind="class" language="C++" prot="public">
+    <compoundname>ChannelWindow</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classChannelWindow_1aef2bb46629de35ab899d29c1d931839a" prot="private" static="no" mutable="no">
+        <type>vector&lt; maxlab::FilteredFrameData &gt;</type>
+        <definition>vector&lt;maxlab::FilteredFrameData&gt; ChannelWindow::spikeWindow</definition>
+        <argsstring></argsstring>
+        <name>spikeWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="126" column="16" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classChannelWindow_1aad074deee0fc774a2fc4a2b1cbb709c3" prot="private" static="no" mutable="no">
+        <type><ref refid="classElectrodeMap" kindref="compound">ElectrodeMap</ref></type>
+        <definition>ElectrodeMap ChannelWindow::emap</definition>
+        <argsstring></argsstring>
+        <name>emap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="127" column="22" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classChannelWindow_1ae19d382cfe743a67438690abd65721a7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ChannelWindow::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="128" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classChannelWindow_1ac2c3750495acd7db98e24532717fcfb5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ChannelWindow::sum</definition>
+        <argsstring></argsstring>
+        <name>sum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="129" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classChannelWindow_1a3326b298debf5b5b0d3b8f086dd005a5" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ChannelWindow::savesWindows</definition>
+        <argsstring></argsstring>
+        <name>savesWindows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="131" column="14" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classChannelWindow_1ac6bc69cd91cfe015ae0bdbc7eefccfc9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ChannelWindow::numPastWindows</definition>
+        <argsstring></argsstring>
+        <name>numPastWindows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="132" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classChannelWindow_1a4ada5780121d96a6d955894c77a8d62e" prot="private" static="no" mutable="no">
+        <type>vector&lt; float &gt;</type>
+        <definition>vector&lt;float&gt; ChannelWindow::pastData</definition>
+        <argsstring></argsstring>
+        <name>pastData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="133" column="16" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classChannelWindow_1a8f962953ed315282f6cbcc3d9a79932e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ChannelWindow::newWindowCount</definition>
+        <argsstring></argsstring>
+        <name>newWindowCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="135" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classChannelWindow_1aff613e2fe9885088754d8b694a488337" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ChannelWindow::ChannelWindow</definition>
+        <argsstring>()</argsstring>
+        <name>ChannelWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="19" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classChannelWindow_1a2997d4f19a4024bcb8d87422df8097d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ChannelWindow::ChannelWindow</definition>
+        <argsstring>(int length, ElectrodeMap emap, int toSave=0)</argsstring>
+        <name>ChannelWindow</name>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type><ref refid="classElectrodeMap" kindref="compound">ElectrodeMap</ref></type>
+          <declname>emap</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>toSave</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="30" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classChannelWindow_1a03fb9f8b3bbfaf416938b7a3d5bf4d03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ChannelWindow::ChannelWindow</definition>
+        <argsstring>(int length, const char *configPath, int toSave=0)</argsstring>
+        <name>ChannelWindow</name>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>configPath</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>toSave</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="42" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classChannelWindow_1af6b05a45d1f682a31a0fa6b43f4b19f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ChannelWindow::add</definition>
+        <argsstring>(maxlab::FilteredFrameData frame)</argsstring>
+        <name>add</name>
+        <param>
+          <type>maxlab::FilteredFrameData</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+<para>Adds a data frame to the window. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds only the <computeroutput>maxlab::spikeEvents</computeroutput> that are found in the given config or <computeroutput><ref refid="classElectrodeMap" kindref="compound">ElectrodeMap</ref></computeroutput>, and increments the total spike sum accordingly.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>FilteredFrameData struct to add to the window</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="56" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classChannelWindow_1ac93750ea8c9a5cfc1412e430c3bd1e3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ChannelWindow::shift</definition>
+        <argsstring>(maxlab::FilteredFrameData frame)</argsstring>
+        <name>shift</name>
+        <param>
+          <type>maxlab::FilteredFrameData</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="71" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classChannelWindow_1a8b1c18c40fa9e4f891eaf7221dd598b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>maxlab::FilteredFrameData</type>
+        <definition>maxlab::FilteredFrameData ChannelWindow::get</definition>
+        <argsstring>(int idx)</argsstring>
+        <name>get</name>
+        <param>
+          <type>int</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="83" column="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classChannelWindow_1afab2b22f3d23ea016697d33b16ac8511" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ChannelWindow::length</definition>
+        <argsstring>()</argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="92" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classChannelWindow_1a362798037f40a99650da61c877971517" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ChannelWindow::totalSpikeCount</definition>
+        <argsstring>()</argsstring>
+        <name>totalSpikeCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="101" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classChannelWindow_1ac118c7e60de090394f40e4f0fcfd6adc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classElectrodeMap" kindref="compound">ElectrodeMap</ref></type>
+        <definition>ElectrodeMap ChannelWindow::electrodeMap</definition>
+        <argsstring>()</argsstring>
+        <name>electrodeMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="110" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classChannelWindow_1a3b7604f6aa0b8fa271e237d39e9df3e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; float &gt;</type>
+        <definition>vector&lt;float&gt; ChannelWindow::pastWindows</definition>
+        <argsstring>()</argsstring>
+        <name>pastWindows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="112" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classChannelWindow_1a88ef58fe01f8b3a310e2f02d0ac0abc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ChannelWindow::avgPastWindows</definition>
+        <argsstring>()</argsstring>
+        <name>avgPastWindows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="114" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classChannelWindow_1a90e47573e5079683dabe03e1aa66a36a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ChannelWindow::getAvgX</definition>
+        <argsstring>()</argsstring>
+        <name>getAvgX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="116" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classChannelWindow_1a69e6d5823613cbc1b8dc9b33ee5346f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ChannelWindow::stdDev</definition>
+        <argsstring>()</argsstring>
+        <name>stdDev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="117" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classChannelWindow_1a11a10504b18341abe0eef53d6b02ea02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ChannelWindow::firingRate</definition>
+        <argsstring>()</argsstring>
+        <name>firingRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="118" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classChannelWindow_1a8a1cdbafbc9c7597446f38d20cf26ea8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ChannelWindow::pastWindowsReady</definition>
+        <argsstring>()</argsstring>
+        <name>pastWindowsReady</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="120" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classChannelWindow_1ad3fe970bc14670cd6d73a37fa2cacbd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ChannelWindow::print</definition>
+        <argsstring>()</argsstring>
+        <name>print</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="122" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classChannelWindow_1a47a4bd5f2102f104b0bbcf521f6be58f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ChannelWindow::debug</definition>
+        <argsstring>(string message)</argsstring>
+        <name>debug</name>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="123" column="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classChannelWindow_1a0bd93e63289f2ac3a7798a900f9bce1a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ChannelWindow::addEvent</definition>
+        <argsstring>(maxlab::SpikeEvent se)</argsstring>
+        <name>addEvent</name>
+        <param>
+          <type>maxlab::SpikeEvent</type>
+          <declname>se</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="148" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classChannelWindow_1ac06416c0dc8722b52c67611d66d811b5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ChannelWindow::shiftOrAdd</definition>
+        <argsstring>(maxlab::FilteredFrameData frame)</argsstring>
+        <name>shiftOrAdd</name>
+        <param>
+          <type>maxlab::FilteredFrameData</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="150" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classChannelWindow_1aff1d94a0bd1b3ec079bca309a3a86f93" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ChannelWindow::addFrame</definition>
+        <argsstring>(maxlab::FilteredFrameData frame)</argsstring>
+        <name>addFrame</name>
+        <param>
+          <type>maxlab::FilteredFrameData</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="151" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classChannelWindow_1a06e3160343a920524f88376184928f6f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ChannelWindow::shiftFrame</definition>
+        <argsstring>(maxlab::FilteredFrameData frame)</argsstring>
+        <name>shiftFrame</name>
+        <param>
+          <type>maxlab::FilteredFrameData</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="152" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="16" column="20" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" bodystart="16" bodyend="156"/>
+    <listofallmembers>
+      <member refid="classChannelWindow_1af6b05a45d1f682a31a0fa6b43f4b19f2" prot="public" virt="non-virtual"><scope>ChannelWindow</scope><name>add</name></member>
+      <member refid="classChannelWindow_1a0bd93e63289f2ac3a7798a900f9bce1a" prot="private" virt="non-virtual"><scope>ChannelWindow</scope><name>addEvent</name></member>
+      <member refid="classChannelWindow_1aff1d94a0bd1b3ec079bca309a3a86f93" prot="private" virt="non-virtual"><scope>ChannelWindow</scope><name>addFrame</name></member>
+      <member refid="classChannelWindow_1a88ef58fe01f8b3a310e2f02d0ac0abc0" prot="public" virt="non-virtual"><scope>ChannelWindow</scope><name>avgPastWindows</name></member>
+      <member refid="classChannelWindow_1aff613e2fe9885088754d8b694a488337" prot="public" virt="non-virtual"><scope>ChannelWindow</scope><name>ChannelWindow</name></member>
+      <member refid="classChannelWindow_1a2997d4f19a4024bcb8d87422df8097d0" prot="public" virt="non-virtual"><scope>ChannelWindow</scope><name>ChannelWindow</name></member>
+      <member refid="classChannelWindow_1a03fb9f8b3bbfaf416938b7a3d5bf4d03" prot="public" virt="non-virtual"><scope>ChannelWindow</scope><name>ChannelWindow</name></member>
+      <member refid="classChannelWindow_1a47a4bd5f2102f104b0bbcf521f6be58f" prot="public" virt="non-virtual"><scope>ChannelWindow</scope><name>debug</name></member>
+      <member refid="classChannelWindow_1ac118c7e60de090394f40e4f0fcfd6adc" prot="public" virt="non-virtual"><scope>ChannelWindow</scope><name>electrodeMap</name></member>
+      <member refid="classChannelWindow_1aad074deee0fc774a2fc4a2b1cbb709c3" prot="private" virt="non-virtual"><scope>ChannelWindow</scope><name>emap</name></member>
+      <member refid="classChannelWindow_1a11a10504b18341abe0eef53d6b02ea02" prot="public" virt="non-virtual"><scope>ChannelWindow</scope><name>firingRate</name></member>
+      <member refid="classChannelWindow_1a8b1c18c40fa9e4f891eaf7221dd598b8" prot="public" virt="non-virtual"><scope>ChannelWindow</scope><name>get</name></member>
+      <member refid="classChannelWindow_1a90e47573e5079683dabe03e1aa66a36a" prot="public" virt="non-virtual"><scope>ChannelWindow</scope><name>getAvgX</name></member>
+      <member refid="classChannelWindow_1afab2b22f3d23ea016697d33b16ac8511" prot="public" virt="non-virtual"><scope>ChannelWindow</scope><name>length</name></member>
+      <member refid="classChannelWindow_1a8f962953ed315282f6cbcc3d9a79932e" prot="private" virt="non-virtual"><scope>ChannelWindow</scope><name>newWindowCount</name></member>
+      <member refid="classChannelWindow_1ac6bc69cd91cfe015ae0bdbc7eefccfc9" prot="private" virt="non-virtual"><scope>ChannelWindow</scope><name>numPastWindows</name></member>
+      <member refid="classChannelWindow_1a4ada5780121d96a6d955894c77a8d62e" prot="private" virt="non-virtual"><scope>ChannelWindow</scope><name>pastData</name></member>
+      <member refid="classChannelWindow_1a3b7604f6aa0b8fa271e237d39e9df3e0" prot="public" virt="non-virtual"><scope>ChannelWindow</scope><name>pastWindows</name></member>
+      <member refid="classChannelWindow_1a8a1cdbafbc9c7597446f38d20cf26ea8" prot="public" virt="non-virtual"><scope>ChannelWindow</scope><name>pastWindowsReady</name></member>
+      <member refid="classChannelWindow_1ad3fe970bc14670cd6d73a37fa2cacbd3" prot="public" virt="non-virtual"><scope>ChannelWindow</scope><name>print</name></member>
+      <member refid="classChannelWindow_1a3326b298debf5b5b0d3b8f086dd005a5" prot="private" virt="non-virtual"><scope>ChannelWindow</scope><name>savesWindows</name></member>
+      <member refid="classChannelWindow_1ac93750ea8c9a5cfc1412e430c3bd1e3f" prot="public" virt="non-virtual"><scope>ChannelWindow</scope><name>shift</name></member>
+      <member refid="classChannelWindow_1a06e3160343a920524f88376184928f6f" prot="private" virt="non-virtual"><scope>ChannelWindow</scope><name>shiftFrame</name></member>
+      <member refid="classChannelWindow_1ac06416c0dc8722b52c67611d66d811b5" prot="private" virt="non-virtual"><scope>ChannelWindow</scope><name>shiftOrAdd</name></member>
+      <member refid="classChannelWindow_1ae19d382cfe743a67438690abd65721a7" prot="private" virt="non-virtual"><scope>ChannelWindow</scope><name>size</name></member>
+      <member refid="classChannelWindow_1aef2bb46629de35ab899d29c1d931839a" prot="private" virt="non-virtual"><scope>ChannelWindow</scope><name>spikeWindow</name></member>
+      <member refid="classChannelWindow_1a69e6d5823613cbc1b8dc9b33ee5346f6" prot="public" virt="non-virtual"><scope>ChannelWindow</scope><name>stdDev</name></member>
+      <member refid="classChannelWindow_1ac2c3750495acd7db98e24532717fcfb5" prot="private" virt="non-virtual"><scope>ChannelWindow</scope><name>sum</name></member>
+      <member refid="classChannelWindow_1a362798037f40a99650da61c877971517" prot="public" virt="non-virtual"><scope>ChannelWindow</scope><name>totalSpikeCount</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

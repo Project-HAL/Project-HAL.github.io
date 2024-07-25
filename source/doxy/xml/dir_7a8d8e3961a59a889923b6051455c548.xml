@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_7a8d8e3961a59a889923b6051455c548" kind="dir">
+    <compoundname>/home/mxwbio/Desktop/HAL/bin</compoundname>
+    <innerdir refid="dir_d230fa4bfc9da69f2775aba0c919f699">/home/mxwbio/Desktop/HAL/bin/lib</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mxwbio/Desktop/HAL/bin/"/>
+  </compounddef>
+</doxygen>

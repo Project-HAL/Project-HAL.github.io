@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.17">
+  <compound refid="classChannelWindow" kind="class"><name>ChannelWindow</name>
+    <member refid="classChannelWindow_1aef2bb46629de35ab899d29c1d931839a" kind="variable"><name>spikeWindow</name></member>
+    <member refid="classChannelWindow_1aad074deee0fc774a2fc4a2b1cbb709c3" kind="variable"><name>emap</name></member>
+    <member refid="classChannelWindow_1ae19d382cfe743a67438690abd65721a7" kind="variable"><name>size</name></member>
+    <member refid="classChannelWindow_1ac2c3750495acd7db98e24532717fcfb5" kind="variable"><name>sum</name></member>
+    <member refid="classChannelWindow_1a3326b298debf5b5b0d3b8f086dd005a5" kind="variable"><name>savesWindows</name></member>
+    <member refid="classChannelWindow_1ac6bc69cd91cfe015ae0bdbc7eefccfc9" kind="variable"><name>numPastWindows</name></member>
+    <member refid="classChannelWindow_1a4ada5780121d96a6d955894c77a8d62e" kind="variable"><name>pastData</name></member>
+    <member refid="classChannelWindow_1a8f962953ed315282f6cbcc3d9a79932e" kind="variable"><name>newWindowCount</name></member>
+    <member refid="classChannelWindow_1aff613e2fe9885088754d8b694a488337" kind="function"><name>ChannelWindow</name></member>
+    <member refid="classChannelWindow_1a2997d4f19a4024bcb8d87422df8097d0" kind="function"><name>ChannelWindow</name></member>
+    <member refid="classChannelWindow_1a03fb9f8b3bbfaf416938b7a3d5bf4d03" kind="function"><name>ChannelWindow</name></member>
+    <member refid="classChannelWindow_1af6b05a45d1f682a31a0fa6b43f4b19f2" kind="function"><name>add</name></member>
+    <member refid="classChannelWindow_1ac93750ea8c9a5cfc1412e430c3bd1e3f" kind="function"><name>shift</name></member>
+    <member refid="classChannelWindow_1a8b1c18c40fa9e4f891eaf7221dd598b8" kind="function"><name>get</name></member>
+    <member refid="classChannelWindow_1afab2b22f3d23ea016697d33b16ac8511" kind="function"><name>length</name></member>
+    <member refid="classChannelWindow_1a362798037f40a99650da61c877971517" kind="function"><name>totalSpikeCount</name></member>
+    <member refid="classChannelWindow_1ac118c7e60de090394f40e4f0fcfd6adc" kind="function"><name>electrodeMap</name></member>
+    <member refid="classChannelWindow_1a3b7604f6aa0b8fa271e237d39e9df3e0" kind="function"><name>pastWindows</name></member>
+    <member refid="classChannelWindow_1a88ef58fe01f8b3a310e2f02d0ac0abc0" kind="function"><name>avgPastWindows</name></member>
+    <member refid="classChannelWindow_1a90e47573e5079683dabe03e1aa66a36a" kind="function"><name>getAvgX</name></member>
+    <member refid="classChannelWindow_1a69e6d5823613cbc1b8dc9b33ee5346f6" kind="function"><name>stdDev</name></member>
+    <member refid="classChannelWindow_1a11a10504b18341abe0eef53d6b02ea02" kind="function"><name>firingRate</name></member>
+    <member refid="classChannelWindow_1a8a1cdbafbc9c7597446f38d20cf26ea8" kind="function"><name>pastWindowsReady</name></member>
+    <member refid="classChannelWindow_1ad3fe970bc14670cd6d73a37fa2cacbd3" kind="function"><name>print</name></member>
+    <member refid="classChannelWindow_1a47a4bd5f2102f104b0bbcf521f6be58f" kind="function"><name>debug</name></member>
+    <member refid="classChannelWindow_1a0bd93e63289f2ac3a7798a900f9bce1a" kind="function"><name>addEvent</name></member>
+    <member refid="classChannelWindow_1ac06416c0dc8722b52c67611d66d811b5" kind="function"><name>shiftOrAdd</name></member>
+    <member refid="classChannelWindow_1aff1d94a0bd1b3ec079bca309a3a86f93" kind="function"><name>addFrame</name></member>
+    <member refid="classChannelWindow_1a06e3160343a920524f88376184928f6f" kind="function"><name>shiftFrame</name></member>
+  </compound>
+  <compound refid="classController" kind="class"><name>Controller</name>
+    <member refid="classController_1ad0603549f0be34ad688c86a33cc6f040" kind="variable"><name>buttons</name></member>
+    <member refid="classController_1a95c56822d667e94b031451729ce069a9" kind="function"><name>Controller</name></member>
+    <member refid="classController_1a0ab87934c4f7a266cfdb86e0f36bc1b5" kind="function"><name>~Controller</name></member>
+    <member refid="classController_1adf7f58c81479a59a7b24d5053560d7d9" kind="function"><name>addButton</name></member>
+    <member refid="classController_1a7af4381e262e2457222fc4b6fac336ce" kind="function"><name>getButtonWindow</name></member>
+    <member refid="classController_1ab9dc08ae3665712026e4f0aa63f86a19" kind="function"><name>add</name></member>
+    <member refid="classController_1a8716527dccd14db21d94e6f8a449627c" kind="function"><name>shift</name></member>
+    <member refid="classController_1a14b2114e3be63d83feb319ce759293fa" kind="function"><name>numChannels</name></member>
+    <member refid="classController_1a34a2a7c37f78cc365a3cf84722b9a224" kind="function"><name>numSpikes</name></member>
+  </compound>
+  <compound refid="structelectrodeCoords" kind="struct"><name>electrodeCoords</name>
+    <member refid="structelectrodeCoords_1a7ae7bfe9ba9b938c319328c4ac6fbbfc" kind="variable"><name>position</name></member>
+    <member refid="structelectrodeCoords_1a77e4a6ef26a195f2f7806f9c3bfc8528" kind="variable"><name>x</name></member>
+    <member refid="structelectrodeCoords_1ac38b0264032b81feed83e0af9a7e3598" kind="variable"><name>y</name></member>
+  </compound>
+  <compound refid="classElectrodeMap" kind="class"><name>ElectrodeMap</name>
+    <member refid="classElectrodeMap_1a049acf17b62575c37a4a9142e0d82ffc" kind="variable"><name>emap</name></member>
+    <member refid="classElectrodeMap_1a7ca971b6410b59c46c53dc2f51737bdd" kind="function"><name>ElectrodeMap</name></member>
+    <member refid="classElectrodeMap_1aaf8fef92aff821f4c7f7d3b4a9164c84" kind="function"><name>ElectrodeMap</name></member>
+    <member refid="classElectrodeMap_1a266b3bb2c54a2016d7dab4ce1fa0a857" kind="function"><name>exists</name></member>
+    <member refid="classElectrodeMap_1ab578d194f65b78490574bf454047fdb1" kind="function"><name>get</name></member>
+    <member refid="classElectrodeMap_1acc2d6a4e0cf5f33e468c57f4c63fe523" kind="function"><name>getPosition</name></member>
+    <member refid="classElectrodeMap_1a4deacbf9752c68ecea362d6a98f870c7" kind="function"><name>getX</name></member>
+    <member refid="classElectrodeMap_1acdd7bb2a9d48c1540efeadb39efd3e47" kind="function"><name>getY</name></member>
+    <member refid="classElectrodeMap_1ab76caa8f91537a7086c21646affcb1e5" kind="function"><name>size</name></member>
+    <member refid="classElectrodeMap_1a38b8c5e4bc4f2b0c7a8e0bcda096c8d4" kind="function"><name>print</name></member>
+    <member refid="classElectrodeMap_1ac7d50e71926d638fffc3a0f8a0ebf9f2" kind="function"><name>readConfig</name></member>
+  </compound>
+  <compound refid="classWorldState" kind="class"><name>WorldState</name>
+    <member refid="classWorldState_1ac0873aea21438074119c8fc23c22d3e0" kind="variable"><name>nodes</name></member>
+    <member refid="classWorldState_1a9d9a7c56723f7810794f4b3097add20d" kind="variable"><name>location</name></member>
+    <member refid="classWorldState_1a237da82d5d6c66bd4c877e1f77dfdc26" kind="variable"><name>world_map</name></member>
+    <member refid="classWorldState_1af4c586e21a71fe2d8345f1fa8174f502" kind="function"><name>validate</name></member>
+    <member refid="classWorldState_1a3d6111f40d7fce1afb66f5afe112efac" kind="function"><name>remainder</name></member>
+    <member refid="classWorldState_1ad14e01bcb94b4edea5d2515cf6cf0868" kind="function"><name>WorldState</name></member>
+    <member refid="classWorldState_1a207af80e9bba9e24195891abddf67df7" kind="function"><name>WorldState</name></member>
+    <member refid="classWorldState_1ababd18af82ed36267bfb9f361f657a9d" kind="function"><name>display</name></member>
+    <member refid="classWorldState_1a021a8f19163d134ccd733f2a444c2bd1" kind="function"><name>move_left</name></member>
+    <member refid="classWorldState_1aebe5afb7efc52de12be8fde4d3dc25d4" kind="function"><name>move_right</name></member>
+    <member refid="classWorldState_1ad2231631de7f0a1ef4cd000f82d3f4bd" kind="function"><name>get_position</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="argparse_8h" kind="file"><name>argparse.h</name>
+    <member refid="argparse_8h_1a064871532e98179817691d89b2a4e34d" kind="function"><name>checkOption</name></member>
+    <member refid="argparse_8h_1af5d91cb84bd0040233a7a590725f4fe9" kind="function"><name>getStringArg</name></member>
+    <member refid="argparse_8h_1a92858476903f8ccc8c5385453d6c4eb1" kind="function"><name>getIntArg</name></member>
+    <member refid="argparse_8h_1ac4e89233194a3d8f1135b70af7a06569" kind="function"><name>getFloatArg</name></member>
+    <member refid="argparse_8h_1a9c6a88f37b2c432fa85a66a204b660c8" kind="function"><name>getStringArgSecure</name></member>
+    <member refid="argparse_8h_1a15288c57f488608d672552830dd5a00c" kind="function"><name>getIntArgSecure</name></member>
+    <member refid="argparse_8h_1aa4cb08dd4f28eb50b7777d5bf111a284" kind="function"><name>getFloatArgSecure</name></member>
+  </compound>
+  <compound refid="channelWindow_8h" kind="file"><name>channelWindow.h</name>
+  </compound>
+  <compound refid="controller_8h" kind="file"><name>controller.h</name>
+    <member refid="controller_8h_1a47002284f3218e9cf622d445e62130f3" kind="define"><name>__CONTROLLER_H__</name></member>
+  </compound>
+  <compound refid="electrodeMap_8h" kind="file"><name>electrodeMap.h</name>
+    <member refid="electrodeMap_8h_1a6922ae2d0490ba3260427ef9fe4553c1" kind="typedef"><name>electrodeCoords</name></member>
+  </compound>
+  <compound refid="hal_8h" kind="file"><name>hal.h</name>
+  </compound>
+  <compound refid="worldstate_8h" kind="file"><name>worldstate.h</name>
+  </compound>
+  <compound refid="dir_7a8d8e3961a59a889923b6051455c548" kind="dir"><name>/home/mxwbio/Desktop/HAL/bin</name>
+  </compound>
+  <compound refid="dir_c5b59151d6c1325e022e4ba605eb40f8" kind="dir"><name>/home/mxwbio/Desktop/HAL</name>
+  </compound>
+  <compound refid="dir_bce5c8b9de98d382830b635c0d815106" kind="dir"><name>/home/mxwbio/Desktop/HAL/bin/lib/include</name>
+  </compound>
+  <compound refid="dir_d230fa4bfc9da69f2775aba0c919f699" kind="dir"><name>/home/mxwbio/Desktop/HAL/bin/lib</name>
+  </compound>
+</doxygenindex>

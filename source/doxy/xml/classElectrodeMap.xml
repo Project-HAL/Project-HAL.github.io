@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classElectrodeMap" kind="class" language="C++" prot="public">
+    <compoundname>ElectrodeMap</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classElectrodeMap_1a049acf17b62575c37a4a9142e0d82ffc" prot="private" static="no" mutable="no">
+        <type>map&lt; int, struct <ref refid="structelectrodeCoords" kindref="compound">electrodeCoords</ref> &gt;</type>
+        <definition>map&lt;int, struct electrodeCoords&gt; ElectrodeMap::emap</definition>
+        <argsstring></argsstring>
+        <name>emap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" line="137" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classElectrodeMap_1a7ca971b6410b59c46c53dc2f51737bdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ElectrodeMap::ElectrodeMap</definition>
+        <argsstring>()</argsstring>
+        <name>ElectrodeMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" line="20" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classElectrodeMap_1aaf8fef92aff821f4c7f7d3b4a9164c84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ElectrodeMap::ElectrodeMap</definition>
+        <argsstring>(const char *config_path)</argsstring>
+        <name>ElectrodeMap</name>
+        <param>
+          <type>const char *</type>
+          <declname>config_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" line="29" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classElectrodeMap_1a266b3bb2c54a2016d7dab4ce1fa0a857" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ElectrodeMap::exists</definition>
+        <argsstring>(int channelNo)</argsstring>
+        <name>exists</name>
+        <param>
+          <type>int</type>
+          <declname>channelNo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" line="40" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classElectrodeMap_1ab578d194f65b78490574bf454047fdb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structelectrodeCoords" kindref="compound">electrodeCoords</ref></type>
+        <definition>struct electrodeCoords ElectrodeMap::get</definition>
+        <argsstring>(int channelNo)</argsstring>
+        <name>get</name>
+        <param>
+          <type>int</type>
+          <declname>channelNo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" line="40" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classElectrodeMap_1acc2d6a4e0cf5f33e468c57f4c63fe523" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ElectrodeMap::getPosition</definition>
+        <argsstring>(int channelNo)</argsstring>
+        <name>getPosition</name>
+        <param>
+          <type>int</type>
+          <declname>channelNo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" line="72" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classElectrodeMap_1a4deacbf9752c68ecea362d6a98f870c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ElectrodeMap::getX</definition>
+        <argsstring>(int channelNo)</argsstring>
+        <name>getX</name>
+        <param>
+          <type>int</type>
+          <declname>channelNo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" line="88" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classElectrodeMap_1acdd7bb2a9d48c1540efeadb39efd3e47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ElectrodeMap::getY</definition>
+        <argsstring>(int channelNo)</argsstring>
+        <name>getY</name>
+        <param>
+          <type>int</type>
+          <declname>channelNo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" line="104" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classElectrodeMap_1ab76caa8f91537a7086c21646affcb1e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ElectrodeMap::size</definition>
+        <argsstring>()</argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" line="113" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classElectrodeMap_1a38b8c5e4bc4f2b0c7a8e0bcda096c8d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ElectrodeMap::print</definition>
+        <argsstring>()</argsstring>
+        <name>print</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" line="120" column="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classElectrodeMap_1ac7d50e71926d638fffc3a0f8a0ebf9f2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ElectrodeMap::readConfig</definition>
+        <argsstring>(FILE *file)</argsstring>
+        <name>readConfig</name>
+        <param>
+          <type>FILE *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" line="134" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" line="17" column="19" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" bodystart="17" bodyend="139"/>
+    <listofallmembers>
+      <member refid="classElectrodeMap_1a7ca971b6410b59c46c53dc2f51737bdd" prot="public" virt="non-virtual"><scope>ElectrodeMap</scope><name>ElectrodeMap</name></member>
+      <member refid="classElectrodeMap_1aaf8fef92aff821f4c7f7d3b4a9164c84" prot="public" virt="non-virtual"><scope>ElectrodeMap</scope><name>ElectrodeMap</name></member>
+      <member refid="classElectrodeMap_1a049acf17b62575c37a4a9142e0d82ffc" prot="private" virt="non-virtual"><scope>ElectrodeMap</scope><name>emap</name></member>
+      <member refid="classElectrodeMap_1a266b3bb2c54a2016d7dab4ce1fa0a857" prot="public" virt="non-virtual"><scope>ElectrodeMap</scope><name>exists</name></member>
+      <member refid="classElectrodeMap_1ab578d194f65b78490574bf454047fdb1" prot="public" virt="non-virtual"><scope>ElectrodeMap</scope><name>get</name></member>
+      <member refid="classElectrodeMap_1acc2d6a4e0cf5f33e468c57f4c63fe523" prot="public" virt="non-virtual"><scope>ElectrodeMap</scope><name>getPosition</name></member>
+      <member refid="classElectrodeMap_1a4deacbf9752c68ecea362d6a98f870c7" prot="public" virt="non-virtual"><scope>ElectrodeMap</scope><name>getX</name></member>
+      <member refid="classElectrodeMap_1acdd7bb2a9d48c1540efeadb39efd3e47" prot="public" virt="non-virtual"><scope>ElectrodeMap</scope><name>getY</name></member>
+      <member refid="classElectrodeMap_1a38b8c5e4bc4f2b0c7a8e0bcda096c8d4" prot="public" virt="non-virtual"><scope>ElectrodeMap</scope><name>print</name></member>
+      <member refid="classElectrodeMap_1ac7d50e71926d638fffc3a0f8a0ebf9f2" prot="private" virt="non-virtual"><scope>ElectrodeMap</scope><name>readConfig</name></member>
+      <member refid="classElectrodeMap_1ab76caa8f91537a7086c21646affcb1e5" prot="public" virt="non-virtual"><scope>ElectrodeMap</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

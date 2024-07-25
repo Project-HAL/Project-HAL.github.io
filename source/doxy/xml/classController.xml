@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classController" kind="class" language="C++" prot="public">
+    <compoundname>Controller</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classController_1ad0603549f0be34ad688c86a33cc6f040" prot="private" static="no" mutable="no">
+        <type>map&lt; string, <ref refid="classChannelWindow" kindref="compound">ChannelWindow</ref> * &gt;</type>
+        <definition>map&lt;string, ChannelWindow *&gt; Controller::buttons</definition>
+        <argsstring></argsstring>
+        <name>buttons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="31" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classController_1a95c56822d667e94b031451729ce069a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Controller::Controller</definition>
+        <argsstring>()</argsstring>
+        <name>Controller</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="14" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classController_1a0ab87934c4f7a266cfdb86e0f36bc1b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Controller::~Controller</definition>
+        <argsstring>()</argsstring>
+        <name>~Controller</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="16" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classController_1adf7f58c81479a59a7b24d5053560d7d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Controller::addButton</definition>
+        <argsstring>(string id, int windowLength, const char *configPath, int saveWindows=0)</argsstring>
+        <name>addButton</name>
+        <param>
+          <type>string</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>windowLength</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>configPath</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>saveWindows</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="18" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classController_1a7af4381e262e2457222fc4b6fac336ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classChannelWindow" kindref="compound">ChannelWindow</ref> *</type>
+        <definition>ChannelWindow* Controller::getButtonWindow</definition>
+        <argsstring>(string id)</argsstring>
+        <name>getButtonWindow</name>
+        <param>
+          <type>string</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="20" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classController_1ab9dc08ae3665712026e4f0aa63f86a19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Controller::add</definition>
+        <argsstring>(maxlab::FilteredFrameData frame)</argsstring>
+        <name>add</name>
+        <param>
+          <type>maxlab::FilteredFrameData</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="22" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classController_1a8716527dccd14db21d94e6f8a449627c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Controller::shift</definition>
+        <argsstring>(maxlab::FilteredFrameData frame)</argsstring>
+        <name>shift</name>
+        <param>
+          <type>maxlab::FilteredFrameData</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="24" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classController_1a14b2114e3be63d83feb319ce759293fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Controller::numChannels</definition>
+        <argsstring>(string id)</argsstring>
+        <name>numChannels</name>
+        <param>
+          <type>string</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="26" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classController_1a34a2a7c37f78cc365a3cf84722b9a224" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Controller::numSpikes</definition>
+        <argsstring>(string id)</argsstring>
+        <name>numSpikes</name>
+        <param>
+          <type>string</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="28" column="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="11" column="17" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" bodystart="11" bodyend="32"/>
+    <listofallmembers>
+      <member refid="classController_1ab9dc08ae3665712026e4f0aa63f86a19" prot="public" virt="non-virtual"><scope>Controller</scope><name>add</name></member>
+      <member refid="classController_1adf7f58c81479a59a7b24d5053560d7d9" prot="public" virt="non-virtual"><scope>Controller</scope><name>addButton</name></member>
+      <member refid="classController_1ad0603549f0be34ad688c86a33cc6f040" prot="private" virt="non-virtual"><scope>Controller</scope><name>buttons</name></member>
+      <member refid="classController_1a95c56822d667e94b031451729ce069a9" prot="public" virt="non-virtual"><scope>Controller</scope><name>Controller</name></member>
+      <member refid="classController_1a7af4381e262e2457222fc4b6fac336ce" prot="public" virt="non-virtual"><scope>Controller</scope><name>getButtonWindow</name></member>
+      <member refid="classController_1a14b2114e3be63d83feb319ce759293fa" prot="public" virt="non-virtual"><scope>Controller</scope><name>numChannels</name></member>
+      <member refid="classController_1a34a2a7c37f78cc365a3cf84722b9a224" prot="public" virt="non-virtual"><scope>Controller</scope><name>numSpikes</name></member>
+      <member refid="classController_1a8716527dccd14db21d94e6f8a449627c" prot="public" virt="non-virtual"><scope>Controller</scope><name>shift</name></member>
+      <member refid="classController_1a0ab87934c4f7a266cfdb86e0f36bc1b5" prot="public" virt="non-virtual"><scope>Controller</scope><name>~Controller</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

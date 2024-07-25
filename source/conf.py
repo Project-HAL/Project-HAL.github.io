@@ -24,7 +24,10 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx_rtd_theme',
     'sphinx.ext.autosectionlabel',
+    'breathe',
 ]
+
+breathe_default_project = "HAL"
 
 autosectionlabel_prefix_document = True
 

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_bce5c8b9de98d382830b635c0d815106" kind="dir">
+    <compoundname>/home/mxwbio/Desktop/HAL/bin/lib/include</compoundname>
+    <innerfile refid="argparse_8h">argparse.h</innerfile>
+    <innerfile refid="channelWindow_8h">channelWindow.h</innerfile>
+    <innerfile refid="controller_8h">controller.h</innerfile>
+    <innerfile refid="electrodeMap_8h">electrodeMap.h</innerfile>
+    <innerfile refid="hal_8h">hal.h</innerfile>
+    <innerfile refid="worldstate_8h">worldstate.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/"/>
+  </compounddef>
+</doxygen>

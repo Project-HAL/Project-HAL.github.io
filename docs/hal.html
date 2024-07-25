@@ -52,6 +52,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="py-modules.html">Python Modules</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="stimulation.html"><code class="docutils literal notranslate"><span class="pre">stimulation</span></code></a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">hal</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#hal.connect_stim_units_to_stim_electrodes"><code class="docutils literal notranslate"><span class="pre">connect_stim_units_to_stim_electrodes()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#hal.make_trial_folders"><code class="docutils literal notranslate"><span class="pre">make_trial_folders()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#hal.make_trial_folders_raw"><code class="docutils literal notranslate"><span class="pre">make_trial_folders_raw()</span></code></a></li>
 </ul>
@@ -90,6 +91,33 @@
 <h1><code class="docutils literal notranslate"><span class="pre">hal</span></code><a class="headerlink" href="#hal" title="Link to this heading"></a></h1>
 <p>Find the folder structure here: <a class="reference internal" href="getting-started.html#folder-structure"><span class="std std-ref">Folder Structure</span></a>.</p>
 <dl class="py function" id="module-hal">
+<dt class="sig sig-object py" id="hal.connect_stim_units_to_stim_electrodes">
+<span class="sig-prename descclassname"><span class="pre">hal.</span></span><span class="sig-name descname"><span class="pre">connect_stim_units_to_stim_electrodes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stim_electrodes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">array</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Array</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#hal.connect_stim_units_to_stim_electrodes" title="Link to this definition"></a></dt>
+<dd><p>Connects stimulation units to stimulatoin electrodes. This function 
+was taken from example code from MaxWell.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>stim_electrodes</strong> (<code class="docutils literal notranslate"><span class="pre">List[int]</span></code>) – list of stimulation electrodes to connect</p></li>
+<li><p><strong>array</strong> (<code class="docutils literal notranslate"><span class="pre">mx.Array</span></code>) – MaxWell array generated from a list of recording/stimulation electrodes</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>RuntimeError</strong> – when a stimulation channel cannot connect to a stimulation electrode</p></li>
+<li><p><strong>RuntimeError</strong> – when two electrodes are connected to the same unit</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>a list of stimulation units</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">List[int]</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
 <dt class="sig sig-object py" id="hal.make_trial_folders">
 <span class="sig-prename descclassname"><span class="pre">hal.</span></span><span class="sig-name descname"><span class="pre">make_trial_folders</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">experiment_parameters</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hal.make_trial_folders" title="Link to this definition"></a></dt>
 <dd><p>Creates folders for saving data based on a dict, generated from an 

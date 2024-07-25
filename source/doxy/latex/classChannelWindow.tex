@@ -1,0 +1,80 @@
+\hypertarget{classChannelWindow}{}\doxysection{Channel\+Window Class Reference}
+\label{classChannelWindow}\index{ChannelWindow@{ChannelWindow}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classChannelWindow_a2997d4f19a4024bcb8d87422df8097d0}\label{classChannelWindow_a2997d4f19a4024bcb8d87422df8097d0}} 
+{\bfseries Channel\+Window} (int length, \mbox{\hyperlink{classElectrodeMap}{Electrode\+Map}} emap, int to\+Save=0)
+\item 
+\mbox{\Hypertarget{classChannelWindow_a03fb9f8b3bbfaf416938b7a3d5bf4d03}\label{classChannelWindow_a03fb9f8b3bbfaf416938b7a3d5bf4d03}} 
+{\bfseries Channel\+Window} (int length, const char $\ast$config\+Path, int to\+Save=0)
+\item 
+void \mbox{\hyperlink{classChannelWindow_af6b05a45d1f682a31a0fa6b43f4b19f2}{add}} (maxlab\+::\+Filtered\+Frame\+Data frame)
+\begin{DoxyCompactList}\small\item\em Adds a data frame to the window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classChannelWindow_ac93750ea8c9a5cfc1412e430c3bd1e3f}\label{classChannelWindow_ac93750ea8c9a5cfc1412e430c3bd1e3f}} 
+void {\bfseries shift} (maxlab\+::\+Filtered\+Frame\+Data frame)
+\item 
+\mbox{\Hypertarget{classChannelWindow_a8b1c18c40fa9e4f891eaf7221dd598b8}\label{classChannelWindow_a8b1c18c40fa9e4f891eaf7221dd598b8}} 
+maxlab\+::\+Filtered\+Frame\+Data {\bfseries get} (int idx)
+\item 
+\mbox{\Hypertarget{classChannelWindow_afab2b22f3d23ea016697d33b16ac8511}\label{classChannelWindow_afab2b22f3d23ea016697d33b16ac8511}} 
+int {\bfseries length} ()
+\item 
+\mbox{\Hypertarget{classChannelWindow_a362798037f40a99650da61c877971517}\label{classChannelWindow_a362798037f40a99650da61c877971517}} 
+int {\bfseries total\+Spike\+Count} ()
+\item 
+\mbox{\Hypertarget{classChannelWindow_ac118c7e60de090394f40e4f0fcfd6adc}\label{classChannelWindow_ac118c7e60de090394f40e4f0fcfd6adc}} 
+\mbox{\hyperlink{classElectrodeMap}{Electrode\+Map}} {\bfseries electrode\+Map} ()
+\item 
+\mbox{\Hypertarget{classChannelWindow_a3b7604f6aa0b8fa271e237d39e9df3e0}\label{classChannelWindow_a3b7604f6aa0b8fa271e237d39e9df3e0}} 
+vector$<$ float $>$ {\bfseries past\+Windows} ()
+\item 
+\mbox{\Hypertarget{classChannelWindow_a88ef58fe01f8b3a310e2f02d0ac0abc0}\label{classChannelWindow_a88ef58fe01f8b3a310e2f02d0ac0abc0}} 
+float {\bfseries avg\+Past\+Windows} ()
+\item 
+\mbox{\Hypertarget{classChannelWindow_a90e47573e5079683dabe03e1aa66a36a}\label{classChannelWindow_a90e47573e5079683dabe03e1aa66a36a}} 
+float {\bfseries get\+AvgX} ()
+\item 
+\mbox{\Hypertarget{classChannelWindow_a69e6d5823613cbc1b8dc9b33ee5346f6}\label{classChannelWindow_a69e6d5823613cbc1b8dc9b33ee5346f6}} 
+float {\bfseries std\+Dev} ()
+\item 
+\mbox{\Hypertarget{classChannelWindow_a11a10504b18341abe0eef53d6b02ea02}\label{classChannelWindow_a11a10504b18341abe0eef53d6b02ea02}} 
+float {\bfseries firing\+Rate} ()
+\item 
+\mbox{\Hypertarget{classChannelWindow_a8a1cdbafbc9c7597446f38d20cf26ea8}\label{classChannelWindow_a8a1cdbafbc9c7597446f38d20cf26ea8}} 
+bool {\bfseries past\+Windows\+Ready} ()
+\item 
+\mbox{\Hypertarget{classChannelWindow_ad3fe970bc14670cd6d73a37fa2cacbd3}\label{classChannelWindow_ad3fe970bc14670cd6d73a37fa2cacbd3}} 
+void {\bfseries print} ()
+\item 
+\mbox{\Hypertarget{classChannelWindow_a47a4bd5f2102f104b0bbcf521f6be58f}\label{classChannelWindow_a47a4bd5f2102f104b0bbcf521f6be58f}} 
+void {\bfseries debug} (string message)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classChannelWindow_af6b05a45d1f682a31a0fa6b43f4b19f2}\label{classChannelWindow_af6b05a45d1f682a31a0fa6b43f4b19f2}} 
+\index{ChannelWindow@{ChannelWindow}!add@{add}}
+\index{add@{add}!ChannelWindow@{ChannelWindow}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Channel\+Window\+::add (\begin{DoxyParamCaption}\item[{maxlab\+::\+Filtered\+Frame\+Data}]{frame }\end{DoxyParamCaption})}
+
+
+
+Adds a data frame to the window. 
+
+Adds only the {\ttfamily maxlab\+::spike\+Events} that are found in the given config or {\ttfamily \mbox{\hyperlink{classElectrodeMap}{Electrode\+Map}}}, and increments the total spike sum accordingly.
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & Filtered\+Frame\+Data struct to add to the window\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/mxwbio/\+Desktop/\+H\+A\+L/bin/lib/include/channel\+Window.\+h\end{DoxyCompactItemize}
