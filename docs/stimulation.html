@@ -58,6 +58,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#stimulation.Stimulation"><code class="docutils literal notranslate"><span class="pre">Stimulation</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#stimulation.Stimulation.combine_stimuli"><code class="docutils literal notranslate"><span class="pre">Stimulation.combine_stimuli()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#stimulation.Stimulation.connect_stim_units_to_stim_electrodes"><code class="docutils literal notranslate"><span class="pre">Stimulation.connect_stim_units_to_stim_electrodes()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#stimulation.Stimulation.from_frequency"><code class="docutils literal notranslate"><span class="pre">Stimulation.from_frequency()</span></code></a></li>
 </ul>
 </li>
@@ -186,6 +187,33 @@ maxtwo (bool, optional): whether or not the maxtwo is being used. If True, fps i
 <dt>Returns:</dt><dd><p>ArbitraryStimulation: The ArbitraryStimulation object that runs both stim1 and stim2 simultaneously.</p>
 </dd>
 <dt>Notes:</dt><dd><p>Not configured to deal with <code class="docutils literal notranslate"><span class="pre">mx.DelayCycles</span></code> objects.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="stimulation.Stimulation.connect_stim_units_to_stim_electrodes">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">connect_stim_units_to_stim_electrodes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">array</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Array</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#stimulation.Stimulation.connect_stim_units_to_stim_electrodes" title="Link to this definition"></a></dt>
+<dd><p>Connects stimulation units to stimulatoin electrodes. This function 
+was taken from example code from MaxWell.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>stim_electrodes</strong> (<code class="docutils literal notranslate"><span class="pre">List[int]</span></code>) – list of stimulation electrodes to connect</p></li>
+<li><p><strong>array</strong> (<code class="docutils literal notranslate"><span class="pre">mx.Array</span></code>) – MaxWell array generated from a list of recording/stimulation electrodes</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>RuntimeError</strong> – when a stimulation channel cannot connect to a stimulation electrode</p></li>
+<li><p><strong>RuntimeError</strong> – when two electrodes are connected to the same unit</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>a list of stimulation units</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">List[int]</span></code></p>
 </dd>
 </dl>
 </dd></dl>
