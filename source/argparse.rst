@@ -2,4 +2,4 @@ Argument Parser Module
 ======================
 
 
-.. doxygenmodule:: argparse
+.. doxygeninterface:: argparse

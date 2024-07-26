@@ -5,43 +5,166 @@
 \item 
 \mbox{\hyperlink{classElectrodeMap_a7ca971b6410b59c46c53dc2f51737bdd}{Electrode\+Map}} ()
 \begin{DoxyCompactList}\small\item\em Construct a new Electrode Map object. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classElectrodeMap_aaf8fef92aff821f4c7f7d3b4a9164c84}\label{classElectrodeMap_aaf8fef92aff821f4c7f7d3b4a9164c84}} 
-{\bfseries Electrode\+Map} (const char $\ast$config\+\_\+path)
-\item 
-\mbox{\Hypertarget{classElectrodeMap_a266b3bb2c54a2016d7dab4ce1fa0a857}\label{classElectrodeMap_a266b3bb2c54a2016d7dab4ce1fa0a857}} 
-bool {\bfseries exists} (int channel\+No)
-\item 
-\mbox{\Hypertarget{classElectrodeMap_ab578d194f65b78490574bf454047fdb1}\label{classElectrodeMap_ab578d194f65b78490574bf454047fdb1}} 
-struct \mbox{\hyperlink{structelectrodeCoords}{electrode\+Coords}} {\bfseries get} (int channel\+No)
-\item 
-\mbox{\Hypertarget{classElectrodeMap_acc2d6a4e0cf5f33e468c57f4c63fe523}\label{classElectrodeMap_acc2d6a4e0cf5f33e468c57f4c63fe523}} 
-int {\bfseries get\+Position} (int channel\+No)
-\item 
-\mbox{\Hypertarget{classElectrodeMap_a4deacbf9752c68ecea362d6a98f870c7}\label{classElectrodeMap_a4deacbf9752c68ecea362d6a98f870c7}} 
-float {\bfseries getX} (int channel\+No)
-\item 
-\mbox{\Hypertarget{classElectrodeMap_acdd7bb2a9d48c1540efeadb39efd3e47}\label{classElectrodeMap_acdd7bb2a9d48c1540efeadb39efd3e47}} 
-float {\bfseries getY} (int channel\+No)
-\item 
-\mbox{\Hypertarget{classElectrodeMap_ab76caa8f91537a7086c21646affcb1e5}\label{classElectrodeMap_ab76caa8f91537a7086c21646affcb1e5}} 
-int {\bfseries size} ()
-\item 
-\mbox{\Hypertarget{classElectrodeMap_a38b8c5e4bc4f2b0c7a8e0bcda096c8d4}\label{classElectrodeMap_a38b8c5e4bc4f2b0c7a8e0bcda096c8d4}} 
-void {\bfseries print} ()
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{classElectrodeMap_aaf8fef92aff821f4c7f7d3b4a9164c84}{Electrode\+Map}} (const char $\ast$config\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Construct a new Electrode Map object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classElectrodeMap_a266b3bb2c54a2016d7dab4ce1fa0a857}{exists}} (int channel\+No)
+\begin{DoxyCompactList}\small\item\em Checks if a channel number exists in the config. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structelectrodeCoords}{electrode\+Coords}} \mbox{\hyperlink{classElectrodeMap_ab578d194f65b78490574bf454047fdb1}{get}} (int channel\+No)
+\begin{DoxyCompactList}\small\item\em Gets the positional data of an electrode given its channel number. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classElectrodeMap_acc2d6a4e0cf5f33e468c57f4c63fe523}{get\+Position}} (int channel\+No)
+\begin{DoxyCompactList}\small\item\em Gets the electrode number of an electrode given its channel number. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classElectrodeMap_a4deacbf9752c68ecea362d6a98f870c7}{getX}} (int channel\+No)
+\begin{DoxyCompactList}\small\item\em Gets the x coordinate (in µm) of an electrode given its channel number. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classElectrodeMap_acdd7bb2a9d48c1540efeadb39efd3e47}{getY}} (int channel\+No)
+\begin{DoxyCompactList}\small\item\em Gets the y coordinate (in µm) of an electrode given its channel number. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classElectrodeMap_ab76caa8f91537a7086c21646affcb1e5}{size}} ()
+\begin{DoxyCompactList}\small\item\em Gets the number of mapped channels in the configuration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classElectrodeMap_a38b8c5e4bc4f2b0c7a8e0bcda096c8d4}{print}} ()
+\begin{DoxyCompactList}\small\item\em prints the \mbox{\hyperlink{classElectrodeMap}{Electrode\+Map}} \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classElectrodeMap_a7ca971b6410b59c46c53dc2f51737bdd}\label{classElectrodeMap_a7ca971b6410b59c46c53dc2f51737bdd}} 
 \index{ElectrodeMap@{ElectrodeMap}!ElectrodeMap@{ElectrodeMap}}
 \index{ElectrodeMap@{ElectrodeMap}!ElectrodeMap@{ElectrodeMap}}
-\doxysubsubsection{\texorpdfstring{ElectrodeMap()}{ElectrodeMap()}}
+\doxysubsubsection{\texorpdfstring{ElectrodeMap()}{ElectrodeMap()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily Electrode\+Map\+::\+Electrode\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
 Construct a new Electrode Map object. 
 
+\mbox{\Hypertarget{classElectrodeMap_aaf8fef92aff821f4c7f7d3b4a9164c84}\label{classElectrodeMap_aaf8fef92aff821f4c7f7d3b4a9164c84}} 
+\index{ElectrodeMap@{ElectrodeMap}!ElectrodeMap@{ElectrodeMap}}
+\index{ElectrodeMap@{ElectrodeMap}!ElectrodeMap@{ElectrodeMap}}
+\doxysubsubsection{\texorpdfstring{ElectrodeMap()}{ElectrodeMap()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Electrode\+Map\+::\+Electrode\+Map (\begin{DoxyParamCaption}\item[{const char $\ast$}]{config\+\_\+path }\end{DoxyParamCaption})}
+
+
+
+Construct a new Electrode Map object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em config\+\_\+path} & {\ttfamily char} array (c string) representing the full path of the config file \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classElectrodeMap_a266b3bb2c54a2016d7dab4ce1fa0a857}\label{classElectrodeMap_a266b3bb2c54a2016d7dab4ce1fa0a857}} 
+\index{ElectrodeMap@{ElectrodeMap}!exists@{exists}}
+\index{exists@{exists}!ElectrodeMap@{ElectrodeMap}}
+\doxysubsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily bool Electrode\+Map\+::exists (\begin{DoxyParamCaption}\item[{int}]{channel\+No }\end{DoxyParamCaption})}
+
+
+
+Checks if a channel number exists in the config. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+No} & {\ttfamily int} representing the channel number of the target electrode \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the channel number exists, {\ttfamily false} otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classElectrodeMap_ab578d194f65b78490574bf454047fdb1}\label{classElectrodeMap_ab578d194f65b78490574bf454047fdb1}} 
+\index{ElectrodeMap@{ElectrodeMap}!get@{get}}
+\index{get@{get}!ElectrodeMap@{ElectrodeMap}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structelectrodeCoords}{electrode\+Coords}} Electrode\+Map\+::get (\begin{DoxyParamCaption}\item[{int}]{channel\+No }\end{DoxyParamCaption})}
+
+
+
+Gets the positional data of an electrode given its channel number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+No} & {\ttfamily int} representing the channel number of the target electrode \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily struct \mbox{\hyperlink{structelectrodeCoords}{electrode\+Coords}}}; if the channel\+No was not set (i.\+e. it wasn\textquotesingle{}t in the config file), each element of the returned struct will be set to -\/1. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classElectrodeMap_acc2d6a4e0cf5f33e468c57f4c63fe523}\label{classElectrodeMap_acc2d6a4e0cf5f33e468c57f4c63fe523}} 
+\index{ElectrodeMap@{ElectrodeMap}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!ElectrodeMap@{ElectrodeMap}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily int Electrode\+Map\+::get\+Position (\begin{DoxyParamCaption}\item[{int}]{channel\+No }\end{DoxyParamCaption})}
+
+
+
+Gets the electrode number of an electrode given its channel number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+No} & {\ttfamily int} representing the channel number of the target electrode \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily int}; if the channel\+No was not set (i.\+e. it wasn\textquotesingle{}t in the config file), then -\/1 will be returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classElectrodeMap_a4deacbf9752c68ecea362d6a98f870c7}\label{classElectrodeMap_a4deacbf9752c68ecea362d6a98f870c7}} 
+\index{ElectrodeMap@{ElectrodeMap}!getX@{getX}}
+\index{getX@{getX}!ElectrodeMap@{ElectrodeMap}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily float Electrode\+Map\+::getX (\begin{DoxyParamCaption}\item[{int}]{channel\+No }\end{DoxyParamCaption})}
+
+
+
+Gets the x coordinate (in µm) of an electrode given its channel number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+No} & {\ttfamily int} channel to get the x coordinate of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily float}; if the channel\+No was not set (i.\+e. it wasn\textquotesingle{}t in the config file), then -\/1 will be returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classElectrodeMap_acdd7bb2a9d48c1540efeadb39efd3e47}\label{classElectrodeMap_acdd7bb2a9d48c1540efeadb39efd3e47}} 
+\index{ElectrodeMap@{ElectrodeMap}!getY@{getY}}
+\index{getY@{getY}!ElectrodeMap@{ElectrodeMap}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily float Electrode\+Map\+::getY (\begin{DoxyParamCaption}\item[{int}]{channel\+No }\end{DoxyParamCaption})}
+
+
+
+Gets the y coordinate (in µm) of an electrode given its channel number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+No} & {\ttfamily int} channel to get the y coordinate of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily float}; if the channel\+No was not set (i.\+e. it wasn\textquotesingle{}t in the config file), then -\/1 will be returned. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classElectrodeMap_a38b8c5e4bc4f2b0c7a8e0bcda096c8d4}\label{classElectrodeMap_a38b8c5e4bc4f2b0c7a8e0bcda096c8d4}} 
+\index{ElectrodeMap@{ElectrodeMap}!print@{print}}
+\index{print@{print}!ElectrodeMap@{ElectrodeMap}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Electrode\+Map\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+prints the \mbox{\hyperlink{classElectrodeMap}{Electrode\+Map}} 
+
+\mbox{\Hypertarget{classElectrodeMap_ab76caa8f91537a7086c21646affcb1e5}\label{classElectrodeMap_ab76caa8f91537a7086c21646affcb1e5}} 
+\index{ElectrodeMap@{ElectrodeMap}!size@{size}}
+\index{size@{size}!ElectrodeMap@{ElectrodeMap}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily int Electrode\+Map\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the number of mapped channels in the configuration. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily int} 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

@@ -5,24 +5,20 @@
 \item 
 \mbox{\hyperlink{classController_a95c56822d667e94b031451729ce069a9}{Controller}} ()
 \begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classController}{Controller}} object. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classController_adf7f58c81479a59a7b24d5053560d7d9}\label{classController_adf7f58c81479a59a7b24d5053560d7d9}} 
-void {\bfseries add\+Button} (string id, int window\+Length, const char $\ast$config\+Path, int save\+Windows=0)
-\item 
-\mbox{\Hypertarget{classController_a7af4381e262e2457222fc4b6fac336ce}\label{classController_a7af4381e262e2457222fc4b6fac336ce}} 
-\mbox{\hyperlink{classChannelWindow}{Channel\+Window}} $\ast$ {\bfseries get\+Button\+Window} (string id)
-\item 
-\mbox{\Hypertarget{classController_ab9dc08ae3665712026e4f0aa63f86a19}\label{classController_ab9dc08ae3665712026e4f0aa63f86a19}} 
-void {\bfseries add} (maxlab\+::\+Filtered\+Frame\+Data frame)
-\item 
-\mbox{\Hypertarget{classController_a8716527dccd14db21d94e6f8a449627c}\label{classController_a8716527dccd14db21d94e6f8a449627c}} 
-void {\bfseries shift} (maxlab\+::\+Filtered\+Frame\+Data frame)
-\item 
-\mbox{\Hypertarget{classController_a14b2114e3be63d83feb319ce759293fa}\label{classController_a14b2114e3be63d83feb319ce759293fa}} 
-int {\bfseries num\+Channels} (string id)
-\item 
-\mbox{\Hypertarget{classController_a34a2a7c37f78cc365a3cf84722b9a224}\label{classController_a34a2a7c37f78cc365a3cf84722b9a224}} 
-int {\bfseries num\+Spikes} (string id)
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{classController_a0ab87934c4f7a266cfdb86e0f36bc1b5}{$\sim$\+Controller}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classController}{Controller}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classController_adf7f58c81479a59a7b24d5053560d7d9}{add\+Button}} (string id, int window\+Length, const char $\ast$config\+Path, int save\+Windows=0)
+\begin{DoxyCompactList}\small\item\em Adds a new button (\mbox{\hyperlink{classChannelWindow}{Channel\+Window}}) to the \mbox{\hyperlink{classController}{Controller}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChannelWindow}{Channel\+Window}} $\ast$ \mbox{\hyperlink{classController_a7af4381e262e2457222fc4b6fac336ce}{get\+Button\+Window}} (string id)
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classChannelWindow}{Channel\+Window}} of the specified button. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classController_ab9dc08ae3665712026e4f0aa63f86a19}{add}} (maxlab\+::\+Filtered\+Frame\+Data frame)
+\begin{DoxyCompactList}\small\item\em Adds a data frame to all button windows. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classController_a8716527dccd14db21d94e6f8a449627c}{shift}} (maxlab\+::\+Filtered\+Frame\+Data frame)
+\begin{DoxyCompactList}\small\item\em Shifts all button windows. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classController_a14b2114e3be63d83feb319ce759293fa}{num\+Channels}} (string id)
+\begin{DoxyCompactList}\small\item\em Gets the number of channels tracked by a button. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classController_a34a2a7c37f78cc365a3cf84722b9a224}{num\+Spikes}} (string id)
+\begin{DoxyCompactList}\small\item\em Gets the number of spikes in the window of a button. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -36,6 +32,124 @@ int {\bfseries num\+Spikes} (string id)
 
 Construct a new \mbox{\hyperlink{classController}{Controller}} object. 
 
+\mbox{\Hypertarget{classController_a0ab87934c4f7a266cfdb86e0f36bc1b5}\label{classController_a0ab87934c4f7a266cfdb86e0f36bc1b5}} 
+\index{Controller@{Controller}!````~Controller@{$\sim$Controller}}
+\index{````~Controller@{$\sim$Controller}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{$\sim$Controller()}{~Controller()}}
+{\footnotesize\ttfamily Controller\+::$\sim$\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{classController}{Controller}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classController_ab9dc08ae3665712026e4f0aa63f86a19}\label{classController_ab9dc08ae3665712026e4f0aa63f86a19}} 
+\index{Controller@{Controller}!add@{add}}
+\index{add@{add}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Controller\+::add (\begin{DoxyParamCaption}\item[{maxlab\+::\+Filtered\+Frame\+Data}]{frame }\end{DoxyParamCaption})}
+
+
+
+Adds a data frame to all button windows. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & {\ttfamily maxlab\+::\+Filtered\+Frame\+Data} frame to add to each window \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classController_adf7f58c81479a59a7b24d5053560d7d9}\label{classController_adf7f58c81479a59a7b24d5053560d7d9}} 
+\index{Controller@{Controller}!addButton@{addButton}}
+\index{addButton@{addButton}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{addButton()}{addButton()}}
+{\footnotesize\ttfamily void Controller\+::add\+Button (\begin{DoxyParamCaption}\item[{string}]{id,  }\item[{int}]{window\+Length,  }\item[{const char $\ast$}]{config\+Path,  }\item[{int}]{save\+Windows = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Adds a new button (\mbox{\hyperlink{classChannelWindow}{Channel\+Window}}) to the \mbox{\hyperlink{classController}{Controller}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & {\ttfamily string} identifier of the button/config \\
+\hline
+{\em window\+Length} & {\ttfamily int} length of the window \\
+\hline
+{\em config\+Path} & {\ttfamily char} array representing the full path of the config file \\
+\hline
+{\em save\+Windows} & {\ttfamily int} indicating how many windows to save, default 0 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classController_a7af4381e262e2457222fc4b6fac336ce}\label{classController_a7af4381e262e2457222fc4b6fac336ce}} 
+\index{Controller@{Controller}!getButtonWindow@{getButtonWindow}}
+\index{getButtonWindow@{getButtonWindow}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{getButtonWindow()}{getButtonWindow()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChannelWindow}{Channel\+Window}}$\ast$ Controller\+::get\+Button\+Window (\begin{DoxyParamCaption}\item[{string}]{id }\end{DoxyParamCaption})}
+
+
+
+Get the \mbox{\hyperlink{classChannelWindow}{Channel\+Window}} of the specified button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & {\ttfamily string} id of the button \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to a {\ttfamily \mbox{\hyperlink{classChannelWindow}{Channel\+Window}}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classController_a14b2114e3be63d83feb319ce759293fa}\label{classController_a14b2114e3be63d83feb319ce759293fa}} 
+\index{Controller@{Controller}!numChannels@{numChannels}}
+\index{numChannels@{numChannels}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{numChannels()}{numChannels()}}
+{\footnotesize\ttfamily int Controller\+::num\+Channels (\begin{DoxyParamCaption}\item[{string}]{id }\end{DoxyParamCaption})}
+
+
+
+Gets the number of channels tracked by a button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & {\ttfamily string} id of the button \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily int} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classController_a34a2a7c37f78cc365a3cf84722b9a224}\label{classController_a34a2a7c37f78cc365a3cf84722b9a224}} 
+\index{Controller@{Controller}!numSpikes@{numSpikes}}
+\index{numSpikes@{numSpikes}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{numSpikes()}{numSpikes()}}
+{\footnotesize\ttfamily int Controller\+::num\+Spikes (\begin{DoxyParamCaption}\item[{string}]{id }\end{DoxyParamCaption})}
+
+
+
+Gets the number of spikes in the window of a button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & {\ttfamily string} id of the button \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily int} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classController_a8716527dccd14db21d94e6f8a449627c}\label{classController_a8716527dccd14db21d94e6f8a449627c}} 
+\index{Controller@{Controller}!shift@{shift}}
+\index{shift@{shift}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{shift()}{shift()}}
+{\footnotesize\ttfamily void Controller\+::shift (\begin{DoxyParamCaption}\item[{maxlab\+::\+Filtered\+Frame\+Data}]{frame }\end{DoxyParamCaption})}
+
+
+
+Shifts all button windows. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & {\ttfamily maxlab\+::\+Filtered\+Frame\+Data} frame to add to each window \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

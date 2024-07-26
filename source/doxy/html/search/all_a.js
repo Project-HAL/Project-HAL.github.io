@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['worldstate_17',['WorldState',['../classWorldState.html',1,'WorldState'],['../classWorldState.html#ad14e01bcb94b4edea5d2515cf6cf0868',1,'WorldState::WorldState()']]]
+  ['totalspikecount_25',['totalSpikeCount',['../classChannelWindow.html#a362798037f40a99650da61c877971517',1,'ChannelWindow']]]
 ];

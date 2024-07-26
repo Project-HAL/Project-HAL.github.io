@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="35" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" bodystart="35" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="79" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" bodystart="79" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -38,12 +38,13 @@
         <argsstring>()</argsstring>
         <name>~Controller</name>
         <briefdescription>
+<para>Destroy the <ref refid="classController" kindref="compound">Controller</ref> object. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="20" column="9"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="24" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classController_1adf7f58c81479a59a7b24d5053560d7d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -68,12 +69,47 @@
           <defval>0</defval>
         </param>
         <briefdescription>
+<para>Adds a new button (<ref refid="classChannelWindow" kindref="compound">ChannelWindow</ref>) to the <ref refid="classController" kindref="compound">Controller</ref>. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>string</computeroutput> identifier of the button/config </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>windowLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>int</computeroutput> length of the window </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>configPath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>char</computeroutput> array representing the full path of the config file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>saveWindows</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>int</computeroutput> indicating how many windows to save, default 0 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="22" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="36" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classController_1a7af4381e262e2457222fc4b6fac336ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classChannelWindow" kindref="compound">ChannelWindow</ref> *</type>
@@ -85,12 +121,25 @@
           <declname>id</declname>
         </param>
         <briefdescription>
+<para>Get the <ref refid="classChannelWindow" kindref="compound">ChannelWindow</ref> of the specified button. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>string</computeroutput> id of the button </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pointer to a <computeroutput><ref refid="classChannelWindow" kindref="compound">ChannelWindow</ref></computeroutput> </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="24" column="23"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="44" column="23"/>
       </memberdef>
       <memberdef kind="function" id="classController_1ab9dc08ae3665712026e4f0aa63f86a19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -102,12 +151,23 @@
           <declname>frame</declname>
         </param>
         <briefdescription>
+<para>Adds a data frame to all button windows. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>maxlab::FilteredFrameData</computeroutput> frame to add to each window </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="26" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="52" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classController_1a8716527dccd14db21d94e6f8a449627c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -119,12 +179,23 @@
           <declname>frame</declname>
         </param>
         <briefdescription>
+<para>Shifts all button windows. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>maxlab::FilteredFrameData</computeroutput> frame to add to each window </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="28" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="60" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classController_1a14b2114e3be63d83feb319ce759293fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -136,12 +207,25 @@
           <declname>id</declname>
         </param>
         <briefdescription>
+<para>Gets the number of channels tracked by a button. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>string</computeroutput> id of the button </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>int</computeroutput> </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="30" column="13"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="68" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classController_1a34a2a7c37f78cc365a3cf84722b9a224" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -153,19 +237,32 @@
           <declname>id</declname>
         </param>
         <briefdescription>
+<para>Gets the number of spikes in the window of a button. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>string</computeroutput> id of the button </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>int</computeroutput> </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="32" column="13"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="76" column="13"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="11" column="17" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" bodystart="11" bodyend="36"/>
+    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="11" column="17" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" bodystart="11" bodyend="80"/>
     <listofallmembers>
       <member refid="classController_1ab9dc08ae3665712026e4f0aa63f86a19" prot="public" virt="non-virtual"><scope>Controller</scope><name>add</name></member>
       <member refid="classController_1adf7f58c81479a59a7b24d5053560d7d9" prot="public" virt="non-virtual"><scope>Controller</scope><name>addButton</name></member>

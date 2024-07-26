@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" line="141" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" bodystart="141" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" line="115" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" bodystart="115" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -42,12 +42,23 @@
           <declname>config_path</declname>
         </param>
         <briefdescription>
+<para>Construct a new Electrode Map object. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>config_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>char</computeroutput> array (c string) representing the full path of the config file </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" line="33" column="9"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" line="32" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classElectrodeMap_1a266b3bb2c54a2016d7dab4ce1fa0a857" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -59,12 +70,25 @@
           <declname>channelNo</declname>
         </param>
         <briefdescription>
+<para>Checks if a channel number exists in the config. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channelNo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>int</computeroutput> representing the channel number of the target electrode </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the channel number exists, <computeroutput>false</computeroutput> otherwise </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" line="44" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" line="42" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classElectrodeMap_1ab578d194f65b78490574bf454047fdb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>struct <ref refid="structelectrodeCoords" kindref="compound">electrodeCoords</ref></type>
@@ -76,12 +100,25 @@
           <declname>channelNo</declname>
         </param>
         <briefdescription>
+<para>Gets the positional data of an electrode given its channel number. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channelNo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>int</computeroutput> representing the channel number of the target electrode </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>struct <ref refid="structelectrodeCoords" kindref="compound">electrodeCoords</ref></computeroutput>; if the channelNo was not set (i.e. it wasn&apos;t in the config file), each element of the returned struct will be set to -1. </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" line="44" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" line="42" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classElectrodeMap_1acc2d6a4e0cf5f33e468c57f4c63fe523" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -93,12 +130,25 @@
           <declname>channelNo</declname>
         </param>
         <briefdescription>
+<para>Gets the electrode number of an electrode given its channel number. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channelNo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>int</computeroutput> representing the channel number of the target electrode </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>int</computeroutput>; if the channelNo was not set (i.e. it wasn&apos;t in the config file), then -1 will be returned. </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" line="76" column="13"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" line="65" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classElectrodeMap_1a4deacbf9752c68ecea362d6a98f870c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -110,12 +160,25 @@
           <declname>channelNo</declname>
         </param>
         <briefdescription>
+<para>Gets the x coordinate (in µm) of an electrode given its channel number. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channelNo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>int</computeroutput> channel to get the x coordinate of </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>float</computeroutput>; if the channelNo was not set (i.e. it wasn&apos;t in the config file), then -1 will be returned. </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" line="92" column="15"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" line="75" column="15"/>
       </memberdef>
       <memberdef kind="function" id="classElectrodeMap_1acdd7bb2a9d48c1540efeadb39efd3e47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -127,12 +190,25 @@
           <declname>channelNo</declname>
         </param>
         <briefdescription>
+<para>Gets the y coordinate (in µm) of an electrode given its channel number. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channelNo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>int</computeroutput> channel to get the y coordinate of </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>float</computeroutput>; if the channelNo was not set (i.e. it wasn&apos;t in the config file), then -1 will be returned. </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" line="108" column="15"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" line="85" column="15"/>
       </memberdef>
       <memberdef kind="function" id="classElectrodeMap_1ab76caa8f91537a7086c21646affcb1e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -140,12 +216,16 @@
         <argsstring>()</argsstring>
         <name>size</name>
         <briefdescription>
+<para>Gets the number of mapped channels in the configuration. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para><computeroutput>int</computeroutput> </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" line="117" column="13"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" line="92" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classElectrodeMap_1a38b8c5e4bc4f2b0c7a8e0bcda096c8d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -153,12 +233,13 @@
         <argsstring>()</argsstring>
         <name>print</name>
         <briefdescription>
+<para>prints the <ref refid="classElectrodeMap" kindref="compound">ElectrodeMap</ref> </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" line="124" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" line="98" column="14"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -177,14 +258,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" line="138" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" line="112" column="14"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" line="17" column="19" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" bodystart="17" bodyend="143"/>
+    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" line="17" column="19" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h" bodystart="17" bodyend="117"/>
     <listofallmembers>
       <member refid="classElectrodeMap_1a7ca971b6410b59c46c53dc2f51737bdd" prot="public" virt="non-virtual"><scope>ElectrodeMap</scope><name>ElectrodeMap</name></member>
       <member refid="classElectrodeMap_1aaf8fef92aff821f4c7f7d3b4a9164c84" prot="public" virt="non-virtual"><scope>ElectrodeMap</scope><name>ElectrodeMap</name></member>

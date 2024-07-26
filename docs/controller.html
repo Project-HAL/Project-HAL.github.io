@@ -56,6 +56,13 @@
 <li class="toctree-l2 current"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">Controller</span></code> Class</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#_CPPv410Controller"><code class="docutils literal notranslate"><span class="pre">Controller</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#_CPPv4N10Controller10ControllerEv"><code class="docutils literal notranslate"><span class="pre">Controller::Controller()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N10ControllerD0Ev"><code class="docutils literal notranslate"><span class="pre">Controller::~Controller()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N10Controller9addButtonE6stringiPKci"><code class="docutils literal notranslate"><span class="pre">Controller::addButton()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N10Controller15getButtonWindowE6string"><code class="docutils literal notranslate"><span class="pre">Controller::getButtonWindow()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N10Controller3addEN6maxlab17FilteredFrameDataE"><code class="docutils literal notranslate"><span class="pre">Controller::add()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N10Controller5shiftEN6maxlab17FilteredFrameDataE"><code class="docutils literal notranslate"><span class="pre">Controller::shift()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N10Controller11numChannelsE6string"><code class="docutils literal notranslate"><span class="pre">Controller::numChannels()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N10Controller9numSpikesE6string"><code class="docutils literal notranslate"><span class="pre">Controller::numSpikes()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -102,6 +109,92 @@
 <dt class="sig sig-object cpp" id="_CPPv4N10Controller10ControllerEv">
 <span id="_CPPv3N10Controller10ControllerEv"></span><span id="_CPPv2N10Controller10ControllerEv"></span><span id="Controller::Controller"></span><span class="target" id="classController_1a95c56822d667e94b031451729ce069a9"></span><span class="sig-name descname"><span class="n"><span class="pre">Controller</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Controller10ControllerEv" title="Link to this definition"></a><br /></dt>
 <dd><p>Construct a new <a class="reference internal" href="#classController"><span class="std std-ref">Controller</span></a> object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N10ControllerD0Ev">
+<span id="_CPPv3N10ControllerD0Ev"></span><span id="_CPPv2N10ControllerD0Ev"></span><span id="Controller::~Controller"></span><span class="target" id="classController_1a0ab87934c4f7a266cfdb86e0f36bc1b5"></span><span class="sig-name descname"><span class="n"><span class="pre">~Controller</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10ControllerD0Ev" title="Link to this definition"></a><br /></dt>
+<dd><p>Destroy the <a class="reference internal" href="#classController"><span class="std std-ref">Controller</span></a> object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N10Controller9addButtonE6stringiPKci">
+<span id="_CPPv3N10Controller9addButtonE6stringiPKci"></span><span id="_CPPv2N10Controller9addButtonE6stringiPKci"></span><span id="Controller::addButton__string.i.cCP.i"></span><span class="target" id="classController_1adf7f58c81479a59a7b24d5053560d7d9"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">addButton</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">windowLength</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">configPath</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">saveWindows</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Controller9addButtonE6stringiPKci" title="Link to this definition"></a><br /></dt>
+<dd><p>Adds a new button (<a class="reference internal" href="channel-window.html#classChannelWindow"><span class="std std-ref">ChannelWindow</span></a>) to the <a class="reference internal" href="#classController"><span class="std std-ref">Controller</span></a>. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> – <code class="docutils literal notranslate"><span class="pre">string</span></code> identifier of the button/config </p></li>
+<li><p><strong>windowLength</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> length of the window </p></li>
+<li><p><strong>configPath</strong> – <code class="docutils literal notranslate"><span class="pre">char</span></code> array representing the full path of the config file </p></li>
+<li><p><strong>saveWindows</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> indicating how many windows to save, default 0 </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N10Controller15getButtonWindowE6string">
+<span id="_CPPv3N10Controller15getButtonWindowE6string"></span><span id="_CPPv2N10Controller15getButtonWindowE6string"></span><span id="Controller::getButtonWindow__string"></span><span class="target" id="classController_1a7af4381e262e2457222fc4b6fac336ce"></span><a class="reference internal" href="channel-window.html#_CPPv413ChannelWindow" title="ChannelWindow"><span class="n"><span class="pre">ChannelWindow</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">getButtonWindow</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Controller15getButtonWindowE6string" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the <a class="reference internal" href="channel-window.html#classChannelWindow"><span class="std std-ref">ChannelWindow</span></a> of the specified button. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>id</strong> – <code class="docutils literal notranslate"><span class="pre">string</span></code> id of the button </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>pointer to a <code class="docutils literal notranslate"><a class="reference internal" href="channel-window.html#classChannelWindow"><span class="std std-ref"><span class="pre">ChannelWindow</span></span></a></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N10Controller3addEN6maxlab17FilteredFrameDataE">
+<span id="_CPPv3N10Controller3addEN6maxlab17FilteredFrameDataE"></span><span id="_CPPv2N10Controller3addEN6maxlab17FilteredFrameDataE"></span><span id="Controller::add__maxlab::FilteredFrameData"></span><span class="target" id="classController_1ab9dc08ae3665712026e4f0aa63f86a19"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">add</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">maxlab</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">FilteredFrameData</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Controller3addEN6maxlab17FilteredFrameDataE" title="Link to this definition"></a><br /></dt>
+<dd><p>Adds a data frame to all button windows. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>frame</strong> – <code class="docutils literal notranslate"><span class="pre">maxlab::FilteredFrameData</span></code> frame to add to each window </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N10Controller5shiftEN6maxlab17FilteredFrameDataE">
+<span id="_CPPv3N10Controller5shiftEN6maxlab17FilteredFrameDataE"></span><span id="_CPPv2N10Controller5shiftEN6maxlab17FilteredFrameDataE"></span><span id="Controller::shift__maxlab::FilteredFrameData"></span><span class="target" id="classController_1a8716527dccd14db21d94e6f8a449627c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">shift</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">maxlab</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">FilteredFrameData</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Controller5shiftEN6maxlab17FilteredFrameDataE" title="Link to this definition"></a><br /></dt>
+<dd><p>Shifts all button windows. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>frame</strong> – <code class="docutils literal notranslate"><span class="pre">maxlab::FilteredFrameData</span></code> frame to add to each window </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N10Controller11numChannelsE6string">
+<span id="_CPPv3N10Controller11numChannelsE6string"></span><span id="_CPPv2N10Controller11numChannelsE6string"></span><span id="Controller::numChannels__string"></span><span class="target" id="classController_1a14b2114e3be63d83feb319ce759293fa"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">numChannels</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Controller11numChannelsE6string" title="Link to this definition"></a><br /></dt>
+<dd><p>Gets the number of channels tracked by a button. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>id</strong> – <code class="docutils literal notranslate"><span class="pre">string</span></code> id of the button </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">int</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N10Controller9numSpikesE6string">
+<span id="_CPPv3N10Controller9numSpikesE6string"></span><span id="_CPPv2N10Controller9numSpikesE6string"></span><span id="Controller::numSpikes__string"></span><span class="target" id="classController_1a34a2a7c37f78cc365a3cf84722b9a224"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">numSpikes</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Controller9numSpikesE6string" title="Link to this definition"></a><br /></dt>
+<dd><p>Gets the number of spikes in the window of a button. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>id</strong> – <code class="docutils literal notranslate"><span class="pre">string</span></code> id of the button </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">int</span></code></p>
+</dd>
+</dl>
 </dd></dl>
 
 </div>
