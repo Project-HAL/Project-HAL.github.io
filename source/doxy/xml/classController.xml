@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="31" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" bodystart="31" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="35" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" bodystart="35" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -24,12 +24,13 @@
         <argsstring>()</argsstring>
         <name>Controller</name>
         <briefdescription>
+<para>Construct a new <ref refid="classController" kindref="compound">Controller</ref> object. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="14" column="9"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="18" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classController_1a0ab87934c4f7a266cfdb86e0f36bc1b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -42,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="16" column="9"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="20" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classController_1adf7f58c81479a59a7b24d5053560d7d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -72,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="18" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="22" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classController_1a7af4381e262e2457222fc4b6fac336ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classChannelWindow" kindref="compound">ChannelWindow</ref> *</type>
@@ -89,7 +90,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="20" column="23"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="24" column="23"/>
       </memberdef>
       <memberdef kind="function" id="classController_1ab9dc08ae3665712026e4f0aa63f86a19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -106,7 +107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="22" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="26" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classController_1a8716527dccd14db21d94e6f8a449627c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -123,7 +124,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="24" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="28" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classController_1a14b2114e3be63d83feb319ce759293fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -140,7 +141,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="26" column="13"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="30" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classController_1a34a2a7c37f78cc365a3cf84722b9a224" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -157,14 +158,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="28" column="13"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="32" column="13"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="11" column="17" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" bodystart="11" bodyend="32"/>
+    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="11" column="17" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" bodystart="11" bodyend="36"/>
     <listofallmembers>
       <member refid="classController_1ab9dc08ae3665712026e4f0aa63f86a19" prot="public" virt="non-virtual"><scope>Controller</scope><name>add</name></member>
       <member refid="classController_1adf7f58c81479a59a7b24d5053560d7d9" prot="public" virt="non-virtual"><scope>Controller</scope><name>addButton</name></member>

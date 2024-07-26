@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['electrodecoords_3',['electrodeCoords',['../structelectrodeCoords.html',1,'']]],
-  ['electrodemap_4',['ElectrodeMap',['../classElectrodeMap.html',1,'']]]
+  ['debug_4',['debug',['../classChannelWindow.html#a47a4bd5f2102f104b0bbcf521f6be58f',1,'ChannelWindow']]]
 ];

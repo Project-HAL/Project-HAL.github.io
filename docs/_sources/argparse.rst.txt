@@ -1,9 +1,5 @@
-``argparse``
-============
-help
+Argument Parser Module
+======================
 
 
-
-
-.. doxygenclass:: argparse
-    :members:
+.. doxygenmodule:: argparse

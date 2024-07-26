@@ -3,53 +3,83 @@
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classChannelWindow_a2997d4f19a4024bcb8d87422df8097d0}\label{classChannelWindow_a2997d4f19a4024bcb8d87422df8097d0}} 
-{\bfseries Channel\+Window} (int length, \mbox{\hyperlink{classElectrodeMap}{Electrode\+Map}} emap, int to\+Save=0)
-\item 
-\mbox{\Hypertarget{classChannelWindow_a03fb9f8b3bbfaf416938b7a3d5bf4d03}\label{classChannelWindow_a03fb9f8b3bbfaf416938b7a3d5bf4d03}} 
-{\bfseries Channel\+Window} (int length, const char $\ast$config\+Path, int to\+Save=0)
-\item 
+\mbox{\hyperlink{classChannelWindow_a03fb9f8b3bbfaf416938b7a3d5bf4d03}{Channel\+Window}} (int \mbox{\hyperlink{classChannelWindow_afab2b22f3d23ea016697d33b16ac8511}{length}}, const char $\ast$config\+Path, int to\+Save=0)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChannelWindow_a2997d4f19a4024bcb8d87422df8097d0}{Channel\+Window}} (int \mbox{\hyperlink{classChannelWindow_afab2b22f3d23ea016697d33b16ac8511}{length}}, \mbox{\hyperlink{classElectrodeMap}{Electrode\+Map}} emap, int to\+Save=0)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classChannelWindow_af6b05a45d1f682a31a0fa6b43f4b19f2}{add}} (maxlab\+::\+Filtered\+Frame\+Data frame)
 \begin{DoxyCompactList}\small\item\em Adds a data frame to the window. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classChannelWindow_ac93750ea8c9a5cfc1412e430c3bd1e3f}\label{classChannelWindow_ac93750ea8c9a5cfc1412e430c3bd1e3f}} 
-void {\bfseries shift} (maxlab\+::\+Filtered\+Frame\+Data frame)
-\item 
-\mbox{\Hypertarget{classChannelWindow_a8b1c18c40fa9e4f891eaf7221dd598b8}\label{classChannelWindow_a8b1c18c40fa9e4f891eaf7221dd598b8}} 
-maxlab\+::\+Filtered\+Frame\+Data {\bfseries get} (int idx)
-\item 
-\mbox{\Hypertarget{classChannelWindow_afab2b22f3d23ea016697d33b16ac8511}\label{classChannelWindow_afab2b22f3d23ea016697d33b16ac8511}} 
-int {\bfseries length} ()
-\item 
-\mbox{\Hypertarget{classChannelWindow_a362798037f40a99650da61c877971517}\label{classChannelWindow_a362798037f40a99650da61c877971517}} 
-int {\bfseries total\+Spike\+Count} ()
-\item 
-\mbox{\Hypertarget{classChannelWindow_ac118c7e60de090394f40e4f0fcfd6adc}\label{classChannelWindow_ac118c7e60de090394f40e4f0fcfd6adc}} 
-\mbox{\hyperlink{classElectrodeMap}{Electrode\+Map}} {\bfseries electrode\+Map} ()
-\item 
-\mbox{\Hypertarget{classChannelWindow_a3b7604f6aa0b8fa271e237d39e9df3e0}\label{classChannelWindow_a3b7604f6aa0b8fa271e237d39e9df3e0}} 
-vector$<$ float $>$ {\bfseries past\+Windows} ()
-\item 
-\mbox{\Hypertarget{classChannelWindow_a88ef58fe01f8b3a310e2f02d0ac0abc0}\label{classChannelWindow_a88ef58fe01f8b3a310e2f02d0ac0abc0}} 
-float {\bfseries avg\+Past\+Windows} ()
-\item 
-\mbox{\Hypertarget{classChannelWindow_a90e47573e5079683dabe03e1aa66a36a}\label{classChannelWindow_a90e47573e5079683dabe03e1aa66a36a}} 
-float {\bfseries get\+AvgX} ()
-\item 
-\mbox{\Hypertarget{classChannelWindow_a69e6d5823613cbc1b8dc9b33ee5346f6}\label{classChannelWindow_a69e6d5823613cbc1b8dc9b33ee5346f6}} 
-float {\bfseries std\+Dev} ()
-\item 
-\mbox{\Hypertarget{classChannelWindow_a11a10504b18341abe0eef53d6b02ea02}\label{classChannelWindow_a11a10504b18341abe0eef53d6b02ea02}} 
-float {\bfseries firing\+Rate} ()
-\item 
-\mbox{\Hypertarget{classChannelWindow_a8a1cdbafbc9c7597446f38d20cf26ea8}\label{classChannelWindow_a8a1cdbafbc9c7597446f38d20cf26ea8}} 
-bool {\bfseries past\+Windows\+Ready} ()
-\item 
-\mbox{\Hypertarget{classChannelWindow_ad3fe970bc14670cd6d73a37fa2cacbd3}\label{classChannelWindow_ad3fe970bc14670cd6d73a37fa2cacbd3}} 
-void {\bfseries print} ()
-\item 
-\mbox{\Hypertarget{classChannelWindow_a47a4bd5f2102f104b0bbcf521f6be58f}\label{classChannelWindow_a47a4bd5f2102f104b0bbcf521f6be58f}} 
-void {\bfseries debug} (string message)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{classChannelWindow_ac93750ea8c9a5cfc1412e430c3bd1e3f}{shift}} (maxlab\+::\+Filtered\+Frame\+Data frame)
+\begin{DoxyCompactList}\small\item\em Shifts window, appending new data frame to the end. \end{DoxyCompactList}\item 
+maxlab\+::\+Filtered\+Frame\+Data \mbox{\hyperlink{classChannelWindow_a8b1c18c40fa9e4f891eaf7221dd598b8}{get}} (int idx)
+\begin{DoxyCompactList}\small\item\em Gets a {\ttfamily maxlab\+::\+Filtered\+Frame\+Data} struct at the specified index. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classChannelWindow_afab2b22f3d23ea016697d33b16ac8511}{length}} ()
+\begin{DoxyCompactList}\small\item\em Returns the length of the window. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classChannelWindow_a362798037f40a99650da61c877971517}{total\+Spike\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Returns the sum of all the spike counts (of valid channels) in the window. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classElectrodeMap}{Electrode\+Map}} \mbox{\hyperlink{classChannelWindow_ac118c7e60de090394f40e4f0fcfd6adc}{electrode\+Map}} ()
+\begin{DoxyCompactList}\small\item\em Returns the {\ttfamily \mbox{\hyperlink{classElectrodeMap}{Electrode\+Map}}} \end{DoxyCompactList}\item 
+vector$<$ float $>$ \mbox{\hyperlink{classChannelWindow_a3b7604f6aa0b8fa271e237d39e9df3e0}{past\+Windows}} ()
+\begin{DoxyCompactList}\small\item\em Gets a vectors containing the firing rates of all the past windows. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classChannelWindow_a88ef58fe01f8b3a310e2f02d0ac0abc0}{avg\+Past\+Windows}} ()
+\begin{DoxyCompactList}\small\item\em Returns the average of all the past windows. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classChannelWindow_a90e47573e5079683dabe03e1aa66a36a}{get\+AvgX}} ()
+\begin{DoxyCompactList}\small\item\em Computes the average x coordinate of all the spike events in the window. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classChannelWindow_a69e6d5823613cbc1b8dc9b33ee5346f6}{std\+Dev}} ()
+\begin{DoxyCompactList}\small\item\em Computes the standard deviation of the firing rates of all past windows. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classChannelWindow_a11a10504b18341abe0eef53d6b02ea02}{firing\+Rate}} ()
+\begin{DoxyCompactList}\small\item\em Computes the firing rate of the window. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classChannelWindow_a8a1cdbafbc9c7597446f38d20cf26ea8}{past\+Windows\+Ready}} ()
+\begin{DoxyCompactList}\small\item\em Indicates whether the window is completely unique from the past windows. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChannelWindow_ad3fe970bc14670cd6d73a37fa2cacbd3}{print}} ()
+\begin{DoxyCompactList}\small\item\em Prints the \mbox{\hyperlink{classChannelWindow}{Channel\+Window}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChannelWindow_a47a4bd5f2102f104b0bbcf521f6be58f}{debug}} (string message)
+\begin{DoxyCompactList}\small\item\em Prints the window with a message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classChannelWindow_a03fb9f8b3bbfaf416938b7a3d5bf4d03}\label{classChannelWindow_a03fb9f8b3bbfaf416938b7a3d5bf4d03}} 
+\index{ChannelWindow@{ChannelWindow}!ChannelWindow@{ChannelWindow}}
+\index{ChannelWindow@{ChannelWindow}!ChannelWindow@{ChannelWindow}}
+\doxysubsubsection{\texorpdfstring{ChannelWindow()}{ChannelWindow()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Channel\+Window\+::\+Channel\+Window (\begin{DoxyParamCaption}\item[{int}]{length,  }\item[{const char $\ast$}]{config\+Path,  }\item[{int}]{to\+Save = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Creates a new \mbox{\hyperlink{classChannelWindow}{Channel\+Window}} object
+
+
+\begin{DoxyParams}{Parameters}
+{\em length} & {\ttfamily int} representing the length of the window (measured in frames) \\
+\hline
+{\em config\+Path} & {\ttfamily char} array representing the full path of the config to use for the underlying \mbox{\hyperlink{classElectrodeMap}{Electrode\+Map}} \\
+\hline
+{\em to\+Save} & {\ttfamily int} indicating how many past window firing rates are to be saved, default=0 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classChannelWindow_a2997d4f19a4024bcb8d87422df8097d0}\label{classChannelWindow_a2997d4f19a4024bcb8d87422df8097d0}} 
+\index{ChannelWindow@{ChannelWindow}!ChannelWindow@{ChannelWindow}}
+\index{ChannelWindow@{ChannelWindow}!ChannelWindow@{ChannelWindow}}
+\doxysubsubsection{\texorpdfstring{ChannelWindow()}{ChannelWindow()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Channel\+Window\+::\+Channel\+Window (\begin{DoxyParamCaption}\item[{int}]{length,  }\item[{\mbox{\hyperlink{classElectrodeMap}{Electrode\+Map}}}]{emap,  }\item[{int}]{to\+Save = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Creates a new \mbox{\hyperlink{classChannelWindow}{Channel\+Window}} object
+
+
+\begin{DoxyParams}{Parameters}
+{\em length} & {\ttfamily int} representing the length of the window (measured in frames) \\
+\hline
+{\em emap} & {\ttfamily \mbox{\hyperlink{classElectrodeMap}{Electrode\+Map}}} holding the current electrode config file \\
+\hline
+{\em to\+Save} & {\ttfamily int} indicating how many past window firing rates are to be saved, default=0 \\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Member Function Documentation}
@@ -67,11 +97,192 @@ Adds only the {\ttfamily maxlab\+::spike\+Events} that are found in the given co
 
 
 \begin{DoxyParams}{Parameters}
-{\em frame} & Filtered\+Frame\+Data struct to add to the window\\
+{\em frame} & {\ttfamily maxlab\+::\+Filtered\+Frame\+Data} struct to add to the window\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classChannelWindow_a88ef58fe01f8b3a310e2f02d0ac0abc0}\label{classChannelWindow_a88ef58fe01f8b3a310e2f02d0ac0abc0}} 
+\index{ChannelWindow@{ChannelWindow}!avgPastWindows@{avgPastWindows}}
+\index{avgPastWindows@{avgPastWindows}!ChannelWindow@{ChannelWindow}}
+\doxysubsubsection{\texorpdfstring{avgPastWindows()}{avgPastWindows()}}
+{\footnotesize\ttfamily float Channel\+Window\+::avg\+Past\+Windows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the average of all the past windows. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily float} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classChannelWindow_a47a4bd5f2102f104b0bbcf521f6be58f}\label{classChannelWindow_a47a4bd5f2102f104b0bbcf521f6be58f}} 
+\index{ChannelWindow@{ChannelWindow}!debug@{debug}}
+\index{debug@{debug}!ChannelWindow@{ChannelWindow}}
+\doxysubsubsection{\texorpdfstring{debug()}{debug()}}
+{\footnotesize\ttfamily void Channel\+Window\+::debug (\begin{DoxyParamCaption}\item[{string}]{message }\end{DoxyParamCaption})}
+
+
+
+Prints the window with a message. 
+
+Also counts each spike event in the window manually, and compares it to the recorded sum
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & {\ttfamily string} to print \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classChannelWindow_ac118c7e60de090394f40e4f0fcfd6adc}\label{classChannelWindow_ac118c7e60de090394f40e4f0fcfd6adc}} 
+\index{ChannelWindow@{ChannelWindow}!electrodeMap@{electrodeMap}}
+\index{electrodeMap@{electrodeMap}!ChannelWindow@{ChannelWindow}}
+\doxysubsubsection{\texorpdfstring{electrodeMap()}{electrodeMap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classElectrodeMap}{Electrode\+Map}} Channel\+Window\+::electrode\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the {\ttfamily \mbox{\hyperlink{classElectrodeMap}{Electrode\+Map}}} 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily \mbox{\hyperlink{classElectrodeMap}{Electrode\+Map}}} containing all of the channel, electrode mappings 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classChannelWindow_a11a10504b18341abe0eef53d6b02ea02}\label{classChannelWindow_a11a10504b18341abe0eef53d6b02ea02}} 
+\index{ChannelWindow@{ChannelWindow}!firingRate@{firingRate}}
+\index{firingRate@{firingRate}!ChannelWindow@{ChannelWindow}}
+\doxysubsubsection{\texorpdfstring{firingRate()}{firingRate()}}
+{\footnotesize\ttfamily float Channel\+Window\+::firing\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Computes the firing rate of the window. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily float} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classChannelWindow_a8b1c18c40fa9e4f891eaf7221dd598b8}\label{classChannelWindow_a8b1c18c40fa9e4f891eaf7221dd598b8}} 
+\index{ChannelWindow@{ChannelWindow}!get@{get}}
+\index{get@{get}!ChannelWindow@{ChannelWindow}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily maxlab\+::\+Filtered\+Frame\+Data Channel\+Window\+::get (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})}
+
+
+
+Gets a {\ttfamily maxlab\+::\+Filtered\+Frame\+Data} struct at the specified index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & {\ttfamily int} representing the index of the target frame\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily maxlab\+::\+Filtered\+Frame\+Data} struct at the specified index within the window 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classChannelWindow_a90e47573e5079683dabe03e1aa66a36a}\label{classChannelWindow_a90e47573e5079683dabe03e1aa66a36a}} 
+\index{ChannelWindow@{ChannelWindow}!getAvgX@{getAvgX}}
+\index{getAvgX@{getAvgX}!ChannelWindow@{ChannelWindow}}
+\doxysubsubsection{\texorpdfstring{getAvgX()}{getAvgX()}}
+{\footnotesize\ttfamily float Channel\+Window\+::get\+AvgX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Computes the average x coordinate of all the spike events in the window. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily float} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classChannelWindow_afab2b22f3d23ea016697d33b16ac8511}\label{classChannelWindow_afab2b22f3d23ea016697d33b16ac8511}} 
+\index{ChannelWindow@{ChannelWindow}!length@{length}}
+\index{length@{length}!ChannelWindow@{ChannelWindow}}
+\doxysubsubsection{\texorpdfstring{length()}{length()}}
+{\footnotesize\ttfamily int Channel\+Window\+::length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the length of the window. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily int} representing the length of the window 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classChannelWindow_a3b7604f6aa0b8fa271e237d39e9df3e0}\label{classChannelWindow_a3b7604f6aa0b8fa271e237d39e9df3e0}} 
+\index{ChannelWindow@{ChannelWindow}!pastWindows@{pastWindows}}
+\index{pastWindows@{pastWindows}!ChannelWindow@{ChannelWindow}}
+\doxysubsubsection{\texorpdfstring{pastWindows()}{pastWindows()}}
+{\footnotesize\ttfamily vector$<$float$>$ Channel\+Window\+::past\+Windows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets a vectors containing the firing rates of all the past windows. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily vector$<$float$>$} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classChannelWindow_a8a1cdbafbc9c7597446f38d20cf26ea8}\label{classChannelWindow_a8a1cdbafbc9c7597446f38d20cf26ea8}} 
+\index{ChannelWindow@{ChannelWindow}!pastWindowsReady@{pastWindowsReady}}
+\index{pastWindowsReady@{pastWindowsReady}!ChannelWindow@{ChannelWindow}}
+\doxysubsubsection{\texorpdfstring{pastWindowsReady()}{pastWindowsReady()}}
+{\footnotesize\ttfamily bool Channel\+Window\+::past\+Windows\+Ready (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Indicates whether the window is completely unique from the past windows. 
+
+The past windows are stored end-\/to-\/end, so, at any point in time, there is a high chance that the current window overlaps with the past ones. When this function returns true, the current window does {\itshape not overlap} with any of the previous windows, and will be counted in all computations relating to the past windows.
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily bool} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classChannelWindow_ad3fe970bc14670cd6d73a37fa2cacbd3}\label{classChannelWindow_ad3fe970bc14670cd6d73a37fa2cacbd3}} 
+\index{ChannelWindow@{ChannelWindow}!print@{print}}
+\index{print@{print}!ChannelWindow@{ChannelWindow}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Channel\+Window\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prints the \mbox{\hyperlink{classChannelWindow}{Channel\+Window}}. 
+
+\mbox{\Hypertarget{classChannelWindow_ac93750ea8c9a5cfc1412e430c3bd1e3f}\label{classChannelWindow_ac93750ea8c9a5cfc1412e430c3bd1e3f}} 
+\index{ChannelWindow@{ChannelWindow}!shift@{shift}}
+\index{shift@{shift}!ChannelWindow@{ChannelWindow}}
+\doxysubsubsection{\texorpdfstring{shift()}{shift()}}
+{\footnotesize\ttfamily void Channel\+Window\+::shift (\begin{DoxyParamCaption}\item[{maxlab\+::\+Filtered\+Frame\+Data}]{frame }\end{DoxyParamCaption})}
+
+
+
+Shifts window, appending new data frame to the end. 
+
+Shifts the window by removing the first frame, updating the total sum accordingly, and adding the new frame to the end. Similar to add, the sum will only be incremented for each channel in frame that exists in the electrode map. Note that it will only count the {\ttfamily maxlab\+::spike\+Events} that are found in the given config
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & {\ttfamily maxlab\+::\+Filtered\+Frame\+Data} struct to add to the window \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classChannelWindow_a69e6d5823613cbc1b8dc9b33ee5346f6}\label{classChannelWindow_a69e6d5823613cbc1b8dc9b33ee5346f6}} 
+\index{ChannelWindow@{ChannelWindow}!stdDev@{stdDev}}
+\index{stdDev@{stdDev}!ChannelWindow@{ChannelWindow}}
+\doxysubsubsection{\texorpdfstring{stdDev()}{stdDev()}}
+{\footnotesize\ttfamily float Channel\+Window\+::std\+Dev (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Computes the standard deviation of the firing rates of all past windows. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily float} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classChannelWindow_a362798037f40a99650da61c877971517}\label{classChannelWindow_a362798037f40a99650da61c877971517}} 
+\index{ChannelWindow@{ChannelWindow}!totalSpikeCount@{totalSpikeCount}}
+\index{totalSpikeCount@{totalSpikeCount}!ChannelWindow@{ChannelWindow}}
+\doxysubsubsection{\texorpdfstring{totalSpikeCount()}{totalSpikeCount()}}
+{\footnotesize\ttfamily int Channel\+Window\+::total\+Spike\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the sum of all the spike counts (of valid channels) in the window. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily int} representing the sum of all spike counts 
 \end{DoxyReturn}
 
 

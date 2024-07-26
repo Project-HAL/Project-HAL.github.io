@@ -10,8 +10,8 @@
     <member refid="classChannelWindow_1a4ada5780121d96a6d955894c77a8d62e" kind="variable"><name>pastData</name></member>
     <member refid="classChannelWindow_1a8f962953ed315282f6cbcc3d9a79932e" kind="variable"><name>newWindowCount</name></member>
     <member refid="classChannelWindow_1aff613e2fe9885088754d8b694a488337" kind="function"><name>ChannelWindow</name></member>
-    <member refid="classChannelWindow_1a2997d4f19a4024bcb8d87422df8097d0" kind="function"><name>ChannelWindow</name></member>
     <member refid="classChannelWindow_1a03fb9f8b3bbfaf416938b7a3d5bf4d03" kind="function"><name>ChannelWindow</name></member>
+    <member refid="classChannelWindow_1a2997d4f19a4024bcb8d87422df8097d0" kind="function"><name>ChannelWindow</name></member>
     <member refid="classChannelWindow_1af6b05a45d1f682a31a0fa6b43f4b19f2" kind="function"><name>add</name></member>
     <member refid="classChannelWindow_1ac93750ea8c9a5cfc1412e430c3bd1e3f" kind="function"><name>shift</name></member>
     <member refid="classChannelWindow_1a8b1c18c40fa9e4f891eaf7221dd598b8" kind="function"><name>get</name></member>

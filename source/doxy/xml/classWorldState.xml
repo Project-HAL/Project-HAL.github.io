@@ -88,12 +88,13 @@
         <argsstring>()</argsstring>
         <name>WorldState</name>
         <briefdescription>
+<para>Construct a new World State object. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="25" column="9"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="29" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classWorldState_1a207af80e9bba9e24195891abddf67df7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -114,7 +115,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="27" column="9"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="31" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classWorldState_1ababd18af82ed36267bfb9f361f657a9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -127,7 +128,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="29" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="33" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classWorldState_1a021a8f19163d134ccd733f2a444c2bd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -140,7 +141,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="31" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="35" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classWorldState_1aebe5afb7efc52de12be8fde4d3dc25d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -153,7 +154,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="33" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="37" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classWorldState_1ad2231631de7f0a1ef4cd000f82d3f4bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>char</type>
@@ -166,14 +167,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="35" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="39" column="14"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="6" column="17" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" bodystart="6" bodyend="36"/>
+    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="6" column="17" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" bodystart="6" bodyend="40"/>
     <listofallmembers>
       <member refid="classWorldState_1ababd18af82ed36267bfb9f361f657a9d" prot="public" virt="non-virtual"><scope>WorldState</scope><name>display</name></member>
       <member refid="classWorldState_1ad2231631de7f0a1ef4cd000f82d3f4bd" prot="public" virt="non-virtual"><scope>WorldState</scope><name>get_position</name></member>
