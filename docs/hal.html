@@ -55,6 +55,9 @@
 <li class="toctree-l3"><a class="reference internal" href="#hal.connect_stim_units_to_stim_electrodes"><code class="docutils literal notranslate"><span class="pre">connect_stim_units_to_stim_electrodes()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#hal.make_trial_folders"><code class="docutils literal notranslate"><span class="pre">make_trial_folders()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#hal.make_trial_folders_raw"><code class="docutils literal notranslate"><span class="pre">make_trial_folders_raw()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hal.power_up_stim_units"><code class="docutils literal notranslate"><span class="pre">power_up_stim_units()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hal.write_exp_description"><code class="docutils literal notranslate"><span class="pre">write_exp_description()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hal.write_stim_electrodes"><code class="docutils literal notranslate"><span class="pre">write_stim_electrodes()</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="world_stimulation.html"><code class="docutils literal notranslate"><span class="pre">world_stimulation</span></code></a></li>
@@ -156,6 +159,48 @@ specified folder format (see <a class="reference internal" href="getting-started
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hal.power_up_stim_units">
+<span class="sig-prename descclassname"><span class="pre">hal.</span></span><span class="sig-name descname"><span class="pre">power_up_stim_units</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stimulation_units</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hal.power_up_stim_units" title="Link to this definition"></a></dt>
+<dd><p>Powers up stimulation units for an experiment</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>stimulation_units</strong> (<code class="docutils literal notranslate"><span class="pre">List[int]</span></code>) – stimulation units to power up</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hal.write_exp_description">
+<span class="sig-prename descclassname"><span class="pre">hal.</span></span><span class="sig-name descname"><span class="pre">write_exp_description</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Saving</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#hal.write_exp_description" title="Link to this definition"></a></dt>
+<dd><p>Writes experiment description as a property to the experiment h5 file
+under key “description”</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>s</strong> (<code class="docutils literal notranslate"><span class="pre">mx.Saving</span></code>) – Experiment to save the stimulation electrodes for</p></li>
+<li><p><strong>description</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – description of the experiment</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hal.write_stim_electrodes">
+<span class="sig-prename descclassname"><span class="pre">hal.</span></span><span class="sig-name descname"><span class="pre">write_stim_electrodes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Saving</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stim_electrodes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hal.write_stim_electrodes" title="Link to this definition"></a></dt>
+<dd><p>Writes the stimulation electrodes as a property to the experiment h5 file
+under key “stim_electrodes”</p>
+<p>Note that this function must be called after opening the file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>s</strong> (<code class="docutils literal notranslate"><span class="pre">mx.Saving</span></code>) – Experiment to save the stimulation electrodes for</p></li>
+<li><p><strong>stim_electrodes</strong> (<code class="docutils literal notranslate"><span class="pre">List[int]</span></code>) – stimulation electrodes</p></li>
+</ul>
 </dd>
 </dl>
 </dd></dl>
