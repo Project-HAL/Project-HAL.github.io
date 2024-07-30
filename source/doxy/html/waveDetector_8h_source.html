@@ -89,56 +89,75 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classWaveDetector.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classWaveDetector.html">WaveDetector</a> {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">enum</span> Wave {noBurst, bursting, burstStart, endShortBurst, leftToRight, rightToLeft};</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="structWaveDetector_1_1WaveMetadata.html">   23</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structWaveDetector_1_1WaveMetadata.html">WaveMetadata</a> {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <span class="keywordtype">bool</span> firstBurstDone;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keywordtype">bool</span> bursting;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <span class="keywordtype">int</span> spikeFrameCount;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keywordtype">int</span> burstStartLocation;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordtype">int</span> burstStartSpikeCount;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="keywordtype">int</span> burstStartFrame;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keywordtype">int</span> burstEnd;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classWaveDetector.html#abc1726aea1cad86baef675ddded84fe8">   25</a></span>&#160;        <span class="keyword">enum</span> <a class="code" href="classWaveDetector.html#abc1726aea1cad86baef675ddded84fe8">Wave</a> {</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classWaveDetector.html#abc1726aea1cad86baef675ddded84fe8a0f6c6b9968eafca36014d956ff48740d">   26</a></span>&#160;            <a class="code" href="classWaveDetector.html#abc1726aea1cad86baef675ddded84fe8a0f6c6b9968eafca36014d956ff48740d">noBurst</a>, </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classWaveDetector.html#abc1726aea1cad86baef675ddded84fe8a77aaeafde2f68f00f4d49debcb62dc13">   27</a></span>&#160;            <a class="code" href="classWaveDetector.html#abc1726aea1cad86baef675ddded84fe8a77aaeafde2f68f00f4d49debcb62dc13">bursting</a>, </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classWaveDetector.html#abc1726aea1cad86baef675ddded84fe8ab16b272064669f9fa3bcd14704864404">   28</a></span>&#160;            <a class="code" href="classWaveDetector.html#abc1726aea1cad86baef675ddded84fe8ab16b272064669f9fa3bcd14704864404">burstStart</a>, </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classWaveDetector.html#abc1726aea1cad86baef675ddded84fe8ac9a23b681fc13f21fe979d96c58bd3c6">   29</a></span>&#160;            endShortBurst, </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classWaveDetector.html#abc1726aea1cad86baef675ddded84fe8a25a4f9ae018191235acb41137dfae933">   31</a></span>&#160;            <a class="code" href="classWaveDetector.html#abc1726aea1cad86baef675ddded84fe8a25a4f9ae018191235acb41137dfae933">leftToRight</a>, </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classWaveDetector.html#abc1726aea1cad86baef675ddded84fe8a8d8edd8f78d12864806a0bb2293df099">   32</a></span>&#160;            rightToLeft </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        };</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordtype">int</span> noSpikeFrameCount;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keywordtype">int</span> maxSpikesFrame;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keywordtype">int</span> maxSpikes;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordtype">float</span> maxSpikesLoc;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structWaveDetector_1_1WaveMetadata.html">WaveMetadata</a> <a class="code" href="structWaveDetector_1_1WaveMetadata.html">WaveMetadata</a>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="classWaveDetector.html">WaveDetector</a>();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="classWaveDetector.html">WaveDetector</a>(<span class="keywordtype">int</span> windowLength, <span class="keyword">const</span> <span class="keywordtype">char</span> *configPath, <span class="keywordtype">float</span> threshold, <span class="keywordtype">int</span> minFrames, <span class="keywordtype">int</span> frameHz=10000);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        ~<a class="code" href="classWaveDetector.html">WaveDetector</a>();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordtype">void</span> shiftWindow(maxlab::FilteredFrameData frame);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="comment">// value corresponds to Wave enum</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordtype">int</span> checkBurst(<span class="keywordtype">int</span> frameNo);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="classChannelWindow.html">ChannelWindow</a> *window;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="structWaveDetector_1_1WaveMetadata.html">WaveMetadata</a> *metadata;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordtype">int</span> framesPerSec;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordtype">int</span> minFrames;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordtype">float</span> threshold;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordtype">int</span> totalElectrodes;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="structWaveDetector_1_1WaveMetadata.html">   40</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structWaveDetector_1_1WaveMetadata.html">WaveMetadata</a> {</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structWaveDetector_1_1WaveMetadata.html#a25ffde91aa62fb0405b25fdc66ff5503">   41</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="structWaveDetector_1_1WaveMetadata.html#a25ffde91aa62fb0405b25fdc66ff5503">firstBurstDone</a>; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="structWaveDetector_1_1WaveMetadata.html#a2c3927bb8e2c2292be38ddbaa86e8c36">   42</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="structWaveDetector_1_1WaveMetadata.html#a2c3927bb8e2c2292be38ddbaa86e8c36">bursting</a>; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="structWaveDetector_1_1WaveMetadata.html#a1cc8a4b326d5231a27fc1b2eff03fbbb">   44</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="structWaveDetector_1_1WaveMetadata.html#a1cc8a4b326d5231a27fc1b2eff03fbbb">spikeFrameCount</a>; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="structWaveDetector_1_1WaveMetadata.html#aa6f46b8a75c78cc151fda363d71dda14">   47</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="structWaveDetector_1_1WaveMetadata.html#aa6f46b8a75c78cc151fda363d71dda14">burstStartLocation</a>; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="structWaveDetector_1_1WaveMetadata.html#a8635a0f212f4c6ed00c9bc73c88ba786">   49</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="structWaveDetector_1_1WaveMetadata.html#a8635a0f212f4c6ed00c9bc73c88ba786">burstStartSpikeCount</a>; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="structWaveDetector_1_1WaveMetadata.html#ad13fdad656e4e828c79b2c5c20033f0a">   51</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="structWaveDetector_1_1WaveMetadata.html#ad13fdad656e4e828c79b2c5c20033f0a">burstStartFrame</a>; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="structWaveDetector_1_1WaveMetadata.html#acd1ceb64873731839710369d548140dc">   54</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="structWaveDetector_1_1WaveMetadata.html#acd1ceb64873731839710369d548140dc">burstEnd</a>; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="structWaveDetector_1_1WaveMetadata.html#a9f066335ffbcb87405225b353c4a313d">   56</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="structWaveDetector_1_1WaveMetadata.html#a9f066335ffbcb87405225b353c4a313d">noSpikeFrameCount</a>; </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="structWaveDetector_1_1WaveMetadata.html#a8560d5d5fe8e2d1a2b3519b18e4b65fc">   59</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="structWaveDetector_1_1WaveMetadata.html#a8560d5d5fe8e2d1a2b3519b18e4b65fc">maxSpikes</a>; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="structWaveDetector_1_1WaveMetadata.html#ab97728a109942553ed257f0574358845">   62</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="structWaveDetector_1_1WaveMetadata.html#ab97728a109942553ed257f0574358845">maxSpikesFrame</a>; </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="structWaveDetector_1_1WaveMetadata.html#a953d1306f4b73452f70bf83aa26bc84f">   66</a></span>&#160;            <span class="keywordtype">float</span> <a class="code" href="structWaveDetector_1_1WaveMetadata.html#a953d1306f4b73452f70bf83aa26bc84f">maxSpikesLoc</a>; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structWaveDetector_1_1WaveMetadata.html">WaveMetadata</a> <a class="code" href="structWaveDetector_1_1WaveMetadata.html">WaveMetadata</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <a class="code" href="classWaveDetector.html">WaveDetector</a>();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <a class="code" href="classWaveDetector.html">WaveDetector</a>(<span class="keywordtype">int</span> windowLength, <span class="keyword">const</span> <span class="keywordtype">char</span> *configPath, <span class="keywordtype">float</span> threshold, <span class="keywordtype">int</span> minFrames, <span class="keywordtype">int</span> frameHz=10000);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        ~<a class="code" href="classWaveDetector.html">WaveDetector</a>();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordtype">void</span> shiftWindow(maxlab::FilteredFrameData frame);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="comment">// value corresponds to Wave enum</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordtype">int</span> checkBurst(<span class="keywordtype">int</span> frameNo);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <a class="code" href="classChannelWindow.html">ChannelWindow</a> *window;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <a class="code" href="structWaveDetector_1_1WaveMetadata.html">WaveMetadata</a> *metadata;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordtype">int</span> framesPerSec;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordtype">int</span> minFrames;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordtype">float</span> threshold;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordtype">int</span> totalElectrodes;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;};</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassChannelWindow_html"><div class="ttname"><a href="classChannelWindow.html">ChannelWindow</a></div><div class="ttdef"><b>Definition:</b> channelWindow.h:16</div></div>
+<div class="ttc" id="aclassChannelWindow_html"><div class="ttname"><a href="classChannelWindow.html">ChannelWindow</a></div><div class="ttdef"><b>Definition:</b> channelWindow.h:18</div></div>
+<div class="ttc" id="astructWaveDetector_1_1WaveMetadata_html_a2c3927bb8e2c2292be38ddbaa86e8c36"><div class="ttname"><a href="structWaveDetector_1_1WaveMetadata.html#a2c3927bb8e2c2292be38ddbaa86e8c36">WaveDetector::WaveMetadata::bursting</a></div><div class="ttdeci">bool bursting</div><div class="ttdef"><b>Definition:</b> waveDetector.h:42</div></div>
+<div class="ttc" id="astructWaveDetector_1_1WaveMetadata_html_a8560d5d5fe8e2d1a2b3519b18e4b65fc"><div class="ttname"><a href="structWaveDetector_1_1WaveMetadata.html#a8560d5d5fe8e2d1a2b3519b18e4b65fc">WaveDetector::WaveMetadata::maxSpikes</a></div><div class="ttdeci">int maxSpikes</div><div class="ttdef"><b>Definition:</b> waveDetector.h:59</div></div>
+<div class="ttc" id="astructWaveDetector_1_1WaveMetadata_html_a9f066335ffbcb87405225b353c4a313d"><div class="ttname"><a href="structWaveDetector_1_1WaveMetadata.html#a9f066335ffbcb87405225b353c4a313d">WaveDetector::WaveMetadata::noSpikeFrameCount</a></div><div class="ttdeci">int noSpikeFrameCount</div><div class="ttdef"><b>Definition:</b> waveDetector.h:56</div></div>
+<div class="ttc" id="astructWaveDetector_1_1WaveMetadata_html_aa6f46b8a75c78cc151fda363d71dda14"><div class="ttname"><a href="structWaveDetector_1_1WaveMetadata.html#aa6f46b8a75c78cc151fda363d71dda14">WaveDetector::WaveMetadata::burstStartLocation</a></div><div class="ttdeci">int burstStartLocation</div><div class="ttdef"><b>Definition:</b> waveDetector.h:47</div></div>
+<div class="ttc" id="astructWaveDetector_1_1WaveMetadata_html_a953d1306f4b73452f70bf83aa26bc84f"><div class="ttname"><a href="structWaveDetector_1_1WaveMetadata.html#a953d1306f4b73452f70bf83aa26bc84f">WaveDetector::WaveMetadata::maxSpikesLoc</a></div><div class="ttdeci">float maxSpikesLoc</div><div class="ttdef"><b>Definition:</b> waveDetector.h:66</div></div>
+<div class="ttc" id="aclassWaveDetector_html_abc1726aea1cad86baef675ddded84fe8"><div class="ttname"><a href="classWaveDetector.html#abc1726aea1cad86baef675ddded84fe8">WaveDetector::Wave</a></div><div class="ttdeci">Wave</div><div class="ttdoc">Wave enum.</div><div class="ttdef"><b>Definition:</b> waveDetector.h:25</div></div>
+<div class="ttc" id="astructWaveDetector_1_1WaveMetadata_html_acd1ceb64873731839710369d548140dc"><div class="ttname"><a href="structWaveDetector_1_1WaveMetadata.html#acd1ceb64873731839710369d548140dc">WaveDetector::WaveMetadata::burstEnd</a></div><div class="ttdeci">int burstEnd</div><div class="ttdef"><b>Definition:</b> waveDetector.h:54</div></div>
+<div class="ttc" id="astructWaveDetector_1_1WaveMetadata_html_a1cc8a4b326d5231a27fc1b2eff03fbbb"><div class="ttname"><a href="structWaveDetector_1_1WaveMetadata.html#a1cc8a4b326d5231a27fc1b2eff03fbbb">WaveDetector::WaveMetadata::spikeFrameCount</a></div><div class="ttdeci">int spikeFrameCount</div><div class="ttdef"><b>Definition:</b> waveDetector.h:44</div></div>
+<div class="ttc" id="astructWaveDetector_1_1WaveMetadata_html_ad13fdad656e4e828c79b2c5c20033f0a"><div class="ttname"><a href="structWaveDetector_1_1WaveMetadata.html#ad13fdad656e4e828c79b2c5c20033f0a">WaveDetector::WaveMetadata::burstStartFrame</a></div><div class="ttdeci">int burstStartFrame</div><div class="ttdef"><b>Definition:</b> waveDetector.h:51</div></div>
 <div class="ttc" id="aclassWaveDetector_html"><div class="ttname"><a href="classWaveDetector.html">WaveDetector</a></div><div class="ttdef"><b>Definition:</b> waveDetector.h:18</div></div>
-<div class="ttc" id="astructWaveDetector_1_1WaveMetadata_html"><div class="ttname"><a href="structWaveDetector_1_1WaveMetadata.html">WaveDetector::WaveMetadata</a></div><div class="ttdef"><b>Definition:</b> waveDetector.h:23</div></div>
+<div class="ttc" id="astructWaveDetector_1_1WaveMetadata_html"><div class="ttname"><a href="structWaveDetector_1_1WaveMetadata.html">WaveDetector::WaveMetadata</a></div><div class="ttdoc">Wave metadata struct.</div><div class="ttdef"><b>Definition:</b> waveDetector.h:40</div></div>
+<div class="ttc" id="aclassWaveDetector_html_abc1726aea1cad86baef675ddded84fe8a25a4f9ae018191235acb41137dfae933"><div class="ttname"><a href="classWaveDetector.html#abc1726aea1cad86baef675ddded84fe8a25a4f9ae018191235acb41137dfae933">WaveDetector::leftToRight</a></div><div class="ttdeci">@ leftToRight</div><div class="ttdef"><b>Definition:</b> waveDetector.h:31</div></div>
+<div class="ttc" id="aclassWaveDetector_html_abc1726aea1cad86baef675ddded84fe8ab16b272064669f9fa3bcd14704864404"><div class="ttname"><a href="classWaveDetector.html#abc1726aea1cad86baef675ddded84fe8ab16b272064669f9fa3bcd14704864404">WaveDetector::burstStart</a></div><div class="ttdeci">@ burstStart</div><div class="ttdef"><b>Definition:</b> waveDetector.h:28</div></div>
+<div class="ttc" id="aclassWaveDetector_html_abc1726aea1cad86baef675ddded84fe8a0f6c6b9968eafca36014d956ff48740d"><div class="ttname"><a href="classWaveDetector.html#abc1726aea1cad86baef675ddded84fe8a0f6c6b9968eafca36014d956ff48740d">WaveDetector::noBurst</a></div><div class="ttdeci">@ noBurst</div><div class="ttdef"><b>Definition:</b> waveDetector.h:26</div></div>
+<div class="ttc" id="astructWaveDetector_1_1WaveMetadata_html_a8635a0f212f4c6ed00c9bc73c88ba786"><div class="ttname"><a href="structWaveDetector_1_1WaveMetadata.html#a8635a0f212f4c6ed00c9bc73c88ba786">WaveDetector::WaveMetadata::burstStartSpikeCount</a></div><div class="ttdeci">int burstStartSpikeCount</div><div class="ttdef"><b>Definition:</b> waveDetector.h:49</div></div>
+<div class="ttc" id="astructWaveDetector_1_1WaveMetadata_html_ab97728a109942553ed257f0574358845"><div class="ttname"><a href="structWaveDetector_1_1WaveMetadata.html#ab97728a109942553ed257f0574358845">WaveDetector::WaveMetadata::maxSpikesFrame</a></div><div class="ttdeci">int maxSpikesFrame</div><div class="ttdef"><b>Definition:</b> waveDetector.h:62</div></div>
+<div class="ttc" id="aclassWaveDetector_html_abc1726aea1cad86baef675ddded84fe8a77aaeafde2f68f00f4d49debcb62dc13"><div class="ttname"><a href="classWaveDetector.html#abc1726aea1cad86baef675ddded84fe8a77aaeafde2f68f00f4d49debcb62dc13">WaveDetector::bursting</a></div><div class="ttdeci">@ bursting</div><div class="ttdef"><b>Definition:</b> waveDetector.h:27</div></div>
+<div class="ttc" id="astructWaveDetector_1_1WaveMetadata_html_a25ffde91aa62fb0405b25fdc66ff5503"><div class="ttname"><a href="structWaveDetector_1_1WaveMetadata.html#a25ffde91aa62fb0405b25fdc66ff5503">WaveDetector::WaveMetadata::firstBurstDone</a></div><div class="ttdeci">bool firstBurstDone</div><div class="ttdef"><b>Definition:</b> waveDetector.h:41</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

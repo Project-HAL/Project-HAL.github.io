@@ -3,7 +3,7 @@
   <compounddef id="namespaceargparse" kind="namespace" language="C++">
     <compoundname>argparse</compoundname>
       <sectiondef kind="func">
-      <memberdef kind="function" id="argparse_8h_1abb7a363c940e66d2b40c984142c9c3bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespaceargparse_1abb7a363c940e66d2b40c984142c9c3bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool argparse::checkOption</definition>
         <argsstring>(string name, int argc, char *argv[])</argsstring>
@@ -56,9 +56,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" line="17" column="6" declfile="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" declline="17" declcolumn="6"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" line="20" column="6" declfile="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" declline="20" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="argparse_8h_1a8686e113755409e373a4a1a3fc14d4bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespaceargparse_1a8686e113755409e373a4a1a3fc14d4bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>string</type>
         <definition>string argparse::getStringArg</definition>
         <argsstring>(string name, int argc, char *argv[], string usage=&quot;&quot;)</argsstring>
@@ -127,9 +127,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" line="37" column="8" declfile="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" declline="37" declcolumn="8"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" line="40" column="8" declfile="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" declline="40" declcolumn="8"/>
       </memberdef>
-      <memberdef kind="function" id="argparse_8h_1ad3582d96323be2fbf575a84d7389ff2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespaceargparse_1ad3582d96323be2fbf575a84d7389ff2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
         <definition>int argparse::getIntArg</definition>
         <argsstring>(string name, int argc, char *argv[], string usage=&quot;&quot;)</argsstring>
@@ -198,9 +198,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" line="57" column="5" declfile="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" declline="57" declcolumn="5"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" line="60" column="5" declfile="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" declline="60" declcolumn="5"/>
       </memberdef>
-      <memberdef kind="function" id="argparse_8h_1addec61b6a5316d78c1ba9323ac715708" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespaceargparse_1addec61b6a5316d78c1ba9323ac715708" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
         <definition>float argparse::getFloatArg</definition>
         <argsstring>(string name, int argc, char *argv[], string usage=&quot;&quot;)</argsstring>
@@ -269,9 +269,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" line="77" column="7" declfile="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" declline="77" declcolumn="7"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" line="80" column="7" declfile="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" declline="80" declcolumn="7"/>
       </memberdef>
-      <memberdef kind="function" id="argparse_8h_1ad841ae5c646c6db065086195ee0f3f57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespaceargparse_1ad841ae5c646c6db065086195ee0f3f57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>string</type>
         <definition>string argparse::getStringArgSecure</definition>
         <argsstring>(string name, string defaultValue, int argc, char *argv[])</argsstring>
@@ -339,9 +339,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" line="97" column="8" declfile="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" declline="97" declcolumn="8"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" line="100" column="8" declfile="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" declline="100" declcolumn="8"/>
       </memberdef>
-      <memberdef kind="function" id="argparse_8h_1a8aeb19c1f3fc6aea50d7d625af8b8fbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespaceargparse_1a8aeb19c1f3fc6aea50d7d625af8b8fbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
         <definition>int argparse::getIntArgSecure</definition>
         <argsstring>(string name, int defaultValue, int argc, char *argv[])</argsstring>
@@ -409,9 +409,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" line="117" column="5" declfile="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" declline="117" declcolumn="5"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" line="120" column="5" declfile="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" declline="120" declcolumn="5"/>
       </memberdef>
-      <memberdef kind="function" id="argparse_8h_1a1e343e24a835d2649f5fea664c5a9f59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespaceargparse_1a1e343e24a835d2649f5fea664c5a9f59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
         <definition>float argparse::getFloatArgSecure</definition>
         <argsstring>(string name, float defaultValue, int argc, char *argv[])</argsstring>
@@ -479,13 +479,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" line="136" column="7" declfile="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" declline="136" declcolumn="7"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" line="139" column="7" declfile="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" declline="139" declcolumn="7"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>test DOCUMENTING THE NAMESPACE </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" line="5" column="18"/>
+    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" line="9" column="18"/>
   </compounddef>
 </doxygen>

@@ -91,8 +91,8 @@
     <member refid="structWaveDetector_1_1WaveMetadata_1ad13fdad656e4e828c79b2c5c20033f0a" kind="variable"><name>burstStartFrame</name></member>
     <member refid="structWaveDetector_1_1WaveMetadata_1acd1ceb64873731839710369d548140dc" kind="variable"><name>burstEnd</name></member>
     <member refid="structWaveDetector_1_1WaveMetadata_1a9f066335ffbcb87405225b353c4a313d" kind="variable"><name>noSpikeFrameCount</name></member>
-    <member refid="structWaveDetector_1_1WaveMetadata_1ab97728a109942553ed257f0574358845" kind="variable"><name>maxSpikesFrame</name></member>
     <member refid="structWaveDetector_1_1WaveMetadata_1a8560d5d5fe8e2d1a2b3519b18e4b65fc" kind="variable"><name>maxSpikes</name></member>
+    <member refid="structWaveDetector_1_1WaveMetadata_1ab97728a109942553ed257f0574358845" kind="variable"><name>maxSpikesFrame</name></member>
     <member refid="structWaveDetector_1_1WaveMetadata_1a953d1306f4b73452f70bf83aa26bc84f" kind="variable"><name>maxSpikesLoc</name></member>
   </compound>
   <compound refid="classWorldState" kind="class"><name>WorldState</name>
@@ -109,13 +109,13 @@
     <member refid="classWorldState_1ad2231631de7f0a1ef4cd000f82d3f4bd" kind="function"><name>get_position</name></member>
   </compound>
   <compound refid="namespaceargparse" kind="namespace"><name>argparse</name>
-    <member refid="argparse_8h_1abb7a363c940e66d2b40c984142c9c3bb" kind="function"><name>checkOption</name></member>
-    <member refid="argparse_8h_1a8686e113755409e373a4a1a3fc14d4bb" kind="function"><name>getStringArg</name></member>
-    <member refid="argparse_8h_1ad3582d96323be2fbf575a84d7389ff2a" kind="function"><name>getIntArg</name></member>
-    <member refid="argparse_8h_1addec61b6a5316d78c1ba9323ac715708" kind="function"><name>getFloatArg</name></member>
-    <member refid="argparse_8h_1ad841ae5c646c6db065086195ee0f3f57" kind="function"><name>getStringArgSecure</name></member>
-    <member refid="argparse_8h_1a8aeb19c1f3fc6aea50d7d625af8b8fbb" kind="function"><name>getIntArgSecure</name></member>
-    <member refid="argparse_8h_1a1e343e24a835d2649f5fea664c5a9f59" kind="function"><name>getFloatArgSecure</name></member>
+    <member refid="namespaceargparse_1abb7a363c940e66d2b40c984142c9c3bb" kind="function"><name>checkOption</name></member>
+    <member refid="namespaceargparse_1a8686e113755409e373a4a1a3fc14d4bb" kind="function"><name>getStringArg</name></member>
+    <member refid="namespaceargparse_1ad3582d96323be2fbf575a84d7389ff2a" kind="function"><name>getIntArg</name></member>
+    <member refid="namespaceargparse_1addec61b6a5316d78c1ba9323ac715708" kind="function"><name>getFloatArg</name></member>
+    <member refid="namespaceargparse_1ad841ae5c646c6db065086195ee0f3f57" kind="function"><name>getStringArgSecure</name></member>
+    <member refid="namespaceargparse_1a8aeb19c1f3fc6aea50d7d625af8b8fbb" kind="function"><name>getIntArgSecure</name></member>
+    <member refid="namespaceargparse_1a1e343e24a835d2649f5fea664c5a9f59" kind="function"><name>getFloatArgSecure</name></member>
   </compound>
   <compound refid="namespacestd" kind="namespace"><name>std</name>
   </compound>

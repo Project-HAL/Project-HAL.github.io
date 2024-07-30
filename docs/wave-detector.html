@@ -56,7 +56,12 @@
 <li class="toctree-l2"><a class="reference internal" href="controller.html"><code class="docutils literal notranslate"><span class="pre">Controller</span></code> Class</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">WaveDetector</span></code></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#_CPPv412WaveDetector"><code class="docutils literal notranslate"><span class="pre">WaveDetector</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12WaveDetector4WaveE"><code class="docutils literal notranslate"><span class="pre">WaveDetector::Wave</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12WaveDetector12WaveDetectorEv"><code class="docutils literal notranslate"><span class="pre">WaveDetector::WaveDetector()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12WaveDetector12WaveDetectorEiPKcfii"><code class="docutils literal notranslate"><span class="pre">WaveDetector::WaveDetector()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12WaveDetectorD0Ev"><code class="docutils literal notranslate"><span class="pre">WaveDetector::~WaveDetector()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12WaveDetector11shiftWindowEN6maxlab17FilteredFrameDataE"><code class="docutils literal notranslate"><span class="pre">WaveDetector::shiftWindow()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12WaveDetector10checkBurstEi"><code class="docutils literal notranslate"><span class="pre">WaveDetector::checkBurst()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12WaveDetector12WaveMetadataE"><code class="docutils literal notranslate"><span class="pre">WaveDetector::WaveMetadata</span></code></a></li>
 </ul>
 </li>
@@ -99,18 +104,180 @@
 <dt class="sig sig-object cpp" id="_CPPv412WaveDetector">
 <span id="_CPPv312WaveDetector"></span><span id="_CPPv212WaveDetector"></span><span id="WaveDetector"></span><span class="target" id="classWaveDetector"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">WaveDetector</span></span></span><a class="headerlink" href="#_CPPv412WaveDetector" title="Link to this definition"></a><br /></dt>
 <dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector4WaveE">
+<span id="_CPPv3N12WaveDetector4WaveE"></span><span id="_CPPv2N12WaveDetector4WaveE"></span><span class="target" id="classWaveDetector_1abc1726aea1cad86baef675ddded84fe8"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Wave</span></span></span><a class="headerlink" href="#_CPPv4N12WaveDetector4WaveE" title="Link to this definition"></a><br /></dt>
+<dd><p>Wave enum. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector4Wave7noBurstE">
+<span id="_CPPv3N12WaveDetector4Wave7noBurstE"></span><span id="_CPPv2N12WaveDetector4Wave7noBurstE"></span><span class="target" id="classWaveDetector_1abc1726aea1cad86baef675ddded84fe8a0f6c6b9968eafca36014d956ff48740d"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">noBurst</span></span></span><a class="headerlink" href="#_CPPv4N12WaveDetector4Wave7noBurstE" title="Link to this definition"></a><br /></dt>
+<dd><p>culture is not currently bursting </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector4Wave8burstingE">
+<span id="_CPPv3N12WaveDetector4Wave8burstingE"></span><span id="_CPPv2N12WaveDetector4Wave8burstingE"></span><span class="target" id="classWaveDetector_1abc1726aea1cad86baef675ddded84fe8a77aaeafde2f68f00f4d49debcb62dc13"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">bursting</span></span></span><a class="headerlink" href="#_CPPv4N12WaveDetector4Wave8burstingE" title="Link to this definition"></a><br /></dt>
+<dd><p>culture is currently bursting </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector4Wave10burstStartE">
+<span id="_CPPv3N12WaveDetector4Wave10burstStartE"></span><span id="_CPPv2N12WaveDetector4Wave10burstStartE"></span><span class="target" id="classWaveDetector_1abc1726aea1cad86baef675ddded84fe8ab16b272064669f9fa3bcd14704864404"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">burstStart</span></span></span><a class="headerlink" href="#_CPPv4N12WaveDetector4Wave10burstStartE" title="Link to this definition"></a><br /></dt>
+<dd><p>burst just started </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector4Wave13endShortBurstE">
+<span id="_CPPv3N12WaveDetector4Wave13endShortBurstE"></span><span id="_CPPv2N12WaveDetector4Wave13endShortBurstE"></span><span class="target" id="classWaveDetector_1abc1726aea1cad86baef675ddded84fe8ac9a23b681fc13f21fe979d96c58bd3c6"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">endShortBurst</span></span></span><a class="headerlink" href="#_CPPv4N12WaveDetector4Wave13endShortBurstE" title="Link to this definition"></a><br /></dt>
+<dd><p>burst ended, but it was too short to be significant </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector4Wave11leftToRightE">
+<span id="_CPPv3N12WaveDetector4Wave11leftToRightE"></span><span id="_CPPv2N12WaveDetector4Wave11leftToRightE"></span><span class="target" id="classWaveDetector_1abc1726aea1cad86baef675ddded84fe8a25a4f9ae018191235acb41137dfae933"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">leftToRight</span></span></span><a class="headerlink" href="#_CPPv4N12WaveDetector4Wave11leftToRightE" title="Link to this definition"></a><br /></dt>
+<dd><p>burst ended, and it went left to right </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector4Wave11rightToLeftE">
+<span id="_CPPv3N12WaveDetector4Wave11rightToLeftE"></span><span id="_CPPv2N12WaveDetector4Wave11rightToLeftE"></span><span class="target" id="classWaveDetector_1abc1726aea1cad86baef675ddded84fe8a8d8edd8f78d12864806a0bb2293df099"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">rightToLeft</span></span></span><a class="headerlink" href="#_CPPv4N12WaveDetector4Wave11rightToLeftE" title="Link to this definition"></a><br /></dt>
+<dd><p>burst ended, and it went right to left </p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector12WaveDetectorEv">
 <span id="_CPPv3N12WaveDetector12WaveDetectorEv"></span><span id="_CPPv2N12WaveDetector12WaveDetectorEv"></span><span id="WaveDetector::WaveDetector"></span><span class="target" id="classWaveDetector_1a9dc0fec49023ac3a388568180575ee7d"></span><span class="sig-name descname"><span class="n"><span class="pre">WaveDetector</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12WaveDetector12WaveDetectorEv" title="Link to this definition"></a><br /></dt>
-<dd><p>Constructor. </p>
+<dd><p>Constructs a new Wave Detector object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector12WaveDetectorEiPKcfii">
+<span id="_CPPv3N12WaveDetector12WaveDetectorEiPKcfii"></span><span id="_CPPv2N12WaveDetector12WaveDetectorEiPKcfii"></span><span id="WaveDetector::WaveDetector__i.cCP.float.i.i"></span><span class="target" id="classWaveDetector_1aa8989a4e992b1017228f6ae4ef8a6b4a"></span><span class="sig-name descname"><span class="n"><span class="pre">WaveDetector</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">windowLength</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">configPath</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">threshold</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">minFrames</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">frameHz</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">10000</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12WaveDetector12WaveDetectorEiPKcfii" title="Link to this definition"></a><br /></dt>
+<dd><p>Constructs a new Wave Detector object. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>windowLength</strong> – </p></li>
+<li><p><strong>configPath</strong> – </p></li>
+<li><p><strong>threshold</strong> – </p></li>
+<li><p><strong>minFrames</strong> – </p></li>
+<li><p><strong>frameHz</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveDetectorD0Ev">
+<span id="_CPPv3N12WaveDetectorD0Ev"></span><span id="_CPPv2N12WaveDetectorD0Ev"></span><span id="WaveDetector::~WaveDetector"></span><span class="target" id="classWaveDetector_1af493cc823e9388b83a3fc6bf8c48b159"></span><span class="sig-name descname"><span class="n"><span class="pre">~WaveDetector</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12WaveDetectorD0Ev" title="Link to this definition"></a><br /></dt>
+<dd><p>Destroys the Wave Detector Object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector11shiftWindowEN6maxlab17FilteredFrameDataE">
+<span id="_CPPv3N12WaveDetector11shiftWindowEN6maxlab17FilteredFrameDataE"></span><span id="_CPPv2N12WaveDetector11shiftWindowEN6maxlab17FilteredFrameDataE"></span><span id="WaveDetector::shiftWindow__maxlab::FilteredFrameData"></span><span class="target" id="classWaveDetector_1aaa4806eeb2950412dbd779635a2f5667"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">shiftWindow</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">maxlab</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">FilteredFrameData</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12WaveDetector11shiftWindowEN6maxlab17FilteredFrameDataE" title="Link to this definition"></a><br /></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>frame</strong> – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector10checkBurstEi">
+<span id="_CPPv3N12WaveDetector10checkBurstEi"></span><span id="_CPPv2N12WaveDetector10checkBurstEi"></span><span id="WaveDetector::checkBurst__i"></span><span class="target" id="classWaveDetector_1a91b522b3335c62a1b498f5a4d09d1820"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">checkBurst</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">frameNo</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12WaveDetector10checkBurstEi" title="Link to this definition"></a><br /></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>frameNo</strong> – </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>int </p>
+</dd>
+</dl>
 </dd></dl>
 
 </div>
 <dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector12WaveMetadataE">
 <span id="_CPPv3N12WaveDetector12WaveMetadataE"></span><span id="_CPPv2N12WaveDetector12WaveMetadataE"></span><span id="WaveDetector::WaveMetadata"></span><span class="target" id="structWaveDetector_1_1WaveMetadata"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">WaveMetadata</span></span></span><a class="headerlink" href="#_CPPv4N12WaveDetector12WaveMetadataE" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>Wave metadata struct. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector12WaveMetadata14firstBurstDoneE">
+<span id="_CPPv3N12WaveDetector12WaveMetadata14firstBurstDoneE"></span><span id="_CPPv2N12WaveDetector12WaveMetadata14firstBurstDoneE"></span><span id="WaveDetector::WaveMetadata::firstBurstDone__b"></span><span class="target" id="structWaveDetector_1_1WaveMetadata_1a25ffde91aa62fb0405b25fdc66ff5503"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">firstBurstDone</span></span></span><a class="headerlink" href="#_CPPv4N12WaveDetector12WaveMetadata14firstBurstDoneE" title="Link to this definition"></a><br /></dt>
+<dd><p>indicates first burst is done </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector12WaveMetadata8burstingE">
+<span id="_CPPv3N12WaveDetector12WaveMetadata8burstingE"></span><span id="_CPPv2N12WaveDetector12WaveMetadata8burstingE"></span><span id="WaveDetector::WaveMetadata::bursting__b"></span><span class="target" id="structWaveDetector_1_1WaveMetadata_1a2c3927bb8e2c2292be38ddbaa86e8c36"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">bursting</span></span></span><a class="headerlink" href="#_CPPv4N12WaveDetector12WaveMetadata8burstingE" title="Link to this definition"></a><br /></dt>
+<dd><p>indicates if currently bursting </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector12WaveMetadata15spikeFrameCountE">
+<span id="_CPPv3N12WaveDetector12WaveMetadata15spikeFrameCountE"></span><span id="_CPPv2N12WaveDetector12WaveMetadata15spikeFrameCountE"></span><span id="WaveDetector::WaveMetadata::spikeFrameCount__i"></span><span class="target" id="structWaveDetector_1_1WaveMetadata_1a1cc8a4b326d5231a27fc1b2eff03fbbb"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">spikeFrameCount</span></span></span><a class="headerlink" href="#_CPPv4N12WaveDetector12WaveMetadata15spikeFrameCountE" title="Link to this definition"></a><br /></dt>
+<dd><p>number of frames since the total spike count was below the threshold </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector12WaveMetadata18burstStartLocationE">
+<span id="_CPPv3N12WaveDetector12WaveMetadata18burstStartLocationE"></span><span id="_CPPv2N12WaveDetector12WaveMetadata18burstStartLocationE"></span><span id="WaveDetector::WaveMetadata::burstStartLocation__i"></span><span class="target" id="structWaveDetector_1_1WaveMetadata_1aa6f46b8a75c78cc151fda363d71dda14"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">burstStartLocation</span></span></span><a class="headerlink" href="#_CPPv4N12WaveDetector12WaveMetadata18burstStartLocationE" title="Link to this definition"></a><br /></dt>
+<dd><p>starting location of the current or most recent burst </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector12WaveMetadata20burstStartSpikeCountE">
+<span id="_CPPv3N12WaveDetector12WaveMetadata20burstStartSpikeCountE"></span><span id="_CPPv2N12WaveDetector12WaveMetadata20burstStartSpikeCountE"></span><span id="WaveDetector::WaveMetadata::burstStartSpikeCount__i"></span><span class="target" id="structWaveDetector_1_1WaveMetadata_1a8635a0f212f4c6ed00c9bc73c88ba786"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">burstStartSpikeCount</span></span></span><a class="headerlink" href="#_CPPv4N12WaveDetector12WaveMetadata20burstStartSpikeCountE" title="Link to this definition"></a><br /></dt>
+<dd><p>starting spike count of the current or most recent burst </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector12WaveMetadata15burstStartFrameE">
+<span id="_CPPv3N12WaveDetector12WaveMetadata15burstStartFrameE"></span><span id="_CPPv2N12WaveDetector12WaveMetadata15burstStartFrameE"></span><span id="WaveDetector::WaveMetadata::burstStartFrame__i"></span><span class="target" id="structWaveDetector_1_1WaveMetadata_1ad13fdad656e4e828c79b2c5c20033f0a"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">burstStartFrame</span></span></span><a class="headerlink" href="#_CPPv4N12WaveDetector12WaveMetadata15burstStartFrameE" title="Link to this definition"></a><br /></dt>
+<dd><p>starting frame of the current or most recent burst </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector12WaveMetadata8burstEndE">
+<span id="_CPPv3N12WaveDetector12WaveMetadata8burstEndE"></span><span id="_CPPv2N12WaveDetector12WaveMetadata8burstEndE"></span><span id="WaveDetector::WaveMetadata::burstEnd__i"></span><span class="target" id="structWaveDetector_1_1WaveMetadata_1acd1ceb64873731839710369d548140dc"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">burstEnd</span></span></span><a class="headerlink" href="#_CPPv4N12WaveDetector12WaveMetadata8burstEndE" title="Link to this definition"></a><br /></dt>
+<dd><p>frame when the last burst ended </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector12WaveMetadata17noSpikeFrameCountE">
+<span id="_CPPv3N12WaveDetector12WaveMetadata17noSpikeFrameCountE"></span><span id="_CPPv2N12WaveDetector12WaveMetadata17noSpikeFrameCountE"></span><span id="WaveDetector::WaveMetadata::noSpikeFrameCount__i"></span><span class="target" id="structWaveDetector_1_1WaveMetadata_1a9f066335ffbcb87405225b353c4a313d"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">noSpikeFrameCount</span></span></span><a class="headerlink" href="#_CPPv4N12WaveDetector12WaveMetadata17noSpikeFrameCountE" title="Link to this definition"></a><br /></dt>
+<dd><p>number of frames since the total spike count went over the threshold </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector12WaveMetadata9maxSpikesE">
+<span id="_CPPv3N12WaveDetector12WaveMetadata9maxSpikesE"></span><span id="_CPPv2N12WaveDetector12WaveMetadata9maxSpikesE"></span><span id="WaveDetector::WaveMetadata::maxSpikes__i"></span><span class="target" id="structWaveDetector_1_1WaveMetadata_1a8560d5d5fe8e2d1a2b3519b18e4b65fc"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">maxSpikes</span></span></span><a class="headerlink" href="#_CPPv4N12WaveDetector12WaveMetadata9maxSpikesE" title="Link to this definition"></a><br /></dt>
+<dd><p>spike count of the peak of the burst (or most recent peak within the burst) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector12WaveMetadata14maxSpikesFrameE">
+<span id="_CPPv3N12WaveDetector12WaveMetadata14maxSpikesFrameE"></span><span id="_CPPv2N12WaveDetector12WaveMetadata14maxSpikesFrameE"></span><span id="WaveDetector::WaveMetadata::maxSpikesFrame__i"></span><span class="target" id="structWaveDetector_1_1WaveMetadata_1ab97728a109942553ed257f0574358845"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">maxSpikesFrame</span></span></span><a class="headerlink" href="#_CPPv4N12WaveDetector12WaveMetadata14maxSpikesFrameE" title="Link to this definition"></a><br /></dt>
+<dd><p>frame number where the peak of the burst occured (or most recent peak within the burst) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector12WaveMetadata12maxSpikesLocE">
+<span id="_CPPv3N12WaveDetector12WaveMetadata12maxSpikesLocE"></span><span id="_CPPv2N12WaveDetector12WaveMetadata12maxSpikesLocE"></span><span id="WaveDetector::WaveMetadata::maxSpikesLoc__float"></span><span class="target" id="structWaveDetector_1_1WaveMetadata_1a953d1306f4b73452f70bf83aa26bc84f"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">maxSpikesLoc</span></span></span><a class="headerlink" href="#_CPPv4N12WaveDetector12WaveMetadata12maxSpikesLocE" title="Link to this definition"></a><br /></dt>
+<dd><p>locatin on the chpi of the peak of the burst (or most recent peak within the burst) </p>
+</dd></dl>
+
+</div>
+</dd></dl>
 
 </dd></dl>
 

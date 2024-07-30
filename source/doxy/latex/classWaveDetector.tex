@@ -4,21 +4,20 @@
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{structWaveDetector_1_1WaveMetadata}{Wave\+Metadata}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Wave metadata struct. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classWaveDetector_abc1726aea1cad86baef675ddded84fe8}\label{classWaveDetector_abc1726aea1cad86baef675ddded84fe8}} 
-enum {\bfseries Wave} \{ \newline
-{\bfseries no\+Burst}, 
-{\bfseries bursting}, 
-{\bfseries burst\+Start}, 
-{\bfseries end\+Short\+Burst}, 
+enum \mbox{\hyperlink{classWaveDetector_abc1726aea1cad86baef675ddded84fe8}{Wave}} \{ \newline
+\mbox{\hyperlink{classWaveDetector_abc1726aea1cad86baef675ddded84fe8a0f6c6b9968eafca36014d956ff48740d}{no\+Burst}}, 
+\mbox{\hyperlink{classWaveDetector_abc1726aea1cad86baef675ddded84fe8a77aaeafde2f68f00f4d49debcb62dc13}{bursting}}, 
+\mbox{\hyperlink{classWaveDetector_abc1726aea1cad86baef675ddded84fe8ab16b272064669f9fa3bcd14704864404}{burst\+Start}}, 
+\mbox{\hyperlink{classWaveDetector_abc1726aea1cad86baef675ddded84fe8ac9a23b681fc13f21fe979d96c58bd3c6}{end\+Short\+Burst}}, 
 \newline
-{\bfseries left\+To\+Right}, 
-{\bfseries right\+To\+Left}
+\mbox{\hyperlink{classWaveDetector_abc1726aea1cad86baef675ddded84fe8a25a4f9ae018191235acb41137dfae933}{left\+To\+Right}}, 
+\mbox{\hyperlink{classWaveDetector_abc1726aea1cad86baef675ddded84fe8a8d8edd8f78d12864806a0bb2293df099}{right\+To\+Left}}
  \}
-\item 
+\begin{DoxyCompactList}\small\item\em Wave enum. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classWaveDetector_ae03fdca0eb57d70c539af2b53946c657}\label{classWaveDetector_ae03fdca0eb57d70c539af2b53946c657}} 
 typedef struct \mbox{\hyperlink{structWaveDetector_1_1WaveMetadata}{Wave\+Metadata}} {\bfseries Wave\+Metadata}
 \end{DoxyCompactItemize}
@@ -27,16 +26,109 @@ typedef struct \mbox{\hyperlink{structWaveDetector_1_1WaveMetadata}{Wave\+Metada
 \item 
 \mbox{\Hypertarget{classWaveDetector_a9dc0fec49023ac3a388568180575ee7d}\label{classWaveDetector_a9dc0fec49023ac3a388568180575ee7d}} 
 \mbox{\hyperlink{classWaveDetector_a9dc0fec49023ac3a388568180575ee7d}{Wave\+Detector}} ()
-\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classWaveDetector_aa8989a4e992b1017228f6ae4ef8a6b4a}\label{classWaveDetector_aa8989a4e992b1017228f6ae4ef8a6b4a}} 
-{\bfseries Wave\+Detector} (int window\+Length, const char $\ast$config\+Path, float threshold, int min\+Frames, int frame\+Hz=10000)
+\begin{DoxyCompactList}\small\item\em Constructs a new Wave Detector object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classWaveDetector_aa8989a4e992b1017228f6ae4ef8a6b4a}{Wave\+Detector}} (int window\+Length, const char $\ast$config\+Path, float threshold, int min\+Frames, int frame\+Hz=10000)
+\begin{DoxyCompactList}\small\item\em Constructs a new Wave Detector object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWaveDetector_af493cc823e9388b83a3fc6bf8c48b159}\label{classWaveDetector_af493cc823e9388b83a3fc6bf8c48b159}} 
+\mbox{\hyperlink{classWaveDetector_af493cc823e9388b83a3fc6bf8c48b159}{$\sim$\+Wave\+Detector}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the Wave Detector Object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaveDetector_aaa4806eeb2950412dbd779635a2f5667}{shift\+Window}} (maxlab\+::\+Filtered\+Frame\+Data frame)
 \item 
-\mbox{\Hypertarget{classWaveDetector_aaa4806eeb2950412dbd779635a2f5667}\label{classWaveDetector_aaa4806eeb2950412dbd779635a2f5667}} 
-void {\bfseries shift\+Window} (maxlab\+::\+Filtered\+Frame\+Data frame)
-\item 
-\mbox{\Hypertarget{classWaveDetector_a91b522b3335c62a1b498f5a4d09d1820}\label{classWaveDetector_a91b522b3335c62a1b498f5a4d09d1820}} 
-int {\bfseries check\+Burst} (int frame\+No)
+int \mbox{\hyperlink{classWaveDetector_a91b522b3335c62a1b498f5a4d09d1820}{check\+Burst}} (int frame\+No)
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classWaveDetector_abc1726aea1cad86baef675ddded84fe8}\label{classWaveDetector_abc1726aea1cad86baef675ddded84fe8}} 
+\index{WaveDetector@{WaveDetector}!Wave@{Wave}}
+\index{Wave@{Wave}!WaveDetector@{WaveDetector}}
+\doxysubsubsection{\texorpdfstring{Wave}{Wave}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classWaveDetector_abc1726aea1cad86baef675ddded84fe8}{Wave\+Detector\+::\+Wave}}}
+
+
+
+Wave enum. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{noBurst@{noBurst}!WaveDetector@{WaveDetector}}\index{WaveDetector@{WaveDetector}!noBurst@{noBurst}}}\mbox{\Hypertarget{classWaveDetector_abc1726aea1cad86baef675ddded84fe8a0f6c6b9968eafca36014d956ff48740d}\label{classWaveDetector_abc1726aea1cad86baef675ddded84fe8a0f6c6b9968eafca36014d956ff48740d}} 
+no\+Burst&culture is not currently bursting \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{bursting@{bursting}!WaveDetector@{WaveDetector}}\index{WaveDetector@{WaveDetector}!bursting@{bursting}}}\mbox{\Hypertarget{classWaveDetector_abc1726aea1cad86baef675ddded84fe8a77aaeafde2f68f00f4d49debcb62dc13}\label{classWaveDetector_abc1726aea1cad86baef675ddded84fe8a77aaeafde2f68f00f4d49debcb62dc13}} 
+bursting&culture is currently bursting \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{burstStart@{burstStart}!WaveDetector@{WaveDetector}}\index{WaveDetector@{WaveDetector}!burstStart@{burstStart}}}\mbox{\Hypertarget{classWaveDetector_abc1726aea1cad86baef675ddded84fe8ab16b272064669f9fa3bcd14704864404}\label{classWaveDetector_abc1726aea1cad86baef675ddded84fe8ab16b272064669f9fa3bcd14704864404}} 
+burst\+Start&burst just started \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{endShortBurst@{endShortBurst}!WaveDetector@{WaveDetector}}\index{WaveDetector@{WaveDetector}!endShortBurst@{endShortBurst}}}\mbox{\Hypertarget{classWaveDetector_abc1726aea1cad86baef675ddded84fe8ac9a23b681fc13f21fe979d96c58bd3c6}\label{classWaveDetector_abc1726aea1cad86baef675ddded84fe8ac9a23b681fc13f21fe979d96c58bd3c6}} 
+end\+Short\+Burst&burst ended, but it was too short to be significant \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{leftToRight@{leftToRight}!WaveDetector@{WaveDetector}}\index{WaveDetector@{WaveDetector}!leftToRight@{leftToRight}}}\mbox{\Hypertarget{classWaveDetector_abc1726aea1cad86baef675ddded84fe8a25a4f9ae018191235acb41137dfae933}\label{classWaveDetector_abc1726aea1cad86baef675ddded84fe8a25a4f9ae018191235acb41137dfae933}} 
+left\+To\+Right&burst ended, and it went left to right \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{rightToLeft@{rightToLeft}!WaveDetector@{WaveDetector}}\index{WaveDetector@{WaveDetector}!rightToLeft@{rightToLeft}}}\mbox{\Hypertarget{classWaveDetector_abc1726aea1cad86baef675ddded84fe8a8d8edd8f78d12864806a0bb2293df099}\label{classWaveDetector_abc1726aea1cad86baef675ddded84fe8a8d8edd8f78d12864806a0bb2293df099}} 
+right\+To\+Left&burst ended, and it went right to left \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWaveDetector_aa8989a4e992b1017228f6ae4ef8a6b4a}\label{classWaveDetector_aa8989a4e992b1017228f6ae4ef8a6b4a}} 
+\index{WaveDetector@{WaveDetector}!WaveDetector@{WaveDetector}}
+\index{WaveDetector@{WaveDetector}!WaveDetector@{WaveDetector}}
+\doxysubsubsection{\texorpdfstring{WaveDetector()}{WaveDetector()}}
+{\footnotesize\ttfamily Wave\+Detector\+::\+Wave\+Detector (\begin{DoxyParamCaption}\item[{int}]{window\+Length,  }\item[{const char $\ast$}]{config\+Path,  }\item[{float}]{threshold,  }\item[{int}]{min\+Frames,  }\item[{int}]{frame\+Hz = {\ttfamily 10000} }\end{DoxyParamCaption})}
+
+
+
+Constructs a new Wave Detector object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window\+Length} & \\
+\hline
+{\em config\+Path} & \\
+\hline
+{\em threshold} & \\
+\hline
+{\em min\+Frames} & \\
+\hline
+{\em frame\+Hz} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWaveDetector_a91b522b3335c62a1b498f5a4d09d1820}\label{classWaveDetector_a91b522b3335c62a1b498f5a4d09d1820}} 
+\index{WaveDetector@{WaveDetector}!checkBurst@{checkBurst}}
+\index{checkBurst@{checkBurst}!WaveDetector@{WaveDetector}}
+\doxysubsubsection{\texorpdfstring{checkBurst()}{checkBurst()}}
+{\footnotesize\ttfamily int Wave\+Detector\+::check\+Burst (\begin{DoxyParamCaption}\item[{int}]{frame\+No }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame\+No} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWaveDetector_aaa4806eeb2950412dbd779635a2f5667}\label{classWaveDetector_aaa4806eeb2950412dbd779635a2f5667}} 
+\index{WaveDetector@{WaveDetector}!shiftWindow@{shiftWindow}}
+\index{shiftWindow@{shiftWindow}!WaveDetector@{WaveDetector}}
+\doxysubsubsection{\texorpdfstring{shiftWindow()}{shiftWindow()}}
+{\footnotesize\ttfamily void Wave\+Detector\+::shift\+Window (\begin{DoxyParamCaption}\item[{maxlab\+::\+Filtered\+Frame\+Data}]{frame }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="structWaveDetector_1_1WaveMetadata" kind="struct" language="C++" prot="public">
     <compoundname>WaveDetector::WaveMetadata</compoundname>
+    <includes refid="waveDetector_8h" local="no">waveDetector.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structWaveDetector_1_1WaveMetadata_1a25ffde91aa62fb0405b25fdc66ff5503" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -11,10 +12,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>indicates first burst is done </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="24" column="18" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="24" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="41" column="18" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="41" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structWaveDetector_1_1WaveMetadata_1a2c3927bb8e2c2292be38ddbaa86e8c36" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -24,10 +26,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>indicates if currently bursting </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="25" column="18" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="25" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="42" column="18" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="42" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structWaveDetector_1_1WaveMetadata_1a1cc8a4b326d5231a27fc1b2eff03fbbb" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -37,10 +40,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>number of frames since the total spike count was below the threshold </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="27" column="17" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="27" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="44" column="17" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="44" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structWaveDetector_1_1WaveMetadata_1aa6f46b8a75c78cc151fda363d71dda14" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -50,10 +54,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>starting location of the current or most recent burst </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="29" column="17" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="29" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="47" column="17" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="47" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structWaveDetector_1_1WaveMetadata_1a8635a0f212f4c6ed00c9bc73c88ba786" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -63,10 +68,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>starting spike count of the current or most recent burst </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="30" column="17" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="30" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="49" column="17" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="49" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structWaveDetector_1_1WaveMetadata_1ad13fdad656e4e828c79b2c5c20033f0a" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -76,10 +82,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>starting frame of the current or most recent burst </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="31" column="17" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="31" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="51" column="17" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="51" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structWaveDetector_1_1WaveMetadata_1acd1ceb64873731839710369d548140dc" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -89,10 +96,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>frame when the last burst ended </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="33" column="17" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="33" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="54" column="17" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="54" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structWaveDetector_1_1WaveMetadata_1a9f066335ffbcb87405225b353c4a313d" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -102,23 +110,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>number of frames since the total spike count went over the threshold </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="35" column="17" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="35" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structWaveDetector_1_1WaveMetadata_1ab97728a109942553ed257f0574358845" prot="public" static="no" mutable="no">
-        <type>int</type>
-        <definition>int WaveDetector::WaveMetadata::maxSpikesFrame</definition>
-        <argsstring></argsstring>
-        <name>maxSpikesFrame</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="37" column="17" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="37" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="56" column="17" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="56" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structWaveDetector_1_1WaveMetadata_1a8560d5d5fe8e2d1a2b3519b18e4b65fc" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -128,10 +124,25 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>spike count of the peak of the burst (or most recent peak within the burst) </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="39" column="17" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="39" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="59" column="17" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structWaveDetector_1_1WaveMetadata_1ab97728a109942553ed257f0574358845" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int WaveDetector::WaveMetadata::maxSpikesFrame</definition>
+        <argsstring></argsstring>
+        <name>maxSpikesFrame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>frame number where the peak of the burst occured (or most recent peak within the burst) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="62" column="17" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="62" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structWaveDetector_1_1WaveMetadata_1a953d1306f4b73452f70bf83aa26bc84f" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -141,17 +152,19 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>locatin on the chpi of the peak of the burst (or most recent peak within the burst) </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="41" column="19" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="41" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="66" column="19" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="66" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Wave metadata struct. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="23" column="27" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="23" bodyend="42"/>
+    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="40" column="27" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="40" bodyend="69"/>
     <listofallmembers>
       <member refid="structWaveDetector_1_1WaveMetadata_1acd1ceb64873731839710369d548140dc" prot="public" virt="non-virtual"><scope>WaveDetector::WaveMetadata</scope><name>burstEnd</name></member>
       <member refid="structWaveDetector_1_1WaveMetadata_1a2c3927bb8e2c2292be38ddbaa86e8c36" prot="public" virt="non-virtual"><scope>WaveDetector::WaveMetadata</scope><name>bursting</name></member>

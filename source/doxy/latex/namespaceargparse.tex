@@ -1,0 +1,232 @@
+\hypertarget{namespaceargparse}{}\doxysection{argparse Namespace Reference}
+\label{namespaceargparse}\index{argparse@{argparse}}
+
+
+test D\+O\+C\+U\+M\+E\+N\+T\+I\+NG T\+HE N\+A\+M\+E\+S\+P\+A\+CE  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespaceargparse_abb7a363c940e66d2b40c984142c9c3bb}{check\+Option}} (string name, int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Parses through arguments and checks if an option/flag exists. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{namespaceargparse_a8686e113755409e373a4a1a3fc14d4bb}{get\+String\+Arg}} (string name, int argc, char $\ast$argv\mbox{[}$\,$\mbox{]}, string usage=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Gets the value of an argument option as a {\ttfamily string} \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespaceargparse_ad3582d96323be2fbf575a84d7389ff2a}{get\+Int\+Arg}} (string name, int argc, char $\ast$argv\mbox{[}$\,$\mbox{]}, string usage=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Gets the value of an argument option as an {\ttfamily int} \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{namespaceargparse_addec61b6a5316d78c1ba9323ac715708}{get\+Float\+Arg}} (string name, int argc, char $\ast$argv\mbox{[}$\,$\mbox{]}, string usage=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Gets the value of an argument option as an {\ttfamily float} \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{namespaceargparse_ad841ae5c646c6db065086195ee0f3f57}{get\+String\+Arg\+Secure}} (string name, string default\+Value, int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Gets the value of an argument option as a {\ttfamily string} \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespaceargparse_a8aeb19c1f3fc6aea50d7d625af8b8fbb}{get\+Int\+Arg\+Secure}} (string name, int default\+Value, int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Gets the value of an argument option as a {\ttfamily int} \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{namespaceargparse_a1e343e24a835d2649f5fea664c5a9f59}{get\+Float\+Arg\+Secure}} (string name, float default\+Value, int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Gets the value of an argument option as a {\ttfamily float} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+test D\+O\+C\+U\+M\+E\+N\+T\+I\+NG T\+HE N\+A\+M\+E\+S\+P\+A\+CE 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceargparse_abb7a363c940e66d2b40c984142c9c3bb}\label{namespaceargparse_abb7a363c940e66d2b40c984142c9c3bb}} 
+\index{argparse@{argparse}!checkOption@{checkOption}}
+\index{checkOption@{checkOption}!argparse@{argparse}}
+\doxysubsubsection{\texorpdfstring{checkOption()}{checkOption()}}
+{\footnotesize\ttfamily bool argparse\+::check\+Option (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Parses through arguments and checks if an option/flag exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & {\ttfamily string} to match option with \\
+\hline
+{\em argc} & {\ttfamily int} representing the number of arguments \\
+\hline
+{\em argv} & array of {\ttfamily char} arrays, representing string arguments\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily bool} representing whether the flag exists. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceargparse_addec61b6a5316d78c1ba9323ac715708}\label{namespaceargparse_addec61b6a5316d78c1ba9323ac715708}} 
+\index{argparse@{argparse}!getFloatArg@{getFloatArg}}
+\index{getFloatArg@{getFloatArg}!argparse@{argparse}}
+\doxysubsubsection{\texorpdfstring{getFloatArg()}{getFloatArg()}}
+{\footnotesize\ttfamily float argparse\+::get\+Float\+Arg (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]},  }\item[{string}]{usage = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Gets the value of an argument option as an {\ttfamily float} 
+
+Parses through arguments, and returns value of matching name of the format\+: \begin{DoxyVerb}             <option> <value> 
+\end{DoxyVerb}
+
+
+Where $<$option$>$ is matched to {\ttfamily name}. This functions exits when the option isn\textquotesingle{}t found, and prints an optional usage message
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & {\ttfamily string} to match option with \\
+\hline
+{\em argc} & {\ttfamily int} indicating the number of arguments \\
+\hline
+{\em argv} & array of {\ttfamily char} arrays, representing string arguments \\
+\hline
+{\em usage} & {\ttfamily string} representing an optional usage message, printed upon failure, default={\ttfamily \char`\"{}\char`\"{}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily float} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceargparse_a1e343e24a835d2649f5fea664c5a9f59}\label{namespaceargparse_a1e343e24a835d2649f5fea664c5a9f59}} 
+\index{argparse@{argparse}!getFloatArgSecure@{getFloatArgSecure}}
+\index{getFloatArgSecure@{getFloatArgSecure}!argparse@{argparse}}
+\doxysubsubsection{\texorpdfstring{getFloatArgSecure()}{getFloatArgSecure()}}
+{\footnotesize\ttfamily float argparse\+::get\+Float\+Arg\+Secure (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{float}]{default\+Value,  }\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Gets the value of an argument option as a {\ttfamily float} 
+
+Parses through arguments, and returns value of matching name of the format\+: \begin{DoxyVerb}             <option> <value> 
+\end{DoxyVerb}
+
+
+Where $<$option$>$ is matched to {\ttfamily name}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & {\ttfamily string} to match option with \\
+\hline
+{\em default\+Value} & {\ttfamily float} representing the default value if the option isn\textquotesingle{}t found \\
+\hline
+{\em argc} & {\ttfamily int} indicating the number of arguments \\
+\hline
+{\em argv} & array of {\ttfamily char} arrays, representing string arguments \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily float}; will return {\ttfamily default\+Value} if the option isn\textquotesingle{}t found 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceargparse_ad3582d96323be2fbf575a84d7389ff2a}\label{namespaceargparse_ad3582d96323be2fbf575a84d7389ff2a}} 
+\index{argparse@{argparse}!getIntArg@{getIntArg}}
+\index{getIntArg@{getIntArg}!argparse@{argparse}}
+\doxysubsubsection{\texorpdfstring{getIntArg()}{getIntArg()}}
+{\footnotesize\ttfamily int argparse\+::get\+Int\+Arg (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]},  }\item[{string}]{usage = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Gets the value of an argument option as an {\ttfamily int} 
+
+Parses through arguments, and returns value of matching name of the format\+: \begin{DoxyVerb}             <option> <value> 
+\end{DoxyVerb}
+
+
+Where $<$option$>$ is matched to {\ttfamily name}. This functions exits when the option isn\textquotesingle{}t found, and prints an optional usage message
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & {\ttfamily string} to match option with \\
+\hline
+{\em argc} & {\ttfamily int} indicating the number of arguments \\
+\hline
+{\em argv} & array of {\ttfamily char} arrays, representing string arguments \\
+\hline
+{\em usage} & {\ttfamily string} representing an optional usage message, printed upon failure, default={\ttfamily \char`\"{}\char`\"{}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily int} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceargparse_a8aeb19c1f3fc6aea50d7d625af8b8fbb}\label{namespaceargparse_a8aeb19c1f3fc6aea50d7d625af8b8fbb}} 
+\index{argparse@{argparse}!getIntArgSecure@{getIntArgSecure}}
+\index{getIntArgSecure@{getIntArgSecure}!argparse@{argparse}}
+\doxysubsubsection{\texorpdfstring{getIntArgSecure()}{getIntArgSecure()}}
+{\footnotesize\ttfamily int argparse\+::get\+Int\+Arg\+Secure (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{int}]{default\+Value,  }\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Gets the value of an argument option as a {\ttfamily int} 
+
+Parses through arguments, and returns value of matching name of the format\+: \begin{DoxyVerb}             <option> <value> 
+\end{DoxyVerb}
+
+
+Where $<$option$>$ is matched to {\ttfamily name}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & {\ttfamily string} to match option with \\
+\hline
+{\em default\+Value} & {\ttfamily int} representing the default value if the option isn\textquotesingle{}t found \\
+\hline
+{\em argc} & {\ttfamily int} indicating the number of arguments \\
+\hline
+{\em argv} & array of {\ttfamily char} arrays, representing string arguments \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily int}; will return {\ttfamily default\+Value} if the option isn\textquotesingle{}t found 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceargparse_a8686e113755409e373a4a1a3fc14d4bb}\label{namespaceargparse_a8686e113755409e373a4a1a3fc14d4bb}} 
+\index{argparse@{argparse}!getStringArg@{getStringArg}}
+\index{getStringArg@{getStringArg}!argparse@{argparse}}
+\doxysubsubsection{\texorpdfstring{getStringArg()}{getStringArg()}}
+{\footnotesize\ttfamily string argparse\+::get\+String\+Arg (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]},  }\item[{string}]{usage = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Gets the value of an argument option as a {\ttfamily string} 
+
+Parses through arguments, and returns value of matching name of the format\+: \begin{DoxyVerb}             <option> <value> 
+\end{DoxyVerb}
+
+
+Where $<$option$>$ is matched to {\ttfamily name}. This functions exits when the option isn\textquotesingle{}t found, and prints an optional usage message
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & {\ttfamily string} to match option with \\
+\hline
+{\em argc} & {\ttfamily int} indicating the number of arguments \\
+\hline
+{\em argv} & array of {\ttfamily char} arrays, representing string arguments \\
+\hline
+{\em usage} & {\ttfamily string} representing an optional usage message, printed upon failure, default={\ttfamily \char`\"{}\char`\"{}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily string} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceargparse_ad841ae5c646c6db065086195ee0f3f57}\label{namespaceargparse_ad841ae5c646c6db065086195ee0f3f57}} 
+\index{argparse@{argparse}!getStringArgSecure@{getStringArgSecure}}
+\index{getStringArgSecure@{getStringArgSecure}!argparse@{argparse}}
+\doxysubsubsection{\texorpdfstring{getStringArgSecure()}{getStringArgSecure()}}
+{\footnotesize\ttfamily string argparse\+::get\+String\+Arg\+Secure (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{default\+Value,  }\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Gets the value of an argument option as a {\ttfamily string} 
+
+Parses through arguments, and returns value of matching name of the format\+: \begin{DoxyVerb}             <option> <value> 
+\end{DoxyVerb}
+
+
+Where $<$option$>$ is matched to {\ttfamily name}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & {\ttfamily string} to match option with \\
+\hline
+{\em default\+Value} & {\ttfamily string} representing the default value if the option isn\textquotesingle{}t found \\
+\hline
+{\em argc} & {\ttfamily int} indicating the number of arguments \\
+\hline
+{\em argv} & array of {\ttfamily char} arrays, representing string arguments \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily string}; will return {\ttfamily default\+Value} if the option isn\textquotesingle{}t found 
+\end{DoxyReturn}

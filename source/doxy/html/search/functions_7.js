@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['numchannels_53',['numChannels',['../classController.html#a14b2114e3be63d83feb319ce759293fa',1,'Controller']]],
-  ['numspikes_54',['numSpikes',['../classController.html#a34a2a7c37f78cc365a3cf84722b9a224',1,'Controller']]]
+  ['numchannels_90',['numChannels',['../classController.html#a14b2114e3be63d83feb319ce759293fa',1,'Controller']]],
+  ['numspikes_91',['numSpikes',['../classController.html#a34a2a7c37f78cc365a3cf84722b9a224',1,'Controller']]]
 ];

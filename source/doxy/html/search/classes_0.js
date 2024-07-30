@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['channelwindow_30',['ChannelWindow',['../classChannelWindow.html',1,'']]],
-  ['controller_31',['Controller',['../classController.html',1,'']]]
+  ['channelwindow_58',['ChannelWindow',['../classChannelWindow.html',1,'']]],
+  ['controller_59',['Controller',['../classController.html',1,'']]]
 ];
