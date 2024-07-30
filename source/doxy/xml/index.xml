@@ -86,11 +86,11 @@
     <member refid="structWaveDetector_1_1WaveMetadata_1a25ffde91aa62fb0405b25fdc66ff5503" kind="variable"><name>firstBurstDone</name></member>
     <member refid="structWaveDetector_1_1WaveMetadata_1a2c3927bb8e2c2292be38ddbaa86e8c36" kind="variable"><name>bursting</name></member>
     <member refid="structWaveDetector_1_1WaveMetadata_1a1cc8a4b326d5231a27fc1b2eff03fbbb" kind="variable"><name>spikeFrameCount</name></member>
+    <member refid="structWaveDetector_1_1WaveMetadata_1a9f066335ffbcb87405225b353c4a313d" kind="variable"><name>noSpikeFrameCount</name></member>
     <member refid="structWaveDetector_1_1WaveMetadata_1aa6f46b8a75c78cc151fda363d71dda14" kind="variable"><name>burstStartLocation</name></member>
     <member refid="structWaveDetector_1_1WaveMetadata_1a8635a0f212f4c6ed00c9bc73c88ba786" kind="variable"><name>burstStartSpikeCount</name></member>
     <member refid="structWaveDetector_1_1WaveMetadata_1ad13fdad656e4e828c79b2c5c20033f0a" kind="variable"><name>burstStartFrame</name></member>
     <member refid="structWaveDetector_1_1WaveMetadata_1acd1ceb64873731839710369d548140dc" kind="variable"><name>burstEnd</name></member>
-    <member refid="structWaveDetector_1_1WaveMetadata_1a9f066335ffbcb87405225b353c4a313d" kind="variable"><name>noSpikeFrameCount</name></member>
     <member refid="structWaveDetector_1_1WaveMetadata_1a8560d5d5fe8e2d1a2b3519b18e4b65fc" kind="variable"><name>maxSpikes</name></member>
     <member refid="structWaveDetector_1_1WaveMetadata_1ab97728a109942553ed257f0574358845" kind="variable"><name>maxSpikesFrame</name></member>
     <member refid="structWaveDetector_1_1WaveMetadata_1a953d1306f4b73452f70bf83aa26bc84f" kind="variable"><name>maxSpikesLoc</name></member>

@@ -164,11 +164,11 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>windowLength</strong> – </p></li>
-<li><p><strong>configPath</strong> – </p></li>
-<li><p><strong>threshold</strong> – </p></li>
-<li><p><strong>minFrames</strong> – </p></li>
-<li><p><strong>frameHz</strong> – </p></li>
+<li><p><strong>windowLength</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> length of the window </p></li>
+<li><p><strong>configPath</strong> – c-style string containing the full path of the electrode config </p></li>
+<li><p><strong>threshold</strong> – <code class="docutils literal notranslate"><span class="pre">float</span></code> threshold used to check the total spike count against </p></li>
+<li><p><strong>minFrames</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> minimum number of frames during which the window must be over the spike threshold in order to be considered a burst </p></li>
+<li><p><strong>frameHz</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> framerate, defaults to <code class="docutils literal notranslate"><span class="pre">10000</span></code>. It shoud be <code class="docutils literal notranslate"><span class="pre">10000</span></code> for the MaxTwo, and <code class="docutils literal notranslate"><span class="pre">20000</span></code> for the MaxOne </p></li>
 </ul>
 </dd>
 </dl>
@@ -183,9 +183,10 @@
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector11shiftWindowEN6maxlab17FilteredFrameDataE">
 <span id="_CPPv3N12WaveDetector11shiftWindowEN6maxlab17FilteredFrameDataE"></span><span id="_CPPv2N12WaveDetector11shiftWindowEN6maxlab17FilteredFrameDataE"></span><span id="WaveDetector::shiftWindow__maxlab::FilteredFrameData"></span><span class="target" id="classWaveDetector_1aaa4806eeb2950412dbd779635a2f5667"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">shiftWindow</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">maxlab</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">FilteredFrameData</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12WaveDetector11shiftWindowEN6maxlab17FilteredFrameDataE" title="Link to this definition"></a><br /></dt>
-<dd><dl class="field-list simple">
+<dd><p>Shifts the window, adding a new frame. </p>
+<dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>frame</strong> – </p>
+<dd class="field-odd"><p><strong>frame</strong> – <code class="docutils literal notranslate"><span class="pre">maxlab::FilteredFrameData</span></code> frame to add to the window </p>
 </dd>
 </dl>
 </dd></dl>
@@ -193,12 +194,13 @@
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector10checkBurstEi">
 <span id="_CPPv3N12WaveDetector10checkBurstEi"></span><span id="_CPPv2N12WaveDetector10checkBurstEi"></span><span id="WaveDetector::checkBurst__i"></span><span class="target" id="classWaveDetector_1a91b522b3335c62a1b498f5a4d09d1820"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">checkBurst</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">frameNo</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12WaveDetector10checkBurstEi" title="Link to this definition"></a><br /></dt>
-<dd><dl class="field-list simple">
+<dd><p>Checks the direction of a burst. </p>
+<dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>frameNo</strong> – </p>
+<dd class="field-odd"><p><strong>frameNo</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> frame number of the most recently received frame </p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>int </p>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">int</span></code>, corresponds to <code class="docutils literal notranslate"><span class="pre">enum</span> <span class="pre">Wave</span></code></p>
 </dd>
 </dl>
 </dd></dl>
@@ -229,6 +231,12 @@
 </dd></dl>
 
 <dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector12WaveMetadata17noSpikeFrameCountE">
+<span id="_CPPv3N12WaveDetector12WaveMetadata17noSpikeFrameCountE"></span><span id="_CPPv2N12WaveDetector12WaveMetadata17noSpikeFrameCountE"></span><span id="WaveDetector::WaveMetadata::noSpikeFrameCount__i"></span><span class="target" id="structWaveDetector_1_1WaveMetadata_1a9f066335ffbcb87405225b353c4a313d"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">noSpikeFrameCount</span></span></span><a class="headerlink" href="#_CPPv4N12WaveDetector12WaveMetadata17noSpikeFrameCountE" title="Link to this definition"></a><br /></dt>
+<dd><p>number of frames since the total spike count went over the threshold </p>
+</dd></dl>
+
+<dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector12WaveMetadata18burstStartLocationE">
 <span id="_CPPv3N12WaveDetector12WaveMetadata18burstStartLocationE"></span><span id="_CPPv2N12WaveDetector12WaveMetadata18burstStartLocationE"></span><span id="WaveDetector::WaveMetadata::burstStartLocation__i"></span><span class="target" id="structWaveDetector_1_1WaveMetadata_1aa6f46b8a75c78cc151fda363d71dda14"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">burstStartLocation</span></span></span><a class="headerlink" href="#_CPPv4N12WaveDetector12WaveMetadata18burstStartLocationE" title="Link to this definition"></a><br /></dt>
 <dd><p>starting location of the current or most recent burst </p>
@@ -250,12 +258,6 @@
 <dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector12WaveMetadata8burstEndE">
 <span id="_CPPv3N12WaveDetector12WaveMetadata8burstEndE"></span><span id="_CPPv2N12WaveDetector12WaveMetadata8burstEndE"></span><span id="WaveDetector::WaveMetadata::burstEnd__i"></span><span class="target" id="structWaveDetector_1_1WaveMetadata_1acd1ceb64873731839710369d548140dc"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">burstEnd</span></span></span><a class="headerlink" href="#_CPPv4N12WaveDetector12WaveMetadata8burstEndE" title="Link to this definition"></a><br /></dt>
 <dd><p>frame when the last burst ended </p>
-</dd></dl>
-
-<dl class="cpp var">
-<dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector12WaveMetadata17noSpikeFrameCountE">
-<span id="_CPPv3N12WaveDetector12WaveMetadata17noSpikeFrameCountE"></span><span id="_CPPv2N12WaveDetector12WaveMetadata17noSpikeFrameCountE"></span><span id="WaveDetector::WaveMetadata::noSpikeFrameCount__i"></span><span class="target" id="structWaveDetector_1_1WaveMetadata_1a9f066335ffbcb87405225b353c4a313d"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">noSpikeFrameCount</span></span></span><a class="headerlink" href="#_CPPv4N12WaveDetector12WaveMetadata17noSpikeFrameCountE" title="Link to this definition"></a><br /></dt>
-<dd><p>number of frames since the total spike count went over the threshold </p>
 </dd></dl>
 
 <dl class="cpp var">

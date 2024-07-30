@@ -33,9 +33,9 @@ typedef struct \mbox{\hyperlink{structWaveDetector_1_1WaveMetadata}{Wave\+Metada
 \mbox{\hyperlink{classWaveDetector_af493cc823e9388b83a3fc6bf8c48b159}{$\sim$\+Wave\+Detector}} ()
 \begin{DoxyCompactList}\small\item\em Destroys the Wave Detector Object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classWaveDetector_aaa4806eeb2950412dbd779635a2f5667}{shift\+Window}} (maxlab\+::\+Filtered\+Frame\+Data frame)
-\item 
+\begin{DoxyCompactList}\small\item\em Shifts the window, adding a new frame. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classWaveDetector_a91b522b3335c62a1b498f5a4d09d1820}{check\+Burst}} (int frame\+No)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Checks the direction of a burst. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Member Enumeration Documentation}
@@ -90,15 +90,15 @@ Constructs a new Wave Detector object.
 
 
 \begin{DoxyParams}{Parameters}
-{\em window\+Length} & \\
+{\em window\+Length} & {\ttfamily int} length of the window \\
 \hline
-{\em config\+Path} & \\
+{\em config\+Path} & c-\/style string containing the full path of the electrode config \\
 \hline
-{\em threshold} & \\
+{\em threshold} & {\ttfamily float} threshold used to check the total spike count against \\
 \hline
-{\em min\+Frames} & \\
+{\em min\+Frames} & {\ttfamily int} minimum number of frames during which the window must be over the spike threshold in order to be considered a burst \\
 \hline
-{\em frame\+Hz} & \\
+{\em frame\+Hz} & {\ttfamily int} framerate, defaults to {\ttfamily 10000}. It shoud be {\ttfamily 10000} for the Max\+Two, and {\ttfamily 20000} for the Max\+One \\
 \hline
 \end{DoxyParams}
 
@@ -111,12 +111,16 @@ Constructs a new Wave Detector object.
 {\footnotesize\ttfamily int Wave\+Detector\+::check\+Burst (\begin{DoxyParamCaption}\item[{int}]{frame\+No }\end{DoxyParamCaption})}
 
 
+
+Checks the direction of a burst. 
+
+
 \begin{DoxyParams}{Parameters}
-{\em frame\+No} & \\
+{\em frame\+No} & {\ttfamily int} frame number of the most recently received frame \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-int 
+{\ttfamily int}, corresponds to {\ttfamily enum Wave} 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classWaveDetector_aaa4806eeb2950412dbd779635a2f5667}\label{classWaveDetector_aaa4806eeb2950412dbd779635a2f5667}} 
 \index{WaveDetector@{WaveDetector}!shiftWindow@{shiftWindow}}
@@ -125,8 +129,12 @@ int
 {\footnotesize\ttfamily void Wave\+Detector\+::shift\+Window (\begin{DoxyParamCaption}\item[{maxlab\+::\+Filtered\+Frame\+Data}]{frame }\end{DoxyParamCaption})}
 
 
+
+Shifts the window, adding a new frame. 
+
+
 \begin{DoxyParams}{Parameters}
-{\em frame} & \\
+{\em frame} & {\ttfamily maxlab\+::\+Filtered\+Frame\+Data} frame to add to the window \\
 \hline
 \end{DoxyParams}
 

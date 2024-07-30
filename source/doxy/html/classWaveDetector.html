@@ -109,8 +109,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:af493cc823e9388b83a3fc6bf8c48b159"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the Wave Detector Object. <br /></td></tr>
 <tr class="separator:af493cc823e9388b83a3fc6bf8c48b159"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa4806eeb2950412dbd779635a2f5667"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWaveDetector.html#aaa4806eeb2950412dbd779635a2f5667">shiftWindow</a> (maxlab::FilteredFrameData frame)</td></tr>
+<tr class="memdesc:aaa4806eeb2950412dbd779635a2f5667"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shifts the window, adding a new frame.  <a href="classWaveDetector.html#aaa4806eeb2950412dbd779635a2f5667">More...</a><br /></td></tr>
 <tr class="separator:aaa4806eeb2950412dbd779635a2f5667"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91b522b3335c62a1b498f5a4d09d1820"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWaveDetector.html#a91b522b3335c62a1b498f5a4d09d1820">checkBurst</a> (int frameNo)</td></tr>
+<tr class="memdesc:a91b522b3335c62a1b498f5a4d09d1820"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks the direction of a burst.  <a href="classWaveDetector.html#a91b522b3335c62a1b498f5a4d09d1820">More...</a><br /></td></tr>
 <tr class="separator:a91b522b3335c62a1b498f5a4d09d1820"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
@@ -192,11 +194,11 @@ Public Member Functions</h2></td></tr>
 <p>Constructs a new Wave Detector object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">windowLength</td><td></td></tr>
-    <tr><td class="paramname">configPath</td><td></td></tr>
-    <tr><td class="paramname">threshold</td><td></td></tr>
-    <tr><td class="paramname">minFrames</td><td></td></tr>
-    <tr><td class="paramname">frameHz</td><td></td></tr>
+    <tr><td class="paramname">windowLength</td><td><code>int</code> length of the window </td></tr>
+    <tr><td class="paramname">configPath</td><td>c-style string containing the full path of the electrode config </td></tr>
+    <tr><td class="paramname">threshold</td><td><code>float</code> threshold used to check the total spike count against </td></tr>
+    <tr><td class="paramname">minFrames</td><td><code>int</code> minimum number of frames during which the window must be over the spike threshold in order to be considered a burst </td></tr>
+    <tr><td class="paramname">frameHz</td><td><code>int</code> framerate, defaults to <code>10000</code>. It shoud be <code>10000</code> for the MaxTwo, and <code>20000</code> for the MaxOne </td></tr>
   </table>
   </dd>
 </dl>
@@ -219,13 +221,15 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Checks the direction of a burst. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">frameNo</td><td></td></tr>
+    <tr><td class="paramname">frameNo</td><td><code>int</code> frame number of the most recently received frame </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>int</code>, corresponds to <code>enum Wave</code> </dd></dl>
 
 </div>
 </div>
@@ -244,9 +248,11 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Shifts the window, adding a new frame. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">frame</td><td></td></tr>
+    <tr><td class="paramname">frame</td><td><code>maxlab::FilteredFrameData</code> frame to add to the window </td></tr>
   </table>
   </dd>
 </dl>
