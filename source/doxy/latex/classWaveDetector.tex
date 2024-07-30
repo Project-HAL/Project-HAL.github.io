@@ -8,11 +8,15 @@ struct \mbox{\hyperlink{structWaveDetector_1_1WaveMetadata}{Wave\+Metadata}}
 \doxysubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classWaveDetector_ae37efceef760363b45e15af7bd1895ff}\label{classWaveDetector_ae37efceef760363b45e15af7bd1895ff}} 
-enum {\bfseries wave} \{ {\bfseries no\+Burst}, 
+\mbox{\Hypertarget{classWaveDetector_abc1726aea1cad86baef675ddded84fe8}\label{classWaveDetector_abc1726aea1cad86baef675ddded84fe8}} 
+enum {\bfseries Wave} \{ \newline
+{\bfseries no\+Burst}, 
+{\bfseries bursting}, 
 {\bfseries burst\+Start}, 
-{\bfseries right}, 
-{\bfseries left}
+{\bfseries end\+Short\+Burst}, 
+\newline
+{\bfseries left\+To\+Right}, 
+{\bfseries right\+To\+Left}
  \}
 \item 
 \mbox{\Hypertarget{classWaveDetector_ae03fdca0eb57d70c539af2b53946c657}\label{classWaveDetector_ae03fdca0eb57d70c539af2b53946c657}} 
@@ -30,8 +34,8 @@ typedef struct \mbox{\hyperlink{structWaveDetector_1_1WaveMetadata}{Wave\+Metada
 \mbox{\Hypertarget{classWaveDetector_aaa4806eeb2950412dbd779635a2f5667}\label{classWaveDetector_aaa4806eeb2950412dbd779635a2f5667}} 
 void {\bfseries shift\+Window} (maxlab\+::\+Filtered\+Frame\+Data frame)
 \item 
-\mbox{\Hypertarget{classWaveDetector_a77c6c5e20338f99a95a1d5f675e7d23c}\label{classWaveDetector_a77c6c5e20338f99a95a1d5f675e7d23c}} 
-void {\bfseries check\+Burst} ()
+\mbox{\Hypertarget{classWaveDetector_a91b522b3335c62a1b498f5a4d09d1820}\label{classWaveDetector_a91b522b3335c62a1b498f5a4d09d1820}} 
+int {\bfseries check\+Burst} (int frame\+No)
 \end{DoxyCompactItemize}
 
 

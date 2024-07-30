@@ -1,0 +1,491 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespaceargparse" kind="namespace" language="C++">
+    <compoundname>argparse</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="argparse_8h_1abb7a363c940e66d2b40c984142c9c3bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool argparse::checkOption</definition>
+        <argsstring>(string name, int argc, char *argv[])</argsstring>
+        <name>checkOption</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+<para>Parses through arguments and checks if an option/flag exists. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>string</computeroutput> to match option with </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>int</computeroutput> representing the number of arguments </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of <computeroutput>char</computeroutput> arrays, representing string arguments</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>bool</computeroutput> representing whether the flag exists. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" line="17" column="6" declfile="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" declline="17" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="argparse_8h_1a8686e113755409e373a4a1a3fc14d4bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string argparse::getStringArg</definition>
+        <argsstring>(string name, int argc, char *argv[], string usage=&quot;&quot;)</argsstring>
+        <name>getStringArg</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>usage</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Gets the value of an argument option as a <computeroutput>string</computeroutput> </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Parses through arguments, and returns value of matching name of the format: <verbatim>             &lt;option&gt; &lt;value&gt; 
+</verbatim></para>
+<para>Where &lt;option&gt; is matched to <computeroutput>name</computeroutput>. This functions exits when the option isn&apos;t found, and prints an optional usage message</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>string</computeroutput> to match option with </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>int</computeroutput> indicating the number of arguments </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of <computeroutput>char</computeroutput> arrays, representing string arguments </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>usage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>string</computeroutput> representing an optional usage message, printed upon failure, default=<computeroutput>&quot;&quot;</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>string</computeroutput> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" line="37" column="8" declfile="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" declline="37" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="argparse_8h_1ad3582d96323be2fbf575a84d7389ff2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int argparse::getIntArg</definition>
+        <argsstring>(string name, int argc, char *argv[], string usage=&quot;&quot;)</argsstring>
+        <name>getIntArg</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>usage</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Gets the value of an argument option as an <computeroutput>int</computeroutput> </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Parses through arguments, and returns value of matching name of the format: <verbatim>             &lt;option&gt; &lt;value&gt; 
+</verbatim></para>
+<para>Where &lt;option&gt; is matched to <computeroutput>name</computeroutput>. This functions exits when the option isn&apos;t found, and prints an optional usage message</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>string</computeroutput> to match option with </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>int</computeroutput> indicating the number of arguments </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of <computeroutput>char</computeroutput> arrays, representing string arguments </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>usage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>string</computeroutput> representing an optional usage message, printed upon failure, default=<computeroutput>&quot;&quot;</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>int</computeroutput> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" line="57" column="5" declfile="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" declline="57" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="argparse_8h_1addec61b6a5316d78c1ba9323ac715708" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float argparse::getFloatArg</definition>
+        <argsstring>(string name, int argc, char *argv[], string usage=&quot;&quot;)</argsstring>
+        <name>getFloatArg</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>usage</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Gets the value of an argument option as an <computeroutput>float</computeroutput> </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Parses through arguments, and returns value of matching name of the format: <verbatim>             &lt;option&gt; &lt;value&gt; 
+</verbatim></para>
+<para>Where &lt;option&gt; is matched to <computeroutput>name</computeroutput>. This functions exits when the option isn&apos;t found, and prints an optional usage message</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>string</computeroutput> to match option with </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>int</computeroutput> indicating the number of arguments </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of <computeroutput>char</computeroutput> arrays, representing string arguments </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>usage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>string</computeroutput> representing an optional usage message, printed upon failure, default=<computeroutput>&quot;&quot;</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>float</computeroutput> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" line="77" column="7" declfile="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" declline="77" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="argparse_8h_1ad841ae5c646c6db065086195ee0f3f57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string argparse::getStringArgSecure</definition>
+        <argsstring>(string name, string defaultValue, int argc, char *argv[])</argsstring>
+        <name>getStringArgSecure</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>defaultValue</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+<para>Gets the value of an argument option as a <computeroutput>string</computeroutput> </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Parses through arguments, and returns value of matching name of the format: <verbatim>             &lt;option&gt; &lt;value&gt; 
+</verbatim></para>
+<para>Where &lt;option&gt; is matched to <computeroutput>name</computeroutput>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>string</computeroutput> to match option with </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>defaultValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>string</computeroutput> representing the default value if the option isn&apos;t found </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>int</computeroutput> indicating the number of arguments </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of <computeroutput>char</computeroutput> arrays, representing string arguments </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>string</computeroutput>; will return <computeroutput>defaultValue</computeroutput> if the option isn&apos;t found </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" line="97" column="8" declfile="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" declline="97" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="argparse_8h_1a8aeb19c1f3fc6aea50d7d625af8b8fbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int argparse::getIntArgSecure</definition>
+        <argsstring>(string name, int defaultValue, int argc, char *argv[])</argsstring>
+        <name>getIntArgSecure</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>defaultValue</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+<para>Gets the value of an argument option as a <computeroutput>int</computeroutput> </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Parses through arguments, and returns value of matching name of the format: <verbatim>             &lt;option&gt; &lt;value&gt; 
+</verbatim></para>
+<para>Where &lt;option&gt; is matched to <computeroutput>name</computeroutput>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>string</computeroutput> to match option with </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>defaultValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>int</computeroutput> representing the default value if the option isn&apos;t found </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>int</computeroutput> indicating the number of arguments </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of <computeroutput>char</computeroutput> arrays, representing string arguments </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>int</computeroutput>; will return <computeroutput>defaultValue</computeroutput> if the option isn&apos;t found </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" line="117" column="5" declfile="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" declline="117" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="argparse_8h_1a1e343e24a835d2649f5fea664c5a9f59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float argparse::getFloatArgSecure</definition>
+        <argsstring>(string name, float defaultValue, int argc, char *argv[])</argsstring>
+        <name>getFloatArgSecure</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>defaultValue</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+<para>Gets the value of an argument option as a <computeroutput>float</computeroutput> </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Parses through arguments, and returns value of matching name of the format: <verbatim>             &lt;option&gt; &lt;value&gt; 
+</verbatim></para>
+<para>Where &lt;option&gt; is matched to <computeroutput>name</computeroutput>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>string</computeroutput> to match option with </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>defaultValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>float</computeroutput> representing the default value if the option isn&apos;t found </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>int</computeroutput> indicating the number of arguments </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of <computeroutput>char</computeroutput> arrays, representing string arguments </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>float</computeroutput>; will return <computeroutput>defaultValue</computeroutput> if the option isn&apos;t found </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" line="136" column="7" declfile="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" declline="136" declcolumn="7"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h" line="5" column="18"/>
+  </compounddef>
+</doxygen>

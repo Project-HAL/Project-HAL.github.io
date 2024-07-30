@@ -2,4 +2,4 @@ Argument Parser Module
 ======================
 
 
-.. doxygenfile:: argparse_8h
+.. doxygennamespace:: argparse

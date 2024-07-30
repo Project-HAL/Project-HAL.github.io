@@ -62,11 +62,13 @@
     <member refid="classElectrodeMap_1ac7d50e71926d638fffc3a0f8a0ebf9f2" kind="function"><name>readConfig</name></member>
   </compound>
   <compound refid="classWaveDetector" kind="class"><name>WaveDetector</name>
-    <member refid="classWaveDetector_1ae37efceef760363b45e15af7bd1895ff" kind="enum"><name>wave</name></member>
-    <member refid="classWaveDetector_1ae37efceef760363b45e15af7bd1895ffa0f6c6b9968eafca36014d956ff48740d" kind="enumvalue"><name>noBurst</name></member>
-    <member refid="classWaveDetector_1ae37efceef760363b45e15af7bd1895ffab16b272064669f9fa3bcd14704864404" kind="enumvalue"><name>burstStart</name></member>
-    <member refid="classWaveDetector_1ae37efceef760363b45e15af7bd1895ffa36cf5fb4c5a0d077e2c5beb30d36c5f0" kind="enumvalue"><name>right</name></member>
-    <member refid="classWaveDetector_1ae37efceef760363b45e15af7bd1895ffa3ac824eed8d6bf9e6aea3ba8ee7481be" kind="enumvalue"><name>left</name></member>
+    <member refid="classWaveDetector_1abc1726aea1cad86baef675ddded84fe8" kind="enum"><name>Wave</name></member>
+    <member refid="classWaveDetector_1abc1726aea1cad86baef675ddded84fe8a0f6c6b9968eafca36014d956ff48740d" kind="enumvalue"><name>noBurst</name></member>
+    <member refid="classWaveDetector_1abc1726aea1cad86baef675ddded84fe8a77aaeafde2f68f00f4d49debcb62dc13" kind="enumvalue"><name>bursting</name></member>
+    <member refid="classWaveDetector_1abc1726aea1cad86baef675ddded84fe8ab16b272064669f9fa3bcd14704864404" kind="enumvalue"><name>burstStart</name></member>
+    <member refid="classWaveDetector_1abc1726aea1cad86baef675ddded84fe8ac9a23b681fc13f21fe979d96c58bd3c6" kind="enumvalue"><name>endShortBurst</name></member>
+    <member refid="classWaveDetector_1abc1726aea1cad86baef675ddded84fe8a25a4f9ae018191235acb41137dfae933" kind="enumvalue"><name>leftToRight</name></member>
+    <member refid="classWaveDetector_1abc1726aea1cad86baef675ddded84fe8a8d8edd8f78d12864806a0bb2293df099" kind="enumvalue"><name>rightToLeft</name></member>
     <member refid="classWaveDetector_1ae03fdca0eb57d70c539af2b53946c657" kind="typedef"><name>WaveMetadata</name></member>
     <member refid="classWaveDetector_1a1b03f5ba903e44a002b8c38cb7d28880" kind="variable"><name>window</name></member>
     <member refid="classWaveDetector_1a3956713b66b71c3b9b38fc3349c23423" kind="variable"><name>metadata</name></member>
@@ -78,7 +80,7 @@
     <member refid="classWaveDetector_1aa8989a4e992b1017228f6ae4ef8a6b4a" kind="function"><name>WaveDetector</name></member>
     <member refid="classWaveDetector_1af493cc823e9388b83a3fc6bf8c48b159" kind="function"><name>~WaveDetector</name></member>
     <member refid="classWaveDetector_1aaa4806eeb2950412dbd779635a2f5667" kind="function"><name>shiftWindow</name></member>
-    <member refid="classWaveDetector_1a77c6c5e20338f99a95a1d5f675e7d23c" kind="function"><name>checkBurst</name></member>
+    <member refid="classWaveDetector_1a91b522b3335c62a1b498f5a4d09d1820" kind="function"><name>checkBurst</name></member>
   </compound>
   <compound refid="structWaveDetector_1_1WaveMetadata" kind="struct"><name>WaveDetector::WaveMetadata</name>
     <member refid="structWaveDetector_1_1WaveMetadata_1a25ffde91aa62fb0405b25fdc66ff5503" kind="variable"><name>firstBurstDone</name></member>
@@ -106,16 +108,18 @@
     <member refid="classWorldState_1aebe5afb7efc52de12be8fde4d3dc25d4" kind="function"><name>move_right</name></member>
     <member refid="classWorldState_1ad2231631de7f0a1ef4cd000f82d3f4bd" kind="function"><name>get_position</name></member>
   </compound>
+  <compound refid="namespaceargparse" kind="namespace"><name>argparse</name>
+    <member refid="argparse_8h_1abb7a363c940e66d2b40c984142c9c3bb" kind="function"><name>checkOption</name></member>
+    <member refid="argparse_8h_1a8686e113755409e373a4a1a3fc14d4bb" kind="function"><name>getStringArg</name></member>
+    <member refid="argparse_8h_1ad3582d96323be2fbf575a84d7389ff2a" kind="function"><name>getIntArg</name></member>
+    <member refid="argparse_8h_1addec61b6a5316d78c1ba9323ac715708" kind="function"><name>getFloatArg</name></member>
+    <member refid="argparse_8h_1ad841ae5c646c6db065086195ee0f3f57" kind="function"><name>getStringArgSecure</name></member>
+    <member refid="argparse_8h_1a8aeb19c1f3fc6aea50d7d625af8b8fbb" kind="function"><name>getIntArgSecure</name></member>
+    <member refid="argparse_8h_1a1e343e24a835d2649f5fea664c5a9f59" kind="function"><name>getFloatArgSecure</name></member>
+  </compound>
   <compound refid="namespacestd" kind="namespace"><name>std</name>
   </compound>
   <compound refid="argparse_8h" kind="file"><name>argparse.h</name>
-    <member refid="argparse_8h_1a064871532e98179817691d89b2a4e34d" kind="function"><name>checkOption</name></member>
-    <member refid="argparse_8h_1af5d91cb84bd0040233a7a590725f4fe9" kind="function"><name>getStringArg</name></member>
-    <member refid="argparse_8h_1a92858476903f8ccc8c5385453d6c4eb1" kind="function"><name>getIntArg</name></member>
-    <member refid="argparse_8h_1ac4e89233194a3d8f1135b70af7a06569" kind="function"><name>getFloatArg</name></member>
-    <member refid="argparse_8h_1a9c6a88f37b2c432fa85a66a204b660c8" kind="function"><name>getStringArgSecure</name></member>
-    <member refid="argparse_8h_1a15288c57f488608d672552830dd5a00c" kind="function"><name>getIntArgSecure</name></member>
-    <member refid="argparse_8h_1aa4cb08dd4f28eb50b7777d5bf111a284" kind="function"><name>getFloatArgSecure</name></member>
   </compound>
   <compound refid="channelWindow_8h" kind="file"><name>channelWindow.h</name>
   </compound>

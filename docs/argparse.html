@@ -53,8 +53,21 @@
 <li class="toctree-l2"><a class="reference internal" href="electrode-map.html"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap</span></code> Class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="channel-window.html"><code class="docutils literal notranslate"><span class="pre">ChannelWindow</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="controller.html"><code class="docutils literal notranslate"><span class="pre">Controller</span></code> Class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wave-detector.html"><code class="docutils literal notranslate"><span class="pre">WaveDetector</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="world-state.html"><code class="docutils literal notranslate"><span class="pre">WorldState</span></code> Class</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Argument Parser Module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Argument Parser Module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv48argparse"><code class="docutils literal notranslate"><span class="pre">argparse</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8argparse11checkOptionE6stringiA_Pc"><code class="docutils literal notranslate"><span class="pre">argparse::checkOption()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8argparse12getStringArgE6stringiA_Pc6string"><code class="docutils literal notranslate"><span class="pre">argparse::getStringArg()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8argparse9getIntArgE6stringiA_Pc6string"><code class="docutils literal notranslate"><span class="pre">argparse::getIntArg()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8argparse11getFloatArgE6stringiA_Pc6string"><code class="docutils literal notranslate"><span class="pre">argparse::getFloatArg()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8argparse18getStringArgSecureE6string6stringiA_Pc"><code class="docutils literal notranslate"><span class="pre">argparse::getStringArgSecure()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8argparse15getIntArgSecureE6stringiiA_Pc"><code class="docutils literal notranslate"><span class="pre">argparse::getIntArgSecure()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N8argparse17getFloatArgSecureE6stringfiA_Pc"><code class="docutils literal notranslate"><span class="pre">argparse::getFloatArgSecure()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -86,10 +99,176 @@
              
   <section id="argument-parser-module">
 <h1>Argument Parser Module<a class="headerlink" href="#argument-parser-module" title="Link to this heading"></a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenfile: Cannot find file “argparse_8h </p>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv48argparse">
+<span id="_CPPv38argparse"></span><span id="_CPPv28argparse"></span><span id="argparse"></span><span class="target" id="namespaceargparse"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">argparse</span></span></span><a class="headerlink" href="#_CPPv48argparse" title="Link to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8argparse11checkOptionE6stringiA_Pc">
+<span id="_CPPv3N8argparse11checkOptionE6stringiA_Pc"></span><span id="_CPPv2N8argparse11checkOptionE6stringiA_Pc"></span><span id="argparse::checkOption__string.i.cPA"></span><span class="target" id="argparse_8h_1abb7a363c940e66d2b40c984142c9c3bb"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">checkOption</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">name</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">argc</span></span>, <span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">argv</span></span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">]</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8argparse11checkOptionE6stringiA_Pc" title="Link to this definition"></a><br /></dt>
+<dd><p>Parses through arguments and checks if an option/flag exists. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – <code class="docutils literal notranslate"><span class="pre">string</span></code> to match option with </p></li>
+<li><p><strong>argc</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> representing the number of arguments </p></li>
+<li><p><strong>argv</strong> – array of <code class="docutils literal notranslate"><span class="pre">char</span></code> arrays, representing string arguments</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">bool</span></code> representing whether the flag exists. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8argparse12getStringArgE6stringiA_Pc6string">
+<span id="_CPPv3N8argparse12getStringArgE6stringiA_Pc6string"></span><span id="_CPPv2N8argparse12getStringArgE6stringiA_Pc6string"></span><span id="argparse::getStringArg__string.i.cPA.string"></span><span class="target" id="argparse_8h_1a8686e113755409e373a4a1a3fc14d4bb"></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getStringArg</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">name</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">argc</span></span>, <span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">argv</span></span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">]</span></span>, <span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">usage</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8argparse12getStringArgE6stringiA_Pc6string" title="Link to this definition"></a><br /></dt>
+<dd><p>Gets the value of an argument option as a <code class="docutils literal notranslate"><span class="pre">string</span></code></p>
+<p>Parses through arguments, and returns value of matching name of the format: <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>             <span class="o">&lt;</span><span class="n">option</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">value</span><span class="o">&gt;</span>
+</pre></div>
 </div>
+</p>
+<p>Where &lt;option&gt; is matched to <code class="docutils literal notranslate"><span class="pre">name</span></code>. This functions exits when the option isn’t found, and prints an optional usage message</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – <code class="docutils literal notranslate"><span class="pre">string</span></code> to match option with </p></li>
+<li><p><strong>argc</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> indicating the number of arguments </p></li>
+<li><p><strong>argv</strong> – array of <code class="docutils literal notranslate"><span class="pre">char</span></code> arrays, representing string arguments </p></li>
+<li><p><strong>usage</strong> – <code class="docutils literal notranslate"><span class="pre">string</span></code> representing an optional usage message, printed upon failure, default=<code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code></p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8argparse9getIntArgE6stringiA_Pc6string">
+<span id="_CPPv3N8argparse9getIntArgE6stringiA_Pc6string"></span><span id="_CPPv2N8argparse9getIntArgE6stringiA_Pc6string"></span><span id="argparse::getIntArg__string.i.cPA.string"></span><span class="target" id="argparse_8h_1ad3582d96323be2fbf575a84d7389ff2a"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getIntArg</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">name</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">argc</span></span>, <span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">argv</span></span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">]</span></span>, <span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">usage</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8argparse9getIntArgE6stringiA_Pc6string" title="Link to this definition"></a><br /></dt>
+<dd><p>Gets the value of an argument option as an <code class="docutils literal notranslate"><span class="pre">int</span></code></p>
+<p>Parses through arguments, and returns value of matching name of the format: <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>             <span class="o">&lt;</span><span class="n">option</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">value</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</p>
+<p>Where &lt;option&gt; is matched to <code class="docutils literal notranslate"><span class="pre">name</span></code>. This functions exits when the option isn’t found, and prints an optional usage message</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – <code class="docutils literal notranslate"><span class="pre">string</span></code> to match option with </p></li>
+<li><p><strong>argc</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> indicating the number of arguments </p></li>
+<li><p><strong>argv</strong> – array of <code class="docutils literal notranslate"><span class="pre">char</span></code> arrays, representing string arguments </p></li>
+<li><p><strong>usage</strong> – <code class="docutils literal notranslate"><span class="pre">string</span></code> representing an optional usage message, printed upon failure, default=<code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code></p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">int</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8argparse11getFloatArgE6stringiA_Pc6string">
+<span id="_CPPv3N8argparse11getFloatArgE6stringiA_Pc6string"></span><span id="_CPPv2N8argparse11getFloatArgE6stringiA_Pc6string"></span><span id="argparse::getFloatArg__string.i.cPA.string"></span><span class="target" id="argparse_8h_1addec61b6a5316d78c1ba9323ac715708"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getFloatArg</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">name</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">argc</span></span>, <span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">argv</span></span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">]</span></span>, <span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">usage</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8argparse11getFloatArgE6stringiA_Pc6string" title="Link to this definition"></a><br /></dt>
+<dd><p>Gets the value of an argument option as an <code class="docutils literal notranslate"><span class="pre">float</span></code></p>
+<p>Parses through arguments, and returns value of matching name of the format: <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>             <span class="o">&lt;</span><span class="n">option</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">value</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</p>
+<p>Where &lt;option&gt; is matched to <code class="docutils literal notranslate"><span class="pre">name</span></code>. This functions exits when the option isn’t found, and prints an optional usage message</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – <code class="docutils literal notranslate"><span class="pre">string</span></code> to match option with </p></li>
+<li><p><strong>argc</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> indicating the number of arguments </p></li>
+<li><p><strong>argv</strong> – array of <code class="docutils literal notranslate"><span class="pre">char</span></code> arrays, representing string arguments </p></li>
+<li><p><strong>usage</strong> – <code class="docutils literal notranslate"><span class="pre">string</span></code> representing an optional usage message, printed upon failure, default=<code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code></p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">float</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8argparse18getStringArgSecureE6string6stringiA_Pc">
+<span id="_CPPv3N8argparse18getStringArgSecureE6string6stringiA_Pc"></span><span id="_CPPv2N8argparse18getStringArgSecureE6string6stringiA_Pc"></span><span id="argparse::getStringArgSecure__string.string.i.cPA"></span><span class="target" id="argparse_8h_1ad841ae5c646c6db065086195ee0f3f57"></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getStringArgSecure</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">name</span></span>, <span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">defaultValue</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">argc</span></span>, <span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">argv</span></span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">]</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8argparse18getStringArgSecureE6string6stringiA_Pc" title="Link to this definition"></a><br /></dt>
+<dd><p>Gets the value of an argument option as a <code class="docutils literal notranslate"><span class="pre">string</span></code></p>
+<p>Parses through arguments, and returns value of matching name of the format: <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>             <span class="o">&lt;</span><span class="n">option</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">value</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</p>
+<p>Where &lt;option&gt; is matched to <code class="docutils literal notranslate"><span class="pre">name</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – <code class="docutils literal notranslate"><span class="pre">string</span></code> to match option with </p></li>
+<li><p><strong>defaultValue</strong> – <code class="docutils literal notranslate"><span class="pre">string</span></code> representing the default value if the option isn’t found </p></li>
+<li><p><strong>argc</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> indicating the number of arguments </p></li>
+<li><p><strong>argv</strong> – array of <code class="docutils literal notranslate"><span class="pre">char</span></code> arrays, representing string arguments </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">string</span></code>; will return <code class="docutils literal notranslate"><span class="pre">defaultValue</span></code> if the option isn’t found </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8argparse15getIntArgSecureE6stringiiA_Pc">
+<span id="_CPPv3N8argparse15getIntArgSecureE6stringiiA_Pc"></span><span id="_CPPv2N8argparse15getIntArgSecureE6stringiiA_Pc"></span><span id="argparse::getIntArgSecure__string.i.i.cPA"></span><span class="target" id="argparse_8h_1a8aeb19c1f3fc6aea50d7d625af8b8fbb"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getIntArgSecure</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">name</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">defaultValue</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">argc</span></span>, <span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">argv</span></span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">]</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8argparse15getIntArgSecureE6stringiiA_Pc" title="Link to this definition"></a><br /></dt>
+<dd><p>Gets the value of an argument option as a <code class="docutils literal notranslate"><span class="pre">int</span></code></p>
+<p>Parses through arguments, and returns value of matching name of the format: <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>             <span class="o">&lt;</span><span class="n">option</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">value</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</p>
+<p>Where &lt;option&gt; is matched to <code class="docutils literal notranslate"><span class="pre">name</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – <code class="docutils literal notranslate"><span class="pre">string</span></code> to match option with </p></li>
+<li><p><strong>defaultValue</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> representing the default value if the option isn’t found </p></li>
+<li><p><strong>argc</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> indicating the number of arguments </p></li>
+<li><p><strong>argv</strong> – array of <code class="docutils literal notranslate"><span class="pre">char</span></code> arrays, representing string arguments </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">int</span></code>; will return <code class="docutils literal notranslate"><span class="pre">defaultValue</span></code> if the option isn’t found </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8argparse17getFloatArgSecureE6stringfiA_Pc">
+<span id="_CPPv3N8argparse17getFloatArgSecureE6stringfiA_Pc"></span><span id="_CPPv2N8argparse17getFloatArgSecureE6stringfiA_Pc"></span><span id="argparse::getFloatArgSecure__string.float.i.cPA"></span><span class="target" id="argparse_8h_1a1e343e24a835d2649f5fea664c5a9f59"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getFloatArgSecure</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">name</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">defaultValue</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">argc</span></span>, <span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">argv</span></span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">]</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8argparse17getFloatArgSecureE6stringfiA_Pc" title="Link to this definition"></a><br /></dt>
+<dd><p>Gets the value of an argument option as a <code class="docutils literal notranslate"><span class="pre">float</span></code></p>
+<p>Parses through arguments, and returns value of matching name of the format: <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>             <span class="o">&lt;</span><span class="n">option</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">value</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</p>
+<p>Where &lt;option&gt; is matched to <code class="docutils literal notranslate"><span class="pre">name</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – <code class="docutils literal notranslate"><span class="pre">string</span></code> to match option with </p></li>
+<li><p><strong>defaultValue</strong> – <code class="docutils literal notranslate"><span class="pre">float</span></code> representing the default value if the option isn’t found </p></li>
+<li><p><strong>argc</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> indicating the number of arguments </p></li>
+<li><p><strong>argv</strong> – array of <code class="docutils literal notranslate"><span class="pre">char</span></code> arrays, representing string arguments </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">float</span></code>; will return <code class="docutils literal notranslate"><span class="pre">defaultValue</span></code> if the option isn’t found </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 
 

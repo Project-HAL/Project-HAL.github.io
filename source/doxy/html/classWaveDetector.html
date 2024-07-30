@@ -78,12 +78,17 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ae37efceef760363b45e15af7bd1895ff"><td class="memItemLeft" align="right" valign="top"><a id="ae37efceef760363b45e15af7bd1895ff"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>wave</b> { <b>noBurst</b>, 
+<tr class="memitem:abc1726aea1cad86baef675ddded84fe8"><td class="memItemLeft" align="right" valign="top"><a id="abc1726aea1cad86baef675ddded84fe8"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Wave</b> { <br />
+&#160;&#160;<b>noBurst</b>, 
+<b>bursting</b>, 
 <b>burstStart</b>, 
-<b>right</b>, 
-<b>left</b>
+<b>endShortBurst</b>, 
+<br />
+&#160;&#160;<b>leftToRight</b>, 
+<b>rightToLeft</b>
+<br />
  }</td></tr>
-<tr class="separator:ae37efceef760363b45e15af7bd1895ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:abc1726aea1cad86baef675ddded84fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae03fdca0eb57d70c539af2b53946c657"><td class="memItemLeft" align="right" valign="top"><a id="ae03fdca0eb57d70c539af2b53946c657"></a>
 typedef struct <a class="el" href="structWaveDetector_1_1WaveMetadata.html">WaveMetadata</a>&#160;</td><td class="memItemRight" valign="bottom"><b>WaveMetadata</b></td></tr>
 <tr class="separator:ae03fdca0eb57d70c539af2b53946c657"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -100,9 +105,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aaa4806eeb2950412dbd779635a2f5667"><td class="memItemLeft" align="right" valign="top"><a id="aaa4806eeb2950412dbd779635a2f5667"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>shiftWindow</b> (maxlab::FilteredFrameData frame)</td></tr>
 <tr class="separator:aaa4806eeb2950412dbd779635a2f5667"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77c6c5e20338f99a95a1d5f675e7d23c"><td class="memItemLeft" align="right" valign="top"><a id="a77c6c5e20338f99a95a1d5f675e7d23c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>checkBurst</b> ()</td></tr>
-<tr class="separator:a77c6c5e20338f99a95a1d5f675e7d23c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91b522b3335c62a1b498f5a4d09d1820"><td class="memItemLeft" align="right" valign="top"><a id="a91b522b3335c62a1b498f5a4d09d1820"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>checkBurst</b> (int frameNo)</td></tr>
+<tr class="separator:a91b522b3335c62a1b498f5a4d09d1820"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/mxwbio/Desktop/HAL/bin/lib/include/<a class="el" href="waveDetector_8h_source.html">waveDetector.h</a></li>
