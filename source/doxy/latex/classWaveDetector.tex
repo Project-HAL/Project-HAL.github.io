@@ -34,6 +34,10 @@ typedef struct \mbox{\hyperlink{structWaveDetector_1_1WaveMetadata}{Wave\+Metada
 \begin{DoxyCompactList}\small\item\em Destroys the Wave Detector Object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classWaveDetector_aaa4806eeb2950412dbd779635a2f5667}{shift\+Window}} (maxlab\+::\+Filtered\+Frame\+Data frame)
 \begin{DoxyCompactList}\small\item\em Shifts the window, adding a new frame. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChannelWindow}{Channel\+Window}} \mbox{\hyperlink{classWaveDetector_a62dc99badd932e00bfa5b8dcc20a0893}{window}} ()
+\begin{DoxyCompactList}\small\item\em Returns the window. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classWaveDetector_adc15bccbffc715f743bb9c7f0d27d5f8}{process\+Frame}} (maxlab\+::\+Filtered\+Frame\+Data frame, int frame\+No)
+\begin{DoxyCompactList}\small\item\em Processes a frame. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classWaveDetector_a91b522b3335c62a1b498f5a4d09d1820}{check\+Burst}} (int frame\+No)
 \begin{DoxyCompactList}\small\item\em Checks the direction of a burst. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -122,6 +126,28 @@ Checks the direction of a burst.
 \begin{DoxyReturn}{Returns}
 {\ttfamily int}, corresponds to {\ttfamily enum Wave} 
 \end{DoxyReturn}
+\mbox{\Hypertarget{classWaveDetector_adc15bccbffc715f743bb9c7f0d27d5f8}\label{classWaveDetector_adc15bccbffc715f743bb9c7f0d27d5f8}} 
+\index{WaveDetector@{WaveDetector}!processFrame@{processFrame}}
+\index{processFrame@{processFrame}!WaveDetector@{WaveDetector}}
+\doxysubsubsection{\texorpdfstring{processFrame()}{processFrame()}}
+{\footnotesize\ttfamily int Wave\+Detector\+::process\+Frame (\begin{DoxyParamCaption}\item[{maxlab\+::\+Filtered\+Frame\+Data}]{frame,  }\item[{int}]{frame\+No }\end{DoxyParamCaption})}
+
+
+
+Processes a frame. 
+
+Shifts the window, and returns the status of the burst
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & {\ttfamily maxlab\+::\+Filtered\+Frame\+Data} frame to process \\
+\hline
+{\em frame\+No} & {\ttfamily int} frame number when {\ttfamily frame} was received \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily int} 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classWaveDetector_aaa4806eeb2950412dbd779635a2f5667}\label{classWaveDetector_aaa4806eeb2950412dbd779635a2f5667}} 
 \index{WaveDetector@{WaveDetector}!shiftWindow@{shiftWindow}}
 \index{shiftWindow@{shiftWindow}!WaveDetector@{WaveDetector}}
@@ -137,6 +163,19 @@ Shifts the window, adding a new frame.
 {\em frame} & {\ttfamily maxlab\+::\+Filtered\+Frame\+Data} frame to add to the window \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classWaveDetector_a62dc99badd932e00bfa5b8dcc20a0893}\label{classWaveDetector_a62dc99badd932e00bfa5b8dcc20a0893}} 
+\index{WaveDetector@{WaveDetector}!window@{window}}
+\index{window@{window}!WaveDetector@{WaveDetector}}
+\doxysubsubsection{\texorpdfstring{window()}{window()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classChannelWindow}{Channel\+Window}} Wave\+Detector\+::window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the window. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily \mbox{\hyperlink{classChannelWindow}{Channel\+Window}}} 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

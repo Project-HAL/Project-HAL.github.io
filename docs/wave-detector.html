@@ -61,6 +61,8 @@
 <li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12WaveDetector12WaveDetectorEiPKcfii"><code class="docutils literal notranslate"><span class="pre">WaveDetector::WaveDetector()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12WaveDetectorD0Ev"><code class="docutils literal notranslate"><span class="pre">WaveDetector::~WaveDetector()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12WaveDetector11shiftWindowEN6maxlab17FilteredFrameDataE"><code class="docutils literal notranslate"><span class="pre">WaveDetector::shiftWindow()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12WaveDetector6windowEv"><code class="docutils literal notranslate"><span class="pre">WaveDetector::window()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12WaveDetector12processFrameEN6maxlab17FilteredFrameDataEi"><code class="docutils literal notranslate"><span class="pre">WaveDetector::processFrame()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12WaveDetector10checkBurstEi"><code class="docutils literal notranslate"><span class="pre">WaveDetector::checkBurst()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12WaveDetector12WaveMetadataE"><code class="docutils literal notranslate"><span class="pre">WaveDetector::WaveMetadata</span></code></a></li>
 </ul>
@@ -187,6 +189,35 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>frame</strong> – <code class="docutils literal notranslate"><span class="pre">maxlab::FilteredFrameData</span></code> frame to add to the window </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector6windowEv">
+<span id="_CPPv3N12WaveDetector6windowEv"></span><span id="_CPPv2N12WaveDetector6windowEv"></span><span id="WaveDetector::window"></span><span class="target" id="classWaveDetector_1a62dc99badd932e00bfa5b8dcc20a0893"></span><a class="reference internal" href="channel-window.html#_CPPv413ChannelWindow" title="ChannelWindow"><span class="n"><span class="pre">ChannelWindow</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">window</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12WaveDetector6windowEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Returns the window. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><a class="reference internal" href="channel-window.html#classChannelWindow"><span class="std std-ref"><span class="pre">ChannelWindow</span></span></a></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector12processFrameEN6maxlab17FilteredFrameDataEi">
+<span id="_CPPv3N12WaveDetector12processFrameEN6maxlab17FilteredFrameDataEi"></span><span id="_CPPv2N12WaveDetector12processFrameEN6maxlab17FilteredFrameDataEi"></span><span id="WaveDetector::processFrame__maxlab::FilteredFrameData.i"></span><span class="target" id="classWaveDetector_1adc15bccbffc715f743bb9c7f0d27d5f8"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">processFrame</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">maxlab</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">FilteredFrameData</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">frame</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">frameNo</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12WaveDetector12processFrameEN6maxlab17FilteredFrameDataEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Processes a frame. </p>
+<p>Shifts the window, and returns the status of the burst</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>frame</strong> – <code class="docutils literal notranslate"><span class="pre">maxlab::FilteredFrameData</span></code> frame to process </p></li>
+<li><p><strong>frameNo</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> frame number when <code class="docutils literal notranslate"><span class="pre">frame</span></code> was received </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">int</span></code></p>
 </dd>
 </dl>
 </dd></dl>

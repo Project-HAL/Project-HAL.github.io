@@ -80,6 +80,8 @@
     <member refid="classWaveDetector_1aa8989a4e992b1017228f6ae4ef8a6b4a" kind="function"><name>WaveDetector</name></member>
     <member refid="classWaveDetector_1af493cc823e9388b83a3fc6bf8c48b159" kind="function"><name>~WaveDetector</name></member>
     <member refid="classWaveDetector_1aaa4806eeb2950412dbd779635a2f5667" kind="function"><name>shiftWindow</name></member>
+    <member refid="classWaveDetector_1a62dc99badd932e00bfa5b8dcc20a0893" kind="function"><name>window</name></member>
+    <member refid="classWaveDetector_1adc15bccbffc715f743bb9c7f0d27d5f8" kind="function"><name>processFrame</name></member>
     <member refid="classWaveDetector_1a91b522b3335c62a1b498f5a4d09d1820" kind="function"><name>checkBurst</name></member>
   </compound>
   <compound refid="structWaveDetector_1_1WaveMetadata" kind="struct"><name>WaveDetector::WaveMetadata</name>

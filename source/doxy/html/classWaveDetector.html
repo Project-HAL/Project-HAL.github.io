@@ -111,6 +111,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aaa4806eeb2950412dbd779635a2f5667"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWaveDetector.html#aaa4806eeb2950412dbd779635a2f5667">shiftWindow</a> (maxlab::FilteredFrameData frame)</td></tr>
 <tr class="memdesc:aaa4806eeb2950412dbd779635a2f5667"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shifts the window, adding a new frame.  <a href="classWaveDetector.html#aaa4806eeb2950412dbd779635a2f5667">More...</a><br /></td></tr>
 <tr class="separator:aaa4806eeb2950412dbd779635a2f5667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62dc99badd932e00bfa5b8dcc20a0893"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classChannelWindow.html">ChannelWindow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWaveDetector.html#a62dc99badd932e00bfa5b8dcc20a0893">window</a> ()</td></tr>
+<tr class="memdesc:a62dc99badd932e00bfa5b8dcc20a0893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the window.  <a href="classWaveDetector.html#a62dc99badd932e00bfa5b8dcc20a0893">More...</a><br /></td></tr>
+<tr class="separator:a62dc99badd932e00bfa5b8dcc20a0893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc15bccbffc715f743bb9c7f0d27d5f8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWaveDetector.html#adc15bccbffc715f743bb9c7f0d27d5f8">processFrame</a> (maxlab::FilteredFrameData frame, int frameNo)</td></tr>
+<tr class="memdesc:adc15bccbffc715f743bb9c7f0d27d5f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes a frame.  <a href="classWaveDetector.html#adc15bccbffc715f743bb9c7f0d27d5f8">More...</a><br /></td></tr>
+<tr class="separator:adc15bccbffc715f743bb9c7f0d27d5f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91b522b3335c62a1b498f5a4d09d1820"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWaveDetector.html#a91b522b3335c62a1b498f5a4d09d1820">checkBurst</a> (int frameNo)</td></tr>
 <tr class="memdesc:a91b522b3335c62a1b498f5a4d09d1820"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks the direction of a burst.  <a href="classWaveDetector.html#a91b522b3335c62a1b498f5a4d09d1820">More...</a><br /></td></tr>
 <tr class="separator:a91b522b3335c62a1b498f5a4d09d1820"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -233,6 +239,45 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="adc15bccbffc715f743bb9c7f0d27d5f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc15bccbffc715f743bb9c7f0d27d5f8">&#9670;&nbsp;</a></span>processFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int WaveDetector::processFrame </td>
+          <td>(</td>
+          <td class="paramtype">maxlab::FilteredFrameData&#160;</td>
+          <td class="paramname"><em>frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frameNo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Processes a frame. </p>
+<p>Shifts the window, and returns the status of the burst</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame</td><td><code>maxlab::FilteredFrameData</code> frame to process </td></tr>
+    <tr><td class="paramname">frameNo</td><td><code>int</code> frame number when <code>frame</code> was received </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>int</code> </dd></dl>
+
+</div>
+</div>
 <a id="aaa4806eeb2950412dbd779635a2f5667"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaa4806eeb2950412dbd779635a2f5667">&#9670;&nbsp;</a></span>shiftWindow()</h2>
 
@@ -256,6 +301,26 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a62dc99badd932e00bfa5b8dcc20a0893"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62dc99badd932e00bfa5b8dcc20a0893">&#9670;&nbsp;</a></span>window()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classChannelWindow.html">ChannelWindow</a> WaveDetector::window </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the window. </p>
+<dl class="section return"><dt>Returns</dt><dd><code><a class="el" href="classChannelWindow.html">ChannelWindow</a></code> </dd></dl>
 
 </div>
 </div>
