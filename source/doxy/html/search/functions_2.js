@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['debug_38',['debug',['../classChannelWindow.html#a47a4bd5f2102f104b0bbcf521f6be58f',1,'ChannelWindow']]]
+  ['debug_42',['debug',['../classChannelWindow.html#a47a4bd5f2102f104b0bbcf521f6be58f',1,'ChannelWindow']]]
 ];

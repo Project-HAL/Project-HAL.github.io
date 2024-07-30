@@ -6,6 +6,7 @@
     <includes local="no">stdlib.h</includes>
     <includes local="no">map</includes>
     <includedby refid="channelWindow_8h" local="no">/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h</includedby>
+    <includedby refid="waveDetector_8h" local="yes">/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h</includedby>
     <incdepgraph>
       <node id="1">
         <label>/home/mxwbio/Desktop/HAL/bin/lib/include/electrodeMap.h</label>
@@ -33,6 +34,12 @@
         <link refid="electrodeMap_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h</label>
+        <link refid="waveDetector_8h_source"/>
       </node>
       <node id="4">
         <label>/home/mxwbio/Desktop/HAL/bin/lib/include/hal.h</label>
@@ -44,6 +51,8 @@
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
         </childnode>
       </node>
       <node id="3">

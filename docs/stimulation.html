@@ -67,6 +67,7 @@
 <li class="toctree-l2"><a class="reference internal" href="world_stimulation.html"><code class="docutils literal notranslate"><span class="pre">world_stimulation</span></code></a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="c-modules.html">C++ Modules</a></li>
 </ul>
 
         </div>
@@ -117,7 +118,7 @@ It remains unclear whether the sample rate is always 20000 samples per second wh
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>initial_delay</strong> (<code class="docutils literal notranslate"><span class="pre">float</span></code>) – Defaults to <code class="docutils literal notranslate"><span class="pre">5</span></code></p></li>
+<li><p><strong>initial_delay</strong> (<code class="docutils literal notranslate"><span class="pre">float</span></code>) – The delay time in ms for downloading the stim sequence. Defaults to <code class="docutils literal notranslate"><span class="pre">5</span></code></p></li>
 <li><p><strong>persistent</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) – Defaults to <code class="docutils literal notranslate"><span class="pre">True</span></code></p></li>
 </ul>
 </dd>
@@ -153,7 +154,7 @@ It remains unclear whether the sample rate is always 20000 samples per second wh
 <dt class="sig sig-object py" id="stimulation.Stimulation">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">stimulation.</span></span><span class="sig-name descname"><span class="pre">Stimulation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dac_source</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitude</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phase</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">500</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pulses_per_train</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_trains</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pulse_interval</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pulse_train_interval</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stim_units</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">well</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stimulation.Stimulation" title="Link to this definition"></a></dt>
 <dd><p>Bases: <a class="reference internal" href="#stimulation.ArbitraryStimulation" title="stimulation.ArbitraryStimulation"><code class="xref py py-class docutils literal notranslate"><span class="pre">ArbitraryStimulation</span></code></a></p>
-<p>_summary_</p>
+<p>Class that represents a regular stimulation,, as created by the MaxLab GUI.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -167,25 +168,32 @@ It remains unclear whether the sample rate is always 20000 samples per second wh
 <li><p><strong>pulse_train_interval</strong> (<code class="docutils literal notranslate"><span class="pre">float</span></code>, optional) – Time between pulse trains, in s. Suggested values between 0.01 and 10. Defaults to 1.</p></li>
 <li><p><strong>stim_units</strong> (<code class="docutils literal notranslate"><span class="pre">Optional[List[int]]</span></code>, optional) – List of stimulation stim_units. Must have a length of less than 32. If None, just sends stimuli to the desired DAC channel. Otherwise, powering on and off stim units is included in the sequence.
 IF THIS IS USED, ENSURE THAT ALL STIM_UNITS ARE POWERED OFF TO BEGIN WITH.</p></li>
-<li><p><strong>well</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, optional) – _description_, defaults to 0</p></li>
+<li><p><strong>well</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, optional) – The well number, used for Events, defaults to 0</p></li>
 </ul>
 </dd>
 </dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="stimulation.Stimulation.combine_stimuli">
 <em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">combine_stimuli</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stim1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stim2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#stimulation.ArbitraryStimulation" title="stimulation.ArbitraryStimulation"><span class="pre">ArbitraryStimulation</span></a></span></span><a class="headerlink" href="#stimulation.Stimulation.combine_stimuli" title="Link to this definition"></a></dt>
-<dd><p>Combine two Stimulation objects into a sequence that runs them simultaneously.</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>stim1 (Self): The Stimulation object to run through dac source 0.
-stim2 (Self): The Stimulation object to run through dac source 1.
-token (str): The unique identifier token for the sequence.
-initial_delay (float, optional): The delay before the sequence, in ms. Defaults to 5.
-persistent(bool, optional): Whether or not the sequence exists on the server after its scope is complete. Defaults to True.
-maxtwo (bool, optional): whether or not the maxtwo is being used. If True, fps is equal to 10000.</p>
+<dd><dl class="simple">
+<dt>Combine two <code class="docutils literal notranslate"><span class="pre">Stimulation</span></code> objects into a sequence that runs them simultaneously.</dt><dd><p>NOTE: A more general version of this function may be written to support combining arbitrary stimuli, not just <code class="docutils literal notranslate"><span class="pre">Stimulation</span></code> objects.
+Currently, this code depends on <code class="docutils literal notranslate"><span class="pre">mx.Event</span></code> objects of a specific format to determine when stimuli start and end, making it inappropriate for general use.
+Not configured to deal with <code class="docutils literal notranslate"><span class="pre">mx.DelayCycles</span></code> objects.</p>
 </dd>
-<dt>Returns:</dt><dd><p>ArbitraryStimulation: The ArbitraryStimulation object that runs both stim1 and stim2 simultaneously.</p>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>stim1</strong> (<code class="docutils literal notranslate"><span class="pre">Self</span></code>) – The first <code class="docutils literal notranslate"><span class="pre">Stimulation</span></code> object.</p></li>
+<li><p><strong>stim2</strong> (<code class="docutils literal notranslate"><span class="pre">Self</span></code>) – The second <code class="docutils literal notranslate"><span class="pre">Stimulation</span></code> object.</p></li>
+<li><p><strong>token</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – The unique identifier token for the sequence.</p></li>
+</ul>
 </dd>
-<dt>Notes:</dt><dd><p>Not configured to deal with <code class="docutils literal notranslate"><span class="pre">mx.DelayCycles</span></code> objects.</p>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>An ArbitraryStimulation object combining the two <code class="docutils literal notranslate"><span class="pre">Stimulation</span></code> objects.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">ArbitraryStimulation</span></code></p>
 </dd>
 </dl>
 </dd></dl>
@@ -193,21 +201,27 @@ maxtwo (bool, optional): whether or not the maxtwo is being used. If True, fps i
 <dl class="py method">
 <dt class="sig sig-object py" id="stimulation.Stimulation.from_frequency">
 <em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_frequency</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dac_source</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitude</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_trains</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pulse_train_interval</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stim_units</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxtwo</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">well</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Self</span></span></span><a class="headerlink" href="#stimulation.Stimulation.from_frequency" title="Link to this definition"></a></dt>
-<dd><p>constructor method, using frequency and duration instead of phase and pulses per train.</p>
-<dl>
-<dt>Args:</dt><dd><p>token (str): unique identifier
-dac_source (int): The DAC channel to send signals to. Must be 0, 1, or 2 to send to a single DAC channel.
-frequency (float): Stimulation frequency, in Hz.
-duration (float): How long the stimulus should last (for a single train), in s.
-amplitude (float, optional): Amplitude of oscillation, in mV. Suggested value between 0 and 1000. Defaults to 100.
-num_trains (int, optional): Number of pulse trains. Defaults to 1.
-pulse_train_interval (float, optional): Time between pulse trains, in s. Defaults to 1.
-stim_units (list, optional): List of stimulation stim_units. Must have a length of less than 32. If None, just sends stimuli to the desired DAC channel. Otherwise, powering on and off stim units is included in the sequence.</p>
-<blockquote>
-<div><p>IF THIS IS USED, ENSURE THAT ALL STIM_UNITS ARE POWERED OFF TO BEGIN WITH.</p>
-</div></blockquote>
+<dd><p>_summary_</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>token</strong> (<em>str</em>) – _description_</p></li>
+<li><p><strong>dac_source</strong> (<em>int</em>) – _description_</p></li>
+<li><p><strong>frequency</strong> (<em>float</em>) – _description_</p></li>
+<li><p><strong>duration</strong> (<em>float</em>) – _description_</p></li>
+<li><p><strong>amplitude</strong> (<em>float</em><em>, </em><em>optional</em>) – _description_, defaults to 100</p></li>
+<li><p><strong>num_trains</strong> (<em>int</em><em>, </em><em>optional</em>) – _description_, defaults to 1</p></li>
+<li><p><strong>pulse_train_interval</strong> (<em>float</em><em>, </em><em>optional</em>) – _description_, defaults to 1</p></li>
+<li><p><strong>stim_units</strong> (<em>Optional</em><em>[</em><em>List</em><em>[</em><em>int</em><em>]</em><em>]</em><em>, </em><em>optional</em>) – _description_, defaults to None</p></li>
+<li><p><strong>maxtwo</strong> (<em>bool</em><em>, </em><em>optional</em>) – _description_, defaults to False</p></li>
+<li><p><strong>well</strong> (<em>int</em><em>, </em><em>optional</em>) – _description_, defaults to 0</p></li>
+</ul>
 </dd>
-<dt>Returns:</dt><dd><p>Self: A Stimulation object.</p>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>_description_</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Self</p>
 </dd>
 </dl>
 </dd></dl>

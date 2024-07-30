@@ -1,0 +1,5 @@
+``WaveDetecor``
+=================
+
+.. doxygenclass:: WaveDetector
+    :members:

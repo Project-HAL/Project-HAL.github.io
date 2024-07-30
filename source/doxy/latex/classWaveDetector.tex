@@ -1,0 +1,40 @@
+\hypertarget{classWaveDetector}{}\doxysection{Wave\+Detector Class Reference}
+\label{classWaveDetector}\index{WaveDetector@{WaveDetector}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structWaveDetector_1_1WaveMetadata}{Wave\+Metadata}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classWaveDetector_ae37efceef760363b45e15af7bd1895ff}\label{classWaveDetector_ae37efceef760363b45e15af7bd1895ff}} 
+enum {\bfseries wave} \{ {\bfseries no\+Burst}, 
+{\bfseries burst\+Start}, 
+{\bfseries right}, 
+{\bfseries left}
+ \}
+\item 
+\mbox{\Hypertarget{classWaveDetector_ae03fdca0eb57d70c539af2b53946c657}\label{classWaveDetector_ae03fdca0eb57d70c539af2b53946c657}} 
+typedef struct \mbox{\hyperlink{structWaveDetector_1_1WaveMetadata}{Wave\+Metadata}} {\bfseries Wave\+Metadata}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classWaveDetector_a9dc0fec49023ac3a388568180575ee7d}\label{classWaveDetector_a9dc0fec49023ac3a388568180575ee7d}} 
+\mbox{\hyperlink{classWaveDetector_a9dc0fec49023ac3a388568180575ee7d}{Wave\+Detector}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWaveDetector_aa8989a4e992b1017228f6ae4ef8a6b4a}\label{classWaveDetector_aa8989a4e992b1017228f6ae4ef8a6b4a}} 
+{\bfseries Wave\+Detector} (int window\+Length, const char $\ast$config\+Path, float threshold, int min\+Frames, int frame\+Hz=10000)
+\item 
+\mbox{\Hypertarget{classWaveDetector_aaa4806eeb2950412dbd779635a2f5667}\label{classWaveDetector_aaa4806eeb2950412dbd779635a2f5667}} 
+void {\bfseries shift\+Window} (maxlab\+::\+Filtered\+Frame\+Data frame)
+\item 
+\mbox{\Hypertarget{classWaveDetector_a77c6c5e20338f99a95a1d5f675e7d23c}\label{classWaveDetector_a77c6c5e20338f99a95a1d5f675e7d23c}} 
+void {\bfseries check\+Burst} ()
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/mxwbio/\+Desktop/\+H\+A\+L/bin/lib/include/wave\+Detector.\+h\end{DoxyCompactItemize}
