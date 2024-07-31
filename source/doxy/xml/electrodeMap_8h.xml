@@ -40,6 +40,8 @@
       <node id="5">
         <label>/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h</label>
         <link refid="waveDetector_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
       </node>
       <node id="4">
         <label>/home/mxwbio/Desktop/HAL/bin/lib/include/hal.h</label>

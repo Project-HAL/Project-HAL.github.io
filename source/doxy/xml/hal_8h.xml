@@ -6,6 +6,7 @@
     <includes refid="controller_8h" local="yes">controller.h</includes>
     <includes refid="argparse_8h" local="yes">argparse.h</includes>
     <includes refid="worldstate_8h" local="yes">worldstate.h</includes>
+    <includes refid="waveDetector_8h" local="yes">waveDetector.h</includes>
     <incdepgraph>
       <node id="13">
         <label>worldstate.h</label>
@@ -32,6 +33,30 @@
       <node id="5">
         <label>stdlib.h</label>
       </node>
+      <node id="14">
+        <label>waveDetector.h</label>
+        <link refid="waveDetector_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
       <node id="1">
         <label>/home/mxwbio/Desktop/HAL/bin/lib/include/hal.h</label>
         <link refid="hal_8h"/>
@@ -42,6 +67,8 @@
         <childnode refid="12" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
         </childnode>
       </node>
       <node id="3">
@@ -89,6 +116,9 @@
       <node id="7">
         <label>vector</label>
       </node>
+      <node id="15">
+        <label>utility</label>
+      </node>
       <node id="9">
         <label>iostream</label>
       </node>
@@ -101,7 +131,8 @@
 <codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;channelWindow.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;controller.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;argparse.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;worldstate.h&quot;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;worldstate.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;waveDetector.h&quot;</highlight></codeline>
     </programlisting>
     <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/hal.h"/>
   </compounddef>
