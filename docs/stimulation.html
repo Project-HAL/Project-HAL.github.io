@@ -101,8 +101,7 @@
 <dt class="sig sig-object py" id="stimulation.ArbitraryStimulation">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">stimulation.</span></span><span class="sig-name descname"><span class="pre">ArbitraryStimulation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sequence_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">ApiObject</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#stimulation.ArbitraryStimulation" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<p>A class that holds any stimulation that could be passed to the MaxLab system. Initialized with a list of <code class="docutils literal notranslate"><span class="pre">ApiObject</span></code>. 
-It remains unclear whether the sample rate is always 20000 samples per second when generating stimuli, regardless of the system being used.</p>
+<p>A class that holds any stimulation that could be passed to the MaxLab system. Initialized with a list of <code class="docutils literal notranslate"><span class="pre">ApiObject</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -167,7 +166,7 @@ It remains unclear whether the sample rate is always 20000 samples per second wh
 <li><p><strong>pulse_interval</strong> (<code class="docutils literal notranslate"><span class="pre">float</span></code>, optional) – Time between pulses within a single train, in ms. Suggested values between 1 and 100. Defaults to 10.</p></li>
 <li><p><strong>pulse_train_interval</strong> (<code class="docutils literal notranslate"><span class="pre">float</span></code>, optional) – Time between pulse trains, in s. Suggested values between 0.01 and 10. Defaults to 1.</p></li>
 <li><p><strong>stim_units</strong> (<code class="docutils literal notranslate"><span class="pre">Optional[List[int]]</span></code>, optional) – List of stimulation stim_units. Must have a length of less than 32. If None, just sends stimuli to the desired DAC channel. Otherwise, powering on and off stim units is included in the sequence.
-IF THIS IS USED, ENSURE THAT ALL STIM_UNITS ARE POWERED OFF TO BEGIN WITH.</p></li>
+If this is used, ensure that all stimulation units are powered off to begin with.</p></li>
 <li><p><strong>well</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, optional) – The well number, used for Events, defaults to 0</p></li>
 </ul>
 </dd>
