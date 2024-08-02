@@ -1,0 +1,113 @@
+\hypertarget{structWaveMetadata}{}\doxysection{Wave\+Metadata Struct Reference}
+\label{structWaveMetadata}\index{WaveMetadata@{WaveMetadata}}
+
+
+Wave metadata struct.  
+
+
+
+
+{\ttfamily \#include $<$wave\+Detector.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{structWaveMetadata_a43a936bf37b698240e83c73819247b9d}{first\+Burst\+Done}}
+\item 
+bool \mbox{\hyperlink{structWaveMetadata_ab09b017cfcc62db1c282c262ee3cd1d3}{bursting}}
+\item 
+int \mbox{\hyperlink{structWaveMetadata_a857e1700fe32cab15307c18d4cf499f2}{spike\+Frame\+Count}}
+\item 
+int \mbox{\hyperlink{structWaveMetadata_a377df28397310e46bd25375c4f89aabc}{no\+Spike\+Frame\+Count}}
+\item 
+int \mbox{\hyperlink{structWaveMetadata_aec901b9f2e38c055ec36b9bec7bcdd64}{burst\+Start\+Location}}
+\item 
+int \mbox{\hyperlink{structWaveMetadata_a9745a6c8ee53db6c94b5ff097631fe13}{burst\+Start\+Spike\+Count}}
+\item 
+int \mbox{\hyperlink{structWaveMetadata_a6b0f00082439f4d29b65e8c317e3cfad}{burst\+Start\+Frame}}
+\item 
+int \mbox{\hyperlink{structWaveMetadata_a469255c7ca660587882cbe3596924d3e}{burst\+End}}
+\item 
+int \mbox{\hyperlink{structWaveMetadata_af3825d5da4ee2e0bc8de5c7bb4851131}{max\+Spikes}}
+\item 
+int \mbox{\hyperlink{structWaveMetadata_afb0a2e151d03d4b71fffc98d8adddfa7}{max\+Spikes\+Frame}}
+\item 
+float \mbox{\hyperlink{structWaveMetadata_ad98b293bc7abfa090b8c89fa9651d165}{max\+Spikes\+Loc}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Wave metadata struct. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structWaveMetadata_a469255c7ca660587882cbe3596924d3e}\label{structWaveMetadata_a469255c7ca660587882cbe3596924d3e}} 
+\index{WaveMetadata@{WaveMetadata}!burstEnd@{burstEnd}}
+\index{burstEnd@{burstEnd}!WaveMetadata@{WaveMetadata}}
+\doxysubsubsection{\texorpdfstring{burstEnd}{burstEnd}}
+{\footnotesize\ttfamily int Wave\+Metadata\+::burst\+End}
+
+frame when the last burst ended \mbox{\Hypertarget{structWaveMetadata_ab09b017cfcc62db1c282c262ee3cd1d3}\label{structWaveMetadata_ab09b017cfcc62db1c282c262ee3cd1d3}} 
+\index{WaveMetadata@{WaveMetadata}!bursting@{bursting}}
+\index{bursting@{bursting}!WaveMetadata@{WaveMetadata}}
+\doxysubsubsection{\texorpdfstring{bursting}{bursting}}
+{\footnotesize\ttfamily bool Wave\+Metadata\+::bursting}
+
+indicates if currently bursting \mbox{\Hypertarget{structWaveMetadata_a6b0f00082439f4d29b65e8c317e3cfad}\label{structWaveMetadata_a6b0f00082439f4d29b65e8c317e3cfad}} 
+\index{WaveMetadata@{WaveMetadata}!burstStartFrame@{burstStartFrame}}
+\index{burstStartFrame@{burstStartFrame}!WaveMetadata@{WaveMetadata}}
+\doxysubsubsection{\texorpdfstring{burstStartFrame}{burstStartFrame}}
+{\footnotesize\ttfamily int Wave\+Metadata\+::burst\+Start\+Frame}
+
+starting frame of the current or most recent burst \mbox{\Hypertarget{structWaveMetadata_aec901b9f2e38c055ec36b9bec7bcdd64}\label{structWaveMetadata_aec901b9f2e38c055ec36b9bec7bcdd64}} 
+\index{WaveMetadata@{WaveMetadata}!burstStartLocation@{burstStartLocation}}
+\index{burstStartLocation@{burstStartLocation}!WaveMetadata@{WaveMetadata}}
+\doxysubsubsection{\texorpdfstring{burstStartLocation}{burstStartLocation}}
+{\footnotesize\ttfamily int Wave\+Metadata\+::burst\+Start\+Location}
+
+starting location of the current or most recent burst \mbox{\Hypertarget{structWaveMetadata_a9745a6c8ee53db6c94b5ff097631fe13}\label{structWaveMetadata_a9745a6c8ee53db6c94b5ff097631fe13}} 
+\index{WaveMetadata@{WaveMetadata}!burstStartSpikeCount@{burstStartSpikeCount}}
+\index{burstStartSpikeCount@{burstStartSpikeCount}!WaveMetadata@{WaveMetadata}}
+\doxysubsubsection{\texorpdfstring{burstStartSpikeCount}{burstStartSpikeCount}}
+{\footnotesize\ttfamily int Wave\+Metadata\+::burst\+Start\+Spike\+Count}
+
+starting spike count of the current or most recent burst \mbox{\Hypertarget{structWaveMetadata_a43a936bf37b698240e83c73819247b9d}\label{structWaveMetadata_a43a936bf37b698240e83c73819247b9d}} 
+\index{WaveMetadata@{WaveMetadata}!firstBurstDone@{firstBurstDone}}
+\index{firstBurstDone@{firstBurstDone}!WaveMetadata@{WaveMetadata}}
+\doxysubsubsection{\texorpdfstring{firstBurstDone}{firstBurstDone}}
+{\footnotesize\ttfamily bool Wave\+Metadata\+::first\+Burst\+Done}
+
+indicates first burst is done \mbox{\Hypertarget{structWaveMetadata_af3825d5da4ee2e0bc8de5c7bb4851131}\label{structWaveMetadata_af3825d5da4ee2e0bc8de5c7bb4851131}} 
+\index{WaveMetadata@{WaveMetadata}!maxSpikes@{maxSpikes}}
+\index{maxSpikes@{maxSpikes}!WaveMetadata@{WaveMetadata}}
+\doxysubsubsection{\texorpdfstring{maxSpikes}{maxSpikes}}
+{\footnotesize\ttfamily int Wave\+Metadata\+::max\+Spikes}
+
+spike count of the peak of the burst (or most recent peak within the burst) \mbox{\Hypertarget{structWaveMetadata_afb0a2e151d03d4b71fffc98d8adddfa7}\label{structWaveMetadata_afb0a2e151d03d4b71fffc98d8adddfa7}} 
+\index{WaveMetadata@{WaveMetadata}!maxSpikesFrame@{maxSpikesFrame}}
+\index{maxSpikesFrame@{maxSpikesFrame}!WaveMetadata@{WaveMetadata}}
+\doxysubsubsection{\texorpdfstring{maxSpikesFrame}{maxSpikesFrame}}
+{\footnotesize\ttfamily int Wave\+Metadata\+::max\+Spikes\+Frame}
+
+frame number where the peak of the burst occured (or most recent peak within the burst) \mbox{\Hypertarget{structWaveMetadata_ad98b293bc7abfa090b8c89fa9651d165}\label{structWaveMetadata_ad98b293bc7abfa090b8c89fa9651d165}} 
+\index{WaveMetadata@{WaveMetadata}!maxSpikesLoc@{maxSpikesLoc}}
+\index{maxSpikesLoc@{maxSpikesLoc}!WaveMetadata@{WaveMetadata}}
+\doxysubsubsection{\texorpdfstring{maxSpikesLoc}{maxSpikesLoc}}
+{\footnotesize\ttfamily float Wave\+Metadata\+::max\+Spikes\+Loc}
+
+locatin on the chpi of the peak of the burst (or most recent peak within the burst) \mbox{\Hypertarget{structWaveMetadata_a377df28397310e46bd25375c4f89aabc}\label{structWaveMetadata_a377df28397310e46bd25375c4f89aabc}} 
+\index{WaveMetadata@{WaveMetadata}!noSpikeFrameCount@{noSpikeFrameCount}}
+\index{noSpikeFrameCount@{noSpikeFrameCount}!WaveMetadata@{WaveMetadata}}
+\doxysubsubsection{\texorpdfstring{noSpikeFrameCount}{noSpikeFrameCount}}
+{\footnotesize\ttfamily int Wave\+Metadata\+::no\+Spike\+Frame\+Count}
+
+number of frames since the total spike count went over the threshold \mbox{\Hypertarget{structWaveMetadata_a857e1700fe32cab15307c18d4cf499f2}\label{structWaveMetadata_a857e1700fe32cab15307c18d4cf499f2}} 
+\index{WaveMetadata@{WaveMetadata}!spikeFrameCount@{spikeFrameCount}}
+\index{spikeFrameCount@{spikeFrameCount}!WaveMetadata@{WaveMetadata}}
+\doxysubsubsection{\texorpdfstring{spikeFrameCount}{spikeFrameCount}}
+{\footnotesize\ttfamily int Wave\+Metadata\+::spike\+Frame\+Count}
+
+number of frames since the total spike count was below the threshold 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/mxwbio/\+Desktop/\+H\+A\+L/bin/lib/include/wave\+Detector.\+h\end{DoxyCompactItemize}

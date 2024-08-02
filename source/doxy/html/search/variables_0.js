@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['burstend_110',['burstEnd',['../structWaveDetector_1_1WaveMetadata.html#acd1ceb64873731839710369d548140dc',1,'WaveDetector::WaveMetadata']]],
-  ['bursting_111',['bursting',['../structWaveDetector_1_1WaveMetadata.html#a2c3927bb8e2c2292be38ddbaa86e8c36',1,'WaveDetector::WaveMetadata']]],
-  ['burststartframe_112',['burstStartFrame',['../structWaveDetector_1_1WaveMetadata.html#ad13fdad656e4e828c79b2c5c20033f0a',1,'WaveDetector::WaveMetadata']]],
-  ['burststartlocation_113',['burstStartLocation',['../structWaveDetector_1_1WaveMetadata.html#aa6f46b8a75c78cc151fda363d71dda14',1,'WaveDetector::WaveMetadata']]],
-  ['burststartspikecount_114',['burstStartSpikeCount',['../structWaveDetector_1_1WaveMetadata.html#a8635a0f212f4c6ed00c9bc73c88ba786',1,'WaveDetector::WaveMetadata']]]
+  ['burstend_104',['burstEnd',['../structWaveMetadata.html#a469255c7ca660587882cbe3596924d3e',1,'WaveMetadata']]],
+  ['bursting_105',['bursting',['../structWaveMetadata.html#ab09b017cfcc62db1c282c262ee3cd1d3',1,'WaveMetadata']]],
+  ['burststartframe_106',['burstStartFrame',['../structWaveMetadata.html#a6b0f00082439f4d29b65e8c317e3cfad',1,'WaveMetadata']]],
+  ['burststartlocation_107',['burstStartLocation',['../structWaveMetadata.html#aec901b9f2e38c055ec36b9bec7bcdd64',1,'WaveMetadata']]],
+  ['burststartspikecount_108',['burstStartSpikeCount',['../structWaveMetadata.html#a9745a6c8ee53db6c94b5ff097631fe13',1,'WaveMetadata']]]
 ];

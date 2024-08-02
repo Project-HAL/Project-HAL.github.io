@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['firstburstdone_115',['firstBurstDone',['../structWaveDetector_1_1WaveMetadata.html#a25ffde91aa62fb0405b25fdc66ff5503',1,'WaveDetector::WaveMetadata']]]
+  ['firstburstdone_109',['firstBurstDone',['../structWaveMetadata.html#a43a936bf37b698240e83c73819247b9d',1,'WaveMetadata']]]
 ];

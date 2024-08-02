@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['maxspikes_35',['maxSpikes',['../structWaveDetector_1_1WaveMetadata.html#a8560d5d5fe8e2d1a2b3519b18e4b65fc',1,'WaveDetector::WaveMetadata']]],
-  ['maxspikesframe_36',['maxSpikesFrame',['../structWaveDetector_1_1WaveMetadata.html#ab97728a109942553ed257f0574358845',1,'WaveDetector::WaveMetadata']]],
-  ['maxspikesloc_37',['maxSpikesLoc',['../structWaveDetector_1_1WaveMetadata.html#a953d1306f4b73452f70bf83aa26bc84f',1,'WaveDetector::WaveMetadata']]],
-  ['metadata_38',['metadata',['../classWaveDetector.html#aa34c82e4fb562a29598402b192254222',1,'WaveDetector']]]
+  ['maxspikes_34',['maxSpikes',['../structWaveMetadata.html#af3825d5da4ee2e0bc8de5c7bb4851131',1,'WaveMetadata']]],
+  ['maxspikesframe_35',['maxSpikesFrame',['../structWaveMetadata.html#afb0a2e151d03d4b71fffc98d8adddfa7',1,'WaveMetadata']]],
+  ['maxspikesloc_36',['maxSpikesLoc',['../structWaveMetadata.html#ad98b293bc7abfa090b8c89fa9651d165',1,'WaveMetadata']]]
 ];

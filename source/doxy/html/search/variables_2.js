@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['maxspikes_116',['maxSpikes',['../structWaveDetector_1_1WaveMetadata.html#a8560d5d5fe8e2d1a2b3519b18e4b65fc',1,'WaveDetector::WaveMetadata']]],
-  ['maxspikesframe_117',['maxSpikesFrame',['../structWaveDetector_1_1WaveMetadata.html#ab97728a109942553ed257f0574358845',1,'WaveDetector::WaveMetadata']]],
-  ['maxspikesloc_118',['maxSpikesLoc',['../structWaveDetector_1_1WaveMetadata.html#a953d1306f4b73452f70bf83aa26bc84f',1,'WaveDetector::WaveMetadata']]]
+  ['maxspikes_110',['maxSpikes',['../structWaveMetadata.html#af3825d5da4ee2e0bc8de5c7bb4851131',1,'WaveMetadata']]],
+  ['maxspikesframe_111',['maxSpikesFrame',['../structWaveMetadata.html#afb0a2e151d03d4b71fffc98d8adddfa7',1,'WaveMetadata']]],
+  ['maxspikesloc_112',['maxSpikesLoc',['../structWaveMetadata.html#ad98b293bc7abfa090b8c89fa9651d165',1,'WaveMetadata']]]
 ];

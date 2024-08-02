@@ -105,8 +105,85 @@
         <link refid="hal_8h_source"/>
       </node>
     </invincdepgraph>
+    <innerclass refid="structWaveMetadata" prot="public">WaveMetadata</innerclass>
     <innerclass refid="classWaveDetector" prot="public">WaveDetector</innerclass>
-    <innerclass refid="structWaveDetector_1_1WaveMetadata" prot="public">WaveDetector::WaveMetadata</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="waveDetector_8h_1adb931b2f752b7879df254a7fd9d17e90" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Wave</name>
+        <enumvalue id="waveDetector_8h_1adb931b2f752b7879df254a7fd9d17e90aed3e913024f0dd06e150c3e04eded410" prot="public">
+          <name>noBurst</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>culture is not currently bursting </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="waveDetector_8h_1adb931b2f752b7879df254a7fd9d17e90a590d959e2e18444c852747822a47a1f9" prot="public">
+          <name>bursting</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>culture is currently bursting </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="waveDetector_8h_1adb931b2f752b7879df254a7fd9d17e90aaba695c45d766bcb0a224a8a6f77fdb2" prot="public">
+          <name>burstStart</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>burst just started </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="waveDetector_8h_1adb931b2f752b7879df254a7fd9d17e90ac53776c020338580a82b74d9388904d2" prot="public">
+          <name>endShortBurst</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>burst ended, but it was too short to be significant </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="waveDetector_8h_1adb931b2f752b7879df254a7fd9d17e90ad28df94fbab5be1b7294fe32d78ad9d6" prot="public">
+          <name>leftToRight</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>burst ended, and it went left to right </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="waveDetector_8h_1adb931b2f752b7879df254a7fd9d17e90aff8288c3ef5ab9740210753e6c762c3f" prot="public">
+          <name>rightToLeft</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>burst ended, and it went right to left </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Wave enum. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="60" column="10" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="60" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="waveDetector_8h_1a02a71c18140ce67db4454eb9902e73c6" prot="public" static="no">
+        <type>struct <ref refid="structWaveMetadata" kindref="compound">WaveMetadata</ref></type>
+        <definition>typedef struct WaveMetadata WaveMetadata</definition>
+        <argsstring></argsstring>
+        <name>WaveMetadata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="1" column="0" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
@@ -128,63 +205,65 @@
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18" refid="classWaveDetector" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classWaveDetector" kindref="compound">WaveDetector</ref><sp/>{</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight></codeline>
-<codeline lineno="25" refid="classWaveDetector_1abc1726aea1cad86baef675ddded84fe8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classWaveDetector_1abc1726aea1cad86baef675ddded84fe8" kindref="member">Wave</ref><sp/>{</highlight></codeline>
-<codeline lineno="26" refid="classWaveDetector_1abc1726aea1cad86baef675ddded84fe8a0f6c6b9968eafca36014d956ff48740d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWaveDetector_1abc1726aea1cad86baef675ddded84fe8a0f6c6b9968eafca36014d956ff48740d" kindref="member">noBurst</ref>,<sp/></highlight></codeline>
-<codeline lineno="27" refid="classWaveDetector_1abc1726aea1cad86baef675ddded84fe8a77aaeafde2f68f00f4d49debcb62dc13" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWaveDetector_1abc1726aea1cad86baef675ddded84fe8a77aaeafde2f68f00f4d49debcb62dc13" kindref="member">bursting</ref>,<sp/></highlight></codeline>
-<codeline lineno="28" refid="classWaveDetector_1abc1726aea1cad86baef675ddded84fe8ab16b272064669f9fa3bcd14704864404" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWaveDetector_1abc1726aea1cad86baef675ddded84fe8ab16b272064669f9fa3bcd14704864404" kindref="member">burstStart</ref>,<sp/></highlight></codeline>
-<codeline lineno="29" refid="classWaveDetector_1abc1726aea1cad86baef675ddded84fe8ac9a23b681fc13f21fe979d96c58bd3c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>endShortBurst,<sp/></highlight></codeline>
-<codeline lineno="31" refid="classWaveDetector_1abc1726aea1cad86baef675ddded84fe8a25a4f9ae018191235acb41137dfae933" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWaveDetector_1abc1726aea1cad86baef675ddded84fe8a25a4f9ae018191235acb41137dfae933" kindref="member">leftToRight</ref>,<sp/></highlight></codeline>
-<codeline lineno="32" refid="classWaveDetector_1abc1726aea1cad86baef675ddded84fe8a8d8edd8f78d12864806a0bb2293df099" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rightToLeft<sp/></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight></codeline>
-<codeline lineno="40" refid="structWaveDetector_1_1WaveMetadata" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structWaveDetector_1_1WaveMetadata" kindref="compound">WaveMetadata</ref><sp/>{</highlight></codeline>
-<codeline lineno="41" refid="structWaveDetector_1_1WaveMetadata_1a25ffde91aa62fb0405b25fdc66ff5503" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structWaveDetector_1_1WaveMetadata_1a25ffde91aa62fb0405b25fdc66ff5503" kindref="member">firstBurstDone</ref>;<sp/></highlight></codeline>
-<codeline lineno="43" refid="structWaveDetector_1_1WaveMetadata_1a2c3927bb8e2c2292be38ddbaa86e8c36" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structWaveDetector_1_1WaveMetadata_1a2c3927bb8e2c2292be38ddbaa86e8c36" kindref="member">bursting</ref>;<sp/></highlight></codeline>
-<codeline lineno="45" refid="structWaveDetector_1_1WaveMetadata_1a1cc8a4b326d5231a27fc1b2eff03fbbb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structWaveDetector_1_1WaveMetadata_1a1cc8a4b326d5231a27fc1b2eff03fbbb" kindref="member">spikeFrameCount</ref>;<sp/></highlight></codeline>
-<codeline lineno="48" refid="structWaveDetector_1_1WaveMetadata_1a9f066335ffbcb87405225b353c4a313d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structWaveDetector_1_1WaveMetadata_1a9f066335ffbcb87405225b353c4a313d" kindref="member">noSpikeFrameCount</ref>;<sp/></highlight></codeline>
-<codeline lineno="51" refid="structWaveDetector_1_1WaveMetadata_1aa6f46b8a75c78cc151fda363d71dda14" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structWaveDetector_1_1WaveMetadata_1aa6f46b8a75c78cc151fda363d71dda14" kindref="member">burstStartLocation</ref>;<sp/></highlight></codeline>
-<codeline lineno="54" refid="structWaveDetector_1_1WaveMetadata_1a8635a0f212f4c6ed00c9bc73c88ba786" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structWaveDetector_1_1WaveMetadata_1a8635a0f212f4c6ed00c9bc73c88ba786" kindref="member">burstStartSpikeCount</ref>;<sp/></highlight></codeline>
-<codeline lineno="57" refid="structWaveDetector_1_1WaveMetadata_1ad13fdad656e4e828c79b2c5c20033f0a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structWaveDetector_1_1WaveMetadata_1ad13fdad656e4e828c79b2c5c20033f0a" kindref="member">burstStartFrame</ref>;<sp/></highlight></codeline>
-<codeline lineno="60" refid="structWaveDetector_1_1WaveMetadata_1acd1ceb64873731839710369d548140dc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structWaveDetector_1_1WaveMetadata_1acd1ceb64873731839710369d548140dc" kindref="member">burstEnd</ref>;<sp/></highlight></codeline>
-<codeline lineno="62" refid="structWaveDetector_1_1WaveMetadata_1a8560d5d5fe8e2d1a2b3519b18e4b65fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structWaveDetector_1_1WaveMetadata_1a8560d5d5fe8e2d1a2b3519b18e4b65fc" kindref="member">maxSpikes</ref>;<sp/></highlight></codeline>
-<codeline lineno="65" refid="structWaveDetector_1_1WaveMetadata_1ab97728a109942553ed257f0574358845" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structWaveDetector_1_1WaveMetadata_1ab97728a109942553ed257f0574358845" kindref="member">maxSpikesFrame</ref>;<sp/></highlight></codeline>
-<codeline lineno="69" refid="structWaveDetector_1_1WaveMetadata_1a953d1306f4b73452f70bf83aa26bc84f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structWaveDetector_1_1WaveMetadata_1a953d1306f4b73452f70bf83aa26bc84f" kindref="member">maxSpikesLoc</ref>;<sp/></highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};<sp/></highlight></codeline>
-<codeline lineno="73"><highlight class="normal"></highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structWaveDetector_1_1WaveMetadata" kindref="compound">WaveMetadata</ref><sp/><ref refid="structWaveDetector_1_1WaveMetadata" kindref="compound">WaveMetadata</ref>;</highlight></codeline>
+<codeline lineno="22" refid="structWaveMetadata" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structWaveMetadata" kindref="compound">WaveMetadata</ref><sp/>{</highlight></codeline>
+<codeline lineno="23" refid="structWaveMetadata_1a43a936bf37b698240e83c73819247b9d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structWaveMetadata_1a43a936bf37b698240e83c73819247b9d" kindref="member">firstBurstDone</ref>;<sp/></highlight></codeline>
+<codeline lineno="25" refid="structWaveMetadata_1ab09b017cfcc62db1c282c262ee3cd1d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structWaveMetadata_1ab09b017cfcc62db1c282c262ee3cd1d3" kindref="member">bursting</ref>;<sp/></highlight></codeline>
+<codeline lineno="27" refid="structWaveMetadata_1a857e1700fe32cab15307c18d4cf499f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structWaveMetadata_1a857e1700fe32cab15307c18d4cf499f2" kindref="member">spikeFrameCount</ref>;<sp/></highlight></codeline>
+<codeline lineno="30" refid="structWaveMetadata_1a377df28397310e46bd25375c4f89aabc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structWaveMetadata_1a377df28397310e46bd25375c4f89aabc" kindref="member">noSpikeFrameCount</ref>;<sp/></highlight></codeline>
+<codeline lineno="33" refid="structWaveMetadata_1aec901b9f2e38c055ec36b9bec7bcdd64" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structWaveMetadata_1aec901b9f2e38c055ec36b9bec7bcdd64" kindref="member">burstStartLocation</ref>;<sp/></highlight></codeline>
+<codeline lineno="36" refid="structWaveMetadata_1a9745a6c8ee53db6c94b5ff097631fe13" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structWaveMetadata_1a9745a6c8ee53db6c94b5ff097631fe13" kindref="member">burstStartSpikeCount</ref>;<sp/></highlight></codeline>
+<codeline lineno="39" refid="structWaveMetadata_1a6b0f00082439f4d29b65e8c317e3cfad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structWaveMetadata_1a6b0f00082439f4d29b65e8c317e3cfad" kindref="member">burstStartFrame</ref>;<sp/></highlight></codeline>
+<codeline lineno="42" refid="structWaveMetadata_1a469255c7ca660587882cbe3596924d3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structWaveMetadata_1a469255c7ca660587882cbe3596924d3e" kindref="member">burstEnd</ref>;<sp/></highlight></codeline>
+<codeline lineno="44" refid="structWaveMetadata_1af3825d5da4ee2e0bc8de5c7bb4851131" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structWaveMetadata_1af3825d5da4ee2e0bc8de5c7bb4851131" kindref="member">maxSpikes</ref>;<sp/></highlight></codeline>
+<codeline lineno="47" refid="structWaveMetadata_1afb0a2e151d03d4b71fffc98d8adddfa7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structWaveMetadata_1afb0a2e151d03d4b71fffc98d8adddfa7" kindref="member">maxSpikesFrame</ref>;<sp/></highlight></codeline>
+<codeline lineno="51" refid="structWaveMetadata_1ad98b293bc7abfa090b8c89fa9651d165" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structWaveMetadata_1ad98b293bc7abfa090b8c89fa9651d165" kindref="member">maxSpikesLoc</ref>;<sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal">};<sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>Wave<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>noBurst,<sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>bursting,<sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>burstStart,<sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>endShortBurst,<sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>leftToRight,<sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>rightToLeft<sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structWaveMetadata" kindref="compound">WaveMetadata</ref><sp/><ref refid="structWaveMetadata" kindref="compound">WaveMetadata</ref>;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="classWaveDetector" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classWaveDetector" kindref="compound">WaveDetector</ref><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"></highlight></codeline>
 <codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWaveDetector" kindref="compound">WaveDetector</ref>();</highlight></codeline>
 <codeline lineno="80"><highlight class="normal"></highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWaveDetector" kindref="compound">WaveDetector</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>windowLength,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*configPath,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>threshold,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>minFrames,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>frameHz=10000);</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~<ref refid="classWaveDetector" kindref="compound">WaveDetector</ref>();</highlight></codeline>
-<codeline lineno="103"><highlight class="normal"></highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classChannelWindow" kindref="compound">ChannelWindow</ref><sp/>*window();</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"></highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structWaveDetector_1_1WaveMetadata" kindref="compound">WaveMetadata</ref><sp/>metadata();</highlight></codeline>
-<codeline lineno="117"><highlight class="normal"></highlight></codeline>
-<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>shiftWindow(maxlab::FilteredFrameData<sp/>frame);</highlight></codeline>
-<codeline lineno="125"><highlight class="normal"></highlight></codeline>
-<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>processFrame(maxlab::FilteredFrameData<sp/>frame,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>frameNo);</highlight></codeline>
-<codeline lineno="138"><highlight class="normal"></highlight></codeline>
-<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>checkBurst(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>frameNo);</highlight></codeline>
-<codeline lineno="147"><highlight class="normal"></highlight></codeline>
-<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classChannelWindow" kindref="compound">ChannelWindow</ref><sp/>*window;</highlight></codeline>
-<codeline lineno="150"><highlight class="normal"></highlight></codeline>
-<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structWaveDetector_1_1WaveMetadata" kindref="compound">WaveMetadata</ref><sp/>*metadata;</highlight></codeline>
-<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>framesPerSec;</highlight></codeline>
-<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>minFrames;</highlight></codeline>
-<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>threshold;</highlight></codeline>
-<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>totalElectrodes;</highlight></codeline>
-<codeline lineno="156"><highlight class="normal"></highlight></codeline>
-<codeline lineno="157"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="158"><highlight class="normal"></highlight></codeline>
-<codeline lineno="159"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWaveDetector" kindref="compound">WaveDetector</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>windowLength,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*configPath,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>threshold,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>minFrames,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>frameHz,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>firstBurstThreshold,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>burstDoneThreshold);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~<ref refid="classWaveDetector" kindref="compound">WaveDetector</ref>();</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classChannelWindow" kindref="compound">ChannelWindow</ref><sp/>*getWindow();</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structWaveMetadata" kindref="compound">WaveMetadata</ref><sp/>getMetadata();</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>shiftWindow(maxlab::FilteredFrameData<sp/>frame);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>processFrame(maxlab::FilteredFrameData<sp/>frame,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>frameNo);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>checkBurst(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>frameNo);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classChannelWindow" kindref="compound">ChannelWindow</ref><sp/>*window;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structWaveMetadata" kindref="compound">WaveMetadata</ref><sp/>*metadata;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>framesPerSec;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>minFrames;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>threshold;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>totalElectrodes;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>firstBurstThreshold;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>burstDoneThreshold;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h"/>
   </compounddef>

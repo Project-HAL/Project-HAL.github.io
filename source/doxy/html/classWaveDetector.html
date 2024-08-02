@@ -62,8 +62,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classWaveDetector-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -71,49 +69,25 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWaveDetector_1_1WaveMetadata.html">WaveMetadata</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wave metadata struct.  <a href="structWaveDetector_1_1WaveMetadata.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:abc1726aea1cad86baef675ddded84fe8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWaveDetector.html#abc1726aea1cad86baef675ddded84fe8">Wave</a> { <br />
-&#160;&#160;<a class="el" href="classWaveDetector.html#abc1726aea1cad86baef675ddded84fe8a0f6c6b9968eafca36014d956ff48740d">noBurst</a>, 
-<a class="el" href="classWaveDetector.html#abc1726aea1cad86baef675ddded84fe8a77aaeafde2f68f00f4d49debcb62dc13">bursting</a>, 
-<a class="el" href="classWaveDetector.html#abc1726aea1cad86baef675ddded84fe8ab16b272064669f9fa3bcd14704864404">burstStart</a>, 
-<a class="el" href="classWaveDetector.html#abc1726aea1cad86baef675ddded84fe8ac9a23b681fc13f21fe979d96c58bd3c6">endShortBurst</a>, 
-<br />
-&#160;&#160;<a class="el" href="classWaveDetector.html#abc1726aea1cad86baef675ddded84fe8a25a4f9ae018191235acb41137dfae933">leftToRight</a>, 
-<a class="el" href="classWaveDetector.html#abc1726aea1cad86baef675ddded84fe8a8d8edd8f78d12864806a0bb2293df099">rightToLeft</a>
-<br />
- }</td></tr>
-<tr class="memdesc:abc1726aea1cad86baef675ddded84fe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wave enum.  <a href="classWaveDetector.html#abc1726aea1cad86baef675ddded84fe8">More...</a><br /></td></tr>
-<tr class="separator:abc1726aea1cad86baef675ddded84fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae03fdca0eb57d70c539af2b53946c657"><td class="memItemLeft" align="right" valign="top"><a id="ae03fdca0eb57d70c539af2b53946c657"></a>
-typedef struct <a class="el" href="structWaveDetector_1_1WaveMetadata.html">WaveMetadata</a>&#160;</td><td class="memItemRight" valign="bottom"><b>WaveMetadata</b></td></tr>
-<tr class="separator:ae03fdca0eb57d70c539af2b53946c657"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9dc0fec49023ac3a388568180575ee7d"><td class="memItemLeft" align="right" valign="top"><a id="a9dc0fec49023ac3a388568180575ee7d"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWaveDetector.html#a9dc0fec49023ac3a388568180575ee7d">WaveDetector</a> ()</td></tr>
 <tr class="memdesc:a9dc0fec49023ac3a388568180575ee7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new Wave Detector object. <br /></td></tr>
 <tr class="separator:a9dc0fec49023ac3a388568180575ee7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8989a4e992b1017228f6ae4ef8a6b4a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWaveDetector.html#aa8989a4e992b1017228f6ae4ef8a6b4a">WaveDetector</a> (int windowLength, const char *configPath, float threshold, int minFrames, int frameHz=10000)</td></tr>
-<tr class="memdesc:aa8989a4e992b1017228f6ae4ef8a6b4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new Wave Detector object and inititalizes the window.  <a href="classWaveDetector.html#aa8989a4e992b1017228f6ae4ef8a6b4a">More...</a><br /></td></tr>
-<tr class="separator:aa8989a4e992b1017228f6ae4ef8a6b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac49842bb930f2bbb174b60855c17aa1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWaveDetector.html#aac49842bb930f2bbb174b60855c17aa1">WaveDetector</a> (int windowLength, const char *configPath, float threshold, int minFrames, int frameHz, float firstBurstThreshold, float burstDoneThreshold)</td></tr>
+<tr class="memdesc:aac49842bb930f2bbb174b60855c17aa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new Wave Detector object and inititalizes the window.  <a href="classWaveDetector.html#aac49842bb930f2bbb174b60855c17aa1">More...</a><br /></td></tr>
+<tr class="separator:aac49842bb930f2bbb174b60855c17aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af493cc823e9388b83a3fc6bf8c48b159"><td class="memItemLeft" align="right" valign="top"><a id="af493cc823e9388b83a3fc6bf8c48b159"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWaveDetector.html#af493cc823e9388b83a3fc6bf8c48b159">~WaveDetector</a> ()</td></tr>
 <tr class="memdesc:af493cc823e9388b83a3fc6bf8c48b159"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the Wave Detector Object. <br /></td></tr>
 <tr class="separator:af493cc823e9388b83a3fc6bf8c48b159"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a42e117558ed94bc02b78d335609ae4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classChannelWindow.html">ChannelWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWaveDetector.html#a0a42e117558ed94bc02b78d335609ae4">window</a> ()</td></tr>
-<tr class="memdesc:a0a42e117558ed94bc02b78d335609ae4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the window.  <a href="classWaveDetector.html#a0a42e117558ed94bc02b78d335609ae4">More...</a><br /></td></tr>
-<tr class="separator:a0a42e117558ed94bc02b78d335609ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa34c82e4fb562a29598402b192254222"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structWaveDetector_1_1WaveMetadata.html">WaveMetadata</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWaveDetector.html#aa34c82e4fb562a29598402b192254222">metadata</a> ()</td></tr>
-<tr class="memdesc:aa34c82e4fb562a29598402b192254222"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets metadata of the Wave Detector.  <a href="classWaveDetector.html#aa34c82e4fb562a29598402b192254222">More...</a><br /></td></tr>
-<tr class="separator:aa34c82e4fb562a29598402b192254222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab85b28fe6599e109456d3e0da0e4306b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classChannelWindow.html">ChannelWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWaveDetector.html#ab85b28fe6599e109456d3e0da0e4306b">getWindow</a> ()</td></tr>
+<tr class="memdesc:ab85b28fe6599e109456d3e0da0e4306b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the window.  <a href="classWaveDetector.html#ab85b28fe6599e109456d3e0da0e4306b">More...</a><br /></td></tr>
+<tr class="separator:ab85b28fe6599e109456d3e0da0e4306b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87a66c6a4abba427c2826e80ca7b7444"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structWaveMetadata.html">WaveMetadata</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWaveDetector.html#a87a66c6a4abba427c2826e80ca7b7444">getMetadata</a> ()</td></tr>
+<tr class="memdesc:a87a66c6a4abba427c2826e80ca7b7444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets metadata of the Wave Detector.  <a href="classWaveDetector.html#a87a66c6a4abba427c2826e80ca7b7444">More...</a><br /></td></tr>
+<tr class="separator:a87a66c6a4abba427c2826e80ca7b7444"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa4806eeb2950412dbd779635a2f5667"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWaveDetector.html#aaa4806eeb2950412dbd779635a2f5667">shiftWindow</a> (maxlab::FilteredFrameData frame)</td></tr>
 <tr class="memdesc:aaa4806eeb2950412dbd779635a2f5667"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shifts the window, adding a new frame.  <a href="classWaveDetector.html#aaa4806eeb2950412dbd779635a2f5667">More...</a><br /></td></tr>
 <tr class="separator:aaa4806eeb2950412dbd779635a2f5667"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,40 +98,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a91b522b3335c62a1b498f5a4d09d1820"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks the direction of a burst.  <a href="classWaveDetector.html#a91b522b3335c62a1b498f5a4d09d1820">More...</a><br /></td></tr>
 <tr class="separator:a91b522b3335c62a1b498f5a4d09d1820"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="abc1726aea1cad86baef675ddded84fe8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc1726aea1cad86baef675ddded84fe8">&#9670;&nbsp;</a></span>Wave</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="classWaveDetector.html#abc1726aea1cad86baef675ddded84fe8">WaveDetector::Wave</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Wave enum. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abc1726aea1cad86baef675ddded84fe8a0f6c6b9968eafca36014d956ff48740d"></a>noBurst&#160;</td><td class="fielddoc"><p>culture is not currently bursting </p>
-</td></tr>
-<tr><td class="fieldname"><a id="abc1726aea1cad86baef675ddded84fe8a77aaeafde2f68f00f4d49debcb62dc13"></a>bursting&#160;</td><td class="fielddoc"><p>culture is currently bursting </p>
-</td></tr>
-<tr><td class="fieldname"><a id="abc1726aea1cad86baef675ddded84fe8ab16b272064669f9fa3bcd14704864404"></a>burstStart&#160;</td><td class="fielddoc"><p>burst just started </p>
-</td></tr>
-<tr><td class="fieldname"><a id="abc1726aea1cad86baef675ddded84fe8ac9a23b681fc13f21fe979d96c58bd3c6"></a>endShortBurst&#160;</td><td class="fielddoc"><p>burst ended, but it was too short to be significant </p>
-</td></tr>
-<tr><td class="fieldname"><a id="abc1726aea1cad86baef675ddded84fe8a25a4f9ae018191235acb41137dfae933"></a>leftToRight&#160;</td><td class="fielddoc"><p>burst ended, and it went left to right </p>
-</td></tr>
-<tr><td class="fieldname"><a id="abc1726aea1cad86baef675ddded84fe8a8d8edd8f78d12864806a0bb2293df099"></a>rightToLeft&#160;</td><td class="fielddoc"><p>burst ended, and it went right to left </p>
-</td></tr>
-</table>
-
-</div>
-</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aa8989a4e992b1017228f6ae4ef8a6b4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8989a4e992b1017228f6ae4ef8a6b4a">&#9670;&nbsp;</a></span>WaveDetector()</h2>
+<a id="aac49842bb930f2bbb174b60855c17aa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac49842bb930f2bbb174b60855c17aa1">&#9670;&nbsp;</a></span>WaveDetector()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -190,7 +133,19 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>frameHz</em> = <code>10000</code>&#160;</td>
+          <td class="paramname"><em>frameHz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>firstBurstThreshold</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>burstDoneThreshold</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -208,6 +163,8 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">threshold</td><td><code>float</code> threshold used to check the total spike count against </td></tr>
     <tr><td class="paramname">minFrames</td><td><code>int</code> minimum number of frames during which the window must be over the spike threshold in order to be considered a burst </td></tr>
     <tr><td class="paramname">frameHz</td><td><code>int</code> framerate, defaults to <code>10000</code>. It shoud be <code>10000</code> for the MaxTwo, and <code>20000</code> for the MaxOne </td></tr>
+    <tr><td class="paramname">firstBurstThreshold</td><td><code>float</code> the amount of time (in seconds) during which the total spike count of the window cannot go over the threshold in order for the first birst to be considered done. </td></tr>
+    <tr><td class="paramname">burstDoneThreshold</td><td><code>float</code> the amount of time (in seconds) during which the total spike count of the window cannot go over the threshold in order for the entire birst to be considered done. </td></tr>
   </table>
   </dd>
 </dl>
@@ -242,14 +199,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa34c82e4fb562a29598402b192254222"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa34c82e4fb562a29598402b192254222">&#9670;&nbsp;</a></span>metadata()</h2>
+<a id="a87a66c6a4abba427c2826e80ca7b7444"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87a66c6a4abba427c2826e80ca7b7444">&#9670;&nbsp;</a></span>getMetadata()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structWaveDetector_1_1WaveMetadata.html">WaveMetadata</a> WaveDetector::metadata </td>
+          <td class="memname"><a class="el" href="structWaveMetadata.html">WaveMetadata</a> WaveDetector::getMetadata </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -258,7 +215,27 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets metadata of the Wave Detector. </p>
-<dl class="section return"><dt>Returns</dt><dd><code><a class="el" href="structWaveDetector_1_1WaveMetadata.html" title="Wave metadata struct.">WaveMetadata</a></code> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code><a class="el" href="structWaveMetadata.html" title="Wave metadata struct.">WaveMetadata</a></code> struct </dd></dl>
+
+</div>
+</div>
+<a id="ab85b28fe6599e109456d3e0da0e4306b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab85b28fe6599e109456d3e0da0e4306b">&#9670;&nbsp;</a></span>getWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classChannelWindow.html">ChannelWindow</a>* WaveDetector::getWindow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the window. </p>
+<dl class="section return"><dt>Returns</dt><dd>pointer to <code><a class="el" href="classChannelWindow.html">ChannelWindow</a></code> </dd></dl>
 
 </div>
 </div>
@@ -324,26 +301,6 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a0a42e117558ed94bc02b78d335609ae4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a42e117558ed94bc02b78d335609ae4">&#9670;&nbsp;</a></span>window()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classChannelWindow.html">ChannelWindow</a>* WaveDetector::window </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the window. </p>
-<dl class="section return"><dt>Returns</dt><dd>pointer to <code><a class="el" href="classChannelWindow.html">ChannelWindow</a></code> </dd></dl>
 
 </div>
 </div>
