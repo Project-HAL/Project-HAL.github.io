@@ -29,10 +29,10 @@ int \mbox{\hyperlink{classChannelWindow_a362798037f40a99650da61c877971517}{total
 vector$<$ float $>$ \mbox{\hyperlink{classChannelWindow_a3b7604f6aa0b8fa271e237d39e9df3e0}{past\+Windows}} ()
 \begin{DoxyCompactList}\small\item\em Gets a vectors containing the firing rates of all the past windows. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{classChannelWindow_a88ef58fe01f8b3a310e2f02d0ac0abc0}{avg\+Past\+Windows}} ()
-\begin{DoxyCompactList}\small\item\em Returns the average of all the past windows. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Returns the average firing rate of all the past windows. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{classChannelWindow_a90e47573e5079683dabe03e1aa66a36a}{get\+AvgX}} ()
 \begin{DoxyCompactList}\small\item\em Computes the average x coordinate of all the spike events in the window. \end{DoxyCompactList}\item 
-float \mbox{\hyperlink{classChannelWindow_a69e6d5823613cbc1b8dc9b33ee5346f6}{std\+Dev}} ()
+float \mbox{\hyperlink{classChannelWindow_ae6aecf5c946b9006ccd7590512244475}{firing\+Rate\+SD}} ()
 \begin{DoxyCompactList}\small\item\em Computes the standard deviation of the firing rates of all past windows. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{classChannelWindow_a11a10504b18341abe0eef53d6b02ea02}{firing\+Rate}} ()
 \begin{DoxyCompactList}\small\item\em Computes the firing rate of the window. \end{DoxyCompactList}\item 
@@ -121,7 +121,7 @@ None
 
 
 
-Returns the average of all the past windows. 
+Returns the average firing rate of all the past windows. 
 
 \begin{DoxyReturn}{Returns}
 {\ttfamily float} 
@@ -165,6 +165,19 @@ Returns the {\ttfamily \mbox{\hyperlink{classElectrodeMap}{Electrode\+Map}}}
 
 
 Computes the firing rate of the window. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily float} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classChannelWindow_ae6aecf5c946b9006ccd7590512244475}\label{classChannelWindow_ae6aecf5c946b9006ccd7590512244475}} 
+\index{ChannelWindow@{ChannelWindow}!firingRateSD@{firingRateSD}}
+\index{firingRateSD@{firingRateSD}!ChannelWindow@{ChannelWindow}}
+\doxysubsubsection{\texorpdfstring{firingRateSD()}{firingRateSD()}}
+{\footnotesize\ttfamily float Channel\+Window\+::firing\+Rate\+SD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Computes the standard deviation of the firing rates of all past windows. 
 
 \begin{DoxyReturn}{Returns}
 {\ttfamily float} 
@@ -268,19 +281,6 @@ Shifts the window by removing the first frame, updating the total sum accordingl
 {\em frame} & {\ttfamily maxlab\+::\+Filtered\+Frame\+Data} struct to add to the window \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classChannelWindow_a69e6d5823613cbc1b8dc9b33ee5346f6}\label{classChannelWindow_a69e6d5823613cbc1b8dc9b33ee5346f6}} 
-\index{ChannelWindow@{ChannelWindow}!stdDev@{stdDev}}
-\index{stdDev@{stdDev}!ChannelWindow@{ChannelWindow}}
-\doxysubsubsection{\texorpdfstring{stdDev()}{stdDev()}}
-{\footnotesize\ttfamily float Channel\+Window\+::std\+Dev (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Computes the standard deviation of the firing rates of all past windows. 
-
-\begin{DoxyReturn}{Returns}
-{\ttfamily float} 
-\end{DoxyReturn}
 \mbox{\Hypertarget{classChannelWindow_a362798037f40a99650da61c877971517}\label{classChannelWindow_a362798037f40a99650da61c877971517}} 
 \index{ChannelWindow@{ChannelWindow}!totalSpikeCount@{totalSpikeCount}}
 \index{totalSpikeCount@{totalSpikeCount}!ChannelWindow@{ChannelWindow}}

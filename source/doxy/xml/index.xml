@@ -22,7 +22,7 @@
     <member refid="classChannelWindow_1a3b7604f6aa0b8fa271e237d39e9df3e0" kind="function"><name>pastWindows</name></member>
     <member refid="classChannelWindow_1a88ef58fe01f8b3a310e2f02d0ac0abc0" kind="function"><name>avgPastWindows</name></member>
     <member refid="classChannelWindow_1a90e47573e5079683dabe03e1aa66a36a" kind="function"><name>getAvgX</name></member>
-    <member refid="classChannelWindow_1a69e6d5823613cbc1b8dc9b33ee5346f6" kind="function"><name>stdDev</name></member>
+    <member refid="classChannelWindow_1ae6aecf5c946b9006ccd7590512244475" kind="function"><name>firingRateSD</name></member>
     <member refid="classChannelWindow_1a11a10504b18341abe0eef53d6b02ea02" kind="function"><name>firingRate</name></member>
     <member refid="classChannelWindow_1a8a1cdbafbc9c7597446f38d20cf26ea8" kind="function"><name>pastWindowsReady</name></member>
     <member refid="classChannelWindow_1ad3fe970bc14670cd6d73a37fa2cacbd3" kind="function"><name>print</name></member>
@@ -60,6 +60,26 @@
     <member refid="classElectrodeMap_1ab76caa8f91537a7086c21646affcb1e5" kind="function"><name>size</name></member>
     <member refid="classElectrodeMap_1a38b8c5e4bc4f2b0c7a8e0bcda096c8d4" kind="function"><name>print</name></member>
     <member refid="classElectrodeMap_1ac7d50e71926d638fffc3a0f8a0ebf9f2" kind="function"><name>readConfig</name></member>
+  </compound>
+  <compound refid="classProgressBar" kind="class"><name>ProgressBar</name>
+    <member refid="classProgressBar_1a7a03c247a1fd4e22a9599802834218c0" kind="variable"><name>totalTicks</name></member>
+    <member refid="classProgressBar_1a0c6d5e3e217a42b91e5a0e64f58acc53" kind="variable"><name>currentTick</name></member>
+    <member refid="classProgressBar_1a180c90fa23f54e523a92da94466f800e" kind="variable"><name>totalTasks</name></member>
+    <member refid="classProgressBar_1ad29cf2c4760aae27c501ddc503f5f0ec" kind="variable"><name>tasksComplete</name></member>
+    <member refid="classProgressBar_1a728905d0237cec95ca13301f0b5e9b85" kind="variable"><name>progress</name></member>
+    <member refid="classProgressBar_1a117e902c0ee055c3cf2085ad163f805d" kind="variable"><name>numCharacters</name></member>
+    <member refid="classProgressBar_1a465abcdf87bce85313d5265822b65cbe" kind="variable"><name>printBar</name></member>
+    <member refid="classProgressBar_1a3520bb96405cbbbe908c00e77d5b5d4c" kind="variable"><name>bar</name></member>
+    <member refid="classProgressBar_1ae5cd8ec42743033c8340e677ed8bac79" kind="variable"><name>desc</name></member>
+    <member refid="classProgressBar_1aabdebc9823af01c7567e7546d9f0016f" kind="function"><name>ProgressBar</name></member>
+    <member refid="classProgressBar_1ab3beae55e425418d0634a635d4270f00" kind="function"><name>ProgressBar</name></member>
+    <member refid="classProgressBar_1a21c4cdb9ed14749692caa47cd1f3c559" kind="function"><name>increment</name></member>
+    <member refid="classProgressBar_1a3dcedc2aef170c30b155e16ef9978f1a" kind="function"><name>print</name></member>
+    <member refid="classProgressBar_1afab07a0864369e09c25658e829f08766" kind="function"><name>clear</name></member>
+    <member refid="classProgressBar_1ade3325d4a0acb00a4cd34f529d17f033" kind="function"><name>numTasksComplete</name></member>
+    <member refid="classProgressBar_1af6457cf39d0c32cdb996b0e9fa5d78e5" kind="function"><name>getProgress</name></member>
+    <member refid="classProgressBar_1aaef0833b42b385e45d872b8bda9cfd37" kind="function"><name>initVars</name></member>
+    <member refid="classProgressBar_1a795a22379fa7581cf8ce701b4b509156" kind="function"><name>countDigits</name></member>
   </compound>
   <compound refid="classWaveDetector" kind="class"><name>WaveDetector</name>
     <member refid="classWaveDetector_1a1b03f5ba903e44a002b8c38cb7d28880" kind="variable"><name>window</name></member>
@@ -127,6 +147,8 @@
     <member refid="electrodeMap_8h_1a6922ae2d0490ba3260427ef9fe4553c1" kind="typedef"><name>electrodeCoords</name></member>
   </compound>
   <compound refid="hal_8h" kind="file"><name>hal.h</name>
+  </compound>
+  <compound refid="progressBar_8h" kind="file"><name>progressBar.h</name>
   </compound>
   <compound refid="waveDetector_8h" kind="file"><name>waveDetector.h</name>
     <member refid="waveDetector_8h_1adb931b2f752b7879df254a7fd9d17e90" kind="enum"><name>Wave</name></member>

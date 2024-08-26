@@ -7,6 +7,7 @@
     <includes refid="argparse_8h" local="yes">argparse.h</includes>
     <includes refid="worldstate_8h" local="yes">worldstate.h</includes>
     <includes refid="waveDetector_8h" local="yes">waveDetector.h</includes>
+    <includes refid="progressBar_8h" local="yes">progressBar.h</includes>
     <incdepgraph>
       <node id="13">
         <label>worldstate.h</label>
@@ -32,6 +33,18 @@
       </node>
       <node id="5">
         <label>stdlib.h</label>
+      </node>
+      <node id="16">
+        <label>progressBar.h</label>
+        <link refid="progressBar_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
       </node>
       <node id="14">
         <label>waveDetector.h</label>
@@ -69,6 +82,8 @@
         <childnode refid="13" relation="include">
         </childnode>
         <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
         </childnode>
       </node>
       <node id="3">
@@ -132,7 +147,8 @@
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;controller.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;argparse.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;worldstate.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;waveDetector.h&quot;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;waveDetector.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;progressBar.h&quot;</highlight></codeline>
     </programlisting>
     <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/hal.h"/>
   </compounddef>

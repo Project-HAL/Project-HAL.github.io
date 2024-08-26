@@ -408,7 +408,7 @@
         <argsstring>()</argsstring>
         <name>avgPastWindows</name>
         <briefdescription>
-<para>Returns the average of all the past windows. </para>
+<para>Returns the average firing rate of all the past windows. </para>
         </briefdescription>
         <detaileddescription>
 <para><simplesect kind="return"><para><computeroutput>float</computeroutput> </para>
@@ -436,11 +436,11 @@
         </inbodydescription>
         <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="143" column="15"/>
       </memberdef>
-      <memberdef kind="function" id="classChannelWindow_1a69e6d5823613cbc1b8dc9b33ee5346f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classChannelWindow_1ae6aecf5c946b9006ccd7590512244475" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
-        <definition>float ChannelWindow::stdDev</definition>
+        <definition>float ChannelWindow::firingRateSD</definition>
         <argsstring>()</argsstring>
-        <name>stdDev</name>
+        <name>firingRateSD</name>
         <briefdescription>
 <para>Computes the standard deviation of the firing rates of all past windows. </para>
         </briefdescription>
@@ -620,6 +620,7 @@
       <member refid="classChannelWindow_1ac118c7e60de090394f40e4f0fcfd6adc" prot="public" virt="non-virtual"><scope>ChannelWindow</scope><name>electrodeMap</name></member>
       <member refid="classChannelWindow_1aad074deee0fc774a2fc4a2b1cbb709c3" prot="private" virt="non-virtual"><scope>ChannelWindow</scope><name>emap</name></member>
       <member refid="classChannelWindow_1a11a10504b18341abe0eef53d6b02ea02" prot="public" virt="non-virtual"><scope>ChannelWindow</scope><name>firingRate</name></member>
+      <member refid="classChannelWindow_1ae6aecf5c946b9006ccd7590512244475" prot="public" virt="non-virtual"><scope>ChannelWindow</scope><name>firingRateSD</name></member>
       <member refid="classChannelWindow_1a8b1c18c40fa9e4f891eaf7221dd598b8" prot="public" virt="non-virtual"><scope>ChannelWindow</scope><name>get</name></member>
       <member refid="classChannelWindow_1a90e47573e5079683dabe03e1aa66a36a" prot="public" virt="non-virtual"><scope>ChannelWindow</scope><name>getAvgX</name></member>
       <member refid="classChannelWindow_1a856aab23dc9823f9cd1e725fc1f4b142" prot="public" virt="non-virtual"><scope>ChannelWindow</scope><name>init</name></member>
@@ -636,7 +637,6 @@
       <member refid="classChannelWindow_1ac06416c0dc8722b52c67611d66d811b5" prot="private" virt="non-virtual"><scope>ChannelWindow</scope><name>shiftOrAdd</name></member>
       <member refid="classChannelWindow_1ae19d382cfe743a67438690abd65721a7" prot="private" virt="non-virtual"><scope>ChannelWindow</scope><name>size</name></member>
       <member refid="classChannelWindow_1aef2bb46629de35ab899d29c1d931839a" prot="private" virt="non-virtual"><scope>ChannelWindow</scope><name>spikeWindow</name></member>
-      <member refid="classChannelWindow_1a69e6d5823613cbc1b8dc9b33ee5346f6" prot="public" virt="non-virtual"><scope>ChannelWindow</scope><name>stdDev</name></member>
       <member refid="classChannelWindow_1ac2c3750495acd7db98e24532717fcfb5" prot="private" virt="non-virtual"><scope>ChannelWindow</scope><name>sum</name></member>
       <member refid="classChannelWindow_1a362798037f40a99650da61c877971517" prot="public" virt="non-virtual"><scope>ChannelWindow</scope><name>totalSpikeCount</name></member>
     </listofallmembers>

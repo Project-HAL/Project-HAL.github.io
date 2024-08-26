@@ -7,6 +7,7 @@
     <innerfile refid="controller_8h">controller.h</innerfile>
     <innerfile refid="electrodeMap_8h">electrodeMap.h</innerfile>
     <innerfile refid="hal_8h">hal.h</innerfile>
+    <innerfile refid="progressBar_8h">progressBar.h</innerfile>
     <innerfile refid="waveDetector_8h">waveDetector.h</innerfile>
     <innerfile refid="worldstate_8h">worldstate.h</innerfile>
     <briefdescription>

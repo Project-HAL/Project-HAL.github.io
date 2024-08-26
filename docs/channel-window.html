@@ -65,7 +65,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13ChannelWindow11pastWindowsEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::pastWindows()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13ChannelWindow14avgPastWindowsEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::avgPastWindows()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13ChannelWindow7getAvgXEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::getAvgX()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13ChannelWindow6stdDevEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::stdDev()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13ChannelWindow12firingRateSDEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::firingRateSD()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13ChannelWindow10firingRateEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::firingRate()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13ChannelWindow16pastWindowsReadyEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::pastWindowsReady()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13ChannelWindow5printEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::print()</span></code></a></li>
@@ -235,7 +235,7 @@
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N13ChannelWindow14avgPastWindowsEv">
 <span id="_CPPv3N13ChannelWindow14avgPastWindowsEv"></span><span id="_CPPv2N13ChannelWindow14avgPastWindowsEv"></span><span id="ChannelWindow::avgPastWindows"></span><span class="target" id="classChannelWindow_1a88ef58fe01f8b3a310e2f02d0ac0abc0"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">avgPastWindows</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13ChannelWindow14avgPastWindowsEv" title="Link to this definition"></a><br /></dt>
-<dd><p>Returns the average of all the past windows. </p>
+<dd><p>Returns the average firing rate of all the past windows. </p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">float</span></code></p>
@@ -255,8 +255,8 @@
 </dd></dl>
 
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N13ChannelWindow6stdDevEv">
-<span id="_CPPv3N13ChannelWindow6stdDevEv"></span><span id="_CPPv2N13ChannelWindow6stdDevEv"></span><span id="ChannelWindow::stdDev"></span><span class="target" id="classChannelWindow_1a69e6d5823613cbc1b8dc9b33ee5346f6"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">stdDev</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13ChannelWindow6stdDevEv" title="Link to this definition"></a><br /></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N13ChannelWindow12firingRateSDEv">
+<span id="_CPPv3N13ChannelWindow12firingRateSDEv"></span><span id="_CPPv2N13ChannelWindow12firingRateSDEv"></span><span id="ChannelWindow::firingRateSD"></span><span class="target" id="classChannelWindow_1ae6aecf5c946b9006ccd7590512244475"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">firingRateSD</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13ChannelWindow12firingRateSDEv" title="Link to this definition"></a><br /></dt>
 <dd><p>Computes the standard deviation of the firing rates of all past windows. </p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -322,7 +322,10 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2024, Wesley Clawson, Nathan Wu, Trevor Sullivan, and Viraj Chhajed.</p>
+    <p>&#169; Copyright 2024, Wesley Clawson, Nathan Wu, Trevor Sullivan, and Viraj Chhajed.
+
+
+HAL was generously funded by the Air Force Office of Scientific Research (Grant ID: FA9550-22-1-0465).</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

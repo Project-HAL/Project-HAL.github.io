@@ -12,7 +12,8 @@ import os
 sys.path.insert(0, os.path.abspath("/home/mxwbio/Desktop/HAL/bin/lib/py_src"))
 
 project = 'Project HAL'
-copyright = '2024, Wesley Clawson, Nathan Wu, Trevor Sullivan, and Viraj Chhajed'
+copyright = """2024, Wesley Clawson, Nathan Wu, Trevor Sullivan, and Viraj Chhajed.\n\n
+HAL was generously funded by the Air Force Office of Scientific Research (Grant ID: FA9550-22-1-0465)"""
 author = 'Wesley Clawson, Nathan Wu, Trevor Sullivan, and Viraj Chhajed'
 
 # -- General configuration ---------------------------------------------------

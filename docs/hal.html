@@ -142,16 +142,22 @@ was taken from example code from MaxWell.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="hal.get_file_names">
 <span class="sig-prename descclassname"><span class="pre">hal.</span></span><span class="sig-name descname"><span class="pre">get_file_names</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">well_no</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">experiment_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trial_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hal.get_file_names" title="Link to this definition"></a></dt>
-<dd><p>_summary_</p>
+<dd><p>Returns names and paths for recording directory, config, and 
+h5 file.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>well_no</strong> (<em>int</em>) – _description_</p></li>
-<li><p><strong>experiment_name</strong> (<em>str</em>) – _description_</p></li>
-<li><p><strong>trial_path</strong> (<em>str</em>) – _description_</p></li>
+<li><p><strong>well_no</strong> (<em>int</em>) – well number</p></li>
+<li><p><strong>experiment_name</strong> (<em>str</em>) – name of the experiment</p></li>
+<li><p><strong>trial_path</strong> (<em>str</em>) – full path of the trial</p></li>
 </ul>
 </dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>tuple of recording directory, experiment name, and config,</p>
+</dd>
 </dl>
+<p>respectively
+:rtype: <code class="docutils literal notranslate"><span class="pre">List[str]</span></code></p>
 </dd></dl>
 
 <dl class="py function">
@@ -159,14 +165,20 @@ was taken from example code from MaxWell.</p>
 <span class="sig-prename descclassname"><span class="pre">hal.</span></span><span class="sig-name descname"><span class="pre">init_well</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">well_no</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rec_elecs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stim_elecs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connect</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">power_up</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Array</span></span></span><a class="headerlink" href="#hal.init_well" title="Link to this definition"></a></dt>
 <dd><p>Initilizes the well recording electrodes and stimulation electrodes. 
 By default, it will connect the stimulation units and power them, but this 
-can be overridden. The stimulation electrodes will also be selected for 
-recording, so they don’t need to be in the recording electrodes list.</p>
+can be overridden by setting the last two arguments to False or by passing
+an empty list for <code class="docutils literal notranslate"><span class="pre">stim_elecs</span></code>. This can be useful for setting 
+stimulations to different DAC channels, since this function sets all 
+stimulation electrodes to DAC 0 automatically. The stimulation electrodes 
+will also be selected for recording, so they don’t need to be in the 
+recording electrodes list.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>well_no</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Well number</p></li>
 <li><p><strong>rec_elecs</strong> (<code class="docutils literal notranslate"><span class="pre">List[int]</span></code>) – Recording electrodes, as a list of electrode numbers</p></li>
-<li><p><strong>stim_elecs</strong> (<code class="docutils literal notranslate"><span class="pre">List[int]</span></code>) – Stimulation electrodes, as a list of electrode numbers</p></li>
+<li><p><strong>stim_elecs</strong> (<code class="docutils literal notranslate"><span class="pre">List[int]</span></code>) – Stimulation electrodes, as a list of electrode numbers. 
+If empty, connecting and powering up will not be 
+attempted.</p></li>
 <li><p><strong>connect</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, optional) – Indicates if the stimulation units should be connected, 
 defaults to True</p></li>
 <li><p><strong>power_up</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, optional) – Indicates if the stimulation units should be powered up, 
@@ -226,7 +238,7 @@ specified folder format (see <a class="reference internal" href="getting-started
 
 <dl class="py function">
 <dt class="sig sig-object py" id="hal.power_up_stim_units">
-<span class="sig-prename descclassname"><span class="pre">hal.</span></span><span class="sig-name descname"><span class="pre">power_up_stim_units</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stimulation_units</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hal.power_up_stim_units" title="Link to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">hal.</span></span><span class="sig-name descname"><span class="pre">power_up_stim_units</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stimulation_units</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dac</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hal.power_up_stim_units" title="Link to this definition"></a></dt>
 <dd><p>Powers up stimulation units for an experiment</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -294,7 +306,10 @@ under key “stim_electrodes”</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2024, Wesley Clawson, Nathan Wu, Trevor Sullivan, and Viraj Chhajed.</p>
+    <p>&#169; Copyright 2024, Wesley Clawson, Nathan Wu, Trevor Sullivan, and Viraj Chhajed.
+
+
+HAL was generously funded by the Air Force Office of Scientific Research (Grant ID: FA9550-22-1-0465).</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

@@ -104,14 +104,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></tr>
 <tr class="memdesc:a3b7604f6aa0b8fa271e237d39e9df3e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a vectors containing the firing rates of all the past windows.  <a href="classChannelWindow.html#a3b7604f6aa0b8fa271e237d39e9df3e0">More...</a><br /></td></tr>
 <tr class="separator:a3b7604f6aa0b8fa271e237d39e9df3e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88ef58fe01f8b3a310e2f02d0ac0abc0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChannelWindow.html#a88ef58fe01f8b3a310e2f02d0ac0abc0">avgPastWindows</a> ()</td></tr>
-<tr class="memdesc:a88ef58fe01f8b3a310e2f02d0ac0abc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the average of all the past windows.  <a href="classChannelWindow.html#a88ef58fe01f8b3a310e2f02d0ac0abc0">More...</a><br /></td></tr>
+<tr class="memdesc:a88ef58fe01f8b3a310e2f02d0ac0abc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the average firing rate of all the past windows.  <a href="classChannelWindow.html#a88ef58fe01f8b3a310e2f02d0ac0abc0">More...</a><br /></td></tr>
 <tr class="separator:a88ef58fe01f8b3a310e2f02d0ac0abc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90e47573e5079683dabe03e1aa66a36a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChannelWindow.html#a90e47573e5079683dabe03e1aa66a36a">getAvgX</a> ()</td></tr>
 <tr class="memdesc:a90e47573e5079683dabe03e1aa66a36a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the average x coordinate of all the spike events in the window.  <a href="classChannelWindow.html#a90e47573e5079683dabe03e1aa66a36a">More...</a><br /></td></tr>
 <tr class="separator:a90e47573e5079683dabe03e1aa66a36a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69e6d5823613cbc1b8dc9b33ee5346f6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChannelWindow.html#a69e6d5823613cbc1b8dc9b33ee5346f6">stdDev</a> ()</td></tr>
-<tr class="memdesc:a69e6d5823613cbc1b8dc9b33ee5346f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the standard deviation of the firing rates of all past windows.  <a href="classChannelWindow.html#a69e6d5823613cbc1b8dc9b33ee5346f6">More...</a><br /></td></tr>
-<tr class="separator:a69e6d5823613cbc1b8dc9b33ee5346f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6aecf5c946b9006ccd7590512244475"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChannelWindow.html#ae6aecf5c946b9006ccd7590512244475">firingRateSD</a> ()</td></tr>
+<tr class="memdesc:ae6aecf5c946b9006ccd7590512244475"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the standard deviation of the firing rates of all past windows.  <a href="classChannelWindow.html#ae6aecf5c946b9006ccd7590512244475">More...</a><br /></td></tr>
+<tr class="separator:ae6aecf5c946b9006ccd7590512244475"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11a10504b18341abe0eef53d6b02ea02"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChannelWindow.html#a11a10504b18341abe0eef53d6b02ea02">firingRate</a> ()</td></tr>
 <tr class="memdesc:a11a10504b18341abe0eef53d6b02ea02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the firing rate of the window.  <a href="classChannelWindow.html#a11a10504b18341abe0eef53d6b02ea02">More...</a><br /></td></tr>
 <tr class="separator:a11a10504b18341abe0eef53d6b02ea02"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -262,7 +262,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the average of all the past windows. </p>
+<p>Returns the average firing rate of all the past windows. </p>
 <dl class="section return"><dt>Returns</dt><dd><code>float</code> </dd></dl>
 
 </div>
@@ -330,6 +330,26 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></tr>
 </div><div class="memdoc">
 
 <p>Computes the firing rate of the window. </p>
+<dl class="section return"><dt>Returns</dt><dd><code>float</code> </dd></dl>
+
+</div>
+</div>
+<a id="ae6aecf5c946b9006ccd7590512244475"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6aecf5c946b9006ccd7590512244475">&#9670;&nbsp;</a></span>firingRateSD()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float ChannelWindow::firingRateSD </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Computes the standard deviation of the firing rates of all past windows. </p>
 <dl class="section return"><dt>Returns</dt><dd><code>float</code> </dd></dl>
 
 </div>
@@ -485,26 +505,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a69e6d5823613cbc1b8dc9b33ee5346f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69e6d5823613cbc1b8dc9b33ee5346f6">&#9670;&nbsp;</a></span>stdDev()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float ChannelWindow::stdDev </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Computes the standard deviation of the firing rates of all past windows. </p>
-<dl class="section return"><dt>Returns</dt><dd><code>float</code> </dd></dl>
 
 </div>
 </div>

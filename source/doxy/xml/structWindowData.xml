@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structWindowData" kind="struct" language="C++" prot="public">
+    <compoundname>WindowData</compoundname>
+    <includes refid="channelWindow_8h" local="no">channelWindow.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structWindowData_1a79aa01fa4e73f2d77ad9b312c2a4a20a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float WindowData::firingRate</definition>
+        <argsstring></argsstring>
+        <name>firingRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>firing rate of the window </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="21" column="11" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Stores data for a past window. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="20" column="17" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" bodystart="20" bodyend="22"/>
+    <listofallmembers>
+      <member refid="structWindowData_1a79aa01fa4e73f2d77ad9b312c2a4a20a" prot="public" virt="non-virtual"><scope>WindowData</scope><name>firingRate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

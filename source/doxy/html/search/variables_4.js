@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['spikeframecount_114',['spikeFrameCount',['../structWaveMetadata.html#a857e1700fe32cab15307c18d4cf499f2',1,'WaveMetadata']]]
+  ['spikeframecount_116',['spikeFrameCount',['../structWaveMetadata.html#a857e1700fe32cab15307c18d4cf499f2',1,'WaveMetadata']]]
 ];
