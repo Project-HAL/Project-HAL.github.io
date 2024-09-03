@@ -8,5 +8,6 @@ C++ Modules
    channel_window
    controller
    wave_detector
-   world_state
+   plotter_cpp
    argparse
+   world_state

@@ -4,6 +4,8 @@ Python Modules
 .. toctree::
    :maxdepth: 4
 
-   stimulation
    hal
+   stimulation
    world_stimulation
+   config
+   plotter_py

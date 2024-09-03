@@ -1,0 +1,5 @@
+``Plotter``
+===========
+
+.. doxygenclass:: Plotter
+    :members:
