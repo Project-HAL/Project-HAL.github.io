@@ -3,23 +3,16 @@
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classWorldState_ad14e01bcb94b4edea5d2515cf6cf0868}{World\+State}} ()
+\mbox{\hyperlink{classWorldState_a207af80e9bba9e24195891abddf67df7}{World\+State}} (string map, int loc)
 \begin{DoxyCompactList}\small\item\em Construct a new World State object. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classWorldState_a207af80e9bba9e24195891abddf67df7}\label{classWorldState_a207af80e9bba9e24195891abddf67df7}} 
-{\bfseries World\+State} (string map, int loc)
-\item 
-\mbox{\Hypertarget{classWorldState_ababd18af82ed36267bfb9f361f657a9d}\label{classWorldState_ababd18af82ed36267bfb9f361f657a9d}} 
-void {\bfseries display} ()
-\item 
-\mbox{\Hypertarget{classWorldState_a021a8f19163d134ccd733f2a444c2bd1}\label{classWorldState_a021a8f19163d134ccd733f2a444c2bd1}} 
-void {\bfseries move\+\_\+left} ()
-\item 
-\mbox{\Hypertarget{classWorldState_aebe5afb7efc52de12be8fde4d3dc25d4}\label{classWorldState_aebe5afb7efc52de12be8fde4d3dc25d4}} 
-void {\bfseries move\+\_\+right} ()
-\item 
-\mbox{\Hypertarget{classWorldState_ad2231631de7f0a1ef4cd000f82d3f4bd}\label{classWorldState_ad2231631de7f0a1ef4cd000f82d3f4bd}} 
-char {\bfseries get\+\_\+position} ()
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{classWorldState_ababd18af82ed36267bfb9f361f657a9d}{display}} ()
+\begin{DoxyCompactList}\small\item\em Prints the world state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWorldState_a9c6e684577e6339573dd60ede708bd3a}{move\+Left}} ()
+\begin{DoxyCompactList}\small\item\em Moves left by one. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWorldState_a1f3c4635f196e0aa9774779e396c4b0a}{move\+Right}} ()
+\begin{DoxyCompactList}\small\item\em Moves right by one. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{classWorldState_a767607282ddd9611a0c89f7a09bd3acc}{get\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Get the current position. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -32,15 +25,68 @@ string {\bfseries world\+\_\+map}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classWorldState_ad14e01bcb94b4edea5d2515cf6cf0868}\label{classWorldState_ad14e01bcb94b4edea5d2515cf6cf0868}} 
+\mbox{\Hypertarget{classWorldState_a207af80e9bba9e24195891abddf67df7}\label{classWorldState_a207af80e9bba9e24195891abddf67df7}} 
 \index{WorldState@{WorldState}!WorldState@{WorldState}}
 \index{WorldState@{WorldState}!WorldState@{WorldState}}
 \doxysubsubsection{\texorpdfstring{WorldState()}{WorldState()}}
-{\footnotesize\ttfamily World\+State\+::\+World\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily World\+State\+::\+World\+State (\begin{DoxyParamCaption}\item[{string}]{map,  }\item[{int}]{loc }\end{DoxyParamCaption})}
 
 
 
 Construct a new World State object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & {\ttfamily string} representing the layout of the world \\
+\hline
+{\em loc} & {\ttfamily int} indicating the starting position \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWorldState_ababd18af82ed36267bfb9f361f657a9d}\label{classWorldState_ababd18af82ed36267bfb9f361f657a9d}} 
+\index{WorldState@{WorldState}!display@{display}}
+\index{display@{display}!WorldState@{WorldState}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void World\+State\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prints the world state. 
+
+\mbox{\Hypertarget{classWorldState_a767607282ddd9611a0c89f7a09bd3acc}\label{classWorldState_a767607282ddd9611a0c89f7a09bd3acc}} 
+\index{WorldState@{WorldState}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!WorldState@{WorldState}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily char World\+State\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the current position. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily char} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWorldState_a9c6e684577e6339573dd60ede708bd3a}\label{classWorldState_a9c6e684577e6339573dd60ede708bd3a}} 
+\index{WorldState@{WorldState}!moveLeft@{moveLeft}}
+\index{moveLeft@{moveLeft}!WorldState@{WorldState}}
+\doxysubsubsection{\texorpdfstring{moveLeft()}{moveLeft()}}
+{\footnotesize\ttfamily void World\+State\+::move\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Moves left by one. 
+
+\mbox{\Hypertarget{classWorldState_a1f3c4635f196e0aa9774779e396c4b0a}\label{classWorldState_a1f3c4635f196e0aa9774779e396c4b0a}} 
+\index{WorldState@{WorldState}!moveRight@{moveRight}}
+\index{moveRight@{moveRight}!WorldState@{WorldState}}
+\doxysubsubsection{\texorpdfstring{moveRight()}{moveRight()}}
+{\footnotesize\ttfamily void World\+State\+::move\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Moves right by one. 
 
 
 

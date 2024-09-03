@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="191" column="16" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" bodystart="191" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="197" column="16" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" bodystart="197" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classChannelWindow_1aad074deee0fc774a2fc4a2b1cbb709c3" prot="private" static="no" mutable="no">
         <type><ref refid="classElectrodeMap" kindref="compound">ElectrodeMap</ref></type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="192" column="22" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" bodystart="192" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="198" column="22" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" bodystart="198" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classChannelWindow_1ae19d382cfe743a67438690abd65721a7" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="193" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" bodystart="193" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="199" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" bodystart="199" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classChannelWindow_1ac2c3750495acd7db98e24532717fcfb5" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="194" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" bodystart="194" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="200" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" bodystart="200" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classChannelWindow_1a3326b298debf5b5b0d3b8f086dd005a5" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="196" column="14" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" bodystart="196" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="202" column="14" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" bodystart="202" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classChannelWindow_1ac6bc69cd91cfe015ae0bdbc7eefccfc9" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -80,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="197" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" bodystart="197" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="203" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" bodystart="203" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classChannelWindow_1a4ada5780121d96a6d955894c77a8d62e" prot="private" static="no" mutable="no">
         <type>vector&lt; float &gt;</type>
@@ -93,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="198" column="16" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" bodystart="198" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="204" column="16" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" bodystart="204" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classChannelWindow_1a8f962953ed315282f6cbcc3d9a79932e" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -106,7 +106,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="200" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" bodystart="200" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="206" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" bodystart="206" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -237,12 +237,14 @@
         <argsstring>()</argsstring>
         <name>init</name>
         <briefdescription>
+<para>Initialize the window. </para>
         </briefdescription>
         <detaileddescription>
+<para>This will read in <computeroutput>maxlab::FilteredFrameData</computeroutput> structs until the window is full. The data streamer must be initialized before calling this function. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="53" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="60" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classChannelWindow_1af6b05a45d1f682a31a0fa6b43f4b19f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -273,7 +275,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="69" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="76" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classChannelWindow_1ac93750ea8c9a5cfc1412e430c3bd1e3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -302,7 +304,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="85" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="91" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classChannelWindow_1a8b1c18c40fa9e4f891eaf7221dd598b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>maxlab::FilteredFrameData</type>
@@ -332,7 +334,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="96" column="35"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="102" column="35"/>
       </memberdef>
       <memberdef kind="function" id="classChannelWindow_1afab2b22f3d23ea016697d33b16ac8511" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -349,7 +351,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="103" column="13"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="109" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classChannelWindow_1a362798037f40a99650da61c877971517" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -366,7 +368,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="112" column="13"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="118" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classChannelWindow_1ac118c7e60de090394f40e4f0fcfd6adc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classElectrodeMap" kindref="compound">ElectrodeMap</ref></type>
@@ -383,7 +385,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="120" column="22"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="126" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classChannelWindow_1a3b7604f6aa0b8fa271e237d39e9df3e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>vector&lt; float &gt;</type>
@@ -400,7 +402,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="128" column="16"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="134" column="16"/>
       </memberdef>
       <memberdef kind="function" id="classChannelWindow_1a88ef58fe01f8b3a310e2f02d0ac0abc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -417,7 +419,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="135" column="15"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="141" column="15"/>
       </memberdef>
       <memberdef kind="function" id="classChannelWindow_1a90e47573e5079683dabe03e1aa66a36a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -434,7 +436,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="143" column="15"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="149" column="15"/>
       </memberdef>
       <memberdef kind="function" id="classChannelWindow_1ae6aecf5c946b9006ccd7590512244475" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -451,7 +453,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="151" column="15"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="157" column="15"/>
       </memberdef>
       <memberdef kind="function" id="classChannelWindow_1a11a10504b18341abe0eef53d6b02ea02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -468,7 +470,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="158" column="15"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="164" column="15"/>
       </memberdef>
       <memberdef kind="function" id="classChannelWindow_1a8a1cdbafbc9c7597446f38d20cf26ea8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -486,7 +488,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="172" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="178" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classChannelWindow_1ad3fe970bc14670cd6d73a37fa2cacbd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -500,7 +502,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="178" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="184" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classChannelWindow_1a47a4bd5f2102f104b0bbcf521f6be58f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -529,7 +531,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="188" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="194" column="14"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -548,7 +550,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="213" column="13"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="219" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classChannelWindow_1ac06416c0dc8722b52c67611d66d811b5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -565,7 +567,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="215" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="221" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classChannelWindow_1aff1d94a0bd1b3ec079bca309a3a86f93" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -582,7 +584,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="216" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="222" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classChannelWindow_1a06e3160343a920524f88376184928f6f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -599,7 +601,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="217" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="223" column="14"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -607,7 +609,7 @@
     <detaileddescription>
 <para>Add description for the <computeroutput><ref refid="classChannelWindow" kindref="compound">ChannelWindow</ref></computeroutput> class </para>
     </detaileddescription>
-    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="18" column="20" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" bodystart="18" bodyend="221"/>
+    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" line="18" column="20" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/channelWindow.h" bodystart="18" bodyend="227"/>
     <listofallmembers>
       <member refid="classChannelWindow_1af6b05a45d1f682a31a0fa6b43f4b19f2" prot="public" virt="non-virtual"><scope>ChannelWindow</scope><name>add</name></member>
       <member refid="classChannelWindow_1a0bd93e63289f2ac3a7798a900f9bce1a" prot="private" virt="non-virtual"><scope>ChannelWindow</scope><name>addEvent</name></member>

@@ -22,8 +22,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="world_stimulation" href="world_stimulation.html" />
-    <link rel="prev" title="stimulation" href="stimulation.html" /> 
+    <link rel="next" title="stimulation" href="stimulation.html" />
+    <link rel="prev" title="Python Modules" href="py_modules.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -47,13 +47,13 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="overview.html">Project Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="results.html">Experiment Results</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="py-modules.html">Python Modules</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="stimulation.html"><code class="docutils literal notranslate"><span class="pre">stimulation</span></code></a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="py_modules.html">Python Modules</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">hal</span></code></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#hal.build_training_sequences"><code class="docutils literal notranslate"><span class="pre">build_training_sequences()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#hal.connect_stim_units_to_stim_electrodes"><code class="docutils literal notranslate"><span class="pre">connect_stim_units_to_stim_electrodes()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hal.get_electrode_square"><code class="docutils literal notranslate"><span class="pre">get_electrode_square()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#hal.get_file_names"><code class="docutils literal notranslate"><span class="pre">get_file_names()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#hal.init_well"><code class="docutils literal notranslate"><span class="pre">init_well()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#hal.make_trial_folders"><code class="docutils literal notranslate"><span class="pre">make_trial_folders()</span></code></a></li>
@@ -64,10 +64,13 @@
 <li class="toctree-l3"><a class="reference internal" href="#hal.write_stim_electrodes"><code class="docutils literal notranslate"><span class="pre">write_stim_electrodes()</span></code></a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="stimulation.html"><code class="docutils literal notranslate"><span class="pre">stimulation</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="world_stimulation.html"><code class="docutils literal notranslate"><span class="pre">world_stimulation</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="config.html"><code class="docutils literal notranslate"><span class="pre">config</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotter_py.html"><code class="docutils literal notranslate"><span class="pre">plotter</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="c-modules.html">C++ Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cpp_modules.html">C++ Modules</a></li>
 </ul>
 
         </div>
@@ -84,7 +87,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="py-modules.html">Python Modules</a></li>
+          <li class="breadcrumb-item"><a href="py_modules.html">Python Modules</a></li>
       <li class="breadcrumb-item active"><code class="docutils literal notranslate"><span class="pre">hal</span></code></li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/hal.rst.txt" rel="nofollow"> View page source</a>
@@ -97,7 +100,7 @@
              
   <section id="hal">
 <h1><code class="docutils literal notranslate"><span class="pre">hal</span></code><a class="headerlink" href="#hal" title="Link to this heading"></a></h1>
-<p>Find the folder structure here: <a class="reference internal" href="getting-started.html#folder-structure"><span class="std std-ref">Folder Structure</span></a>.</p>
+<p>Find the folder structure here: <a class="reference internal" href="getting_started.html#folder-structure"><span class="std std-ref">Folder Structure</span></a>.</p>
 <dl class="py function" id="module-hal">
 <dt class="sig sig-object py" id="hal.build_training_sequences">
 <span class="sig-prename descclassname"><span class="pre">hal.</span></span><span class="sig-name descname"><span class="pre">build_training_sequences</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">well_no</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hal.build_training_sequences" title="Link to this definition"></a></dt>
@@ -137,6 +140,27 @@ was taken from example code from MaxWell.</p>
 <dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">List[int]</span></code></p>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hal.get_electrode_square">
+<span class="sig-prename descclassname"><span class="pre">hal.</span></span><span class="sig-name descname"><span class="pre">get_electrode_square</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">center</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radius</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step_width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hal.get_electrode_square" title="Link to this definition"></a></dt>
+<dd><p>Generates a square of electrodes centered around a single electrode</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>center</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – the target electrode to center the square around</p></li>
+<li><p><strong>radius</strong> – half the length of the square, measured in steps/chosen</p></li>
+</ul>
+</dd>
+</dl>
+<p>electrodes
+:type radius: <code class="docutils literal notranslate"><span class="pre">int</span></code>
+:param step_width: how far to “step” when choosing electrodes in the square, 
+defaults to 1
+:type step_width: <code class="docutils literal notranslate"><span class="pre">int</span></code>, optional
+:return: list of electrodes
+:rtype: <code class="docutils literal notranslate"><span class="pre">List[int]</span></code></p>
 </dd></dl>
 
 <dl class="py function">
@@ -198,7 +222,7 @@ defaults to True</p></li>
 <dt class="sig sig-object py" id="hal.make_trial_folders">
 <span class="sig-prename descclassname"><span class="pre">hal.</span></span><span class="sig-name descname"><span class="pre">make_trial_folders</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">experiment_parameters</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hal.make_trial_folders" title="Link to this definition"></a></dt>
 <dd><p>Creates folders for saving data based on a dict, generated from an 
-experiment <code class="docutils literal notranslate"><span class="pre">json</span></code> file (see: <a class="reference internal" href="getting-started.html#folder-structure"><span class="std std-ref">Folder Structure</span></a>)</p>
+experiment <code class="docutils literal notranslate"><span class="pre">json</span></code> file (see: <a class="reference internal" href="getting_started.html#folder-structure"><span class="std std-ref">Folder Structure</span></a>)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>experiment_parameters</strong> (<code class="docutils literal notranslate"><span class="pre">HAL.json.dict{}</span></code>) – Holds the experiment paremeters; the following elements are <strong>required</strong>:
@@ -217,7 +241,7 @@ experiment <code class="docutils literal notranslate"><span class="pre">json</sp
 <dt class="sig sig-object py" id="hal.make_trial_folders_raw">
 <span class="sig-prename descclassname"><span class="pre">hal.</span></span><span class="sig-name descname"><span class="pre">make_trial_folders_raw</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">experiment_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chip_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wells</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hal.make_trial_folders_raw" title="Link to this definition"></a></dt>
 <dd><p>Creates folders for saving data without using a dict, in the HAL 
-specified folder format (see <a class="reference internal" href="getting-started.html#folder-structure"><span class="std std-ref">Folder Structure</span></a>).</p>
+specified folder format (see <a class="reference internal" href="getting_started.html#folder-structure"><span class="std std-ref">Folder Structure</span></a>).</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -299,8 +323,8 @@ under key “stim_electrodes”</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="stimulation.html" class="btn btn-neutral float-left" title="stimulation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="world_stimulation.html" class="btn btn-neutral float-right" title="world_stimulation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="py_modules.html" class="btn btn-neutral float-left" title="Python Modules" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="stimulation.html" class="btn btn-neutral float-right" title="stimulation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

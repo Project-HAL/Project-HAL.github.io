@@ -1,0 +1,5 @@
+``ChannelWindow``
+=================
+
+.. doxygenclass:: ChannelWindow
+    :members:

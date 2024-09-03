@@ -9,10 +9,10 @@ Welcome to Project HAL's documentation!
 .. toctree::
    
    overview
-   getting-started
+   getting_started
    results
-   py-modules
-   c-modules
+   py_modules
+   cpp_modules
 
 
 

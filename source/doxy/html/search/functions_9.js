@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['shift_98',['shift',['../classChannelWindow.html#ac93750ea8c9a5cfc1412e430c3bd1e3f',1,'ChannelWindow::shift()'],['../classController.html#a8716527dccd14db21d94e6f8a449627c',1,'Controller::shift()']]],
-  ['shiftwindow_99',['shiftWindow',['../classWaveDetector.html#aaa4806eeb2950412dbd779635a2f5667',1,'WaveDetector']]],
-  ['size_100',['size',['../classElectrodeMap.html#ab76caa8f91537a7086c21646affcb1e5',1,'ElectrodeMap']]]
+  ['numchannels_103',['numChannels',['../classController.html#a14b2114e3be63d83feb319ce759293fa',1,'Controller']]],
+  ['numspikes_104',['numSpikes',['../classController.html#a34a2a7c37f78cc365a3cf84722b9a224',1,'Controller']]]
 ];

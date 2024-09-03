@@ -2,21 +2,6 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="classWorldState" kind="class" language="C++" prot="public">
     <compoundname>WorldState</compoundname>
-      <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="classWorldState_1ac0873aea21438074119c8fc23c22d3e0" prot="private" static="no" mutable="no">
-        <type>int</type>
-        <definition>int WorldState::nodes</definition>
-        <argsstring></argsstring>
-        <name>nodes</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="8" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" bodystart="8" bodyend="-1"/>
-      </memberdef>
-      </sectiondef>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="classWorldState_1a9d9a7c56723f7810794f4b3097add20d" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -29,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="22" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" bodystart="22" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="8" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" bodystart="8" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classWorldState_1a237da82d5d6c66bd4c877e1f77dfdc26" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -42,7 +27,136 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="23" column="16" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" bodystart="23" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="9" column="16" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classWorldState_1ac0873aea21438074119c8fc23c22d3e0" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int WorldState::nodes</definition>
+        <argsstring></argsstring>
+        <name>nodes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="47" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classWorldState_1ad14e01bcb94b4edea5d2515cf6cf0868" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WorldState::WorldState</definition>
+        <argsstring>()</argsstring>
+        <name>WorldState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="11" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classWorldState_1a207af80e9bba9e24195891abddf67df7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WorldState::WorldState</definition>
+        <argsstring>(string map, int loc)</argsstring>
+        <name>WorldState</name>
+        <param>
+          <type>string</type>
+          <declname>map</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>loc</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new World State object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>string</computeroutput> representing the layout of the world </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>loc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>int</computeroutput> indicating the starting position </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="19" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classWorldState_1ababd18af82ed36267bfb9f361f657a9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WorldState::display</definition>
+        <argsstring>()</argsstring>
+        <name>display</name>
+        <briefdescription>
+<para>Prints the world state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="25" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classWorldState_1a9c6e684577e6339573dd60ede708bd3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WorldState::moveLeft</definition>
+        <argsstring>()</argsstring>
+        <name>moveLeft</name>
+        <briefdescription>
+<para>Moves left by one. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="31" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classWorldState_1a1f3c4635f196e0aa9774779e396c4b0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WorldState::moveRight</definition>
+        <argsstring>()</argsstring>
+        <name>moveRight</name>
+        <briefdescription>
+<para>Moves right by one. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="37" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classWorldState_1a767607282ddd9611a0c89f7a09bd3acc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char WorldState::getPosition</definition>
+        <argsstring>()</argsstring>
+        <name>getPosition</name>
+        <briefdescription>
+<para>Get the current position. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><computeroutput>char</computeroutput> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="44" column="14"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -57,7 +171,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="14" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="53" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classWorldState_1a3d6111f40d7fce1afb66f5afe112efac" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -78,109 +192,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="16" column="13"/>
-      </memberdef>
-      </sectiondef>
-      <sectiondef kind="public-func">
-      <memberdef kind="function" id="classWorldState_1ad14e01bcb94b4edea5d2515cf6cf0868" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>WorldState::WorldState</definition>
-        <argsstring>()</argsstring>
-        <name>WorldState</name>
-        <briefdescription>
-<para>Construct a new World State object. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="29" column="9"/>
-      </memberdef>
-      <memberdef kind="function" id="classWorldState_1a207af80e9bba9e24195891abddf67df7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>WorldState::WorldState</definition>
-        <argsstring>(string map, int loc)</argsstring>
-        <name>WorldState</name>
-        <param>
-          <type>string</type>
-          <declname>map</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>loc</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="31" column="9"/>
-      </memberdef>
-      <memberdef kind="function" id="classWorldState_1ababd18af82ed36267bfb9f361f657a9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void WorldState::display</definition>
-        <argsstring>()</argsstring>
-        <name>display</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="33" column="14"/>
-      </memberdef>
-      <memberdef kind="function" id="classWorldState_1a021a8f19163d134ccd733f2a444c2bd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void WorldState::move_left</definition>
-        <argsstring>()</argsstring>
-        <name>move_left</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="35" column="14"/>
-      </memberdef>
-      <memberdef kind="function" id="classWorldState_1aebe5afb7efc52de12be8fde4d3dc25d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void WorldState::move_right</definition>
-        <argsstring>()</argsstring>
-        <name>move_right</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="37" column="14"/>
-      </memberdef>
-      <memberdef kind="function" id="classWorldState_1ad2231631de7f0a1ef4cd000f82d3f4bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>char</type>
-        <definition>char WorldState::get_position</definition>
-        <argsstring>()</argsstring>
-        <name>get_position</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="39" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="55" column="13"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="6" column="17" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" bodystart="6" bodyend="40"/>
+    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="6" column="17" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" bodystart="6" bodyend="56"/>
     <listofallmembers>
       <member refid="classWorldState_1ababd18af82ed36267bfb9f361f657a9d" prot="public" virt="non-virtual"><scope>WorldState</scope><name>display</name></member>
-      <member refid="classWorldState_1ad2231631de7f0a1ef4cd000f82d3f4bd" prot="public" virt="non-virtual"><scope>WorldState</scope><name>get_position</name></member>
+      <member refid="classWorldState_1a767607282ddd9611a0c89f7a09bd3acc" prot="public" virt="non-virtual"><scope>WorldState</scope><name>getPosition</name></member>
       <member refid="classWorldState_1a9d9a7c56723f7810794f4b3097add20d" prot="public" virt="non-virtual"><scope>WorldState</scope><name>location</name></member>
-      <member refid="classWorldState_1a021a8f19163d134ccd733f2a444c2bd1" prot="public" virt="non-virtual"><scope>WorldState</scope><name>move_left</name></member>
-      <member refid="classWorldState_1aebe5afb7efc52de12be8fde4d3dc25d4" prot="public" virt="non-virtual"><scope>WorldState</scope><name>move_right</name></member>
+      <member refid="classWorldState_1a9c6e684577e6339573dd60ede708bd3a" prot="public" virt="non-virtual"><scope>WorldState</scope><name>moveLeft</name></member>
+      <member refid="classWorldState_1a1f3c4635f196e0aa9774779e396c4b0a" prot="public" virt="non-virtual"><scope>WorldState</scope><name>moveRight</name></member>
       <member refid="classWorldState_1ac0873aea21438074119c8fc23c22d3e0" prot="private" virt="non-virtual"><scope>WorldState</scope><name>nodes</name></member>
       <member refid="classWorldState_1a3d6111f40d7fce1afb66f5afe112efac" prot="private" virt="non-virtual"><scope>WorldState</scope><name>remainder</name></member>
       <member refid="classWorldState_1af4c586e21a71fe2d8345f1fa8174f502" prot="private" virt="non-virtual"><scope>WorldState</scope><name>validate</name></member>

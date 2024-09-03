@@ -61,6 +61,12 @@
     <member refid="classElectrodeMap_1a38b8c5e4bc4f2b0c7a8e0bcda096c8d4" kind="function"><name>print</name></member>
     <member refid="classElectrodeMap_1ac7d50e71926d638fffc3a0f8a0ebf9f2" kind="function"><name>readConfig</name></member>
   </compound>
+  <compound refid="classPlotter" kind="class"><name>Plotter</name>
+    <member refid="classPlotter_1aedaa4a2c25cba70241da4c8072c48f01" kind="variable"><name>type</name></member>
+    <member refid="classPlotter_1afd5d44e148be6c512170582a27b3455c" kind="variable"><name>pub_sock</name></member>
+    <member refid="classPlotter_1ae90ba1f586a6862e0e24ce63259cb09b" kind="function"><name>Plotter</name></member>
+    <member refid="classPlotter_1a2967008e81047a3256b5b2be7e261dd4" kind="function"><name>sync</name></member>
+  </compound>
   <compound refid="classProgressBar" kind="class"><name>ProgressBar</name>
     <member refid="classProgressBar_1a7a03c247a1fd4e22a9599802834218c0" kind="variable"><name>totalTicks</name></member>
     <member refid="classProgressBar_1a0c6d5e3e217a42b91e5a0e64f58acc53" kind="variable"><name>currentTick</name></member>
@@ -113,17 +119,17 @@
     <member refid="structWaveMetadata_1ad98b293bc7abfa090b8c89fa9651d165" kind="variable"><name>maxSpikesLoc</name></member>
   </compound>
   <compound refid="classWorldState" kind="class"><name>WorldState</name>
-    <member refid="classWorldState_1ac0873aea21438074119c8fc23c22d3e0" kind="variable"><name>nodes</name></member>
     <member refid="classWorldState_1a9d9a7c56723f7810794f4b3097add20d" kind="variable"><name>location</name></member>
     <member refid="classWorldState_1a237da82d5d6c66bd4c877e1f77dfdc26" kind="variable"><name>world_map</name></member>
-    <member refid="classWorldState_1af4c586e21a71fe2d8345f1fa8174f502" kind="function"><name>validate</name></member>
-    <member refid="classWorldState_1a3d6111f40d7fce1afb66f5afe112efac" kind="function"><name>remainder</name></member>
+    <member refid="classWorldState_1ac0873aea21438074119c8fc23c22d3e0" kind="variable"><name>nodes</name></member>
     <member refid="classWorldState_1ad14e01bcb94b4edea5d2515cf6cf0868" kind="function"><name>WorldState</name></member>
     <member refid="classWorldState_1a207af80e9bba9e24195891abddf67df7" kind="function"><name>WorldState</name></member>
     <member refid="classWorldState_1ababd18af82ed36267bfb9f361f657a9d" kind="function"><name>display</name></member>
-    <member refid="classWorldState_1a021a8f19163d134ccd733f2a444c2bd1" kind="function"><name>move_left</name></member>
-    <member refid="classWorldState_1aebe5afb7efc52de12be8fde4d3dc25d4" kind="function"><name>move_right</name></member>
-    <member refid="classWorldState_1ad2231631de7f0a1ef4cd000f82d3f4bd" kind="function"><name>get_position</name></member>
+    <member refid="classWorldState_1a9c6e684577e6339573dd60ede708bd3a" kind="function"><name>moveLeft</name></member>
+    <member refid="classWorldState_1a1f3c4635f196e0aa9774779e396c4b0a" kind="function"><name>moveRight</name></member>
+    <member refid="classWorldState_1a767607282ddd9611a0c89f7a09bd3acc" kind="function"><name>getPosition</name></member>
+    <member refid="classWorldState_1af4c586e21a71fe2d8345f1fa8174f502" kind="function"><name>validate</name></member>
+    <member refid="classWorldState_1a3d6111f40d7fce1afb66f5afe112efac" kind="function"><name>remainder</name></member>
   </compound>
   <compound refid="namespaceargparse" kind="namespace"><name>argparse</name>
     <member refid="namespaceargparse_1abb7a363c940e66d2b40c984142c9c3bb" kind="function"><name>checkOption</name></member>
@@ -147,6 +153,8 @@
     <member refid="electrodeMap_8h_1a6922ae2d0490ba3260427ef9fe4553c1" kind="typedef"><name>electrodeCoords</name></member>
   </compound>
   <compound refid="hal_8h" kind="file"><name>hal.h</name>
+  </compound>
+  <compound refid="plotter_8h" kind="file"><name>plotter.h</name>
   </compound>
   <compound refid="progressBar_8h" kind="file"><name>progressBar.h</name>
   </compound>

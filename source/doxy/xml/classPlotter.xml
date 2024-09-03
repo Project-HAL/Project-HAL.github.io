@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classPlotter" kind="class" language="C++" prot="public">
+    <compoundname>Plotter</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classPlotter_1aedaa4a2c25cba70241da4c8072c48f01" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Plotter::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/plotter.h" line="27" column="16" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/plotter.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPlotter_1afd5d44e148be6c512170582a27b3455c" prot="private" static="no" mutable="no">
+        <type>zmq::socket_t</type>
+        <definition>zmq::socket_t Plotter::pub_sock</definition>
+        <argsstring></argsstring>
+        <name>pub_sock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/plotter.h" line="28" column="23" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/plotter.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPlotter_1ae90ba1f586a6862e0e24ce63259cb09b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Plotter::Plotter</definition>
+        <argsstring>(string experiment_type=&quot;frequency_game&quot;)</argsstring>
+        <name>Plotter</name>
+        <param>
+          <type>string</type>
+          <declname>experiment_type</declname>
+          <defval>&quot;frequency_game&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="classPlotter" kindref="compound">Plotter</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>experiment_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>string</computeroutput> representing the type of experiment being run. Currently, only &quot;frequency_game&quot; is supported. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/plotter.h" line="15" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlotter_1a2967008e81047a3256b5b2be7e261dd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Plotter::sync</definition>
+        <argsstring>()</argsstring>
+        <name>sync</name>
+        <briefdescription>
+<para>Syncs with Python plotter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/plotter.h" line="22" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/plotter.h" line="6" column="14" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/plotter.h" bodystart="6" bodyend="29"/>
+    <listofallmembers>
+      <member refid="classPlotter_1ae90ba1f586a6862e0e24ce63259cb09b" prot="public" virt="non-virtual"><scope>Plotter</scope><name>Plotter</name></member>
+      <member refid="classPlotter_1afd5d44e148be6c512170582a27b3455c" prot="private" virt="non-virtual"><scope>Plotter</scope><name>pub_sock</name></member>
+      <member refid="classPlotter_1a2967008e81047a3256b5b2be7e261dd4" prot="public" virt="non-virtual"><scope>Plotter</scope><name>sync</name></member>
+      <member refid="classPlotter_1aedaa4a2c25cba70241da4c8072c48f01" prot="private" virt="non-virtual"><scope>Plotter</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

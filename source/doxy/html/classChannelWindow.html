@@ -79,8 +79,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2997d4f19a4024bcb8d87422df8097d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChannelWindow.html#a2997d4f19a4024bcb8d87422df8097d0">ChannelWindow</a> (int <a class="el" href="classChannelWindow.html#afab2b22f3d23ea016697d33b16ac8511">length</a>, <a class="el" href="classElectrodeMap.html">ElectrodeMap</a> emap, int toSave=0)</td></tr>
 <tr class="memdesc:a2997d4f19a4024bcb8d87422df8097d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classChannelWindow.html#a2997d4f19a4024bcb8d87422df8097d0">More...</a><br /></td></tr>
 <tr class="separator:a2997d4f19a4024bcb8d87422df8097d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a856aab23dc9823f9cd1e725fc1f4b142"><td class="memItemLeft" align="right" valign="top"><a id="a856aab23dc9823f9cd1e725fc1f4b142"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></tr>
+<tr class="memitem:a856aab23dc9823f9cd1e725fc1f4b142"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChannelWindow.html#a856aab23dc9823f9cd1e725fc1f4b142">init</a> ()</td></tr>
+<tr class="memdesc:a856aab23dc9823f9cd1e725fc1f4b142"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the window.  <a href="classChannelWindow.html#a856aab23dc9823f9cd1e725fc1f4b142">More...</a><br /></td></tr>
 <tr class="separator:a856aab23dc9823f9cd1e725fc1f4b142"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6b05a45d1f682a31a0fa6b43f4b19f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChannelWindow.html#af6b05a45d1f682a31a0fa6b43f4b19f2">add</a> (maxlab::FilteredFrameData frame)</td></tr>
 <tr class="memdesc:af6b05a45d1f682a31a0fa6b43f4b19f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a data frame to the window.  <a href="classChannelWindow.html#af6b05a45d1f682a31a0fa6b43f4b19f2">More...</a><br /></td></tr>
@@ -398,6 +398,26 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></tr>
 
 <p>Computes the average x coordinate of all the spike events in the window. </p>
 <dl class="section return"><dt>Returns</dt><dd><code>float</code> </dd></dl>
+
+</div>
+</div>
+<a id="a856aab23dc9823f9cd1e725fc1f4b142"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a856aab23dc9823f9cd1e725fc1f4b142">&#9670;&nbsp;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ChannelWindow::init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize the window. </p>
+<p>This will read in <code>maxlab::FilteredFrameData</code> structs until the window is full. The data streamer must be initialized before calling this function. </p>
 
 </div>
 </div>

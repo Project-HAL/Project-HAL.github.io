@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ElectrodeMap Class &mdash; Project HAL  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/_static/style.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ChannelWindow" href="channel_window.html" />
+    <link rel="prev" title="C++ Modules" href="cpp_modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Project HAL
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Project Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="results.html">Experiment Results</a></li>
+<li class="toctree-l1"><a class="reference internal" href="py_modules.html">Python Modules</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="cpp_modules.html">C++ Modules</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap</span></code> Class</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv412ElectrodeMap"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12ElectrodeMap12ElectrodeMapEv"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap::ElectrodeMap()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12ElectrodeMap12ElectrodeMapEPKc"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap::ElectrodeMap()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12ElectrodeMap6existsEi"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap::exists()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12ElectrodeMap3getEi"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap::get()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12ElectrodeMap11getPositionEi"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap::getPosition()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12ElectrodeMap4getXEi"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap::getX()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12ElectrodeMap4getYEi"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap::getY()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12ElectrodeMap4sizeEv"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap::size()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12ElectrodeMap5printEv"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap::print()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="channel_window.html"><code class="docutils literal notranslate"><span class="pre">ChannelWindow</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="controller.html"><code class="docutils literal notranslate"><span class="pre">Controller</span></code> Class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wave_detector.html"><code class="docutils literal notranslate"><span class="pre">WaveDetector</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotter_cpp.html"><code class="docutils literal notranslate"><span class="pre">Plotter</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="argparse.html">Argument Parser Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="world_state.html"><code class="docutils literal notranslate"><span class="pre">WorldState</span></code> Class</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Project HAL</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="cpp_modules.html">C++ Modules</a></li>
+      <li class="breadcrumb-item active"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap</span></code> Class</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/electrode_map.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="electrodemap-class">
+<h1><code class="docutils literal notranslate"><span class="pre">ElectrodeMap</span></code> Class<a class="headerlink" href="#electrodemap-class" title="Link to this heading"></a></h1>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv412ElectrodeMap">
+<span id="_CPPv312ElectrodeMap"></span><span id="_CPPv212ElectrodeMap"></span><span id="ElectrodeMap"></span><span class="target" id="classElectrodeMap"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ElectrodeMap</span></span></span><a class="headerlink" href="#_CPPv412ElectrodeMap" title="Link to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12ElectrodeMap12ElectrodeMapEv">
+<span id="_CPPv3N12ElectrodeMap12ElectrodeMapEv"></span><span id="_CPPv2N12ElectrodeMap12ElectrodeMapEv"></span><span id="ElectrodeMap::ElectrodeMap"></span><span class="target" id="classElectrodeMap_1a7ca971b6410b59c46c53dc2f51737bdd"></span><span class="sig-name descname"><span class="n"><span class="pre">ElectrodeMap</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12ElectrodeMap12ElectrodeMapEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct a new Electrode Map object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12ElectrodeMap12ElectrodeMapEPKc">
+<span id="_CPPv3N12ElectrodeMap12ElectrodeMapEPKc"></span><span id="_CPPv2N12ElectrodeMap12ElectrodeMapEPKc"></span><span id="ElectrodeMap::ElectrodeMap__cCP"></span><span class="target" id="classElectrodeMap_1aaf8fef92aff821f4c7f7d3b4a9164c84"></span><span class="sig-name descname"><span class="n"><span class="pre">ElectrodeMap</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">config_path</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12ElectrodeMap12ElectrodeMapEPKc" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct a new Electrode Map object. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>config_path</strong> – <code class="docutils literal notranslate"><span class="pre">char</span></code> array (c string) representing the full path of the config file </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12ElectrodeMap6existsEi">
+<span id="_CPPv3N12ElectrodeMap6existsEi"></span><span id="_CPPv2N12ElectrodeMap6existsEi"></span><span id="ElectrodeMap::exists__i"></span><span class="target" id="classElectrodeMap_1a266b3bb2c54a2016d7dab4ce1fa0a857"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">exists</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">channelNo</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12ElectrodeMap6existsEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Checks if a channel number exists in the config. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>channelNo</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> representing the channel number of the target electrode </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">true</span></code> if the channel number exists, <code class="docutils literal notranslate"><span class="pre">false</span></code> otherwise </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12ElectrodeMap3getEi">
+<span id="_CPPv3N12ElectrodeMap3getEi"></span><span id="_CPPv2N12ElectrodeMap3getEi"></span><span id="ElectrodeMap::get__i"></span><span class="target" id="classElectrodeMap_1ab578d194f65b78490574bf454047fdb1"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">electrodeCoords</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">channelNo</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12ElectrodeMap3getEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Gets the positional data of an electrode given its channel number. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>channelNo</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> representing the channel number of the target electrode </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">struct</span> <span class="pre">electrodeCoords</span></code>; if the channelNo was not set (i.e. it wasn’t in the config file), each element of the returned struct will be set to -1. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12ElectrodeMap11getPositionEi">
+<span id="_CPPv3N12ElectrodeMap11getPositionEi"></span><span id="_CPPv2N12ElectrodeMap11getPositionEi"></span><span id="ElectrodeMap::getPosition__i"></span><span class="target" id="classElectrodeMap_1acc2d6a4e0cf5f33e468c57f4c63fe523"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getPosition</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">channelNo</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12ElectrodeMap11getPositionEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Gets the electrode number of an electrode given its channel number. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>channelNo</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> representing the channel number of the target electrode </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">int</span></code>; if the channelNo was not set (i.e. it wasn’t in the config file), then -1 will be returned. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12ElectrodeMap4getXEi">
+<span id="_CPPv3N12ElectrodeMap4getXEi"></span><span id="_CPPv2N12ElectrodeMap4getXEi"></span><span id="ElectrodeMap::getX__i"></span><span class="target" id="classElectrodeMap_1a4deacbf9752c68ecea362d6a98f870c7"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getX</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">channelNo</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12ElectrodeMap4getXEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Gets the x coordinate (in µm) of an electrode given its channel number. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>channelNo</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> channel to get the x coordinate of </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">float</span></code>; if the channelNo was not set (i.e. it wasn’t in the config file), then -1 will be returned. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12ElectrodeMap4getYEi">
+<span id="_CPPv3N12ElectrodeMap4getYEi"></span><span id="_CPPv2N12ElectrodeMap4getYEi"></span><span id="ElectrodeMap::getY__i"></span><span class="target" id="classElectrodeMap_1acdd7bb2a9d48c1540efeadb39efd3e47"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getY</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">channelNo</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12ElectrodeMap4getYEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Gets the y coordinate (in µm) of an electrode given its channel number. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>channelNo</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> channel to get the y coordinate of </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">float</span></code>; if the channelNo was not set (i.e. it wasn’t in the config file), then -1 will be returned. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12ElectrodeMap4sizeEv">
+<span id="_CPPv3N12ElectrodeMap4sizeEv"></span><span id="_CPPv2N12ElectrodeMap4sizeEv"></span><span id="ElectrodeMap::size"></span><span class="target" id="classElectrodeMap_1ab76caa8f91537a7086c21646affcb1e5"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">size</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12ElectrodeMap4sizeEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Gets the number of mapped channels in the configuration. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">int</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12ElectrodeMap5printEv">
+<span id="_CPPv3N12ElectrodeMap5printEv"></span><span id="_CPPv2N12ElectrodeMap5printEv"></span><span id="ElectrodeMap::print"></span><span class="target" id="classElectrodeMap_1a38b8c5e4bc4f2b0c7a8e0bcda096c8d4"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">print</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12ElectrodeMap5printEv" title="Link to this definition"></a><br /></dt>
+<dd><p>prints the <a class="reference internal" href="#classElectrodeMap"><span class="std std-ref">ElectrodeMap</span></a></p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="cpp_modules.html" class="btn btn-neutral float-left" title="C++ Modules" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="channel_window.html" class="btn btn-neutral float-right" title="ChannelWindow" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Wesley Clawson, Nathan Wu, Trevor Sullivan, and Viraj Chhajed.
+
+
+HAL was generously funded by the Air Force Office of Scientific Research (Grant ID: FA9550-22-1-0465).</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

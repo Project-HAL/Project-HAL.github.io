@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChannelWindow &mdash; Project HAL  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/_static/style.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Controller Class" href="controller.html" />
+    <link rel="prev" title="ElectrodeMap Class" href="electrode_map.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Project HAL
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Project Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="results.html">Experiment Results</a></li>
+<li class="toctree-l1"><a class="reference internal" href="py_modules.html">Python Modules</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="cpp_modules.html">C++ Modules</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="electrode_map.html"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap</span></code> Class</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">ChannelWindow</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv413ChannelWindow"><code class="docutils literal notranslate"><span class="pre">ChannelWindow</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13ChannelWindow13ChannelWindowEiPKci"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::ChannelWindow()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13ChannelWindow13ChannelWindowEi12ElectrodeMapi"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::ChannelWindow()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13ChannelWindow4initEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::init()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13ChannelWindow3addEN6maxlab17FilteredFrameDataE"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::add()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13ChannelWindow5shiftEN6maxlab17FilteredFrameDataE"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::shift()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13ChannelWindow3getEi"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::get()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13ChannelWindow6lengthEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::length()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13ChannelWindow15totalSpikeCountEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::totalSpikeCount()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13ChannelWindow12electrodeMapEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::electrodeMap()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13ChannelWindow11pastWindowsEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::pastWindows()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13ChannelWindow14avgPastWindowsEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::avgPastWindows()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13ChannelWindow7getAvgXEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::getAvgX()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13ChannelWindow12firingRateSDEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::firingRateSD()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13ChannelWindow10firingRateEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::firingRate()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13ChannelWindow16pastWindowsReadyEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::pastWindowsReady()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13ChannelWindow5printEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::print()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N13ChannelWindow5debugE6string"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::debug()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="controller.html"><code class="docutils literal notranslate"><span class="pre">Controller</span></code> Class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wave_detector.html"><code class="docutils literal notranslate"><span class="pre">WaveDetector</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotter_cpp.html"><code class="docutils literal notranslate"><span class="pre">Plotter</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="argparse.html">Argument Parser Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="world_state.html"><code class="docutils literal notranslate"><span class="pre">WorldState</span></code> Class</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Project HAL</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="cpp_modules.html">C++ Modules</a></li>
+      <li class="breadcrumb-item active"><code class="docutils literal notranslate"><span class="pre">ChannelWindow</span></code></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/channel_window.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="channelwindow">
+<h1><code class="docutils literal notranslate"><span class="pre">ChannelWindow</span></code><a class="headerlink" href="#channelwindow" title="Link to this heading"></a></h1>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv413ChannelWindow">
+<span id="_CPPv313ChannelWindow"></span><span id="_CPPv213ChannelWindow"></span><span id="ChannelWindow"></span><span class="target" id="classChannelWindow"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ChannelWindow</span></span></span><a class="headerlink" href="#_CPPv413ChannelWindow" title="Link to this definition"></a><br /></dt>
+<dd><p>Add description for the <code class="docutils literal notranslate"><a class="reference internal" href="#classChannelWindow"><span class="std std-ref"><span class="pre">ChannelWindow</span></span></a></code> class </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13ChannelWindow13ChannelWindowEiPKci">
+<span id="_CPPv3N13ChannelWindow13ChannelWindowEiPKci"></span><span id="_CPPv2N13ChannelWindow13ChannelWindowEiPKci"></span><span id="ChannelWindow::ChannelWindow__i.cCP.i"></span><span class="target" id="classChannelWindow_1a03fb9f8b3bbfaf416938b7a3d5bf4d03"></span><span class="sig-name descname"><span class="n"><span class="pre">ChannelWindow</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">length</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">configPath</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">toSave</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13ChannelWindow13ChannelWindowEiPKci" title="Link to this definition"></a><br /></dt>
+<dd><p>Constructor. </p>
+<p>Creates a new <a class="reference internal" href="#classChannelWindow"><span class="std std-ref">ChannelWindow</span></a> object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>length</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> representing the length of the window (measured in frames) </p></li>
+<li><p><strong>configPath</strong> – <code class="docutils literal notranslate"><span class="pre">char</span></code> array representing the full path of the config to use for the underlying <a class="reference internal" href="electrode_map.html#classElectrodeMap"><span class="std std-ref">ElectrodeMap</span></a></p></li>
+<li><p><strong>toSave</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> indicating how many past window firing rates are to be saved, default=0 </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13ChannelWindow13ChannelWindowEi12ElectrodeMapi">
+<span id="_CPPv3N13ChannelWindow13ChannelWindowEi12ElectrodeMapi"></span><span id="_CPPv2N13ChannelWindow13ChannelWindowEi12ElectrodeMapi"></span><span id="ChannelWindow::ChannelWindow__i.ElectrodeMap.i"></span><span class="target" id="classChannelWindow_1a2997d4f19a4024bcb8d87422df8097d0"></span><span class="sig-name descname"><span class="n"><span class="pre">ChannelWindow</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">length</span></span>, <a class="reference internal" href="electrode_map.html#_CPPv412ElectrodeMap" title="ElectrodeMap"><span class="n"><span class="pre">ElectrodeMap</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">emap</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">toSave</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13ChannelWindow13ChannelWindowEi12ElectrodeMapi" title="Link to this definition"></a><br /></dt>
+<dd><p>Constructor. </p>
+<p>Creates a new <a class="reference internal" href="#classChannelWindow"><span class="std std-ref">ChannelWindow</span></a> object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>length</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> representing the length of the window (measured in frames) </p></li>
+<li><p><strong>emap</strong> – <code class="docutils literal notranslate"><a class="reference internal" href="electrode_map.html#classElectrodeMap"><span class="std std-ref"><span class="pre">ElectrodeMap</span></span></a></code> holding the current electrode config file </p></li>
+<li><p><strong>toSave</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> indicating how many past window firing rates are to be saved, default=0 </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13ChannelWindow4initEv">
+<span id="_CPPv3N13ChannelWindow4initEv"></span><span id="_CPPv2N13ChannelWindow4initEv"></span><span id="ChannelWindow::init"></span><span class="target" id="classChannelWindow_1a856aab23dc9823f9cd1e725fc1f4b142"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">init</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13ChannelWindow4initEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Initialize the window. </p>
+<p>This will read in <code class="docutils literal notranslate"><span class="pre">maxlab::FilteredFrameData</span></code> structs until the window is full. The data streamer must be initialized before calling this function. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13ChannelWindow3addEN6maxlab17FilteredFrameDataE">
+<span id="_CPPv3N13ChannelWindow3addEN6maxlab17FilteredFrameDataE"></span><span id="_CPPv2N13ChannelWindow3addEN6maxlab17FilteredFrameDataE"></span><span id="ChannelWindow::add__maxlab::FilteredFrameData"></span><span class="target" id="classChannelWindow_1af6b05a45d1f682a31a0fa6b43f4b19f2"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">add</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">maxlab</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">FilteredFrameData</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13ChannelWindow3addEN6maxlab17FilteredFrameDataE" title="Link to this definition"></a><br /></dt>
+<dd><p>Adds a data frame to the window. </p>
+<p>Adds only the <code class="docutils literal notranslate"><span class="pre">maxlab::spikeEvents</span></code> that are found in the given config or <code class="docutils literal notranslate"><a class="reference internal" href="electrode_map.html#classElectrodeMap"><span class="std std-ref"><span class="pre">ElectrodeMap</span></span></a></code>, and increments the total spike sum accordingly.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>frame</strong> – <code class="docutils literal notranslate"><span class="pre">maxlab::FilteredFrameData</span></code> struct to add to the window</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13ChannelWindow5shiftEN6maxlab17FilteredFrameDataE">
+<span id="_CPPv3N13ChannelWindow5shiftEN6maxlab17FilteredFrameDataE"></span><span id="_CPPv2N13ChannelWindow5shiftEN6maxlab17FilteredFrameDataE"></span><span id="ChannelWindow::shift__maxlab::FilteredFrameData"></span><span class="target" id="classChannelWindow_1ac93750ea8c9a5cfc1412e430c3bd1e3f"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">shift</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">maxlab</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">FilteredFrameData</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13ChannelWindow5shiftEN6maxlab17FilteredFrameDataE" title="Link to this definition"></a><br /></dt>
+<dd><p>Shifts window, appending new data frame to the end. </p>
+<p>Shifts the window by removing the first frame, updating the total sum accordingly, and adding the new frame to the end. Similar to add, the sum will only be incremented for each channel in frame that exists in the electrode map. Note that it will only count the <code class="docutils literal notranslate"><span class="pre">maxlab::spikeEvents</span></code> that are found in the given config</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>frame</strong> – <code class="docutils literal notranslate"><span class="pre">maxlab::FilteredFrameData</span></code> struct to add to the window </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13ChannelWindow3getEi">
+<span id="_CPPv3N13ChannelWindow3getEi"></span><span id="_CPPv2N13ChannelWindow3getEi"></span><span id="ChannelWindow::get__i"></span><span class="target" id="classChannelWindow_1a8b1c18c40fa9e4f891eaf7221dd598b8"></span><span class="n"><span class="pre">maxlab</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">FilteredFrameData</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">idx</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13ChannelWindow3getEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Gets a <code class="docutils literal notranslate"><span class="pre">maxlab::FilteredFrameData</span></code> struct at the specified index. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>idx</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> representing the index of the target frame</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">maxlab::FilteredFrameData</span></code> struct at the specified index within the window </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13ChannelWindow6lengthEv">
+<span id="_CPPv3N13ChannelWindow6lengthEv"></span><span id="_CPPv2N13ChannelWindow6lengthEv"></span><span id="ChannelWindow::length"></span><span class="target" id="classChannelWindow_1afab2b22f3d23ea016697d33b16ac8511"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">length</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13ChannelWindow6lengthEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Returns the length of the window. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">int</span></code> representing the length of the window </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13ChannelWindow15totalSpikeCountEv">
+<span id="_CPPv3N13ChannelWindow15totalSpikeCountEv"></span><span id="_CPPv2N13ChannelWindow15totalSpikeCountEv"></span><span id="ChannelWindow::totalSpikeCount"></span><span class="target" id="classChannelWindow_1a362798037f40a99650da61c877971517"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">totalSpikeCount</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13ChannelWindow15totalSpikeCountEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Returns the sum of all the spike counts (of valid channels) in the window. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">int</span></code> representing the sum of all spike counts </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13ChannelWindow12electrodeMapEv">
+<span id="_CPPv3N13ChannelWindow12electrodeMapEv"></span><span id="_CPPv2N13ChannelWindow12electrodeMapEv"></span><span id="ChannelWindow::electrodeMap"></span><span class="target" id="classChannelWindow_1ac118c7e60de090394f40e4f0fcfd6adc"></span><a class="reference internal" href="electrode_map.html#_CPPv412ElectrodeMap" title="ElectrodeMap"><span class="n"><span class="pre">ElectrodeMap</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">electrodeMap</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13ChannelWindow12electrodeMapEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Returns the <code class="docutils literal notranslate"><a class="reference internal" href="electrode_map.html#classElectrodeMap"><span class="std std-ref"><span class="pre">ElectrodeMap</span></span></a></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><a class="reference internal" href="electrode_map.html#classElectrodeMap"><span class="std std-ref"><span class="pre">ElectrodeMap</span></span></a></code> containing all of the channel, electrode mappings </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13ChannelWindow11pastWindowsEv">
+<span id="_CPPv3N13ChannelWindow11pastWindowsEv"></span><span id="_CPPv2N13ChannelWindow11pastWindowsEv"></span><span id="ChannelWindow::pastWindows"></span><span class="target" id="classChannelWindow_1a3b7604f6aa0b8fa271e237d39e9df3e0"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">float</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pastWindows</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13ChannelWindow11pastWindowsEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Gets a vectors containing the firing rates of all the past windows. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">vector&lt;float&gt;</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13ChannelWindow14avgPastWindowsEv">
+<span id="_CPPv3N13ChannelWindow14avgPastWindowsEv"></span><span id="_CPPv2N13ChannelWindow14avgPastWindowsEv"></span><span id="ChannelWindow::avgPastWindows"></span><span class="target" id="classChannelWindow_1a88ef58fe01f8b3a310e2f02d0ac0abc0"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">avgPastWindows</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13ChannelWindow14avgPastWindowsEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Returns the average firing rate of all the past windows. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">float</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13ChannelWindow7getAvgXEv">
+<span id="_CPPv3N13ChannelWindow7getAvgXEv"></span><span id="_CPPv2N13ChannelWindow7getAvgXEv"></span><span id="ChannelWindow::getAvgX"></span><span class="target" id="classChannelWindow_1a90e47573e5079683dabe03e1aa66a36a"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getAvgX</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13ChannelWindow7getAvgXEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Computes the average x coordinate of all the spike events in the window. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">float</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13ChannelWindow12firingRateSDEv">
+<span id="_CPPv3N13ChannelWindow12firingRateSDEv"></span><span id="_CPPv2N13ChannelWindow12firingRateSDEv"></span><span id="ChannelWindow::firingRateSD"></span><span class="target" id="classChannelWindow_1ae6aecf5c946b9006ccd7590512244475"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">firingRateSD</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13ChannelWindow12firingRateSDEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Computes the standard deviation of the firing rates of all past windows. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">float</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13ChannelWindow10firingRateEv">
+<span id="_CPPv3N13ChannelWindow10firingRateEv"></span><span id="_CPPv2N13ChannelWindow10firingRateEv"></span><span id="ChannelWindow::firingRate"></span><span class="target" id="classChannelWindow_1a11a10504b18341abe0eef53d6b02ea02"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">firingRate</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13ChannelWindow10firingRateEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Computes the firing rate of the window. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">float</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13ChannelWindow16pastWindowsReadyEv">
+<span id="_CPPv3N13ChannelWindow16pastWindowsReadyEv"></span><span id="_CPPv2N13ChannelWindow16pastWindowsReadyEv"></span><span id="ChannelWindow::pastWindowsReady"></span><span class="target" id="classChannelWindow_1a8a1cdbafbc9c7597446f38d20cf26ea8"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pastWindowsReady</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13ChannelWindow16pastWindowsReadyEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Indicates whether the window is completely unique from the past windows. </p>
+<p>The past windows are stored end-to-end, so, at any point in time, there is a high chance that the current window overlaps with the past ones. When this function returns true, the current window does <em>not overlap</em> with any of the previous windows, and will be counted in all computations relating to the past windows.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13ChannelWindow5printEv">
+<span id="_CPPv3N13ChannelWindow5printEv"></span><span id="_CPPv2N13ChannelWindow5printEv"></span><span id="ChannelWindow::print"></span><span class="target" id="classChannelWindow_1ad3fe970bc14670cd6d73a37fa2cacbd3"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">print</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13ChannelWindow5printEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Prints the <a class="reference internal" href="#classChannelWindow"><span class="std std-ref">ChannelWindow</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13ChannelWindow5debugE6string">
+<span id="_CPPv3N13ChannelWindow5debugE6string"></span><span id="_CPPv2N13ChannelWindow5debugE6string"></span><span id="ChannelWindow::debug__string"></span><span class="target" id="classChannelWindow_1a47a4bd5f2102f104b0bbcf521f6be58f"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">debug</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13ChannelWindow5debugE6string" title="Link to this definition"></a><br /></dt>
+<dd><p>Prints the window with a message. </p>
+<p>Also counts each spike event in the window manually, and compares it to the recorded sum</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>message</strong> – <code class="docutils literal notranslate"><span class="pre">string</span></code> to print </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="electrode_map.html" class="btn btn-neutral float-left" title="ElectrodeMap Class" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="controller.html" class="btn btn-neutral float-right" title="Controller Class" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Wesley Clawson, Nathan Wu, Trevor Sullivan, and Viraj Chhajed.
+
+
+HAL was generously funded by the Air Force Office of Scientific Research (Grant ID: FA9550-22-1-0465).</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

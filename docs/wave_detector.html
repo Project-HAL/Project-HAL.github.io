@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WaveDetector &mdash; Project HAL  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/_static/style.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Plotter" href="plotter_cpp.html" />
+    <link rel="prev" title="Controller Class" href="controller.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Project HAL
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Project Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="results.html">Experiment Results</a></li>
+<li class="toctree-l1"><a class="reference internal" href="py_modules.html">Python Modules</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="cpp_modules.html">C++ Modules</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="electrode_map.html"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap</span></code> Class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="channel_window.html"><code class="docutils literal notranslate"><span class="pre">ChannelWindow</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="controller.html"><code class="docutils literal notranslate"><span class="pre">Controller</span></code> Class</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">WaveDetector</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv412WaveDetector"><code class="docutils literal notranslate"><span class="pre">WaveDetector</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12WaveDetector12WaveDetectorEv"><code class="docutils literal notranslate"><span class="pre">WaveDetector::WaveDetector()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12WaveDetector12WaveDetectorEiPKcfiiff"><code class="docutils literal notranslate"><span class="pre">WaveDetector::WaveDetector()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12WaveDetectorD0Ev"><code class="docutils literal notranslate"><span class="pre">WaveDetector::~WaveDetector()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12WaveDetector9getWindowEv"><code class="docutils literal notranslate"><span class="pre">WaveDetector::getWindow()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12WaveDetector11getMetadataEv"><code class="docutils literal notranslate"><span class="pre">WaveDetector::getMetadata()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12WaveDetector11shiftWindowEN6maxlab17FilteredFrameDataE"><code class="docutils literal notranslate"><span class="pre">WaveDetector::shiftWindow()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12WaveDetector12processFrameEN6maxlab17FilteredFrameDataEi"><code class="docutils literal notranslate"><span class="pre">WaveDetector::processFrame()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12WaveDetector10checkBurstEi"><code class="docutils literal notranslate"><span class="pre">WaveDetector::checkBurst()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="plotter_cpp.html"><code class="docutils literal notranslate"><span class="pre">Plotter</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="argparse.html">Argument Parser Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="world_state.html"><code class="docutils literal notranslate"><span class="pre">WorldState</span></code> Class</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Project HAL</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="cpp_modules.html">C++ Modules</a></li>
+      <li class="breadcrumb-item active"><code class="docutils literal notranslate"><span class="pre">WaveDetector</span></code></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/wave_detector.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="wavedetector">
+<h1><code class="docutils literal notranslate"><span class="pre">WaveDetector</span></code><a class="headerlink" href="#wavedetector" title="Link to this heading"></a></h1>
+<p>Example:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;maxlab.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;hal.h&quot;</span>
+
+<span class="cp">#define SYS_START_BUFFER 50000</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">argv</span><span class="p">[])</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">maxlab</span><span class="o">::</span><span class="n">verifyStatus</span><span class="p">(</span><span class="n">maxlab</span><span class="o">::</span><span class="n">DataStreamerFiltered_open</span><span class="p">(</span><span class="n">maxlab</span><span class="o">::</span><span class="n">FilterType</span><span class="o">::</span><span class="n">IIR</span><span class="p">));</span>
+
+<span class="w">    </span><span class="c1">// ignore system startup activity</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">SYS_START_BUFFER</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">maxlab</span><span class="o">::</span><span class="n">FilteredFrameData</span><span class="w"> </span><span class="n">frameData</span><span class="p">;</span>
+<span class="w">        </span><span class="n">maxlab</span><span class="o">::</span><span class="n">Status</span><span class="w"> </span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">maxlab</span><span class="o">::</span><span class="n">DataStreamerFiltered_receiveNextFrame</span><span class="p">(</span><span class="o">&amp;</span><span class="n">frameData</span><span class="p">);</span>
+
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">status</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">maxlab</span><span class="o">::</span><span class="n">Status</span><span class="o">::</span><span class="n">MAXLAB_NO_FRAME</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">i</span><span class="o">--</span><span class="p">;</span>
+<span class="w">            </span><span class="k">continue</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">configPath</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;/home/mxwbio/config.cfg&quot;</span><span class="p">;</span>
+
+<span class="w">    </span><span class="n">WaveDetector</span><span class="w"> </span><span class="n">wd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">WaveDetector</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="w"> </span><span class="n">configPath</span><span class="p">,</span><span class="w"> </span><span class="mf">0.1</span><span class="p">,</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span><span class="w"> </span><span class="mi">10000</span><span class="p">);</span>
+
+<span class="w">    </span><span class="c1">// examine the culture for 20 seconds</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">200000</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">maxlab</span><span class="o">::</span><span class="n">FilteredFrameData</span><span class="w"> </span><span class="n">frameData</span><span class="p">;</span>
+<span class="w">        </span><span class="n">maxlab</span><span class="o">::</span><span class="n">Status</span><span class="w"> </span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">maxlab</span><span class="o">::</span><span class="n">DataStreamerFiltered_receiveNextFrame</span><span class="p">(</span><span class="o">&amp;</span><span class="n">frameData</span><span class="p">);</span>
+
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">status</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">maxlab</span><span class="o">::</span><span class="n">Status</span><span class="o">::</span><span class="n">MAXLAB_NO_FRAME</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">i</span><span class="o">--</span><span class="p">;</span>
+<span class="w">            </span><span class="k">continue</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="c1">// extend the window and check for burst waves</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">val</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">wd</span><span class="p">.</span><span class="n">processFrame</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">200</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">SYS_START_BUFFER</span><span class="p">);</span>
+
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">val</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">Wave</span><span class="o">::</span><span class="n">leftToRight</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Culture bursted left to right!&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">val</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">Wave</span><span class="o">::</span><span class="n">rightToLeft</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Culture bursted right to left!&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="n">maxlab</span><span class="o">::</span><span class="n">verifyStatus</span><span class="p">(</span><span class="n">maxlab</span><span class="o">::</span><span class="n">DataStreamerFiltered_close</span><span class="p">());</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv412WaveDetector">
+<span id="_CPPv312WaveDetector"></span><span id="_CPPv212WaveDetector"></span><span id="WaveDetector"></span><span class="target" id="classWaveDetector"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">WaveDetector</span></span></span><a class="headerlink" href="#_CPPv412WaveDetector" title="Link to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector12WaveDetectorEv">
+<span id="_CPPv3N12WaveDetector12WaveDetectorEv"></span><span id="_CPPv2N12WaveDetector12WaveDetectorEv"></span><span id="WaveDetector::WaveDetector"></span><span class="target" id="classWaveDetector_1a9dc0fec49023ac3a388568180575ee7d"></span><span class="sig-name descname"><span class="n"><span class="pre">WaveDetector</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12WaveDetector12WaveDetectorEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Constructs a new Wave Detector object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector12WaveDetectorEiPKcfiiff">
+<span id="_CPPv3N12WaveDetector12WaveDetectorEiPKcfiiff"></span><span id="_CPPv2N12WaveDetector12WaveDetectorEiPKcfiiff"></span><span id="WaveDetector::WaveDetector__i.cCP.float.i.i.float.float"></span><span class="target" id="classWaveDetector_1aac49842bb930f2bbb174b60855c17aa1"></span><span class="sig-name descname"><span class="n"><span class="pre">WaveDetector</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">windowLength</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">configPath</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">threshold</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">minFrames</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">frameHz</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">firstBurstThreshold</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">burstDoneThreshold</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12WaveDetector12WaveDetectorEiPKcfiiff" title="Link to this definition"></a><br /></dt>
+<dd><p>Constructs a new Wave Detector object and inititalizes the window. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>windowLength</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> length of the window </p></li>
+<li><p><strong>configPath</strong> – c-style string containing the full path of the electrode config </p></li>
+<li><p><strong>threshold</strong> – <code class="docutils literal notranslate"><span class="pre">float</span></code> threshold used to check the total spike count against </p></li>
+<li><p><strong>minFrames</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> minimum number of frames during which the window must be over the spike threshold in order to be considered a burst </p></li>
+<li><p><strong>frameHz</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> framerate, defaults to <code class="docutils literal notranslate"><span class="pre">10000</span></code>. It shoud be <code class="docutils literal notranslate"><span class="pre">10000</span></code> for the MaxTwo, and <code class="docutils literal notranslate"><span class="pre">20000</span></code> for the MaxOne </p></li>
+<li><p><strong>firstBurstThreshold</strong> – <code class="docutils literal notranslate"><span class="pre">float</span></code> the amount of time (in seconds) during which the total spike count of the window cannot go over the threshold in order for the first birst to be considered done. </p></li>
+<li><p><strong>burstDoneThreshold</strong> – <code class="docutils literal notranslate"><span class="pre">float</span></code> the amount of time (in seconds) during which the total spike count of the window cannot go over the threshold in order for the entire birst to be considered done. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveDetectorD0Ev">
+<span id="_CPPv3N12WaveDetectorD0Ev"></span><span id="_CPPv2N12WaveDetectorD0Ev"></span><span id="WaveDetector::~WaveDetector"></span><span class="target" id="classWaveDetector_1af493cc823e9388b83a3fc6bf8c48b159"></span><span class="sig-name descname"><span class="n"><span class="pre">~WaveDetector</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12WaveDetectorD0Ev" title="Link to this definition"></a><br /></dt>
+<dd><p>Destroys the Wave Detector Object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector9getWindowEv">
+<span id="_CPPv3N12WaveDetector9getWindowEv"></span><span id="_CPPv2N12WaveDetector9getWindowEv"></span><span id="WaveDetector::getWindow"></span><span class="target" id="classWaveDetector_1ab85b28fe6599e109456d3e0da0e4306b"></span><a class="reference internal" href="channel_window.html#_CPPv413ChannelWindow" title="ChannelWindow"><span class="n"><span class="pre">ChannelWindow</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">getWindow</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12WaveDetector9getWindowEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Returns the window. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>pointer to <code class="docutils literal notranslate"><a class="reference internal" href="channel_window.html#classChannelWindow"><span class="std std-ref"><span class="pre">ChannelWindow</span></span></a></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector11getMetadataEv">
+<span id="_CPPv3N12WaveDetector11getMetadataEv"></span><span id="_CPPv2N12WaveDetector11getMetadataEv"></span><span id="WaveDetector::getMetadata"></span><span class="target" id="classWaveDetector_1a87a66c6a4abba427c2826e80ca7b7444"></span><span class="n"><span class="pre">WaveMetadata</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getMetadata</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12WaveDetector11getMetadataEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Gets metadata of the Wave Detector. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">WaveMetadata</span></code> struct </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector11shiftWindowEN6maxlab17FilteredFrameDataE">
+<span id="_CPPv3N12WaveDetector11shiftWindowEN6maxlab17FilteredFrameDataE"></span><span id="_CPPv2N12WaveDetector11shiftWindowEN6maxlab17FilteredFrameDataE"></span><span id="WaveDetector::shiftWindow__maxlab::FilteredFrameData"></span><span class="target" id="classWaveDetector_1aaa4806eeb2950412dbd779635a2f5667"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">shiftWindow</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">maxlab</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">FilteredFrameData</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12WaveDetector11shiftWindowEN6maxlab17FilteredFrameDataE" title="Link to this definition"></a><br /></dt>
+<dd><p>Shifts the window, adding a new frame. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>frame</strong> – <code class="docutils literal notranslate"><span class="pre">maxlab::FilteredFrameData</span></code> frame to add to the window </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector12processFrameEN6maxlab17FilteredFrameDataEi">
+<span id="_CPPv3N12WaveDetector12processFrameEN6maxlab17FilteredFrameDataEi"></span><span id="_CPPv2N12WaveDetector12processFrameEN6maxlab17FilteredFrameDataEi"></span><span id="WaveDetector::processFrame__maxlab::FilteredFrameData.i"></span><span class="target" id="classWaveDetector_1adc15bccbffc715f743bb9c7f0d27d5f8"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">processFrame</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">maxlab</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">FilteredFrameData</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">frame</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">frameNo</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12WaveDetector12processFrameEN6maxlab17FilteredFrameDataEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Processes a frame. </p>
+<p>Shifts the window, and returns the status of the burst</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>frame</strong> – <code class="docutils literal notranslate"><span class="pre">maxlab::FilteredFrameData</span></code> frame to process </p></li>
+<li><p><strong>frameNo</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> frame number when <code class="docutils literal notranslate"><span class="pre">frame</span></code> was received </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">int</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector10checkBurstEi">
+<span id="_CPPv3N12WaveDetector10checkBurstEi"></span><span id="_CPPv2N12WaveDetector10checkBurstEi"></span><span id="WaveDetector::checkBurst__i"></span><span class="target" id="classWaveDetector_1a91b522b3335c62a1b498f5a4d09d1820"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">checkBurst</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">frameNo</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12WaveDetector10checkBurstEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Checks the direction of a burst. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>frameNo</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> frame number of the most recently received frame </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">int</span></code>, corresponds to <code class="docutils literal notranslate"><span class="pre">enum</span> <span class="pre">Wave</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="controller.html" class="btn btn-neutral float-left" title="Controller Class" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="plotter_cpp.html" class="btn btn-neutral float-right" title="Plotter" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Wesley Clawson, Nathan Wu, Trevor Sullivan, and Viraj Chhajed.
+
+
+HAL was generously funded by the Air Force Office of Scientific Research (Grant ID: FA9550-22-1-0465).</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
