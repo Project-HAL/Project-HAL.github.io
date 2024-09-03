@@ -4,9 +4,9 @@ C++ Modules
 .. toctree::
    .. :maxdepth: 4
    
-   electrode-map
-   channel-window
+   electrode_map
+   channel_window
    controller
-   wave-detector
-   world-state
+   wave_detector
+   world_state
    argparse
