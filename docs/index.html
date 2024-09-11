@@ -7,6 +7,7 @@
   <title>Welcome to Project HAL’s documentation! &mdash; Project HAL  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=3a4c267e" />
       <link rel="stylesheet" type="text/css" href="_static/_static/style.css" />
 
   
@@ -273,7 +274,18 @@ HAL was generously funded by the Air Force Office of Scientific Research (Grant 
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+ <script type="text/javascript">
+    $(document).ready(function() {
+        $(".toggle > *").hide();
+        $(".toggle .header").show();
+        $(".toggle .header").click(function() {
+            $(this).parent().children().not(".header").toggle(400);
+            $(this).parent().children(".header").toggleClass("open");
+        })
+    });
+</script>
+
 
 </body>
 </html>

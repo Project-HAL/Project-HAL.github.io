@@ -1,54 +1,60 @@
 ``WaveDetector``
 ================
 
-.. code:: c
+.. container:: toggle
 
-    #include <iostream>
-    #include "maxlab.h"
-    #include "hal.h"
+    .. container:: header
 
-    #define SYS_START_BUFFER 50000
+        Example closed-loop program
+    
+    .. code:: c
 
-    int main(int argc, char *argv[]) {
-        maxlab::verifyStatus(maxlab::DataStreamerFiltered_open(maxlab::FilterType::IIR));
+        #include <iostream>
+        #include "maxlab.h"
+        #include "hal.h"
 
-        // ignore system startup activity
-        for (int i = 0; i < SYS_START_BUFFER; i++) {
-            maxlab::FilteredFrameData frameData;
-            maxlab::Status status = maxlab::DataStreamerFiltered_receiveNextFrame(&frameData);
+        #define SYS_START_BUFFER 50000
 
-            if (status == maxlab::Status::MAXLAB_NO_FRAME) {
-                i--;
-                continue;
+        int main(int argc, char *argv[]) {
+            maxlab::verifyStatus(maxlab::DataStreamerFiltered_open(maxlab::FilterType::IIR));
+
+            // ignore system startup activity
+            for (int i = 0; i < SYS_START_BUFFER; i++) {
+                maxlab::FilteredFrameData frameData;
+                maxlab::Status status = maxlab::DataStreamerFiltered_receiveNextFrame(&frameData);
+
+                if (status == maxlab::Status::MAXLAB_NO_FRAME) {
+                    i--;
+                    continue;
+                }
             }
+
+            char *configPath = "/home/mxwbio/config.cfg";
+
+            WaveDetector wd = WaveDetector(200, configPath, 0.1, 1000, 10000);
+
+            // examine the culture for 20 seconds
+            for (int i = 0; i < 200000; i++) {
+                maxlab::FilteredFrameData frameData;
+                maxlab::Status status = maxlab::DataStreamerFiltered_receiveNextFrame(&frameData);
+
+                if (status == maxlab::Status::MAXLAB_NO_FRAME) {
+                    i--;
+                    continue;
+                }
+
+                // extend the window and check for burst waves
+                int val = wd.processFrame(frame, i + 200 + SYS_START_BUFFER);
+
+                if (val == Wave::leftToRight) {
+                    cout << "Culture bursted left to right!" << endl;
+                } else if (val == Wave::rightToLeft) {
+                    cout << "Culture bursted right to left!" << endl;
+                }
+            }
+
+            maxlab::verifyStatus(maxlab::DataStreamerFiltered_close());
         }
-
-        char *configPath = "/home/mxwbio/config.cfg";
-
-        WaveDetector wd = WaveDetector(200, configPath, 0.1, 1000, 10000);
-
-        // examine the culture for 20 seconds
-        for (int i = 0; i < 200000; i++) {
-            maxlab::FilteredFrameData frameData;
-            maxlab::Status status = maxlab::DataStreamerFiltered_receiveNextFrame(&frameData);
-
-            if (status == maxlab::Status::MAXLAB_NO_FRAME) {
-                i--;
-                continue;
-            }
-
-            // extend the window and check for burst waves
-            int val = wd.processFrame(frame, i + 200 + SYS_START_BUFFER);
-
-            if (val == Wave::leftToRight) {
-                cout << "Culture bursted left to right!" << endl;
-            } else if (val == Wave::rightToLeft) {
-                cout << "Culture bursted right to left!" << endl;
-            }
-        }
-
-        maxlab::verifyStatus(maxlab::DataStreamerFiltered_close());
-    }
 
 .. doxygenclass:: WaveDetector
     :members:

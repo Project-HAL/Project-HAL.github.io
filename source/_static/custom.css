@@ -1,1 +1,18 @@
 /* This file intentionally left blank. */
+
+/* the following was inspired from
+ https://stackoverflow.com/questions/2454577/sphinx-restructuredtext-show-hide-code-snippets
+ 
+ */
+.toggle .header {
+    display: inline;
+    clear: both;
+}
+
+.toggle .header p:before  {
+    content: "► "; /* unicode: &#x25BA; */
+}
+
+.toggle .header.open p:before {
+    content: "▼ "; /* unicode: &#x25BC; */
+}

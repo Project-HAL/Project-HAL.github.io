@@ -7,6 +7,7 @@
   <title>WaveDetector &mdash; Project HAL  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=3a4c267e" />
       <link rel="stylesheet" type="text/css" href="_static/_static/style.css" />
 
   
@@ -102,6 +103,10 @@
              
   <section id="wavedetector">
 <h1><code class="docutils literal notranslate"><span class="pre">WaveDetector</span></code><a class="headerlink" href="#wavedetector" title="Link to this heading"></a></h1>
+<div class="toggle docutils container">
+<div class="header docutils container">
+<p>Example closed-loop program</p>
+</div>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;maxlab.h&quot;</span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;hal.h&quot;</span>
@@ -149,6 +154,7 @@
 <span class="w">    </span><span class="n">maxlab</span><span class="o">::</span><span class="n">verifyStatus</span><span class="p">(</span><span class="n">maxlab</span><span class="o">::</span><span class="n">DataStreamerFiltered_close</span><span class="p">());</span>
 <span class="p">}</span>
 </pre></div>
+</div>
 </div>
 <dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv412WaveDetector">
@@ -287,7 +293,18 @@ HAL was generously funded by the Air Force Office of Scientific Research (Grant 
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+ <script type="text/javascript">
+    $(document).ready(function() {
+        $(".toggle > *").hide();
+        $(".toggle .header").show();
+        $(".toggle .header").click(function() {
+            $(this).parent().children().not(".header").toggle(400);
+            $(this).parent().children(".header").toggleClass("open");
+        })
+    });
+</script>
+
 
 </body>
 </html>

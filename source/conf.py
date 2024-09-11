@@ -15,6 +15,9 @@ import locs
 
 sys.path.insert(0, os.path.abspath(locs.hal_py_lib_path))
 
+def setup(app):
+    app.add_css_file('custom.css')
+
 project = 'Project HAL'
 copyright = """2024, Wesley Clawson, Nathan Wu, Trevor Sullivan, and Viraj Chhajed.\n\n
 HAL was generously funded by the Air Force Office of Scientific Research (Grant ID: FA9550-22-1-0465)"""
