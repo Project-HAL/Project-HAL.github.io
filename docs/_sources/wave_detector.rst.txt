@@ -1,8 +1,6 @@
 ``WaveDetector``
 ================
 
-Example:
-
 .. code:: c
 
     #include <iostream>

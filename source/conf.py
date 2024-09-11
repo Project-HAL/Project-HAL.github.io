@@ -9,7 +9,11 @@ import pathlib
 import sys
 import os
 
-sys.path.insert(0, os.path.abspath("/home/mxwbio/Desktop/HAL/bin/lib/py_src"))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+
+import locs
+
+sys.path.insert(0, os.path.abspath(locs.hal_py_lib_path))
 
 project = 'Project HAL'
 copyright = """2024, Wesley Clawson, Nathan Wu, Trevor Sullivan, and Viraj Chhajed.\n\n

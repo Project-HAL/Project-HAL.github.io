@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>world_stimulation &mdash; Project HAL  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/_static/style.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="config" href="config.html" />
+    <link rel="prev" title="stimulation" href="stimulation.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Project HAL
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Project Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="results.html">Experiment Results</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="py_modules.html">Python Modules</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="hal.html"><code class="docutils literal notranslate"><span class="pre">hal</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="stimulation.html"><code class="docutils literal notranslate"><span class="pre">stimulation</span></code></a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">world_stimulation</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#world_stimulation.ObjectDistanceParams"><code class="docutils literal notranslate"><span class="pre">ObjectDistanceParams</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#world_stimulation.build_distance_stimuli"><code class="docutils literal notranslate"><span class="pre">build_distance_stimuli()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="config.html"><code class="docutils literal notranslate"><span class="pre">config</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotter_py.html"><code class="docutils literal notranslate"><span class="pre">plotter</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cpp_modules.html">C++ Modules</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Project HAL</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="py_modules.html">Python Modules</a></li>
+      <li class="breadcrumb-item active"><code class="docutils literal notranslate"><span class="pre">world_stimulation</span></code></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/world_stimulation.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-world_stimulation">
+<span id="world-stimulation"></span><h1><code class="docutils literal notranslate"><span class="pre">world_stimulation</span></code><a class="headerlink" href="#module-world_stimulation" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="world_stimulation.ObjectDistanceParams">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">world_stimulation.</span></span><span class="sig-name descname"><span class="pre">ObjectDistanceParams</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">world_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitudes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phases</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pulses_per_train</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_trains</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pulse_intervals</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pulse_train_intervals</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">[]</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#world_stimulation.ObjectDistanceParams" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Stores parameters for stimuli delivered to an embodied culture in a 1D world.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>world_size</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – The maximum distance observable by the culture in a 1D world.</p></li>
+<li><p><strong>amplitudes</strong> (<code class="docutils literal notranslate"><span class="pre">List[float]</span> <span class="pre">|</span> <span class="pre">float</span></code>, optional) – A list of amplitudes of stim pulses for each unit away an object of interest is, in mV. If a float is passed, the same amplitude is used for all distances. defaults to <code class="docutils literal notranslate"><span class="pre">[]</span></code></p></li>
+<li><p><strong>phases</strong> (<code class="docutils literal notranslate"><span class="pre">List[float]</span> <span class="pre">|</span> <span class="pre">float</span></code>, optional) – A list of phases of stim pulses for each unit away an object of interest is, in us. If a float is passed, the same phase is used for all distances. defaults to <code class="docutils literal notranslate"><span class="pre">[]</span></code></p></li>
+<li><p><strong>pulses_per_train</strong> (<code class="docutils literal notranslate"><span class="pre">List[int]</span> <span class="pre">|</span> <span class="pre">int</span></code>, optional) – A list of pulses per train of stimuli for each unit away an object of interest is. If an int is passed, the same number of pulses per train is used for all distances. defaults to <code class="docutils literal notranslate"><span class="pre">[]</span></code></p></li>
+<li><p><strong>num_trains</strong> (<code class="docutils literal notranslate"><span class="pre">List[int]</span> <span class="pre">|</span> <span class="pre">int</span></code>, optional) – A list of numbers of trains of stimuli for each unit away an object of interest is. If an int is passed, the same number of number of trains is used for all distances. defaults to <code class="docutils literal notranslate"><span class="pre">[]</span></code></p></li>
+<li><p><strong>pulse_intervals</strong> (<code class="docutils literal notranslate"><span class="pre">List[float]</span> <span class="pre">|</span> <span class="pre">float</span></code>, optional) – A list of pulse intervals for each stimuli for each unit away an object of interest is. If a float is passed, the same pulse interval is used for all distances. defaults to <code class="docutils literal notranslate"><span class="pre">[]</span></code></p></li>
+<li><p><strong>pulse_train_intervals</strong> (<code class="docutils literal notranslate"><span class="pre">List[float]</span> <span class="pre">|</span> <span class="pre">float</span></code>, optional) – A list of pulse train intervals for each stimuli for each unit away an object of interest is. If a float is passed, the same pulse train interval is used for all distances. defaults to <code class="docutils literal notranslate"><span class="pre">[]</span></code></p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="world_stimulation.build_distance_stimuli">
+<span class="sig-prename descclassname"><span class="pre">world_stimulation.</span></span><span class="sig-name descname"><span class="pre">build_distance_stimuli</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">world</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">object_distance_params</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#world_stimulation.ObjectDistanceParams" title="world_stimulation.ObjectDistanceParams"><span class="pre">ObjectDistanceParams</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxtwo</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">well</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="stimulation.html#stimulation.ArbitraryStimulation" title="stimulation.ArbitraryStimulation"><span class="pre">ArbitraryStimulation</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#world_stimulation.build_distance_stimuli" title="Link to this definition"></a></dt>
+<dd><p>Function to create Sequences for every single position in the world. Stores sequences with tokens of the form f”loc{i}_distance”.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>world</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – A string representing the 1D world.</p></li>
+<li><p><strong>object_distance_params</strong> (<code class="docutils literal notranslate"><span class="pre">dict</span></code>) – A dictionary of <code class="docutils literal notranslate"><span class="pre">ObjectDistanceParams</span></code>, each indexed by its corresponding “location of interest” in the world.</p></li>
+<li><p><strong>maxtwo</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, optional) – Whether or not the code is being run on the MaxTwo, defaults to <code class="docutils literal notranslate"><span class="pre">False</span></code></p></li>
+<li><p><strong>well</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, optional) – The well number. Defaults to <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>list of <code class="docutils literal notranslate"><span class="pre">Stimulation</span></code> sequences, indexed by the location in the world.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">List[ArbitraryStimulation]</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="stimulation.html" class="btn btn-neutral float-left" title="stimulation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="config.html" class="btn btn-neutral float-right" title="config" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Wesley Clawson, Nathan Wu, Trevor Sullivan, and Viraj Chhajed.
+
+
+HAL was generously funded by the Air Force Office of Scientific Research (Grant ID: FA9550-22-1-0465).</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
