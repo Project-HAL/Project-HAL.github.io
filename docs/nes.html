@@ -123,6 +123,82 @@ column for each button):</p>
 </section>
 <section id="members">
 <h2>Members<a class="headerlink" href="#members" title="Link to this heading"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv43NES">
+<span id="_CPPv33NES"></span><span id="_CPPv23NES"></span><span id="NES"></span><span class="target" id="classNES"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">NES</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="controller.html#_CPPv410Controller" title="Controller"><span class="n"><span class="pre">Controller</span></span></a><a class="headerlink" href="#_CPPv43NES" title="Link to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3NES3NESEff">
+<span id="_CPPv3N3NES3NESEff"></span><span id="_CPPv2N3NES3NESEff"></span><span id="NES::NES__float.float"></span><span class="target" id="classNES_1a914034a7bd9e94880fcbd83c75e69553"></span><span class="sig-name descname"><span class="n"><span class="pre">NES</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">spikePercentThreshold</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.03</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">zScoreThreshold</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">3</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3NES3NESEff" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct a new <code class="docutils literal notranslate"><a class="reference internal" href="#classNES"><span class="std std-ref"><span class="pre">NES</span></span></a></code> object. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>spikePercentThreshold</strong> – <code class="docutils literal notranslate"><span class="pre">float</span></code> percent of channels that spiked threshold (default 0.03) </p></li>
+<li><p><strong>zScoreThreshold</strong> – <code class="docutils literal notranslate"><span class="pre">float</span></code> Z score threshold (default 3) </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3NES3NESEPKcff">
+<span id="_CPPv3N3NES3NESEPKcff"></span><span id="_CPPv2N3NES3NESEPKcff"></span><span id="NES::NES__cCP.float.float"></span><span class="target" id="classNES_1a7e405afad7ca7fc00421edf13ae7a90e"></span><span class="sig-name descname"><span class="n"><span class="pre">NES</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">csvName</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">spikePercentThreshold</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.03</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">zScoreThreshold</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">3</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3NES3NESEPKcff" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct a new <code class="docutils literal notranslate"><a class="reference internal" href="#classNES"><span class="std std-ref"><span class="pre">NES</span></span></a></code> object. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>csvName</strong> – <code class="docutils literal notranslate"><span class="pre">const</span> <span class="pre">char</span> <span class="pre">*</span></code> full path to csv which holds button data for post-experiment analysis. If the csv doesn’t exist, it will automatically be created. </p></li>
+<li><p><strong>spikePercentThreshold</strong> – <code class="docutils literal notranslate"><span class="pre">float</span></code> percent of channels that spiked threshold (default 0.03) </p></li>
+<li><p><strong>zScoreThreshold</strong> – <code class="docutils literal notranslate"><span class="pre">float</span></code> Z score threshold (default 3) </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3NES3NESEbiPKcPKcPKcff">
+<span id="_CPPv3N3NES3NESEbiPKcPKcPKcff"></span><span id="_CPPv2N3NES3NESEbiPKcPKcPKcff"></span><span id="NES::NES__b.i.cCP.cCP.cCP.float.float"></span><span class="target" id="classNES_1ae0296911ca3a7582f7a58e46f7b2d68f"></span><span class="sig-name descname"><span class="n"><span class="pre">NES</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">maxtwo</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">windowLength</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">AconfigPath</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">BconfigPath</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">csvName</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">spikePercentThreshold</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.03</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">zScoreThreshold</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">3</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3NES3NESEbiPKcPKcPKcff" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct a new <code class="docutils literal notranslate"><a class="reference internal" href="#classNES"><span class="std std-ref"><span class="pre">NES</span></span></a></code> object. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>maxtwo</strong> – <code class="docutils literal notranslate"><span class="pre">bool</span></code> indicates if the experiment is running on the maxtwo </p></li>
+<li><p><strong>windowLength</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> length of the windows representing the buttons, measured in frames </p></li>
+<li><p><strong>AconfigPath</strong> – <code class="docutils literal notranslate"><span class="pre">const</span> <span class="pre">char</span> <span class="pre">*</span></code></p></li>
+<li><p><strong>BconfigPath</strong> – <code class="docutils literal notranslate"><span class="pre">const</span> <span class="pre">char</span> <span class="pre">*</span></code></p></li>
+<li><p><strong>csvName</strong> – <code class="docutils literal notranslate"><span class="pre">const</span> <span class="pre">char</span> <span class="pre">*</span></code> full path to csv which holds button data for post-experiment analysis. If the csv doesn’t exist, it will automatically be created. </p></li>
+<li><p><strong>spikePercentThreshold</strong> – <code class="docutils literal notranslate"><span class="pre">float</span></code> percent of channels that spiked threshold (default 0.03) </p></li>
+<li><p><strong>zScoreThreshold</strong> – <code class="docutils literal notranslate"><span class="pre">float</span></code> Z score threshold (default 3) </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3NESD0Ev">
+<span id="_CPPv3N3NESD0Ev"></span><span id="_CPPv2N3NESD0Ev"></span><span id="NES::~NES"></span><span class="target" id="classNES_1a10056f30dbcb4a0ac24124faa81c9d03"></span><span class="sig-name descname"><span class="n"><span class="pre">~NES</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3NESD0Ev" title="Link to this definition"></a><br /></dt>
+<dd><p>Destroy the <code class="docutils literal notranslate"><a class="reference internal" href="#classNES"><span class="std std-ref"><span class="pre">NES</span></span></a></code> object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3NES12checkButtonsEi">
+<span id="_CPPv3N3NES12checkButtonsEi"></span><span id="_CPPv2N3NES12checkButtonsEi"></span><span id="NES::checkButtons__i"></span><span class="target" id="classNES_1a0f97a407d66d6f82a28cd88c1c1120cf"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">checkButtons</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">frameNo</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3NES12checkButtonsEi" title="Link to this definition"></a><br /></dt>
+<dd><p>checks if either button A or button B has been pressed </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>frameNo</strong> – </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">int</span></code> code: -1: button A or B has not been initialized 0: neither button A or B was pressed 1: button A was pressed 2: button B was pressed </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 </section>
 

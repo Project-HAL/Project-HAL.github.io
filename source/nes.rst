@@ -25,3 +25,5 @@ column for each button):
 Members 
 ^^^^^^^
 
+.. doxygenclass:: NES
+    :members:

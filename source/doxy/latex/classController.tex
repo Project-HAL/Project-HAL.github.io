@@ -1,5 +1,9 @@
 \hypertarget{classController}{}\doxysection{Controller Class Reference}
 \label{classController}\index{Controller@{Controller}}
+
+
+Inheritance diagram for Controller\+:
+% FIG 0
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -9,12 +13,16 @@
 \begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classController}{Controller}} object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classController_adf7f58c81479a59a7b24d5053560d7d9}{add\+Button}} (string id, int window\+Length, const char $\ast$config\+Path, int save\+Windows=0)
 \begin{DoxyCompactList}\small\item\em Adds a new button (\mbox{\hyperlink{classChannelWindow}{Channel\+Window}}) to the \mbox{\hyperlink{classController}{Controller}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classController_a9904f7fc1d538558a197157c24d69478}{init}} ()
+\begin{DoxyCompactList}\small\item\em Initializes all buttons, regardless of window length. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classChannelWindow}{Channel\+Window}} $\ast$ \mbox{\hyperlink{classController_a7af4381e262e2457222fc4b6fac336ce}{get\+Button\+Window}} (string id)
 \begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classChannelWindow}{Channel\+Window}} of the specified button. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classController_a05438a228ffc4f1437693211c4ea00c6}{button\+Exists}} (string id)
+\begin{DoxyCompactList}\small\item\em checks if a button exists in the controller \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classController_ab9dc08ae3665712026e4f0aa63f86a19}{add}} (maxlab\+::\+Filtered\+Frame\+Data frame)
 \begin{DoxyCompactList}\small\item\em Adds a data frame to all button windows. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classController_a8716527dccd14db21d94e6f8a449627c}{shift}} (maxlab\+::\+Filtered\+Frame\+Data frame)
-\begin{DoxyCompactList}\small\item\em Shifts all button windows. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Shifts all button windows--the first frame of each window will be removed, and a new one will be appended to the end. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classController_a14b2114e3be63d83feb319ce759293fa}{num\+Channels}} (string id)
 \begin{DoxyCompactList}\small\item\em Gets the number of channels tracked by a button. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classController_a34a2a7c37f78cc365a3cf84722b9a224}{num\+Spikes}} (string id)
@@ -55,6 +63,8 @@ Destroy the \mbox{\hyperlink{classController}{Controller}} object.
 
 Adds a data frame to all button windows. 
 
+Note that this function will extend the window, not shift it
+
 
 \begin{DoxyParams}{Parameters}
 {\em frame} & {\ttfamily maxlab\+::\+Filtered\+Frame\+Data} frame to add to each window \\
@@ -81,6 +91,26 @@ Adds a new button (\mbox{\hyperlink{classChannelWindow}{Channel\+Window}}) to th
 {\em save\+Windows} & {\ttfamily int} indicating how many windows to save, default 0 \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classController_a05438a228ffc4f1437693211c4ea00c6}\label{classController_a05438a228ffc4f1437693211c4ea00c6}} 
+\index{Controller@{Controller}!buttonExists@{buttonExists}}
+\index{buttonExists@{buttonExists}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{buttonExists()}{buttonExists()}}
+{\footnotesize\ttfamily bool Controller\+::button\+Exists (\begin{DoxyParamCaption}\item[{string}]{id }\end{DoxyParamCaption})}
+
+
+
+checks if a button exists in the controller 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & {\ttfamily string} id of the button \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classController_a7af4381e262e2457222fc4b6fac336ce}\label{classController_a7af4381e262e2457222fc4b6fac336ce}} 
 \index{Controller@{Controller}!getButtonWindow@{getButtonWindow}}
 \index{getButtonWindow@{getButtonWindow}!Controller@{Controller}}
@@ -99,6 +129,21 @@ Get the \mbox{\hyperlink{classChannelWindow}{Channel\+Window}} of the specified 
 \begin{DoxyReturn}{Returns}
 pointer to a {\ttfamily \mbox{\hyperlink{classChannelWindow}{Channel\+Window}}} 
 \end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em $<$code$>$std\+::out\+\_\+of\+\_\+range$<$/code$>$} & if there is not a button with the ke\+Trevor Sullivan (\href{mailto:trevor.sullivan@tufts.edu}{\texttt{ trevor.\+sullivan@tufts.\+edu}})y {\ttfamily id} \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classController_a9904f7fc1d538558a197157c24d69478}\label{classController_a9904f7fc1d538558a197157c24d69478}} 
+\index{Controller@{Controller}!init@{init}}
+\index{init@{init}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Controller\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes all buttons, regardless of window length. 
+
 \mbox{\Hypertarget{classController_a14b2114e3be63d83feb319ce759293fa}\label{classController_a14b2114e3be63d83feb319ce759293fa}} 
 \index{Controller@{Controller}!numChannels@{numChannels}}
 \index{numChannels@{numChannels}!Controller@{Controller}}
@@ -143,7 +188,7 @@ Gets the number of spikes in the window of a button.
 
 
 
-Shifts all button windows. 
+Shifts all button windows--the first frame of each window will be removed, and a new one will be appended to the end. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -154,4 +199,4 @@ Shifts all button windows.
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-/home/mxwbio/\+Desktop/\+H\+A\+L/bin/lib/include/controller.\+h\end{DoxyCompactItemize}
+/home/mxwbio/\+Desktop/\+H\+A\+L/bin/lib/include/\mbox{\hyperlink{controller_8h}{controller.\+h}}\end{DoxyCompactItemize}

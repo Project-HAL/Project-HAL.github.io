@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wave_121',['Wave',['../classWaveDetector.html#abc1726aea1cad86baef675ddded84fe8',1,'WaveDetector']]]
+  ['wave_169',['Wave',['../waveDetector_8h.html#adb931b2f752b7879df254a7fd9d17e90',1,'waveDetector.h']]]
 ];

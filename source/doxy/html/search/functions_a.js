@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['pastwindows_105',['pastWindows',['../classChannelWindow.html#a3b7604f6aa0b8fa271e237d39e9df3e0',1,'ChannelWindow']]],
-  ['pastwindowsready_106',['pastWindowsReady',['../classChannelWindow.html#a8a1cdbafbc9c7597446f38d20cf26ea8',1,'ChannelWindow']]],
-  ['plotter_107',['Plotter',['../classPlotter.html#ae90ba1f586a6862e0e24ce63259cb09b',1,'Plotter']]],
-  ['print_108',['print',['../classChannelWindow.html#ad3fe970bc14670cd6d73a37fa2cacbd3',1,'ChannelWindow::print()'],['../classElectrodeMap.html#a38b8c5e4bc4f2b0c7a8e0bcda096c8d4',1,'ElectrodeMap::print()']]],
-  ['processframe_109',['processFrame',['../classWaveDetector.html#adc15bccbffc715f743bb9c7f0d27d5f8',1,'WaveDetector']]]
+  ['nes_139',['NES',['../classNES.html#a914034a7bd9e94880fcbd83c75e69553',1,'NES::NES(float spikePercentThreshold=0.03, float zScoreThreshold=3)'],['../classNES.html#a7e405afad7ca7fc00421edf13ae7a90e',1,'NES::NES(const char *csvName, float spikePercentThreshold=0.03, float zScoreThreshold=3)'],['../classNES.html#ae0296911ca3a7582f7a58e46f7b2d68f',1,'NES::NES(bool maxtwo, int windowLength, const char *AconfigPath, const char *BconfigPath, const char *csvName, float spikePercentThreshold=0.03, float zScoreThreshold=3)']]],
+  ['numchannels_140',['numChannels',['../classChannelWindow.html#ab76eef4dd3c205fce788cd44d9f7b550',1,'ChannelWindow::numChannels()'],['../classController.html#a14b2114e3be63d83feb319ce759293fa',1,'Controller::numChannels()']]],
+  ['numspikes_141',['numSpikes',['../classController.html#a34a2a7c37f78cc365a3cf84722b9a224',1,'Controller']]]
 ];

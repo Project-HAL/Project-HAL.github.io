@@ -110,20 +110,38 @@
 <dd><div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N7Plotter7PlotterE6string">
-<span id="_CPPv3N7Plotter7PlotterE6string"></span><span id="_CPPv2N7Plotter7PlotterE6string"></span><span id="Plotter::Plotter__string"></span><span class="target" id="classPlotter_1ae90ba1f586a6862e0e24ce63259cb09b"></span><span class="sig-name descname"><span class="n"><span class="pre">Plotter</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">experiment_type</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;frequency_game&quot;</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Plotter7PlotterE6string" title="Link to this definition"></a><br /></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N7Plotter7PlotterEv">
+<span id="_CPPv3N7Plotter7PlotterEv"></span><span id="_CPPv2N7Plotter7PlotterEv"></span><span id="Plotter::Plotter"></span><span class="target" id="classPlotter_1aba3be32116013da27655868ed5e49af4"></span><span class="sig-name descname"><span class="n"><span class="pre">Plotter</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Plotter7PlotterEv" title="Link to this definition"></a><br /></dt>
 <dd><p>Construct a new <a class="reference internal" href="#classPlotter"><span class="std std-ref">Plotter</span></a> object. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>experiment_type</strong> – <code class="docutils literal notranslate"><span class="pre">string</span></code> representing the type of experiment being run. Currently, only “frequency_game” is supported. </p>
-</dd>
-</dl>
 </dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N7Plotter4syncEv">
 <span id="_CPPv3N7Plotter4syncEv"></span><span id="_CPPv2N7Plotter4syncEv"></span><span id="Plotter::sync"></span><span class="target" id="classPlotter_1a2967008e81047a3256b5b2be7e261dd4"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sync</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Plotter4syncEv" title="Link to this definition"></a><br /></dt>
-<dd><p>Syncs with Python plotter. </p>
+<dd><p>Syncs with Python plotter. Note that this function will block until the plotter is ready. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N7Plotter21sendFrequencyGameDataE6stringfif">
+<span id="_CPPv3N7Plotter21sendFrequencyGameDataE6stringfif"></span><span id="_CPPv2N7Plotter21sendFrequencyGameDataE6stringfif"></span><span id="Plotter::sendFrequencyGameData__string.float.i.float"></span><span class="target" id="classPlotter_1af95b1308365c6a381488cf0ce66599b8"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sendFrequencyGameData</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">buttonPressed</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">seconds</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">level</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">stimRate</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Plotter21sendFrequencyGameDataE6stringfif" title="Link to this definition"></a><br /></dt>
+<dd><p>sends data to python plotter for real-time plotting </p>
+<p>This function MUST be called only after syncing both end of the plotter.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>buttonPressed</strong> – <code class="docutils literal notranslate"><span class="pre">string</span></code> the button that was pressed </p></li>
+<li><p><strong>seconds</strong> – <code class="docutils literal notranslate"><span class="pre">float</span></code> the current frame, converted to seconds </p></li>
+<li><p><strong>level</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> the “level” in the frequency space </p></li>
+<li><p><strong>stimRate</strong> – <code class="docutils literal notranslate"><span class="pre">float</span></code> the current rate of stimulation, or whatever is being affected by the level </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N7Plotter5closeEv">
+<span id="_CPPv3N7Plotter5closeEv"></span><span id="_CPPv2N7Plotter5closeEv"></span><span id="Plotter::close"></span><span class="target" id="classPlotter_1a846ecd45e38dd8f7c73d963f99b75fbe"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">close</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Plotter5closeEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Closees the plotter connection. </p>
 </dd></dl>
 
 </div>

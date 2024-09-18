@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['_7econtroller_117',['~Controller',['../classController.html#a0ab87934c4f7a266cfdb86e0f36bc1b5',1,'Controller']]],
-  ['_7ewavedetector_118',['~WaveDetector',['../classWaveDetector.html#af493cc823e9388b83a3fc6bf8c48b159',1,'WaveDetector']]]
+  ['wavedetector_153',['WaveDetector',['../classWaveDetector.html#a9dc0fec49023ac3a388568180575ee7d',1,'WaveDetector::WaveDetector()'],['../classWaveDetector.html#aac49842bb930f2bbb174b60855c17aa1',1,'WaveDetector::WaveDetector(int windowLength, const char *configPath, float threshold, int minFrames, int frameHz, float firstBurstThreshold, float burstDoneThreshold)']]],
+  ['worldstate_154',['WorldState',['../classWorldState.html#a207af80e9bba9e24195891abddf67df7',1,'WorldState']]]
 ];

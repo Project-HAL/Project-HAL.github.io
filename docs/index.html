@@ -196,6 +196,7 @@
 <li class="toctree-l6"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow3getEi"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::get()</span></code></a></li>
 <li class="toctree-l6"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow6lengthEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::length()</span></code></a></li>
 <li class="toctree-l6"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow15totalSpikeCountEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::totalSpikeCount()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow11numChannelsEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::numChannels()</span></code></a></li>
 <li class="toctree-l6"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow12electrodeMapEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::electrodeMap()</span></code></a></li>
 <li class="toctree-l6"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow11pastWindowsEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::pastWindows()</span></code></a></li>
 <li class="toctree-l6"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow14avgPastWindowsEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::avgPastWindows()</span></code></a></li>
@@ -236,7 +237,9 @@
 <li class="toctree-l6"><a class="reference internal" href="controller.html#_CPPv4N10Controller10ControllerEv"><code class="docutils literal notranslate"><span class="pre">Controller::Controller()</span></code></a></li>
 <li class="toctree-l6"><a class="reference internal" href="controller.html#_CPPv4N10ControllerD0Ev"><code class="docutils literal notranslate"><span class="pre">Controller::~Controller()</span></code></a></li>
 <li class="toctree-l6"><a class="reference internal" href="controller.html#_CPPv4N10Controller9addButtonE6stringiPKci"><code class="docutils literal notranslate"><span class="pre">Controller::addButton()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="controller.html#_CPPv4N10Controller4initEv"><code class="docutils literal notranslate"><span class="pre">Controller::init()</span></code></a></li>
 <li class="toctree-l6"><a class="reference internal" href="controller.html#_CPPv4N10Controller15getButtonWindowE6string"><code class="docutils literal notranslate"><span class="pre">Controller::getButtonWindow()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="controller.html#_CPPv4N10Controller12buttonExistsE6string"><code class="docutils literal notranslate"><span class="pre">Controller::buttonExists()</span></code></a></li>
 <li class="toctree-l6"><a class="reference internal" href="controller.html#_CPPv4N10Controller3addEN6maxlab17FilteredFrameDataE"><code class="docutils literal notranslate"><span class="pre">Controller::add()</span></code></a></li>
 <li class="toctree-l6"><a class="reference internal" href="controller.html#_CPPv4N10Controller5shiftEN6maxlab17FilteredFrameDataE"><code class="docutils literal notranslate"><span class="pre">Controller::shift()</span></code></a></li>
 <li class="toctree-l6"><a class="reference internal" href="controller.html#_CPPv4N10Controller11numChannelsE6string"><code class="docutils literal notranslate"><span class="pre">Controller::numChannels()</span></code></a></li>
@@ -252,7 +255,17 @@
 <li class="toctree-l5"><a class="reference internal" href="nes.html#csv-output"><strong>CSV output</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="nes.html#members">Members</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nes.html#members">Members</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="nes.html#_CPPv43NES"><code class="docutils literal notranslate"><span class="pre">NES</span></code></a><ul>
+<li class="toctree-l6"><a class="reference internal" href="nes.html#_CPPv4N3NES3NESEff"><code class="docutils literal notranslate"><span class="pre">NES::NES()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="nes.html#_CPPv4N3NES3NESEPKcff"><code class="docutils literal notranslate"><span class="pre">NES::NES()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="nes.html#_CPPv4N3NES3NESEbiPKcPKcPKcff"><code class="docutils literal notranslate"><span class="pre">NES::NES()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="nes.html#_CPPv4N3NESD0Ev"><code class="docutils literal notranslate"><span class="pre">NES::~NES()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="nes.html#_CPPv4N3NES12checkButtonsEi"><code class="docutils literal notranslate"><span class="pre">NES::checkButtons()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="world_state.html"><code class="docutils literal notranslate"><span class="pre">WorldState</span></code></a><ul>
@@ -274,8 +287,10 @@
 <li class="toctree-l4"><a class="reference internal" href="plotter_cpp.html#overview">Overview</a></li>
 <li class="toctree-l4"><a class="reference internal" href="plotter_cpp.html#members">Members</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="plotter_cpp.html#_CPPv47Plotter"><code class="docutils literal notranslate"><span class="pre">Plotter</span></code></a><ul>
-<li class="toctree-l6"><a class="reference internal" href="plotter_cpp.html#_CPPv4N7Plotter7PlotterE6string"><code class="docutils literal notranslate"><span class="pre">Plotter::Plotter()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="plotter_cpp.html#_CPPv4N7Plotter7PlotterEv"><code class="docutils literal notranslate"><span class="pre">Plotter::Plotter()</span></code></a></li>
 <li class="toctree-l6"><a class="reference internal" href="plotter_cpp.html#_CPPv4N7Plotter4syncEv"><code class="docutils literal notranslate"><span class="pre">Plotter::sync()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="plotter_cpp.html#_CPPv4N7Plotter21sendFrequencyGameDataE6stringfif"><code class="docutils literal notranslate"><span class="pre">Plotter::sendFrequencyGameData()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="plotter_cpp.html#_CPPv4N7Plotter5closeEv"><code class="docutils literal notranslate"><span class="pre">Plotter::close()</span></code></a></li>
 </ul>
 </li>
 </ul>

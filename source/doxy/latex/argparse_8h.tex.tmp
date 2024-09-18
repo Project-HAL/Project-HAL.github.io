@@ -1,0 +1,51 @@
+\hypertarget{argparse_8h}{}\doxysection{/home/mxwbio/\+Desktop/\+H\+A\+L/bin/lib/include/argparse.h File Reference}
+\label{argparse_8h}\index{/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h@{/home/mxwbio/Desktop/HAL/bin/lib/include/argparse.h}}
+
+
+Header file for argparse module.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+Include dependency graph for argparse.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceargparse}{argparse}}
+\begin{DoxyCompactList}\small\item\em test D\+O\+C\+U\+M\+E\+N\+T\+I\+NG T\+HE N\+A\+M\+E\+S\+P\+A\+CE \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespaceargparse_abb7a363c940e66d2b40c984142c9c3bb}{argparse\+::check\+Option}} (string name, int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Parses through arguments and checks if an option/flag exists. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{namespaceargparse_a8686e113755409e373a4a1a3fc14d4bb}{argparse\+::get\+String\+Arg}} (string name, int argc, char $\ast$argv\mbox{[}$\,$\mbox{]}, string usage=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Gets the value of an argument option as a {\ttfamily string} \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespaceargparse_ad3582d96323be2fbf575a84d7389ff2a}{argparse\+::get\+Int\+Arg}} (string name, int argc, char $\ast$argv\mbox{[}$\,$\mbox{]}, string usage=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Gets the value of an argument option as an {\ttfamily int} \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{namespaceargparse_addec61b6a5316d78c1ba9323ac715708}{argparse\+::get\+Float\+Arg}} (string name, int argc, char $\ast$argv\mbox{[}$\,$\mbox{]}, string usage=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Gets the value of an argument option as an {\ttfamily float} \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{namespaceargparse_ad841ae5c646c6db065086195ee0f3f57}{argparse\+::get\+String\+Arg\+Secure}} (string name, string default\+Value, int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Gets the value of an argument option as a {\ttfamily string} \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespaceargparse_a8aeb19c1f3fc6aea50d7d625af8b8fbb}{argparse\+::get\+Int\+Arg\+Secure}} (string name, int default\+Value, int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Gets the value of an argument option as a {\ttfamily int} \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{namespaceargparse_a1e343e24a835d2649f5fea664c5a9f59}{argparse\+::get\+Float\+Arg\+Secure}} (string name, float default\+Value, int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Gets the value of an argument option as a {\ttfamily float} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for argparse module. 
+
+\begin{DoxyAuthor}{Author}
+Trevor Sullivan (\href{mailto:trevor.sullivan@tufts.edu}{\texttt{ trevor.\+sullivan@tufts.\+edu}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/09-\/18
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024 
+\end{DoxyCopyright}

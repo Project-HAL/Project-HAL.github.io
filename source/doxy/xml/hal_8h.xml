@@ -8,66 +8,43 @@
     <includes refid="worldstate_8h" local="yes">worldstate.h</includes>
     <includes refid="waveDetector_8h" local="yes">waveDetector.h</includes>
     <includes refid="progressBar_8h" local="yes">progressBar.h</includes>
+    <includes refid="plotter_8h" local="yes">plotter.h</includes>
+    <includes refid="nes_8h" local="yes">nes.h</includes>
     <incdepgraph>
-      <node id="13">
+      <node id="10">
         <label>worldstate.h</label>
-        <link refid="worldstate_8h_source"/>
-        <childnode refid="9" relation="include">
+        <link refid="worldstate_8h"/>
+        <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="4">
+      <node id="7">
         <label>electrodeMap.h</label>
-        <link refid="electrodeMap_8h_source"/>
+        <link refid="electrodeMap_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="6" relation="include">
+      </node>
+      <node id="9">
+        <label>argparse.h</label>
+        <link refid="argparse_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>progressBar.h</label>
+        <link refid="progressBar_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
         </childnode>
       </node>
       <node id="12">
-        <label>argparse.h</label>
-        <link refid="argparse_8h_source"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-      </node>
-      <node id="5">
-        <label>stdlib.h</label>
-      </node>
-      <node id="16">
-        <label>progressBar.h</label>
-        <link refid="progressBar_8h_source"/>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-      </node>
-      <node id="14">
         <label>waveDetector.h</label>
-        <link refid="waveDetector_8h_source"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
+        <link refid="waveDetector_8h"/>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="15" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -75,7 +52,11 @@
         <link refid="hal_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="11" relation="include">
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
@@ -89,66 +70,89 @@
       <node id="3">
         <label>string</label>
       </node>
-      <node id="6">
+      <node id="5">
         <label>map</label>
       </node>
-      <node id="8">
+      <node id="6">
         <label>maxlab.h</label>
+      </node>
+      <node id="14">
+        <label>plotter.h</label>
+        <link refid="plotter_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
       </node>
       <node id="2">
         <label>channelWindow.h</label>
-        <link refid="channelWindow_8h_source"/>
+        <link refid="channelWindow_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
         <childnode refid="6" relation="include">
         </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
       </node>
-      <node id="10">
+      <node id="17">
         <label>fstream</label>
       </node>
-      <node id="11">
+      <node id="15">
+        <label>zmq.hpp</label>
+      </node>
+      <node id="8">
         <label>controller.h</label>
-        <link refid="controller_8h_source"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
+        <link refid="controller_8h"/>
+        <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
       </node>
-      <node id="7">
+      <node id="4">
         <label>vector</label>
       </node>
-      <node id="15">
-        <label>utility</label>
+      <node id="16">
+        <label>nes.h</label>
+        <link refid="nes_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
       </node>
-      <node id="9">
+      <node id="11">
         <label>iostream</label>
       </node>
     </incdepgraph>
     <briefdescription>
+<para>Includes the entire HAL C++ library. </para>
     </briefdescription>
     <detaileddescription>
+<para><simplesect kind="author"><para>Trevor Sullivan (<ulink url="mailto:trevor.sullivan@tufts.edu">trevor.sullivan@tufts.edu</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>0.1 </para>
+</simplesect>
+<simplesect kind="date"><para>2024-09-18</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2024 </para>
+</simplesect>
+</para>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;channelWindow.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;controller.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;argparse.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;worldstate.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;waveDetector.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;progressBar.h&quot;</highlight></codeline>
+<codeline lineno="1"></codeline>
+<codeline lineno="11"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="channelWindow_8h" kindref="compound">channelWindow.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="controller_8h" kindref="compound">controller.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="argparse_8h" kindref="compound">argparse.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="worldstate_8h" kindref="compound">worldstate.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="waveDetector_8h" kindref="compound">waveDetector.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="progressBar_8h" kindref="compound">progressBar.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="plotter_8h" kindref="compound">plotter.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="nes_8h" kindref="compound">nes.h</ref>&quot;</highlight></codeline>
     </programlisting>
     <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/hal.h"/>
   </compounddef>

@@ -3,62 +3,47 @@
   <compounddef id="classPlotter" kind="class" language="C++" prot="public">
     <compoundname>Plotter</compoundname>
       <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="classPlotter_1aedaa4a2c25cba70241da4c8072c48f01" prot="private" static="no" mutable="no">
-        <type>string</type>
-        <definition>string Plotter::type</definition>
+      <memberdef kind="variable" id="classPlotter_1a5dfd182fdf5f21570c51eb6324a23017" prot="private" static="no" mutable="no">
+        <type>zmq::context_t</type>
+        <definition>zmq::context_t Plotter::context</definition>
         <argsstring></argsstring>
-        <name>type</name>
+        <name>context</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/plotter.h" line="27" column="16" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/plotter.h" bodystart="27" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/plotter.h" line="57" column="24" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/plotter.h" bodystart="57" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classPlotter_1afd5d44e148be6c512170582a27b3455c" prot="private" static="no" mutable="no">
+      <memberdef kind="variable" id="classPlotter_1a1b096aaa691a52fdc5717c6f88194275" prot="private" static="no" mutable="no">
         <type>zmq::socket_t</type>
-        <definition>zmq::socket_t Plotter::pub_sock</definition>
+        <definition>zmq::socket_t Plotter::pubSock</definition>
         <argsstring></argsstring>
-        <name>pub_sock</name>
+        <name>pubSock</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/plotter.h" line="28" column="23" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/plotter.h" bodystart="28" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/plotter.h" line="58" column="23" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/plotter.h" bodystart="58" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classPlotter_1ae90ba1f586a6862e0e24ce63259cb09b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classPlotter_1aba3be32116013da27655868ed5e49af4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>Plotter::Plotter</definition>
-        <argsstring>(string experiment_type=&quot;frequency_game&quot;)</argsstring>
+        <argsstring>()</argsstring>
         <name>Plotter</name>
-        <param>
-          <type>string</type>
-          <declname>experiment_type</declname>
-          <defval>&quot;frequency_game&quot;</defval>
-        </param>
         <briefdescription>
 <para>Construct a new <ref refid="classPlotter" kindref="compound">Plotter</ref> object. </para>
         </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>experiment_type</parametername>
-</parameternamelist>
-<parameterdescription>
-<para><computeroutput>string</computeroutput> representing the type of experiment being run. Currently, only &quot;frequency_game&quot; is supported. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/plotter.h" line="15" column="9"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/plotter.h" line="25" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classPlotter_1a2967008e81047a3256b5b2be7e261dd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -66,25 +51,106 @@
         <argsstring>()</argsstring>
         <name>sync</name>
         <briefdescription>
-<para>Syncs with Python plotter. </para>
+<para>Syncs with Python plotter. Note that this function will block until the plotter is ready. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/plotter.h" line="22" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/plotter.h" line="33" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlotter_1af95b1308365c6a381488cf0ce66599b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Plotter::sendFrequencyGameData</definition>
+        <argsstring>(string buttonPressed, float seconds, int level, float stimRate)</argsstring>
+        <name>sendFrequencyGameData</name>
+        <param>
+          <type>string</type>
+          <declname>buttonPressed</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>seconds</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>stimRate</declname>
+        </param>
+        <briefdescription>
+<para>sends data to python plotter for real-time plotting </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function MUST be called only after syncing both end of the plotter.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buttonPressed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>string</computeroutput> the button that was pressed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>seconds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>float</computeroutput> the current frame, converted to seconds </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>int</computeroutput> the &quot;level&quot; in the frequency space </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stimRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>float</computeroutput> the current rate of stimulation, or whatever is being affected by the level </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/plotter.h" line="48" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classPlotter_1a846ecd45e38dd8f7c73d963f99b75fbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Plotter::close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <briefdescription>
+<para>Closees the plotter connection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/plotter.h" line="54" column="14"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/plotter.h" line="6" column="14" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/plotter.h" bodystart="6" bodyend="29"/>
+    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/plotter.h" line="20" column="14" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/plotter.h" bodystart="20" bodyend="59"/>
     <listofallmembers>
-      <member refid="classPlotter_1ae90ba1f586a6862e0e24ce63259cb09b" prot="public" virt="non-virtual"><scope>Plotter</scope><name>Plotter</name></member>
-      <member refid="classPlotter_1afd5d44e148be6c512170582a27b3455c" prot="private" virt="non-virtual"><scope>Plotter</scope><name>pub_sock</name></member>
+      <member refid="classPlotter_1a846ecd45e38dd8f7c73d963f99b75fbe" prot="public" virt="non-virtual"><scope>Plotter</scope><name>close</name></member>
+      <member refid="classPlotter_1a5dfd182fdf5f21570c51eb6324a23017" prot="private" virt="non-virtual"><scope>Plotter</scope><name>context</name></member>
+      <member refid="classPlotter_1aba3be32116013da27655868ed5e49af4" prot="public" virt="non-virtual"><scope>Plotter</scope><name>Plotter</name></member>
+      <member refid="classPlotter_1a1b096aaa691a52fdc5717c6f88194275" prot="private" virt="non-virtual"><scope>Plotter</scope><name>pubSock</name></member>
+      <member refid="classPlotter_1af95b1308365c6a381488cf0ce66599b8" prot="public" virt="non-virtual"><scope>Plotter</scope><name>sendFrequencyGameData</name></member>
       <member refid="classPlotter_1a2967008e81047a3256b5b2be7e261dd4" prot="public" virt="non-virtual"><scope>Plotter</scope><name>sync</name></member>
-      <member refid="classPlotter_1aedaa4a2c25cba70241da4c8072c48f01" prot="private" virt="non-virtual"><scope>Plotter</scope><name>type</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

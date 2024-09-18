@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['pastwindows_45',['pastWindows',['../classChannelWindow.html#a3b7604f6aa0b8fa271e237d39e9df3e0',1,'ChannelWindow']]],
-  ['pastwindowsready_46',['pastWindowsReady',['../classChannelWindow.html#a8a1cdbafbc9c7597446f38d20cf26ea8',1,'ChannelWindow']]],
-  ['plotter_47',['Plotter',['../classPlotter.html',1,'Plotter'],['../classPlotter.html#ae90ba1f586a6862e0e24ce63259cb09b',1,'Plotter::Plotter()']]],
-  ['print_48',['print',['../classChannelWindow.html#ad3fe970bc14670cd6d73a37fa2cacbd3',1,'ChannelWindow::print()'],['../classElectrodeMap.html#a38b8c5e4bc4f2b0c7a8e0bcda096c8d4',1,'ElectrodeMap::print()']]],
-  ['processframe_49',['processFrame',['../classWaveDetector.html#adc15bccbffc715f743bb9c7f0d27d5f8',1,'WaveDetector']]],
-  ['progressbar_50',['ProgressBar',['../classProgressBar.html',1,'']]]
+  ['nes_53',['NES',['../classNES.html',1,'NES'],['../classNES.html#a914034a7bd9e94880fcbd83c75e69553',1,'NES::NES(float spikePercentThreshold=0.03, float zScoreThreshold=3)'],['../classNES.html#a7e405afad7ca7fc00421edf13ae7a90e',1,'NES::NES(const char *csvName, float spikePercentThreshold=0.03, float zScoreThreshold=3)'],['../classNES.html#ae0296911ca3a7582f7a58e46f7b2d68f',1,'NES::NES(bool maxtwo, int windowLength, const char *AconfigPath, const char *BconfigPath, const char *csvName, float spikePercentThreshold=0.03, float zScoreThreshold=3)']]],
+  ['nes_2eh_54',['nes.h',['../nes_8h.html',1,'']]],
+  ['noburst_55',['noBurst',['../waveDetector_8h.html#adb931b2f752b7879df254a7fd9d17e90aed3e913024f0dd06e150c3e04eded410',1,'waveDetector.h']]],
+  ['nospikeframecount_56',['noSpikeFrameCount',['../structWaveMetadata.html#a377df28397310e46bd25375c4f89aabc',1,'WaveMetadata']]],
+  ['numchannels_57',['numChannels',['../classChannelWindow.html#ab76eef4dd3c205fce788cd44d9f7b550',1,'ChannelWindow::numChannels()'],['../classController.html#a14b2114e3be63d83feb319ce759293fa',1,'Controller::numChannels()']]],
+  ['numspikes_58',['numSpikes',['../classController.html#a34a2a7c37f78cc365a3cf84722b9a224',1,'Controller']]]
 ];

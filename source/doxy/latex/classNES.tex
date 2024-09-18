@@ -1,0 +1,125 @@
+\hypertarget{classNES}{}\doxysection{N\+ES Class Reference}
+\label{classNES}\index{NES@{NES}}
+
+
+Inheritance diagram for N\+ES\+:
+% FIG 0
+
+
+Collaboration diagram for N\+ES\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNES_a914034a7bd9e94880fcbd83c75e69553}{N\+ES}} (float spike\+Percent\+Threshold=0.\+03, float z\+Score\+Threshold=3)
+\begin{DoxyCompactList}\small\item\em Construct a new {\ttfamily \mbox{\hyperlink{classNES}{N\+ES}}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNES_a7e405afad7ca7fc00421edf13ae7a90e}{N\+ES}} (const char $\ast$csv\+Name, float spike\+Percent\+Threshold=0.\+03, float z\+Score\+Threshold=3)
+\begin{DoxyCompactList}\small\item\em Construct a new {\ttfamily \mbox{\hyperlink{classNES}{N\+ES}}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNES_ae0296911ca3a7582f7a58e46f7b2d68f}{N\+ES}} (bool maxtwo, int window\+Length, const char $\ast$Aconfig\+Path, const char $\ast$Bconfig\+Path, const char $\ast$csv\+Name, float spike\+Percent\+Threshold=0.\+03, float z\+Score\+Threshold=3)
+\begin{DoxyCompactList}\small\item\em Construct a new {\ttfamily \mbox{\hyperlink{classNES}{N\+ES}}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNES_a10056f30dbcb4a0ac24124faa81c9d03}{$\sim$\+N\+ES}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the {\ttfamily \mbox{\hyperlink{classNES}{N\+ES}}} object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classNES_a0f97a407d66d6f82a28cd88c1c1120cf}{check\+Buttons}} (int frame\+No)
+\begin{DoxyCompactList}\small\item\em checks if either button A or button B has been pressed \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNES_a914034a7bd9e94880fcbd83c75e69553}\label{classNES_a914034a7bd9e94880fcbd83c75e69553}} 
+\index{NES@{NES}!NES@{NES}}
+\index{NES@{NES}!NES@{NES}}
+\doxysubsubsection{\texorpdfstring{NES()}{NES()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily N\+E\+S\+::\+N\+ES (\begin{DoxyParamCaption}\item[{float}]{spike\+Percent\+Threshold = {\ttfamily 0.03},  }\item[{float}]{z\+Score\+Threshold = {\ttfamily 3} }\end{DoxyParamCaption})}
+
+
+
+Construct a new {\ttfamily \mbox{\hyperlink{classNES}{N\+ES}}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em spike\+Percent\+Threshold} & {\ttfamily float} percent of channels that spiked threshold (default 0.\+03) \\
+\hline
+{\em z\+Score\+Threshold} & {\ttfamily float} Z score threshold (default 3) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNES_a7e405afad7ca7fc00421edf13ae7a90e}\label{classNES_a7e405afad7ca7fc00421edf13ae7a90e}} 
+\index{NES@{NES}!NES@{NES}}
+\index{NES@{NES}!NES@{NES}}
+\doxysubsubsection{\texorpdfstring{NES()}{NES()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily N\+E\+S\+::\+N\+ES (\begin{DoxyParamCaption}\item[{const char $\ast$}]{csv\+Name,  }\item[{float}]{spike\+Percent\+Threshold = {\ttfamily 0.03},  }\item[{float}]{z\+Score\+Threshold = {\ttfamily 3} }\end{DoxyParamCaption})}
+
+
+
+Construct a new {\ttfamily \mbox{\hyperlink{classNES}{N\+ES}}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em csv\+Name} & {\ttfamily const char $\ast$} full path to csv which holds button data for post-\/experiment analysis. If the csv doesn\textquotesingle{}t exist, it will automatically be created. \\
+\hline
+{\em spike\+Percent\+Threshold} & {\ttfamily float} percent of channels that spiked threshold (default 0.\+03) \\
+\hline
+{\em z\+Score\+Threshold} & {\ttfamily float} Z score threshold (default 3) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNES_ae0296911ca3a7582f7a58e46f7b2d68f}\label{classNES_ae0296911ca3a7582f7a58e46f7b2d68f}} 
+\index{NES@{NES}!NES@{NES}}
+\index{NES@{NES}!NES@{NES}}
+\doxysubsubsection{\texorpdfstring{NES()}{NES()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily N\+E\+S\+::\+N\+ES (\begin{DoxyParamCaption}\item[{bool}]{maxtwo,  }\item[{int}]{window\+Length,  }\item[{const char $\ast$}]{Aconfig\+Path,  }\item[{const char $\ast$}]{Bconfig\+Path,  }\item[{const char $\ast$}]{csv\+Name,  }\item[{float}]{spike\+Percent\+Threshold = {\ttfamily 0.03},  }\item[{float}]{z\+Score\+Threshold = {\ttfamily 3} }\end{DoxyParamCaption})}
+
+
+
+Construct a new {\ttfamily \mbox{\hyperlink{classNES}{N\+ES}}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em maxtwo} & {\ttfamily bool} indicates if the experiment is running on the maxtwo \\
+\hline
+{\em window\+Length} & {\ttfamily int} length of the windows representing the buttons, measured in frames \\
+\hline
+{\em Aconfig\+Path} & {\ttfamily const char $\ast$} \\
+\hline
+{\em Bconfig\+Path} & {\ttfamily const char $\ast$} \\
+\hline
+{\em csv\+Name} & {\ttfamily const char $\ast$} full path to csv which holds button data for post-\/experiment analysis. If the csv doesn\textquotesingle{}t exist, it will automatically be created. \\
+\hline
+{\em spike\+Percent\+Threshold} & {\ttfamily float} percent of channels that spiked threshold (default 0.\+03) \\
+\hline
+{\em z\+Score\+Threshold} & {\ttfamily float} Z score threshold (default 3) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classNES_a10056f30dbcb4a0ac24124faa81c9d03}\label{classNES_a10056f30dbcb4a0ac24124faa81c9d03}} 
+\index{NES@{NES}!````~NES@{$\sim$NES}}
+\index{````~NES@{$\sim$NES}!NES@{NES}}
+\doxysubsubsection{\texorpdfstring{$\sim$NES()}{~NES()}}
+{\footnotesize\ttfamily N\+E\+S\+::$\sim$\+N\+ES (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the {\ttfamily \mbox{\hyperlink{classNES}{N\+ES}}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNES_a0f97a407d66d6f82a28cd88c1c1120cf}\label{classNES_a0f97a407d66d6f82a28cd88c1c1120cf}} 
+\index{NES@{NES}!checkButtons@{checkButtons}}
+\index{checkButtons@{checkButtons}!NES@{NES}}
+\doxysubsubsection{\texorpdfstring{checkButtons()}{checkButtons()}}
+{\footnotesize\ttfamily int N\+E\+S\+::check\+Buttons (\begin{DoxyParamCaption}\item[{int}]{frame\+No }\end{DoxyParamCaption})}
+
+
+
+checks if either button A or button B has been pressed 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame\+No} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily int} code\+: -\/1\+: button A or B has not been initialized 0\+: neither button A or B was pressed 1\+: button A was pressed 2\+: button B was pressed 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/mxwbio/\+Desktop/\+H\+A\+L/bin/lib/include/\mbox{\hyperlink{nes_8h}{nes.\+h}}\end{DoxyCompactItemize}

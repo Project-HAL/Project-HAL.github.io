@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['numchannels_103',['numChannels',['../classController.html#a14b2114e3be63d83feb319ce759293fa',1,'Controller']]],
-  ['numspikes_104',['numSpikes',['../classController.html#a34a2a7c37f78cc365a3cf84722b9a224',1,'Controller']]]
+  ['moveleft_137',['moveLeft',['../classWorldState.html#a9c6e684577e6339573dd60ede708bd3a',1,'WorldState']]],
+  ['moveright_138',['moveRight',['../classWorldState.html#a1f3c4635f196e0aa9774779e396c4b0a',1,'WorldState']]]
 ];

@@ -71,41 +71,92 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae90ba1f586a6862e0e24ce63259cb09b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlotter.html#ae90ba1f586a6862e0e24ce63259cb09b">Plotter</a> (string experiment_type=&quot;frequency_game&quot;)</td></tr>
-<tr class="memdesc:ae90ba1f586a6862e0e24ce63259cb09b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classPlotter.html">Plotter</a> object.  <a href="classPlotter.html#ae90ba1f586a6862e0e24ce63259cb09b">More...</a><br /></td></tr>
-<tr class="separator:ae90ba1f586a6862e0e24ce63259cb09b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba3be32116013da27655868ed5e49af4"><td class="memItemLeft" align="right" valign="top"><a id="aba3be32116013da27655868ed5e49af4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlotter.html#aba3be32116013da27655868ed5e49af4">Plotter</a> ()</td></tr>
+<tr class="memdesc:aba3be32116013da27655868ed5e49af4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classPlotter.html">Plotter</a> object. <br /></td></tr>
+<tr class="separator:aba3be32116013da27655868ed5e49af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2967008e81047a3256b5b2be7e261dd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlotter.html#a2967008e81047a3256b5b2be7e261dd4">sync</a> ()</td></tr>
-<tr class="memdesc:a2967008e81047a3256b5b2be7e261dd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Syncs with Python plotter.  <a href="classPlotter.html#a2967008e81047a3256b5b2be7e261dd4">More...</a><br /></td></tr>
+<tr class="memdesc:a2967008e81047a3256b5b2be7e261dd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Syncs with Python plotter. Note that this function will block until the plotter is ready.  <a href="classPlotter.html#a2967008e81047a3256b5b2be7e261dd4">More...</a><br /></td></tr>
 <tr class="separator:a2967008e81047a3256b5b2be7e261dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af95b1308365c6a381488cf0ce66599b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlotter.html#af95b1308365c6a381488cf0ce66599b8">sendFrequencyGameData</a> (string buttonPressed, float seconds, int level, float stimRate)</td></tr>
+<tr class="memdesc:af95b1308365c6a381488cf0ce66599b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">sends data to python plotter for real-time plotting  <a href="classPlotter.html#af95b1308365c6a381488cf0ce66599b8">More...</a><br /></td></tr>
+<tr class="separator:af95b1308365c6a381488cf0ce66599b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a846ecd45e38dd8f7c73d963f99b75fbe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlotter.html#a846ecd45e38dd8f7c73d963f99b75fbe">close</a> ()</td></tr>
+<tr class="memdesc:a846ecd45e38dd8f7c73d963f99b75fbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closees the plotter connection.  <a href="classPlotter.html#a846ecd45e38dd8f7c73d963f99b75fbe">More...</a><br /></td></tr>
+<tr class="separator:a846ecd45e38dd8f7c73d963f99b75fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ae90ba1f586a6862e0e24ce63259cb09b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae90ba1f586a6862e0e24ce63259cb09b">&#9670;&nbsp;</a></span>Plotter()</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a846ecd45e38dd8f7c73d963f99b75fbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a846ecd45e38dd8f7c73d963f99b75fbe">&#9670;&nbsp;</a></span>close()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Plotter::Plotter </td>
+          <td class="memname">void Plotter::close </td>
           <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>experiment_type</em> = <code>&quot;frequency_game&quot;</code></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Construct a new <a class="el" href="classPlotter.html">Plotter</a> object. </p>
+<p>Closees the plotter connection. </p>
+
+</div>
+</div>
+<a id="af95b1308365c6a381488cf0ce66599b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af95b1308365c6a381488cf0ce66599b8">&#9670;&nbsp;</a></span>sendFrequencyGameData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Plotter::sendFrequencyGameData </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>buttonPressed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>seconds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>stimRate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sends data to python plotter for real-time plotting </p>
+<p>This function MUST be called only after syncing both end of the plotter.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">experiment_type</td><td><code>string</code> representing the type of experiment being run. Currently, only "frequency_game" is supported. </td></tr>
+    <tr><td class="paramname">buttonPressed</td><td><code>string</code> the button that was pressed </td></tr>
+    <tr><td class="paramname">seconds</td><td><code>float</code> the current frame, converted to seconds </td></tr>
+    <tr><td class="paramname">level</td><td><code>int</code> the "level" in the frequency space </td></tr>
+    <tr><td class="paramname">stimRate</td><td><code>float</code> the current rate of stimulation, or whatever is being affected by the level </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a2967008e81047a3256b5b2be7e261dd4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2967008e81047a3256b5b2be7e261dd4">&#9670;&nbsp;</a></span>sync()</h2>
 
@@ -121,7 +172,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Syncs with Python plotter. </p>
+<p>Syncs with Python plotter. Note that this function will block until the plotter is ready. </p>
 
 </div>
 </div>

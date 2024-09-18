@@ -18,6 +18,7 @@
     <member refid="classChannelWindow_1a8b1c18c40fa9e4f891eaf7221dd598b8" kind="function"><name>get</name></member>
     <member refid="classChannelWindow_1afab2b22f3d23ea016697d33b16ac8511" kind="function"><name>length</name></member>
     <member refid="classChannelWindow_1a362798037f40a99650da61c877971517" kind="function"><name>totalSpikeCount</name></member>
+    <member refid="classChannelWindow_1ab76eef4dd3c205fce788cd44d9f7b550" kind="function"><name>numChannels</name></member>
     <member refid="classChannelWindow_1ac118c7e60de090394f40e4f0fcfd6adc" kind="function"><name>electrodeMap</name></member>
     <member refid="classChannelWindow_1a3b7604f6aa0b8fa271e237d39e9df3e0" kind="function"><name>pastWindows</name></member>
     <member refid="classChannelWindow_1a88ef58fe01f8b3a310e2f02d0ac0abc0" kind="function"><name>avgPastWindows</name></member>
@@ -37,11 +38,14 @@
     <member refid="classController_1a95c56822d667e94b031451729ce069a9" kind="function"><name>Controller</name></member>
     <member refid="classController_1a0ab87934c4f7a266cfdb86e0f36bc1b5" kind="function"><name>~Controller</name></member>
     <member refid="classController_1adf7f58c81479a59a7b24d5053560d7d9" kind="function"><name>addButton</name></member>
+    <member refid="classController_1a9904f7fc1d538558a197157c24d69478" kind="function"><name>init</name></member>
     <member refid="classController_1a7af4381e262e2457222fc4b6fac336ce" kind="function"><name>getButtonWindow</name></member>
+    <member refid="classController_1a05438a228ffc4f1437693211c4ea00c6" kind="function"><name>buttonExists</name></member>
     <member refid="classController_1ab9dc08ae3665712026e4f0aa63f86a19" kind="function"><name>add</name></member>
     <member refid="classController_1a8716527dccd14db21d94e6f8a449627c" kind="function"><name>shift</name></member>
     <member refid="classController_1a14b2114e3be63d83feb319ce759293fa" kind="function"><name>numChannels</name></member>
     <member refid="classController_1a34a2a7c37f78cc365a3cf84722b9a224" kind="function"><name>numSpikes</name></member>
+    <member refid="classController_1a8320c417df16e547307e576ceb6ab894" kind="function"><name>getMaxLength</name></member>
   </compound>
   <compound refid="structelectrodeCoords" kind="struct"><name>electrodeCoords</name>
     <member refid="structelectrodeCoords_1a7ae7bfe9ba9b938c319328c4ac6fbbfc" kind="variable"><name>position</name></member>
@@ -61,11 +65,28 @@
     <member refid="classElectrodeMap_1a38b8c5e4bc4f2b0c7a8e0bcda096c8d4" kind="function"><name>print</name></member>
     <member refid="classElectrodeMap_1ac7d50e71926d638fffc3a0f8a0ebf9f2" kind="function"><name>readConfig</name></member>
   </compound>
+  <compound refid="classNES" kind="class"><name>NES</name>
+    <member refid="classNES_1ae1c61fed6069cbf763e66665f251e99f" kind="variable"><name>currFrame</name></member>
+    <member refid="classNES_1ae34b9022ccab06b1e0c39f2f83ad3d9f" kind="variable"><name>csv</name></member>
+    <member refid="classNES_1a433a77228e04028454af3c0866e4e06f" kind="variable"><name>zThresh</name></member>
+    <member refid="classNES_1af9435f6e70772045a2cae81f4752333e" kind="variable"><name>percentThresh</name></member>
+    <member refid="classNES_1a7582c7e829926bcb71d5e45c2c9d82e5" kind="variable"><name>aReleased</name></member>
+    <member refid="classNES_1a7f0931161357b83b3bd0633937a6f6de" kind="variable"><name>bReleased</name></member>
+    <member refid="classNES_1a914034a7bd9e94880fcbd83c75e69553" kind="function"><name>NES</name></member>
+    <member refid="classNES_1a7e405afad7ca7fc00421edf13ae7a90e" kind="function"><name>NES</name></member>
+    <member refid="classNES_1ae0296911ca3a7582f7a58e46f7b2d68f" kind="function"><name>NES</name></member>
+    <member refid="classNES_1a10056f30dbcb4a0ac24124faa81c9d03" kind="function"><name>~NES</name></member>
+    <member refid="classNES_1a0f97a407d66d6f82a28cd88c1c1120cf" kind="function"><name>checkButtons</name></member>
+    <member refid="classNES_1a68c85131da8bf7d3a54033b1b74e427c" kind="function"><name>zScore</name></member>
+    <member refid="classNES_1a0e28e99afc6d0345995f4c627b6a186e" kind="function"><name>printValues</name></member>
+  </compound>
   <compound refid="classPlotter" kind="class"><name>Plotter</name>
-    <member refid="classPlotter_1aedaa4a2c25cba70241da4c8072c48f01" kind="variable"><name>type</name></member>
-    <member refid="classPlotter_1afd5d44e148be6c512170582a27b3455c" kind="variable"><name>pub_sock</name></member>
-    <member refid="classPlotter_1ae90ba1f586a6862e0e24ce63259cb09b" kind="function"><name>Plotter</name></member>
+    <member refid="classPlotter_1a5dfd182fdf5f21570c51eb6324a23017" kind="variable"><name>context</name></member>
+    <member refid="classPlotter_1a1b096aaa691a52fdc5717c6f88194275" kind="variable"><name>pubSock</name></member>
+    <member refid="classPlotter_1aba3be32116013da27655868ed5e49af4" kind="function"><name>Plotter</name></member>
     <member refid="classPlotter_1a2967008e81047a3256b5b2be7e261dd4" kind="function"><name>sync</name></member>
+    <member refid="classPlotter_1af95b1308365c6a381488cf0ce66599b8" kind="function"><name>sendFrequencyGameData</name></member>
+    <member refid="classPlotter_1a846ecd45e38dd8f7c73d963f99b75fbe" kind="function"><name>close</name></member>
   </compound>
   <compound refid="classProgressBar" kind="class"><name>ProgressBar</name>
     <member refid="classProgressBar_1a7a03c247a1fd4e22a9599802834218c0" kind="variable"><name>totalTicks</name></member>
@@ -147,12 +168,13 @@
   <compound refid="channelWindow_8h" kind="file"><name>channelWindow.h</name>
   </compound>
   <compound refid="controller_8h" kind="file"><name>controller.h</name>
-    <member refid="controller_8h_1a47002284f3218e9cf622d445e62130f3" kind="define"><name>__CONTROLLER_H__</name></member>
   </compound>
   <compound refid="electrodeMap_8h" kind="file"><name>electrodeMap.h</name>
     <member refid="electrodeMap_8h_1a6922ae2d0490ba3260427ef9fe4553c1" kind="typedef"><name>electrodeCoords</name></member>
   </compound>
   <compound refid="hal_8h" kind="file"><name>hal.h</name>
+  </compound>
+  <compound refid="nes_8h" kind="file"><name>nes.h</name>
   </compound>
   <compound refid="plotter_8h" kind="file"><name>plotter.h</name>
   </compound>

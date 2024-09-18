@@ -69,29 +69,33 @@ $(function() {
 <div class="title">plotter.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __PLOTTER_H__</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define __PLOTTER_H__</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="classPlotter.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPlotter.html">Plotter</a> {</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keyword">public</span>: </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <a class="code" href="classPlotter.html#ae90ba1f586a6862e0e24ce63259cb09b">Plotter</a>(<span class="keywordtype">string</span> experiment_type=<span class="stringliteral">&quot;frequency_game&quot;</span>);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classPlotter.html#a2967008e81047a3256b5b2be7e261dd4">sync</a>();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="comment">// currrently supports &quot;frequency_game&quot;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordtype">string</span> type;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        zmq::socket_t pub_sock;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif</span></div>
+<a href="plotter_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef __PLOTTER_H__</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define __PLOTTER_H__</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;zmq.hpp&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classPlotter.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPlotter.html">Plotter</a> {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">public</span>: </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="classPlotter.html">Plotter</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordtype">void</span> sync();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordtype">void</span> sendFrequencyGameData(<span class="keywordtype">string</span> buttonPressed, <span class="keywordtype">float</span> seconds, <span class="keywordtype">int</span> level, <span class="keywordtype">float</span> stimRate);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordtype">void</span> close();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        zmq::context_t context;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        zmq::socket_t pubSock;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassPlotter_html_ae90ba1f586a6862e0e24ce63259cb09b"><div class="ttname"><a href="classPlotter.html#ae90ba1f586a6862e0e24ce63259cb09b">Plotter::Plotter</a></div><div class="ttdeci">Plotter(string experiment_type=&quot;frequency_game&quot;)</div><div class="ttdoc">Construct a new Plotter object.</div></div>
-<div class="ttc" id="aclassPlotter_html"><div class="ttname"><a href="classPlotter.html">Plotter</a></div><div class="ttdef"><b>Definition:</b> plotter.h:6</div></div>
-<div class="ttc" id="aclassPlotter_html_a2967008e81047a3256b5b2be7e261dd4"><div class="ttname"><a href="classPlotter.html#a2967008e81047a3256b5b2be7e261dd4">Plotter::sync</a></div><div class="ttdeci">void sync()</div><div class="ttdoc">Syncs with Python plotter.</div></div>
+<div class="ttc" id="aclassPlotter_html"><div class="ttname"><a href="classPlotter.html">Plotter</a></div><div class="ttdef"><b>Definition:</b> plotter.h:20</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

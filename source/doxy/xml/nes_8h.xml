@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="nes_8h" kind="file" language="C++">
+    <compoundname>nes.h</compoundname>
+    <includes local="no">fstream</includes>
+    <includes refid="controller_8h" local="yes">controller.h</includes>
+    <includedby refid="hal_8h" local="yes">/home/mxwbio/Desktop/HAL/bin/lib/include/hal.h</includedby>
+    <incdepgraph>
+      <node id="9">
+        <label>electrodeMap.h</label>
+        <link refid="electrodeMap_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="4">
+        <label>map</label>
+      </node>
+      <node id="8">
+        <label>maxlab.h</label>
+      </node>
+      <node id="6">
+        <label>channelWindow.h</label>
+        <link refid="channelWindow_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>fstream</label>
+      </node>
+      <node id="3">
+        <label>controller.h</label>
+        <link refid="controller_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vector</label>
+      </node>
+      <node id="1">
+        <label>/home/mxwbio/Desktop/HAL/bin/lib/include/nes.h</label>
+        <link refid="nes_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/mxwbio/Desktop/HAL/bin/lib/include/hal.h</label>
+        <link refid="hal_8h"/>
+      </node>
+      <node id="1">
+        <label>/home/mxwbio/Desktop/HAL/bin/lib/include/nes.h</label>
+        <link refid="nes_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classNES" prot="public">NES</innerclass>
+    <briefdescription>
+<para>Header file for the <ref refid="classNES" kindref="compound">NES</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Trevor Sullivan (<ulink url="mailto:trevor.sullivan@tufts.edu">trevor.sullivan@tufts.edu</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>0.1 </para>
+</simplesect>
+<simplesect kind="date"><para>2024-09-18</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2024 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#ifndef<sp/>__NES_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__NES_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="controller_8h" kindref="compound">controller.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classNES" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classNES" kindref="compound">NES</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classController" kindref="compound">Controller</ref><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNES" kindref="compound">NES</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>spikePercentThreshold=0.03,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>zScoreThreshold=3);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNES" kindref="compound">NES</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*csvName,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>spikePercentThreshold=0.03,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>zScoreThreshold=3);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classNES" kindref="compound">NES</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>maxtwo,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>windowLength,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*AconfigPath,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*BconfigPath,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*csvName,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>spikePercentThreshold=0.03,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>zScoreThreshold=3);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~<ref refid="classNES" kindref="compound">NES</ref>();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>checkButtons(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>frameNo);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>currFrame<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::fstream<sp/>csv;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>zThresh;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>percentThresh;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>aReleased;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bReleased;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>zScore(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>avg,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>sd);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printValues(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ab,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>frameNo,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>perA,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>valA,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>avgA,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>sdA,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>zA,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>perB,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>valB,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>avgB,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>sdB,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>zB);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/nes.h"/>
+  </compounddef>
+</doxygen>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['noburst_126',['noBurst',['../classWaveDetector.html#abc1726aea1cad86baef675ddded84fe8a0f6c6b9968eafca36014d956ff48740d',1,'WaveDetector']]]
+  ['noburst_174',['noBurst',['../waveDetector_8h.html#adb931b2f752b7879df254a7fd9d17e90aed3e913024f0dd06e150c3e04eded410',1,'waveDetector.h']]]
 ];

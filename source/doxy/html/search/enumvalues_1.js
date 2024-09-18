@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['endshortburst_124',['endShortBurst',['../classWaveDetector.html#abc1726aea1cad86baef675ddded84fe8ac9a23b681fc13f21fe979d96c58bd3c6',1,'WaveDetector']]]
+  ['endshortburst_172',['endShortBurst',['../waveDetector_8h.html#adb931b2f752b7879df254a7fd9d17e90ac53776c020338580a82b74d9388904d2',1,'waveDetector.h']]]
 ];

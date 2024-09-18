@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['maxspikes_37',['maxSpikes',['../structWaveMetadata.html#af3825d5da4ee2e0bc8de5c7bb4851131',1,'WaveMetadata']]],
-  ['maxspikesframe_38',['maxSpikesFrame',['../structWaveMetadata.html#afb0a2e151d03d4b71fffc98d8adddfa7',1,'WaveMetadata']]],
-  ['maxspikesloc_39',['maxSpikesLoc',['../structWaveMetadata.html#ad98b293bc7abfa090b8c89fa9651d165',1,'WaveMetadata']]],
-  ['moveleft_40',['moveLeft',['../classWorldState.html#a9c6e684577e6339573dd60ede708bd3a',1,'WorldState']]],
-  ['moveright_41',['moveRight',['../classWorldState.html#a1f3c4635f196e0aa9774779e396c4b0a',1,'WorldState']]]
+  ['lefttoright_46',['leftToRight',['../waveDetector_8h.html#adb931b2f752b7879df254a7fd9d17e90ad28df94fbab5be1b7294fe32d78ad9d6',1,'waveDetector.h']]],
+  ['length_47',['length',['../classChannelWindow.html#afab2b22f3d23ea016697d33b16ac8511',1,'ChannelWindow']]]
 ];

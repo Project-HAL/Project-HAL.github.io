@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="28" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" bodystart="28" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="37" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" bodystart="37" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classProgressBar_1a0c6d5e3e217a42b91e5a0e64f58acc53" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="29" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" bodystart="29" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="38" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" bodystart="38" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classProgressBar_1a180c90fa23f54e523a92da94466f800e" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -40,7 +40,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="30" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" bodystart="30" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="39" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" bodystart="39" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classProgressBar_1ad29cf2c4760aae27c501ddc503f5f0ec" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -53,7 +53,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="31" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" bodystart="31" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="40" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" bodystart="40" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classProgressBar_1a728905d0237cec95ca13301f0b5e9b85" prot="private" static="no" mutable="no">
         <type>float</type>
@@ -66,7 +66,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="32" column="15" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" bodystart="32" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="41" column="15" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" bodystart="41" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classProgressBar_1a117e902c0ee055c3cf2085ad163f805d" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -79,7 +79,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="33" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" bodystart="33" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="42" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" bodystart="42" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classProgressBar_1a465abcdf87bce85313d5265822b65cbe" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -92,7 +92,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="34" column="14" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" bodystart="34" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="43" column="14" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" bodystart="43" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classProgressBar_1a3520bb96405cbbbe908c00e77d5b5d4c" prot="private" static="no" mutable="no">
         <type>vector&lt; char &gt;</type>
@@ -105,7 +105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="36" column="16" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" bodystart="36" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="45" column="16" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" bodystart="45" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classProgressBar_1ae5cd8ec42743033c8340e677ed8bac79" prot="private" static="no" mutable="no">
         <type>string</type>
@@ -118,7 +118,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="37" column="16" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" bodystart="37" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="46" column="16" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" bodystart="46" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -133,7 +133,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="13" column="9"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="22" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classProgressBar_1ab3beae55e425418d0634a635d4270f00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -159,7 +159,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="15" column="9"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="24" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classProgressBar_1a21c4cdb9ed14749692caa47cd1f3c559" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -172,7 +172,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="17" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="26" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classProgressBar_1a3dcedc2aef170c30b155e16ef9978f1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -185,7 +185,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="19" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="28" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classProgressBar_1afab07a0864369e09c25658e829f08766" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -198,7 +198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="21" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="30" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classProgressBar_1ade3325d4a0acb00a4cd34f529d17f033" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -211,7 +211,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="23" column="13"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="32" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classProgressBar_1af6457cf39d0c32cdb996b0e9fa5d78e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -224,7 +224,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="25" column="15"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="34" column="15"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -252,7 +252,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="39" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="48" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classProgressBar_1a795a22379fa7581cf8ce701b4b509156" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -269,14 +269,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="40" column="13"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="49" column="13"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="11" column="18" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" bodystart="11" bodyend="43"/>
+    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" line="20" column="18" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/progressBar.h" bodystart="20" bodyend="52"/>
     <listofallmembers>
       <member refid="classProgressBar_1a3520bb96405cbbbe908c00e77d5b5d4c" prot="private" virt="non-virtual"><scope>ProgressBar</scope><name>bar</name></member>
       <member refid="classProgressBar_1afab07a0864369e09c25658e829f08766" prot="public" virt="non-virtual"><scope>ProgressBar</scope><name>clear</name></member>

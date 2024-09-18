@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="8" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" bodystart="8" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="22" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" bodystart="22" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classWorldState_1a237da82d5d6c66bd4c877e1f77dfdc26" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="9" column="16" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" bodystart="9" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="23" column="16" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" bodystart="23" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -42,7 +42,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="47" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" bodystart="47" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="61" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" bodystart="61" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -57,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="11" column="9"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="25" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classWorldState_1a207af80e9bba9e24195891abddf67df7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -97,7 +97,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="19" column="9"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="33" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classWorldState_1ababd18af82ed36267bfb9f361f657a9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -111,7 +111,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="25" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="39" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classWorldState_1a9c6e684577e6339573dd60ede708bd3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -125,7 +125,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="31" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="45" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classWorldState_1a1f3c4635f196e0aa9774779e396c4b0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -139,7 +139,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="37" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="51" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classWorldState_1a767607282ddd9611a0c89f7a09bd3acc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>char</type>
@@ -156,7 +156,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="44" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="58" column="14"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -171,7 +171,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="53" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="67" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classWorldState_1a3d6111f40d7fce1afb66f5afe112efac" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -192,14 +192,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="55" column="13"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="69" column="13"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="6" column="17" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" bodystart="6" bodyend="56"/>
+    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" line="20" column="17" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/worldstate.h" bodystart="20" bodyend="70"/>
     <listofallmembers>
       <member refid="classWorldState_1ababd18af82ed36267bfb9f361f657a9d" prot="public" virt="non-virtual"><scope>WorldState</scope><name>display</name></member>
       <member refid="classWorldState_1a767607282ddd9611a0c89f7a09bd3acc" prot="public" virt="non-virtual"><scope>WorldState</scope><name>getPosition</name></member>

@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['nospikeframecount_42',['noSpikeFrameCount',['../structWaveMetadata.html#a377df28397310e46bd25375c4f89aabc',1,'WaveMetadata']]],
-  ['numchannels_43',['numChannels',['../classController.html#a14b2114e3be63d83feb319ce759293fa',1,'Controller']]],
-  ['numspikes_44',['numSpikes',['../classController.html#a34a2a7c37f78cc365a3cf84722b9a224',1,'Controller']]]
+  ['maxspikes_48',['maxSpikes',['../structWaveMetadata.html#af3825d5da4ee2e0bc8de5c7bb4851131',1,'WaveMetadata']]],
+  ['maxspikesframe_49',['maxSpikesFrame',['../structWaveMetadata.html#afb0a2e151d03d4b71fffc98d8adddfa7',1,'WaveMetadata']]],
+  ['maxspikesloc_50',['maxSpikesLoc',['../structWaveMetadata.html#ad98b293bc7abfa090b8c89fa9651d165',1,'WaveMetadata']]],
+  ['moveleft_51',['moveLeft',['../classWorldState.html#a9c6e684577e6339573dd60ede708bd3a',1,'WorldState']]],
+  ['moveright_52',['moveRight',['../classWorldState.html#a1f3c4635f196e0aa9774779e396c4b0a',1,'WorldState']]]
 ];

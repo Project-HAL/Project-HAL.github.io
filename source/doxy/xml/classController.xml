@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="classController" kind="class" language="C++" prot="public">
     <compoundname>Controller</compoundname>
+    <derivedcompoundref refid="classNES" prot="public" virt="non-virtual">NES</derivedcompoundref>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classController_1ad0603549f0be34ad688c86a33cc6f040" prot="private" static="no" mutable="no">
         <type>map&lt; string, <ref refid="classChannelWindow" kindref="compound">ChannelWindow</ref> * &gt;</type>
@@ -14,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="79" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" bodystart="79" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="111" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" bodystart="111" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -30,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="18" column="9"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="29" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classController_1a0ab87934c4f7a266cfdb86e0f36bc1b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -44,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="24" column="9"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="35" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classController_1adf7f58c81479a59a7b24d5053560d7d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -109,7 +110,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="36" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="47" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classController_1a9904f7fc1d538558a197157c24d69478" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Controller::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <briefdescription>
+<para>Initializes all buttons, regardless of window length. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="53" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classController_1a7af4381e262e2457222fc4b6fac336ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classChannelWindow" kindref="compound">ChannelWindow</ref> *</type>
@@ -135,11 +150,52 @@
 </parameterlist>
 <simplesect kind="return"><para>pointer to a <computeroutput><ref refid="classChannelWindow" kindref="compound">ChannelWindow</ref></computeroutput> </para>
 </simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>&lt;code&gt;std::out_of_range&lt;/code&gt;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if there is not a button with the keTrevor Sullivan (<ulink url="mailto:trevor.sullivan@tufts.edu">trevor.sullivan@tufts.edu</ulink>)y <computeroutput>id</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="44" column="23"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="64" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classController_1a05438a228ffc4f1437693211c4ea00c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Controller::buttonExists</definition>
+        <argsstring>(string id)</argsstring>
+        <name>buttonExists</name>
+        <param>
+          <type>string</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>checks if a button exists in the controller </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>string</computeroutput> id of the button </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="73" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classController_1ab9dc08ae3665712026e4f0aa63f86a19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -154,6 +210,7 @@
 <para>Adds a data frame to all button windows. </para>
         </briefdescription>
         <detaileddescription>
+<para>Note that this function will extend the window, not shift it</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>frame</parametername>
@@ -167,7 +224,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="52" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="83" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classController_1a8716527dccd14db21d94e6f8a449627c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -179,7 +236,7 @@
           <declname>frame</declname>
         </param>
         <briefdescription>
-<para>Shifts all button windows. </para>
+<para>Shifts all button windows<ndash/>the first frame of each window will be removed, and a new one will be appended to the end. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -195,7 +252,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="60" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="92" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classController_1a14b2114e3be63d83feb319ce759293fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -225,7 +282,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="68" column="13"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="100" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classController_1a34a2a7c37f78cc365a3cf84722b9a224" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -255,20 +312,50 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="76" column="13"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="108" column="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classController_1a8320c417df16e547307e576ceb6ab894" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Controller::getMaxLength</definition>
+        <argsstring>()</argsstring>
+        <name>getMaxLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="113" column="13"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="11" column="17" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" bodystart="11" bodyend="80"/>
+    <inheritancegraph>
+      <node id="1">
+        <label>Controller</label>
+        <link refid="classController"/>
+      </node>
+      <node id="2">
+        <label>NES</label>
+        <link refid="classNES"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="22" column="17" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" bodystart="22" bodyend="114"/>
     <listofallmembers>
       <member refid="classController_1ab9dc08ae3665712026e4f0aa63f86a19" prot="public" virt="non-virtual"><scope>Controller</scope><name>add</name></member>
       <member refid="classController_1adf7f58c81479a59a7b24d5053560d7d9" prot="public" virt="non-virtual"><scope>Controller</scope><name>addButton</name></member>
+      <member refid="classController_1a05438a228ffc4f1437693211c4ea00c6" prot="public" virt="non-virtual"><scope>Controller</scope><name>buttonExists</name></member>
       <member refid="classController_1ad0603549f0be34ad688c86a33cc6f040" prot="private" virt="non-virtual"><scope>Controller</scope><name>buttons</name></member>
       <member refid="classController_1a95c56822d667e94b031451729ce069a9" prot="public" virt="non-virtual"><scope>Controller</scope><name>Controller</name></member>
       <member refid="classController_1a7af4381e262e2457222fc4b6fac336ce" prot="public" virt="non-virtual"><scope>Controller</scope><name>getButtonWindow</name></member>
+      <member refid="classController_1a8320c417df16e547307e576ceb6ab894" prot="private" virt="non-virtual"><scope>Controller</scope><name>getMaxLength</name></member>
+      <member refid="classController_1a9904f7fc1d538558a197157c24d69478" prot="public" virt="non-virtual"><scope>Controller</scope><name>init</name></member>
       <member refid="classController_1a14b2114e3be63d83feb319ce759293fa" prot="public" virt="non-virtual"><scope>Controller</scope><name>numChannels</name></member>
       <member refid="classController_1a34a2a7c37f78cc365a3cf84722b9a224" prot="public" virt="non-virtual"><scope>Controller</scope><name>numSpikes</name></member>
       <member refid="classController_1a8716527dccd14db21d94e6f8a449627c" prot="public" virt="non-virtual"><scope>Controller</scope><name>shift</name></member>

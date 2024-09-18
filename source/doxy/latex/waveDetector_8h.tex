@@ -1,0 +1,95 @@
+\hypertarget{waveDetector_8h}{}\doxysection{/home/mxwbio/\+Desktop/\+H\+A\+L/bin/lib/include/wave\+Detector.h File Reference}
+\label{waveDetector_8h}\index{/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h@{/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h}}
+
+
+Header file for the \mbox{\hyperlink{classWaveDetector}{Wave\+Detector}} Class.  
+
+
+{\ttfamily \#include \char`\"{}maxlab.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}channel\+Window.\+h\char`\"{}}\newline
+Include dependency graph for wave\+Detector.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structWaveMetadata}{Wave\+Metadata}}
+\begin{DoxyCompactList}\small\item\em Wave metadata struct. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classWaveDetector}{Wave\+Detector}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{waveDetector_8h_a02a71c18140ce67db4454eb9902e73c6}\label{waveDetector_8h_a02a71c18140ce67db4454eb9902e73c6}} 
+typedef struct \mbox{\hyperlink{structWaveMetadata}{Wave\+Metadata}} {\bfseries Wave\+Metadata}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90}{Wave}} \{ \newline
+\mbox{\hyperlink{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90aed3e913024f0dd06e150c3e04eded410}{no\+Burst}}, 
+\mbox{\hyperlink{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90a590d959e2e18444c852747822a47a1f9}{bursting}}, 
+\mbox{\hyperlink{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90aaba695c45d766bcb0a224a8a6f77fdb2}{burst\+Start}}, 
+\mbox{\hyperlink{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90ac53776c020338580a82b74d9388904d2}{end\+Short\+Burst}}, 
+\newline
+\mbox{\hyperlink{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90ad28df94fbab5be1b7294fe32d78ad9d6}{left\+To\+Right}}, 
+\mbox{\hyperlink{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90aff8288c3ef5ab9740210753e6c762c3f}{right\+To\+Left}}
+ \}
+\begin{DoxyCompactList}\small\item\em Wave enum. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for the \mbox{\hyperlink{classWaveDetector}{Wave\+Detector}} Class. 
+
+\begin{DoxyAuthor}{Author}
+Trevor Sullivan (\href{mailto:trevor.sullivan@tufts.edu}{\texttt{ trevor.\+sullivan@tufts.\+edu}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/09-\/18
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90}\label{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90}} 
+\index{waveDetector.h@{waveDetector.h}!Wave@{Wave}}
+\index{Wave@{Wave}!waveDetector.h@{waveDetector.h}}
+\doxysubsubsection{\texorpdfstring{Wave}{Wave}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90}{Wave}}}
+
+
+
+Wave enum. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{noBurst@{noBurst}!waveDetector.h@{waveDetector.h}}\index{waveDetector.h@{waveDetector.h}!noBurst@{noBurst}}}\mbox{\Hypertarget{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90aed3e913024f0dd06e150c3e04eded410}\label{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90aed3e913024f0dd06e150c3e04eded410}} 
+no\+Burst&culture is not currently bursting \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{bursting@{bursting}!waveDetector.h@{waveDetector.h}}\index{waveDetector.h@{waveDetector.h}!bursting@{bursting}}}\mbox{\Hypertarget{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90a590d959e2e18444c852747822a47a1f9}\label{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90a590d959e2e18444c852747822a47a1f9}} 
+bursting&culture is currently bursting \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{burstStart@{burstStart}!waveDetector.h@{waveDetector.h}}\index{waveDetector.h@{waveDetector.h}!burstStart@{burstStart}}}\mbox{\Hypertarget{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90aaba695c45d766bcb0a224a8a6f77fdb2}\label{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90aaba695c45d766bcb0a224a8a6f77fdb2}} 
+burst\+Start&burst just started \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{endShortBurst@{endShortBurst}!waveDetector.h@{waveDetector.h}}\index{waveDetector.h@{waveDetector.h}!endShortBurst@{endShortBurst}}}\mbox{\Hypertarget{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90ac53776c020338580a82b74d9388904d2}\label{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90ac53776c020338580a82b74d9388904d2}} 
+end\+Short\+Burst&burst ended, but it was too short to be significant \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{leftToRight@{leftToRight}!waveDetector.h@{waveDetector.h}}\index{waveDetector.h@{waveDetector.h}!leftToRight@{leftToRight}}}\mbox{\Hypertarget{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90ad28df94fbab5be1b7294fe32d78ad9d6}\label{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90ad28df94fbab5be1b7294fe32d78ad9d6}} 
+left\+To\+Right&burst ended, and it went left to right \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{rightToLeft@{rightToLeft}!waveDetector.h@{waveDetector.h}}\index{waveDetector.h@{waveDetector.h}!rightToLeft@{rightToLeft}}}\mbox{\Hypertarget{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90aff8288c3ef5ab9740210753e6c762c3f}\label{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90aff8288c3ef5ab9740210753e6c762c3f}} 
+right\+To\+Left&burst ended, and it went right to left \\
+\hline
+
+\end{DoxyEnumFields}

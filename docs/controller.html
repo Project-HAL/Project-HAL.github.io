@@ -104,15 +104,15 @@
 <p>The <code class="docutils literal notranslate"><span class="pre">Controller</span></code> class stores <code class="docutils literal notranslate"><span class="pre">ChannelWindow</span></code> objects as “buttons”, allowing
 for the user to update many windows at once. For button detection, see the
 <code class="docutils literal notranslate"><span class="pre">NES</span></code> class.</p>
-<a class="reference internal image-reference" href="_images/controller-diagram.png"><img alt="_images/controller-diagram.png" src="_images/controller-diagram.png" style="width: 600px;" />
-</a>
+<a class="reference internal image-reference" href="_images/controller-diagram.png"><img alt="_images/controller-diagram.png" src="_images/controller-diagram.png" style="width: 600px;" /></a>
 </section>
 <section id="members">
 <h2>Members<a class="headerlink" href="#members" title="Link to this heading"></a></h2>
 <dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv410Controller">
 <span id="_CPPv310Controller"></span><span id="_CPPv210Controller"></span><span id="Controller"></span><span class="target" id="classController"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Controller</span></span></span><a class="headerlink" href="#_CPPv410Controller" title="Link to this definition"></a><br /></dt>
-<dd><div class="breathe-sectiondef docutils container">
+<dd><p>Subclassed by NES</p>
+<div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N10Controller10ControllerEv">
@@ -143,6 +143,12 @@ for the user to update many windows at once. For button detection, see the
 </dd></dl>
 
 <dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N10Controller4initEv">
+<span id="_CPPv3N10Controller4initEv"></span><span id="_CPPv2N10Controller4initEv"></span><span id="Controller::init"></span><span class="target" id="classController_1a9904f7fc1d538558a197157c24d69478"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">init</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Controller4initEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Initializes all buttons, regardless of window length. </p>
+</dd></dl>
+
+<dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N10Controller15getButtonWindowE6string">
 <span id="_CPPv3N10Controller15getButtonWindowE6string"></span><span id="_CPPv2N10Controller15getButtonWindowE6string"></span><span id="Controller::getButtonWindow__string"></span><span class="target" id="classController_1a7af4381e262e2457222fc4b6fac336ce"></span><a class="reference internal" href="channel_window.html#_CPPv413ChannelWindow" title="ChannelWindow"><span class="n"><span class="pre">ChannelWindow</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">getButtonWindow</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Controller15getButtonWindowE6string" title="Link to this definition"></a><br /></dt>
 <dd><p>Get the <a class="reference internal" href="channel_window.html#classChannelWindow"><span class="std std-ref">ChannelWindow</span></a> of the specified button. </p>
@@ -150,8 +156,28 @@ for the user to update many windows at once. For button detection, see the
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>id</strong> – <code class="docutils literal notranslate"><span class="pre">string</span></code> id of the button </p>
 </dd>
+<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp">&lt;code&gt;std::out_of_range&lt;/code&gt;</span></span> – if there is not a button with the keTrevor Sullivan (<a class="reference external" href="mailto:trevor&#46;sullivan&#37;&#52;&#48;tufts&#46;edu">trevor<span>&#46;</span>sullivan<span>&#64;</span>tufts<span>&#46;</span>edu</a>)y <code class="docutils literal notranslate"><span class="pre">id</span></code></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>pointer to a <code class="docutils literal notranslate"><a class="reference internal" href="channel_window.html#classChannelWindow"><span class="std std-ref"><span class="pre">ChannelWindow</span></span></a></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N10Controller12buttonExistsE6string">
+<span id="_CPPv3N10Controller12buttonExistsE6string"></span><span id="_CPPv2N10Controller12buttonExistsE6string"></span><span id="Controller::buttonExists__string"></span><span class="target" id="classController_1a05438a228ffc4f1437693211c4ea00c6"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">buttonExists</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Controller12buttonExistsE6string" title="Link to this definition"></a><br /></dt>
+<dd><p>checks if a button exists in the controller </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>id</strong> – <code class="docutils literal notranslate"><span class="pre">string</span></code> id of the button </p>
+</dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>pointer to a <code class="docutils literal notranslate"><a class="reference internal" href="channel_window.html#classChannelWindow"><span class="std std-ref"><span class="pre">ChannelWindow</span></span></a></code></p>
+<dd class="field-even"><p>true </p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>false </p>
 </dd>
 </dl>
 </dd></dl>
@@ -160,6 +186,7 @@ for the user to update many windows at once. For button detection, see the
 <dt class="sig sig-object cpp" id="_CPPv4N10Controller3addEN6maxlab17FilteredFrameDataE">
 <span id="_CPPv3N10Controller3addEN6maxlab17FilteredFrameDataE"></span><span id="_CPPv2N10Controller3addEN6maxlab17FilteredFrameDataE"></span><span id="Controller::add__maxlab::FilteredFrameData"></span><span class="target" id="classController_1ab9dc08ae3665712026e4f0aa63f86a19"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">add</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">maxlab</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">FilteredFrameData</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Controller3addEN6maxlab17FilteredFrameDataE" title="Link to this definition"></a><br /></dt>
 <dd><p>Adds a data frame to all button windows. </p>
+<p>Note that this function will extend the window, not shift it</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>frame</strong> – <code class="docutils literal notranslate"><span class="pre">maxlab::FilteredFrameData</span></code> frame to add to each window </p>
@@ -170,7 +197,7 @@ for the user to update many windows at once. For button detection, see the
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N10Controller5shiftEN6maxlab17FilteredFrameDataE">
 <span id="_CPPv3N10Controller5shiftEN6maxlab17FilteredFrameDataE"></span><span id="_CPPv2N10Controller5shiftEN6maxlab17FilteredFrameDataE"></span><span id="Controller::shift__maxlab::FilteredFrameData"></span><span class="target" id="classController_1a8716527dccd14db21d94e6f8a449627c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">shift</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">maxlab</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">FilteredFrameData</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Controller5shiftEN6maxlab17FilteredFrameDataE" title="Link to this definition"></a><br /></dt>
-<dd><p>Shifts all button windows. </p>
+<dd><p>Shifts all button windows&amp;#8212;the first frame of each window will be removed, and a new one will be appended to the end. </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>frame</strong> – <code class="docutils literal notranslate"><span class="pre">maxlab::FilteredFrameData</span></code> frame to add to each window </p>

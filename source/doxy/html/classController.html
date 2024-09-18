@@ -68,6 +68,12 @@ $(function() {
 <div class="title">Controller Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for Controller:</div>
+<div class="dyncontent">
+<div class="center"><img src="classController__inherit__graph.png" border="0" usemap="#Controller_inherit__map" alt="Inheritance graph"/></div>
+<!-- MAP 0 -->
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -80,14 +86,20 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adf7f58c81479a59a7b24d5053560d7d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classController.html#adf7f58c81479a59a7b24d5053560d7d9">addButton</a> (string id, int windowLength, const char *configPath, int saveWindows=0)</td></tr>
 <tr class="memdesc:adf7f58c81479a59a7b24d5053560d7d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new button (<a class="el" href="classChannelWindow.html">ChannelWindow</a>) to the <a class="el" href="classController.html">Controller</a>.  <a href="classController.html#adf7f58c81479a59a7b24d5053560d7d9">More...</a><br /></td></tr>
 <tr class="separator:adf7f58c81479a59a7b24d5053560d7d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9904f7fc1d538558a197157c24d69478"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classController.html#a9904f7fc1d538558a197157c24d69478">init</a> ()</td></tr>
+<tr class="memdesc:a9904f7fc1d538558a197157c24d69478"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes all buttons, regardless of window length.  <a href="classController.html#a9904f7fc1d538558a197157c24d69478">More...</a><br /></td></tr>
+<tr class="separator:a9904f7fc1d538558a197157c24d69478"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7af4381e262e2457222fc4b6fac336ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classChannelWindow.html">ChannelWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classController.html#a7af4381e262e2457222fc4b6fac336ce">getButtonWindow</a> (string id)</td></tr>
 <tr class="memdesc:a7af4381e262e2457222fc4b6fac336ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the <a class="el" href="classChannelWindow.html">ChannelWindow</a> of the specified button.  <a href="classController.html#a7af4381e262e2457222fc4b6fac336ce">More...</a><br /></td></tr>
 <tr class="separator:a7af4381e262e2457222fc4b6fac336ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05438a228ffc4f1437693211c4ea00c6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classController.html#a05438a228ffc4f1437693211c4ea00c6">buttonExists</a> (string id)</td></tr>
+<tr class="memdesc:a05438a228ffc4f1437693211c4ea00c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if a button exists in the controller  <a href="classController.html#a05438a228ffc4f1437693211c4ea00c6">More...</a><br /></td></tr>
+<tr class="separator:a05438a228ffc4f1437693211c4ea00c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9dc08ae3665712026e4f0aa63f86a19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classController.html#ab9dc08ae3665712026e4f0aa63f86a19">add</a> (maxlab::FilteredFrameData frame)</td></tr>
 <tr class="memdesc:ab9dc08ae3665712026e4f0aa63f86a19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a data frame to all button windows.  <a href="classController.html#ab9dc08ae3665712026e4f0aa63f86a19">More...</a><br /></td></tr>
 <tr class="separator:ab9dc08ae3665712026e4f0aa63f86a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8716527dccd14db21d94e6f8a449627c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classController.html#a8716527dccd14db21d94e6f8a449627c">shift</a> (maxlab::FilteredFrameData frame)</td></tr>
-<tr class="memdesc:a8716527dccd14db21d94e6f8a449627c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shifts all button windows.  <a href="classController.html#a8716527dccd14db21d94e6f8a449627c">More...</a><br /></td></tr>
+<tr class="memdesc:a8716527dccd14db21d94e6f8a449627c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shifts all button windows&ndash;the first frame of each window will be removed, and a new one will be appended to the end.  <a href="classController.html#a8716527dccd14db21d94e6f8a449627c">More...</a><br /></td></tr>
 <tr class="separator:a8716527dccd14db21d94e6f8a449627c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14b2114e3be63d83feb319ce759293fa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classController.html#a14b2114e3be63d83feb319ce759293fa">numChannels</a> (string id)</td></tr>
 <tr class="memdesc:a14b2114e3be63d83feb319ce759293fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of channels tracked by a button.  <a href="classController.html#a14b2114e3be63d83feb319ce759293fa">More...</a><br /></td></tr>
@@ -153,6 +165,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Adds a data frame to all button windows. </p>
+<p>Note that this function will extend the window, not shift it</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">frame</td><td><code>maxlab::FilteredFrameData</code> frame to add to each window </td></tr>
@@ -213,6 +226,35 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a05438a228ffc4f1437693211c4ea00c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05438a228ffc4f1437693211c4ea00c6">&#9670;&nbsp;</a></span>buttonExists()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Controller::buttonExists </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>checks if a button exists in the controller </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td><code>string</code> id of the button </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true </dd>
+<dd>
+false </dd></dl>
+
+</div>
+</div>
 <a id="a7af4381e262e2457222fc4b6fac336ce"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7af4381e262e2457222fc4b6fac336ce">&#9670;&nbsp;</a></span>getButtonWindow()</h2>
 
@@ -237,6 +279,31 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pointer to a <code><a class="el" href="classChannelWindow.html">ChannelWindow</a></code> </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">&lt;code&gt;std::out_of_range&lt;/code&gt;</td><td>if there is not a button with the keTrevor Sullivan (<a href="#" onclick="location.href='mai'+'lto:'+'tre'+'vo'+'r.s'+'ul'+'liv'+'an'+'@tu'+'ft'+'s.e'+'du'; return false;">trevo<span style="display: none;">.nosp@m.</span>r.su<span style="display: none;">.nosp@m.</span>lliva<span style="display: none;">.nosp@m.</span>n@tu<span style="display: none;">.nosp@m.</span>fts.e<span style="display: none;">.nosp@m.</span>du</a>)y <code>id</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9904f7fc1d538558a197157c24d69478"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9904f7fc1d538558a197157c24d69478">&#9670;&nbsp;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Controller::init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes all buttons, regardless of window length. </p>
 
 </div>
 </div>
@@ -310,7 +377,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Shifts all button windows. </p>
+<p>Shifts all button windows&ndash;the first frame of each window will be removed, and a new one will be appended to the end. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">frame</td><td><code>maxlab::FilteredFrameData</code> frame to add to each window </td></tr>

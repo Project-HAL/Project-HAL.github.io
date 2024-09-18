@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['bursting_122',['bursting',['../classWaveDetector.html#abc1726aea1cad86baef675ddded84fe8a77aaeafde2f68f00f4d49debcb62dc13',1,'WaveDetector']]],
-  ['burststart_123',['burstStart',['../classWaveDetector.html#abc1726aea1cad86baef675ddded84fe8ab16b272064669f9fa3bcd14704864404',1,'WaveDetector']]]
+  ['bursting_170',['bursting',['../waveDetector_8h.html#adb931b2f752b7879df254a7fd9d17e90a590d959e2e18444c852747822a47a1f9',1,'waveDetector.h']]],
+  ['burststart_171',['burstStart',['../waveDetector_8h.html#adb931b2f752b7879df254a7fd9d17e90aaba695c45d766bcb0a224a8a6f77fdb2',1,'waveDetector.h']]]
 ];

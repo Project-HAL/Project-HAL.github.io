@@ -3,31 +3,51 @@
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classPlotter_ae90ba1f586a6862e0e24ce63259cb09b}{Plotter}} (string experiment\+\_\+type=\char`\"{}frequency\+\_\+game\char`\"{})
+\mbox{\Hypertarget{classPlotter_aba3be32116013da27655868ed5e49af4}\label{classPlotter_aba3be32116013da27655868ed5e49af4}} 
+\mbox{\hyperlink{classPlotter_aba3be32116013da27655868ed5e49af4}{Plotter}} ()
 \begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classPlotter}{Plotter}} object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classPlotter_a2967008e81047a3256b5b2be7e261dd4}{sync}} ()
-\begin{DoxyCompactList}\small\item\em Syncs with Python plotter. \end{DoxyCompactList}\end{DoxyCompactItemize}
-
-
-\doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classPlotter_ae90ba1f586a6862e0e24ce63259cb09b}\label{classPlotter_ae90ba1f586a6862e0e24ce63259cb09b}} 
-\index{Plotter@{Plotter}!Plotter@{Plotter}}
-\index{Plotter@{Plotter}!Plotter@{Plotter}}
-\doxysubsubsection{\texorpdfstring{Plotter()}{Plotter()}}
-{\footnotesize\ttfamily Plotter\+::\+Plotter (\begin{DoxyParamCaption}\item[{string}]{experiment\+\_\+type = {\ttfamily \char`\"{}frequency\+\_\+game\char`\"{}} }\end{DoxyParamCaption})}
-
-
-
-Construct a new \mbox{\hyperlink{classPlotter}{Plotter}} object. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em experiment\+\_\+type} & {\ttfamily string} representing the type of experiment being run. Currently, only \char`\"{}frequency\+\_\+game\char`\"{} is supported. \\
-\hline
-\end{DoxyParams}
+\begin{DoxyCompactList}\small\item\em Syncs with Python plotter. Note that this function will block until the plotter is ready. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlotter_af95b1308365c6a381488cf0ce66599b8}{send\+Frequency\+Game\+Data}} (string button\+Pressed, float seconds, int level, float stim\+Rate)
+\begin{DoxyCompactList}\small\item\em sends data to python plotter for real-\/time plotting \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlotter_a846ecd45e38dd8f7c73d963f99b75fbe}{close}} ()
+\begin{DoxyCompactList}\small\item\em Closees the plotter connection. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPlotter_a846ecd45e38dd8f7c73d963f99b75fbe}\label{classPlotter_a846ecd45e38dd8f7c73d963f99b75fbe}} 
+\index{Plotter@{Plotter}!close@{close}}
+\index{close@{close}!Plotter@{Plotter}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void Plotter\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Closees the plotter connection. 
+
+\mbox{\Hypertarget{classPlotter_af95b1308365c6a381488cf0ce66599b8}\label{classPlotter_af95b1308365c6a381488cf0ce66599b8}} 
+\index{Plotter@{Plotter}!sendFrequencyGameData@{sendFrequencyGameData}}
+\index{sendFrequencyGameData@{sendFrequencyGameData}!Plotter@{Plotter}}
+\doxysubsubsection{\texorpdfstring{sendFrequencyGameData()}{sendFrequencyGameData()}}
+{\footnotesize\ttfamily void Plotter\+::send\+Frequency\+Game\+Data (\begin{DoxyParamCaption}\item[{string}]{button\+Pressed,  }\item[{float}]{seconds,  }\item[{int}]{level,  }\item[{float}]{stim\+Rate }\end{DoxyParamCaption})}
+
+
+
+sends data to python plotter for real-\/time plotting 
+
+This function M\+U\+ST be called only after syncing both end of the plotter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em button\+Pressed} & {\ttfamily string} the button that was pressed \\
+\hline
+{\em seconds} & {\ttfamily float} the current frame, converted to seconds \\
+\hline
+{\em level} & {\ttfamily int} the \char`\"{}level\char`\"{} in the frequency space \\
+\hline
+{\em stim\+Rate} & {\ttfamily float} the current rate of stimulation, or whatever is being affected by the level \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classPlotter_a2967008e81047a3256b5b2be7e261dd4}\label{classPlotter_a2967008e81047a3256b5b2be7e261dd4}} 
 \index{Plotter@{Plotter}!sync@{sync}}
 \index{sync@{sync}!Plotter@{Plotter}}
@@ -36,10 +56,10 @@ Construct a new \mbox{\hyperlink{classPlotter}{Plotter}} object.
 
 
 
-Syncs with Python plotter. 
+Syncs with Python plotter. Note that this function will block until the plotter is ready. 
 
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-/home/mxwbio/\+Desktop/\+H\+A\+L/bin/lib/include/plotter.\+h\end{DoxyCompactItemize}
+/home/mxwbio/\+Desktop/\+H\+A\+L/bin/lib/include/\mbox{\hyperlink{plotter_8h}{plotter.\+h}}\end{DoxyCompactItemize}

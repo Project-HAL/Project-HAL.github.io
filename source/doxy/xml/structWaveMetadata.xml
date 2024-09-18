@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="23" column="10" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="23" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="26" column="10" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="26" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structWaveMetadata_1ab09b017cfcc62db1c282c262ee3cd1d3" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="25" column="10" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="25" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="28" column="10" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="28" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structWaveMetadata_1a857e1700fe32cab15307c18d4cf499f2" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="27" column="9" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="27" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="30" column="9" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="30" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structWaveMetadata_1a377df28397310e46bd25375c4f89aabc" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="30" column="9" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="30" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="33" column="9" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="33" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structWaveMetadata_1aec901b9f2e38c055ec36b9bec7bcdd64" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="33" column="9" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="33" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="36" column="9" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="36" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structWaveMetadata_1a9745a6c8ee53db6c94b5ff097631fe13" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="36" column="9" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="36" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="39" column="9" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="39" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structWaveMetadata_1a6b0f00082439f4d29b65e8c317e3cfad" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -100,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="39" column="9" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="39" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="42" column="9" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="42" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structWaveMetadata_1a469255c7ca660587882cbe3596924d3e" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -114,7 +114,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="42" column="9" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="42" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="45" column="9" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="45" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structWaveMetadata_1af3825d5da4ee2e0bc8de5c7bb4851131" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -128,7 +128,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="44" column="9" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="44" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="47" column="9" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="47" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structWaveMetadata_1afb0a2e151d03d4b71fffc98d8adddfa7" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -142,7 +142,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="47" column="9" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="47" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="50" column="9" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="50" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structWaveMetadata_1ad98b293bc7abfa090b8c89fa9651d165" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -156,7 +156,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="51" column="11" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="51" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="54" column="11" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="54" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -164,7 +164,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="22" column="19" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="22" bodyend="54"/>
+    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="25" column="19" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="25" bodyend="57"/>
     <listofallmembers>
       <member refid="structWaveMetadata_1a469255c7ca660587882cbe3596924d3e" prot="public" virt="non-virtual"><scope>WaveMetadata</scope><name>burstEnd</name></member>
       <member refid="structWaveMetadata_1ab09b017cfcc62db1c282c262ee3cd1d3" prot="public" virt="non-virtual"><scope>WaveMetadata</scope><name>bursting</name></member>
