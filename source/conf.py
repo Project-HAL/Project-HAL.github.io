@@ -33,9 +33,12 @@ extensions = [
     'sphinx_rtd_theme',
     'sphinx.ext.autosectionlabel',
     'breathe',
+    'myst_parser',
 ]
 
 breathe_default_project = "HAL"
+
+source_suffix = ['.rst', '.md']
 
 autosectionlabel_prefix_document = True
 

@@ -23,7 +23,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="ElectrodeMap Class" href="electrode_map.html" />
+    <link rel="next" title="ElectrodeMap" href="electrode_map.html" />
     <link rel="prev" title="plotter" href="plotter_py.html" /> 
 </head>
 
@@ -52,13 +52,18 @@
 <li class="toctree-l1"><a class="reference internal" href="results.html">Experiment Results</a></li>
 <li class="toctree-l1"><a class="reference internal" href="py_modules.html">Python Modules</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">C++ Modules</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="electrode_map.html"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap</span></code> Class</a></li>
-<li class="toctree-l2"><a class="reference internal" href="channel_window.html"><code class="docutils literal notranslate"><span class="pre">ChannelWindow</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="controller.html"><code class="docutils literal notranslate"><span class="pre">Controller</span></code> Class</a></li>
-<li class="toctree-l2"><a class="reference internal" href="wave_detector.html"><code class="docutils literal notranslate"><span class="pre">WaveDetector</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="plotter_cpp.html"><code class="docutils literal notranslate"><span class="pre">Plotter</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="argparse.html">Argument Parser Module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="world_state.html"><code class="docutils literal notranslate"><span class="pre">WorldState</span></code> Class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-index">Module Index:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="electrode_map.html"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="channel_window.html"><code class="docutils literal notranslate"><span class="pre">ChannelWindow</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wave_detector.html"><code class="docutils literal notranslate"><span class="pre">WaveDetector</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="controller.html"><code class="docutils literal notranslate"><span class="pre">Controller</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="nes.html"><code class="docutils literal notranslate"><span class="pre">NES</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="world_state.html"><code class="docutils literal notranslate"><span class="pre">WorldState</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="plotter_cpp.html"><code class="docutils literal notranslate"><span class="pre">Plotter</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="progress_bar.html"><code class="docutils literal notranslate"><span class="pre">ProgressBar</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="argparse.html"><code class="docutils literal notranslate"><span class="pre">argparse</span></code> Module</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -89,102 +94,171 @@
              
   <section id="c-modules">
 <h1>C++ Modules<a class="headerlink" href="#c-modules" title="Link to this heading"></a></h1>
+<p>The HAL C++ modules come in two varieties:</p>
+<blockquote>
+<div><ul>
+<li><p><strong>Experiment Logic</strong>: these modules are used at the core of the data processing for the closed-loop experiments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>:doc:<code class="docutils literal notranslate"><span class="pre">electrode_map</span></code></p></li>
+<li><p><a class="reference internal" href="channel_window.html"><span class="doc">ChannelWindow</span></a></p></li>
+<li><p><a class="reference internal" href="wave_detector.html"><span class="doc">WaveDetector</span></a></p></li>
+<li><p><a class="reference internal" href="controller.html"><span class="doc">Controller</span></a></p></li>
+<li><p><a class="reference internal" href="nes.html"><span class="doc">NES</span></a></p></li>
+<li><p><a class="reference internal" href="world_state.html"><span class="doc">WorldState</span></a></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>General Purpose</strong>: these modules were made to either simplify code or add useful visualizations</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference internal" href="plotter_cpp.html"><span class="doc">Plotter</span></a></p></li>
+<li><p><a class="reference internal" href="progress_bar.html"><span class="doc">ProgressBar</span></a></p></li>
+<li><p><a class="reference internal" href="argparse.html"><span class="doc">argparse Module</span></a></p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<section id="module-index">
+<h2>Module Index:<a class="headerlink" href="#module-index" title="Link to this heading"></a></h2>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="electrode_map.html"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap</span></code> Class</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="electrode_map.html#_CPPv412ElectrodeMap"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="electrode_map.html#_CPPv4N12ElectrodeMap12ElectrodeMapEv"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap::ElectrodeMap()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="electrode_map.html#_CPPv4N12ElectrodeMap12ElectrodeMapEPKc"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap::ElectrodeMap()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="electrode_map.html#_CPPv4N12ElectrodeMap6existsEi"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap::exists()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="electrode_map.html#_CPPv4N12ElectrodeMap3getEi"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap::get()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="electrode_map.html#_CPPv4N12ElectrodeMap11getPositionEi"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap::getPosition()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="electrode_map.html#_CPPv4N12ElectrodeMap4getXEi"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap::getX()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="electrode_map.html#_CPPv4N12ElectrodeMap4getYEi"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap::getY()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="electrode_map.html#_CPPv4N12ElectrodeMap4sizeEv"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap::size()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="electrode_map.html#_CPPv4N12ElectrodeMap5printEv"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap::print()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="electrode_map.html"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="electrode_map.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electrode_map.html#members">Members</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="electrode_map.html#_CPPv412ElectrodeMap"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="electrode_map.html#_CPPv4N12ElectrodeMap12ElectrodeMapEv"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap::ElectrodeMap()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="electrode_map.html#_CPPv4N12ElectrodeMap12ElectrodeMapEPKc"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap::ElectrodeMap()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="electrode_map.html#_CPPv4N12ElectrodeMap6existsEi"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap::exists()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="electrode_map.html#_CPPv4N12ElectrodeMap3getEi"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap::get()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="electrode_map.html#_CPPv4N12ElectrodeMap11getPositionEi"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap::getPosition()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="electrode_map.html#_CPPv4N12ElectrodeMap4getXEi"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap::getX()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="electrode_map.html#_CPPv4N12ElectrodeMap4getYEi"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap::getY()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="electrode_map.html#_CPPv4N12ElectrodeMap4sizeEv"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap::size()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="electrode_map.html#_CPPv4N12ElectrodeMap5printEv"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap::print()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="channel_window.html"><code class="docutils literal notranslate"><span class="pre">ChannelWindow</span></code></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="channel_window.html#_CPPv413ChannelWindow"><code class="docutils literal notranslate"><span class="pre">ChannelWindow</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow13ChannelWindowEiPKci"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::ChannelWindow()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow13ChannelWindowEi12ElectrodeMapi"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::ChannelWindow()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow4initEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::init()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow3addEN6maxlab17FilteredFrameDataE"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::add()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow5shiftEN6maxlab17FilteredFrameDataE"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::shift()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow3getEi"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::get()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow6lengthEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::length()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow15totalSpikeCountEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::totalSpikeCount()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow12electrodeMapEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::electrodeMap()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow11pastWindowsEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::pastWindows()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow14avgPastWindowsEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::avgPastWindows()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow7getAvgXEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::getAvgX()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow12firingRateSDEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::firingRateSD()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow10firingRateEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::firingRate()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow16pastWindowsReadyEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::pastWindowsReady()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow5printEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::print()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow5debugE6string"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::debug()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="channel_window.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="channel_window.html#members">Members</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="channel_window.html#_CPPv413ChannelWindow"><code class="docutils literal notranslate"><span class="pre">ChannelWindow</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow13ChannelWindowEiPKci"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::ChannelWindow()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow13ChannelWindowEi12ElectrodeMapi"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::ChannelWindow()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow4initEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::init()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow3addEN6maxlab17FilteredFrameDataE"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::add()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow5shiftEN6maxlab17FilteredFrameDataE"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::shift()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow3getEi"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::get()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow6lengthEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::length()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow15totalSpikeCountEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::totalSpikeCount()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow12electrodeMapEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::electrodeMap()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow11pastWindowsEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::pastWindows()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow14avgPastWindowsEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::avgPastWindows()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow7getAvgXEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::getAvgX()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow12firingRateSDEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::firingRateSD()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow10firingRateEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::firingRate()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow16pastWindowsReadyEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::pastWindowsReady()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow5printEv"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::print()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="channel_window.html#_CPPv4N13ChannelWindow5debugE6string"><code class="docutils literal notranslate"><span class="pre">ChannelWindow::debug()</span></code></a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="controller.html"><code class="docutils literal notranslate"><span class="pre">Controller</span></code> Class</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="controller.html#_CPPv410Controller"><code class="docutils literal notranslate"><span class="pre">Controller</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="controller.html#_CPPv4N10Controller10ControllerEv"><code class="docutils literal notranslate"><span class="pre">Controller::Controller()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="controller.html#_CPPv4N10ControllerD0Ev"><code class="docutils literal notranslate"><span class="pre">Controller::~Controller()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="controller.html#_CPPv4N10Controller9addButtonE6stringiPKci"><code class="docutils literal notranslate"><span class="pre">Controller::addButton()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="controller.html#_CPPv4N10Controller15getButtonWindowE6string"><code class="docutils literal notranslate"><span class="pre">Controller::getButtonWindow()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="controller.html#_CPPv4N10Controller3addEN6maxlab17FilteredFrameDataE"><code class="docutils literal notranslate"><span class="pre">Controller::add()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="controller.html#_CPPv4N10Controller5shiftEN6maxlab17FilteredFrameDataE"><code class="docutils literal notranslate"><span class="pre">Controller::shift()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="controller.html#_CPPv4N10Controller11numChannelsE6string"><code class="docutils literal notranslate"><span class="pre">Controller::numChannels()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="controller.html#_CPPv4N10Controller9numSpikesE6string"><code class="docutils literal notranslate"><span class="pre">Controller::numSpikes()</span></code></a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="wave_detector.html"><code class="docutils literal notranslate"><span class="pre">WaveDetector</span></code></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="wave_detector.html#_CPPv412WaveDetector"><code class="docutils literal notranslate"><span class="pre">WaveDetector</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="wave_detector.html#_CPPv4N12WaveDetector12WaveDetectorEv"><code class="docutils literal notranslate"><span class="pre">WaveDetector::WaveDetector()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="wave_detector.html#_CPPv4N12WaveDetector12WaveDetectorEiPKcfiiff"><code class="docutils literal notranslate"><span class="pre">WaveDetector::WaveDetector()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="wave_detector.html#_CPPv4N12WaveDetectorD0Ev"><code class="docutils literal notranslate"><span class="pre">WaveDetector::~WaveDetector()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="wave_detector.html#_CPPv4N12WaveDetector9getWindowEv"><code class="docutils literal notranslate"><span class="pre">WaveDetector::getWindow()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="wave_detector.html#_CPPv4N12WaveDetector11getMetadataEv"><code class="docutils literal notranslate"><span class="pre">WaveDetector::getMetadata()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="wave_detector.html#_CPPv4N12WaveDetector11shiftWindowEN6maxlab17FilteredFrameDataE"><code class="docutils literal notranslate"><span class="pre">WaveDetector::shiftWindow()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="wave_detector.html#_CPPv4N12WaveDetector12processFrameEN6maxlab17FilteredFrameDataEi"><code class="docutils literal notranslate"><span class="pre">WaveDetector::processFrame()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="wave_detector.html#_CPPv4N12WaveDetector10checkBurstEi"><code class="docutils literal notranslate"><span class="pre">WaveDetector::checkBurst()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="wave_detector.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wave_detector.html#members">Members</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="wave_detector.html#_CPPv412WaveDetector"><code class="docutils literal notranslate"><span class="pre">WaveDetector</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wave_detector.html#_CPPv4N12WaveDetector12WaveDetectorEv"><code class="docutils literal notranslate"><span class="pre">WaveDetector::WaveDetector()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wave_detector.html#_CPPv4N12WaveDetector12WaveDetectorEiPKcfiiff"><code class="docutils literal notranslate"><span class="pre">WaveDetector::WaveDetector()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wave_detector.html#_CPPv4N12WaveDetectorD0Ev"><code class="docutils literal notranslate"><span class="pre">WaveDetector::~WaveDetector()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wave_detector.html#_CPPv4N12WaveDetector9getWindowEv"><code class="docutils literal notranslate"><span class="pre">WaveDetector::getWindow()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wave_detector.html#_CPPv4N12WaveDetector11getMetadataEv"><code class="docutils literal notranslate"><span class="pre">WaveDetector::getMetadata()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wave_detector.html#_CPPv4N12WaveDetector11shiftWindowEN6maxlab17FilteredFrameDataE"><code class="docutils literal notranslate"><span class="pre">WaveDetector::shiftWindow()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wave_detector.html#_CPPv4N12WaveDetector12processFrameEN6maxlab17FilteredFrameDataEi"><code class="docutils literal notranslate"><span class="pre">WaveDetector::processFrame()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wave_detector.html#_CPPv4N12WaveDetector10checkBurstEi"><code class="docutils literal notranslate"><span class="pre">WaveDetector::checkBurst()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="controller.html"><code class="docutils literal notranslate"><span class="pre">Controller</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="controller.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="controller.html#members">Members</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="controller.html#_CPPv410Controller"><code class="docutils literal notranslate"><span class="pre">Controller</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#_CPPv4N10Controller10ControllerEv"><code class="docutils literal notranslate"><span class="pre">Controller::Controller()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#_CPPv4N10ControllerD0Ev"><code class="docutils literal notranslate"><span class="pre">Controller::~Controller()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#_CPPv4N10Controller9addButtonE6stringiPKci"><code class="docutils literal notranslate"><span class="pre">Controller::addButton()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#_CPPv4N10Controller15getButtonWindowE6string"><code class="docutils literal notranslate"><span class="pre">Controller::getButtonWindow()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#_CPPv4N10Controller3addEN6maxlab17FilteredFrameDataE"><code class="docutils literal notranslate"><span class="pre">Controller::add()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#_CPPv4N10Controller5shiftEN6maxlab17FilteredFrameDataE"><code class="docutils literal notranslate"><span class="pre">Controller::shift()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#_CPPv4N10Controller11numChannelsE6string"><code class="docutils literal notranslate"><span class="pre">Controller::numChannels()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="controller.html#_CPPv4N10Controller9numSpikesE6string"><code class="docutils literal notranslate"><span class="pre">Controller::numSpikes()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="nes.html"><code class="docutils literal notranslate"><span class="pre">NES</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="nes.html#overview">Overview</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="nes.html#csv-output"><strong>CSV output</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="nes.html#members">Members</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="world_state.html"><code class="docutils literal notranslate"><span class="pre">WorldState</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="world_state.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="world_state.html#members">Members</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="world_state.html#_CPPv410WorldState"><code class="docutils literal notranslate"><span class="pre">WorldState</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="world_state.html#_CPPv4N10WorldState10WorldStateE6stringi"><code class="docutils literal notranslate"><span class="pre">WorldState::WorldState()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="world_state.html#_CPPv4N10WorldState7displayEv"><code class="docutils literal notranslate"><span class="pre">WorldState::display()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="world_state.html#_CPPv4N10WorldState8moveLeftEv"><code class="docutils literal notranslate"><span class="pre">WorldState::moveLeft()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="world_state.html#_CPPv4N10WorldState9moveRightEv"><code class="docutils literal notranslate"><span class="pre">WorldState::moveRight()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="world_state.html#_CPPv4N10WorldState11getPositionEv"><code class="docutils literal notranslate"><span class="pre">WorldState::getPosition()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="plotter_cpp.html"><code class="docutils literal notranslate"><span class="pre">Plotter</span></code></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="plotter_cpp.html#_CPPv47Plotter"><code class="docutils literal notranslate"><span class="pre">Plotter</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="plotter_cpp.html#_CPPv4N7Plotter7PlotterE6string"><code class="docutils literal notranslate"><span class="pre">Plotter::Plotter()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="plotter_cpp.html#_CPPv4N7Plotter4syncEv"><code class="docutils literal notranslate"><span class="pre">Plotter::sync()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotter_cpp.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotter_cpp.html#members">Members</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="plotter_cpp.html#_CPPv47Plotter"><code class="docutils literal notranslate"><span class="pre">Plotter</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="plotter_cpp.html#_CPPv4N7Plotter7PlotterE6string"><code class="docutils literal notranslate"><span class="pre">Plotter::Plotter()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="plotter_cpp.html#_CPPv4N7Plotter4syncEv"><code class="docutils literal notranslate"><span class="pre">Plotter::sync()</span></code></a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="argparse.html">Argument Parser Module</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="argparse.html#_CPPv48argparse"><code class="docutils literal notranslate"><span class="pre">argparse</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="argparse.html#_CPPv4N8argparse11checkOptionE6stringiA_Pc"><code class="docutils literal notranslate"><span class="pre">argparse::checkOption()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="argparse.html#_CPPv4N8argparse12getStringArgE6stringiA_Pc6string"><code class="docutils literal notranslate"><span class="pre">argparse::getStringArg()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="argparse.html#_CPPv4N8argparse9getIntArgE6stringiA_Pc6string"><code class="docutils literal notranslate"><span class="pre">argparse::getIntArg()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="argparse.html#_CPPv4N8argparse11getFloatArgE6stringiA_Pc6string"><code class="docutils literal notranslate"><span class="pre">argparse::getFloatArg()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="argparse.html#_CPPv4N8argparse18getStringArgSecureE6string6stringiA_Pc"><code class="docutils literal notranslate"><span class="pre">argparse::getStringArgSecure()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="argparse.html#_CPPv4N8argparse15getIntArgSecureE6stringiiA_Pc"><code class="docutils literal notranslate"><span class="pre">argparse::getIntArgSecure()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="argparse.html#_CPPv4N8argparse17getFloatArgSecureE6stringfiA_Pc"><code class="docutils literal notranslate"><span class="pre">argparse::getFloatArgSecure()</span></code></a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="progress_bar.html"><code class="docutils literal notranslate"><span class="pre">ProgressBar</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="progress_bar.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="progress_bar.html#members">Members</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="world_state.html"><code class="docutils literal notranslate"><span class="pre">WorldState</span></code> Class</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="world_state.html#_CPPv410WorldState"><code class="docutils literal notranslate"><span class="pre">WorldState</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="world_state.html#_CPPv4N10WorldState10WorldStateE6stringi"><code class="docutils literal notranslate"><span class="pre">WorldState::WorldState()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="world_state.html#_CPPv4N10WorldState7displayEv"><code class="docutils literal notranslate"><span class="pre">WorldState::display()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="world_state.html#_CPPv4N10WorldState8moveLeftEv"><code class="docutils literal notranslate"><span class="pre">WorldState::moveLeft()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="world_state.html#_CPPv4N10WorldState9moveRightEv"><code class="docutils literal notranslate"><span class="pre">WorldState::moveRight()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="world_state.html#_CPPv4N10WorldState11getPositionEv"><code class="docutils literal notranslate"><span class="pre">WorldState::getPosition()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="argparse.html"><code class="docutils literal notranslate"><span class="pre">argparse</span></code> Module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="argparse.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="argparse.html#members">Members</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="argparse.html#_CPPv48argparse"><code class="docutils literal notranslate"><span class="pre">argparse</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="argparse.html#_CPPv4N8argparse11checkOptionE6stringiA_Pc"><code class="docutils literal notranslate"><span class="pre">argparse::checkOption()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="argparse.html#_CPPv4N8argparse12getStringArgE6stringiA_Pc6string"><code class="docutils literal notranslate"><span class="pre">argparse::getStringArg()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="argparse.html#_CPPv4N8argparse9getIntArgE6stringiA_Pc6string"><code class="docutils literal notranslate"><span class="pre">argparse::getIntArg()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="argparse.html#_CPPv4N8argparse11getFloatArgE6stringiA_Pc6string"><code class="docutils literal notranslate"><span class="pre">argparse::getFloatArg()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="argparse.html#_CPPv4N8argparse18getStringArgSecureE6string6stringiA_Pc"><code class="docutils literal notranslate"><span class="pre">argparse::getStringArgSecure()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="argparse.html#_CPPv4N8argparse15getIntArgSecureE6stringiiA_Pc"><code class="docutils literal notranslate"><span class="pre">argparse::getIntArgSecure()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="argparse.html#_CPPv4N8argparse17getFloatArgSecureE6stringfiA_Pc"><code class="docutils literal notranslate"><span class="pre">argparse::getFloatArgSecure()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -192,13 +266,14 @@
 </ul>
 </div>
 </section>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="plotter_py.html" class="btn btn-neutral float-left" title="plotter" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="electrode_map.html" class="btn btn-neutral float-right" title="ElectrodeMap Class" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="electrode_map.html" class="btn btn-neutral float-right" title="ElectrodeMap" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

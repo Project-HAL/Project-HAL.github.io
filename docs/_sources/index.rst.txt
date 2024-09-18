@@ -7,7 +7,6 @@ Welcome to Project HAL's documentation!
 =======================================
 
 .. toctree::
-   
    overview
    getting_started
    results

@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Plotter &mdash; Project HAL  documentation</title>
+  <title>ProgressBar &mdash; Project HAL  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css?v=3a4c267e" />
@@ -23,8 +23,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="ProgressBar" href="progress_bar.html" />
-    <link rel="prev" title="WorldState" href="world_state.html" /> 
+    <link rel="next" title="argparse Module" href="argparse.html" />
+    <link rel="prev" title="Plotter" href="plotter_cpp.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -59,12 +59,12 @@
 <li class="toctree-l3"><a class="reference internal" href="controller.html"><code class="docutils literal notranslate"><span class="pre">Controller</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="nes.html"><code class="docutils literal notranslate"><span class="pre">NES</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="world_state.html"><code class="docutils literal notranslate"><span class="pre">WorldState</span></code></a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">Plotter</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="plotter_cpp.html"><code class="docutils literal notranslate"><span class="pre">Plotter</span></code></a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">ProgressBar</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#overview">Overview</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#members">Members</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="progress_bar.html"><code class="docutils literal notranslate"><span class="pre">ProgressBar</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="argparse.html"><code class="docutils literal notranslate"><span class="pre">argparse</span></code> Module</a></li>
 </ul>
 </li>
@@ -87,9 +87,9 @@
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="cpp_modules.html">C++ Modules</a></li>
-      <li class="breadcrumb-item active"><code class="docutils literal notranslate"><span class="pre">Plotter</span></code></li>
+      <li class="breadcrumb-item active"><code class="docutils literal notranslate"><span class="pre">ProgressBar</span></code></li>
       <li class="wy-breadcrumbs-aside">
-            <a href="_sources/plotter_cpp.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/progress_bar.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -97,38 +97,13 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="plotter">
-<h1><code class="docutils literal notranslate"><span class="pre">Plotter</span></code><a class="headerlink" href="#plotter" title="Link to this heading"></a></h1>
+  <section id="progressbar">
+<h1><code class="docutils literal notranslate"><span class="pre">ProgressBar</span></code><a class="headerlink" href="#progressbar" title="Link to this heading"></a></h1>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
 </section>
 <section id="members">
 <h2>Members<a class="headerlink" href="#members" title="Link to this heading"></a></h2>
-<dl class="cpp class">
-<dt class="sig sig-object cpp" id="_CPPv47Plotter">
-<span id="_CPPv37Plotter"></span><span id="_CPPv27Plotter"></span><span id="Plotter"></span><span class="target" id="classPlotter"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Plotter</span></span></span><a class="headerlink" href="#_CPPv47Plotter" title="Link to this definition"></a><br /></dt>
-<dd><div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N7Plotter7PlotterE6string">
-<span id="_CPPv3N7Plotter7PlotterE6string"></span><span id="_CPPv2N7Plotter7PlotterE6string"></span><span id="Plotter::Plotter__string"></span><span class="target" id="classPlotter_1ae90ba1f586a6862e0e24ce63259cb09b"></span><span class="sig-name descname"><span class="n"><span class="pre">Plotter</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">experiment_type</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;frequency_game&quot;</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Plotter7PlotterE6string" title="Link to this definition"></a><br /></dt>
-<dd><p>Construct a new <a class="reference internal" href="#classPlotter"><span class="std std-ref">Plotter</span></a> object. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>experiment_type</strong> – <code class="docutils literal notranslate"><span class="pre">string</span></code> representing the type of experiment being run. Currently, only “frequency_game” is supported. </p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N7Plotter4syncEv">
-<span id="_CPPv3N7Plotter4syncEv"></span><span id="_CPPv2N7Plotter4syncEv"></span><span id="Plotter::sync"></span><span class="target" id="classPlotter_1a2967008e81047a3256b5b2be7e261dd4"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sync</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Plotter4syncEv" title="Link to this definition"></a><br /></dt>
-<dd><p>Syncs with Python plotter. </p>
-</dd></dl>
-
-</div>
-</dd></dl>
-
 </section>
 </section>
 
@@ -136,8 +111,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="world_state.html" class="btn btn-neutral float-left" title="WorldState" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="progress_bar.html" class="btn btn-neutral float-right" title="ProgressBar" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="plotter_cpp.html" class="btn btn-neutral float-left" title="Plotter" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="argparse.html" class="btn btn-neutral float-right" title="argparse Module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

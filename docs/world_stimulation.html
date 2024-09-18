@@ -51,15 +51,19 @@
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="results.html">Experiment Results</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="py_modules.html">Python Modules</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="hal.html"><code class="docutils literal notranslate"><span class="pre">hal</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="stimulation.html"><code class="docutils literal notranslate"><span class="pre">stimulation</span></code></a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">world_stimulation</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#world_stimulation.ObjectDistanceParams"><code class="docutils literal notranslate"><span class="pre">ObjectDistanceParams</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#world_stimulation.build_distance_stimuli"><code class="docutils literal notranslate"><span class="pre">build_distance_stimuli()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="py_modules.html#overview">Overview</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="py_modules.html#members">Members</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="hal.html"><code class="docutils literal notranslate"><span class="pre">hal</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="stimulation.html"><code class="docutils literal notranslate"><span class="pre">stimulation</span></code></a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">world_stimulation</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-world_stimulation">Members</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="config.html"><code class="docutils literal notranslate"><span class="pre">config</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="plotter_py.html"><code class="docutils literal notranslate"><span class="pre">plotter</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="config.html"><code class="docutils literal notranslate"><span class="pre">config</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="plotter_py.html"><code class="docutils literal notranslate"><span class="pre">plotter</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="cpp_modules.html">C++ Modules</a></li>
@@ -90,8 +94,13 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="module-world_stimulation">
-<span id="world-stimulation"></span><h1><code class="docutils literal notranslate"><span class="pre">world_stimulation</span></code><a class="headerlink" href="#module-world_stimulation" title="Link to this heading"></a></h1>
+  <section id="world-stimulation">
+<h1><code class="docutils literal notranslate"><span class="pre">world_stimulation</span></code><a class="headerlink" href="#world-stimulation" title="Link to this heading"></a></h1>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
+</section>
+<section id="module-world_stimulation">
+<span id="members"></span><h2>Members<a class="headerlink" href="#module-world_stimulation" title="Link to this heading"></a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="world_stimulation.ObjectDistanceParams">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">world_stimulation.</span></span><span class="sig-name descname"><span class="pre">ObjectDistanceParams</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">world_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitudes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phases</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pulses_per_train</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_trains</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pulse_intervals</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pulse_train_intervals</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">[]</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#world_stimulation.ObjectDistanceParams" title="Link to this definition"></a></dt>
@@ -134,6 +143,7 @@
 </dl>
 </dd></dl>
 
+</section>
 </section>
 
 

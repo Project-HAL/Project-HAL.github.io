@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WorldState Class &mdash; Project HAL  documentation</title>
+  <title>WorldState &mdash; Project HAL  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="_static/custom.css?v=3a4c267e" />
@@ -23,7 +23,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Argument Parser Module" href="argparse.html" /> 
+    <link rel="next" title="Plotter" href="plotter_cpp.html" />
+    <link rel="prev" title="NES" href="nes.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -51,21 +52,20 @@
 <li class="toctree-l1"><a class="reference internal" href="results.html">Experiment Results</a></li>
 <li class="toctree-l1"><a class="reference internal" href="py_modules.html">Python Modules</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="cpp_modules.html">C++ Modules</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="electrode_map.html"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap</span></code> Class</a></li>
-<li class="toctree-l2"><a class="reference internal" href="channel_window.html"><code class="docutils literal notranslate"><span class="pre">ChannelWindow</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="controller.html"><code class="docutils literal notranslate"><span class="pre">Controller</span></code> Class</a></li>
-<li class="toctree-l2"><a class="reference internal" href="wave_detector.html"><code class="docutils literal notranslate"><span class="pre">WaveDetector</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="plotter_cpp.html"><code class="docutils literal notranslate"><span class="pre">Plotter</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="argparse.html">Argument Parser Module</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">WorldState</span></code> Class</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#_CPPv410WorldState"><code class="docutils literal notranslate"><span class="pre">WorldState</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N10WorldState10WorldStateE6stringi"><code class="docutils literal notranslate"><span class="pre">WorldState::WorldState()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N10WorldState7displayEv"><code class="docutils literal notranslate"><span class="pre">WorldState::display()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N10WorldState8moveLeftEv"><code class="docutils literal notranslate"><span class="pre">WorldState::moveLeft()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N10WorldState9moveRightEv"><code class="docutils literal notranslate"><span class="pre">WorldState::moveRight()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N10WorldState11getPositionEv"><code class="docutils literal notranslate"><span class="pre">WorldState::getPosition()</span></code></a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="cpp_modules.html#module-index">Module Index:</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="electrode_map.html"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="channel_window.html"><code class="docutils literal notranslate"><span class="pre">ChannelWindow</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wave_detector.html"><code class="docutils literal notranslate"><span class="pre">WaveDetector</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="controller.html"><code class="docutils literal notranslate"><span class="pre">Controller</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="nes.html"><code class="docutils literal notranslate"><span class="pre">NES</span></code></a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">WorldState</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#members">Members</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="plotter_cpp.html"><code class="docutils literal notranslate"><span class="pre">Plotter</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="progress_bar.html"><code class="docutils literal notranslate"><span class="pre">ProgressBar</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="argparse.html"><code class="docutils literal notranslate"><span class="pre">argparse</span></code> Module</a></li>
 </ul>
 </li>
 </ul>
@@ -87,7 +87,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="cpp_modules.html">C++ Modules</a></li>
-      <li class="breadcrumb-item active"><code class="docutils literal notranslate"><span class="pre">WorldState</span></code> Class</li>
+      <li class="breadcrumb-item active"><code class="docutils literal notranslate"><span class="pre">WorldState</span></code></li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/world_state.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -97,8 +97,13 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="worldstate-class">
-<h1><code class="docutils literal notranslate"><span class="pre">WorldState</span></code> Class<a class="headerlink" href="#worldstate-class" title="Link to this heading"></a></h1>
+  <section id="worldstate">
+<h1><code class="docutils literal notranslate"><span class="pre">WorldState</span></code><a class="headerlink" href="#worldstate" title="Link to this heading"></a></h1>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
+</section>
+<section id="members">
+<h2>Members<a class="headerlink" href="#members" title="Link to this heading"></a></h2>
 <dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv410WorldState">
 <span id="_CPPv310WorldState"></span><span id="_CPPv210WorldState"></span><span id="WorldState"></span><span class="target" id="classWorldState"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">WorldState</span></span></span><a class="headerlink" href="#_CPPv410WorldState" title="Link to this definition"></a><br /></dt>
@@ -151,12 +156,14 @@
 </dd></dl>
 
 </section>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="argparse.html" class="btn btn-neutral float-left" title="Argument Parser Module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="nes.html" class="btn btn-neutral float-left" title="NES" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="plotter_cpp.html" class="btn btn-neutral float-right" title="Plotter" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

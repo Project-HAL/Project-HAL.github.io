@@ -23,8 +23,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Plotter" href="plotter_cpp.html" />
-    <link rel="prev" title="Controller Class" href="controller.html" /> 
+    <link rel="next" title="Controller" href="controller.html" />
+    <link rel="prev" title="ChannelWindow" href="channel_window.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -52,26 +52,22 @@
 <li class="toctree-l1"><a class="reference internal" href="results.html">Experiment Results</a></li>
 <li class="toctree-l1"><a class="reference internal" href="py_modules.html">Python Modules</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="cpp_modules.html">C++ Modules</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="electrode_map.html"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap</span></code> Class</a></li>
-<li class="toctree-l2"><a class="reference internal" href="channel_window.html"><code class="docutils literal notranslate"><span class="pre">ChannelWindow</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="controller.html"><code class="docutils literal notranslate"><span class="pre">Controller</span></code> Class</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">WaveDetector</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#_CPPv412WaveDetector"><code class="docutils literal notranslate"><span class="pre">WaveDetector</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12WaveDetector12WaveDetectorEv"><code class="docutils literal notranslate"><span class="pre">WaveDetector::WaveDetector()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12WaveDetector12WaveDetectorEiPKcfiiff"><code class="docutils literal notranslate"><span class="pre">WaveDetector::WaveDetector()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12WaveDetectorD0Ev"><code class="docutils literal notranslate"><span class="pre">WaveDetector::~WaveDetector()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12WaveDetector9getWindowEv"><code class="docutils literal notranslate"><span class="pre">WaveDetector::getWindow()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12WaveDetector11getMetadataEv"><code class="docutils literal notranslate"><span class="pre">WaveDetector::getMetadata()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12WaveDetector11shiftWindowEN6maxlab17FilteredFrameDataE"><code class="docutils literal notranslate"><span class="pre">WaveDetector::shiftWindow()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12WaveDetector12processFrameEN6maxlab17FilteredFrameDataEi"><code class="docutils literal notranslate"><span class="pre">WaveDetector::processFrame()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N12WaveDetector10checkBurstEi"><code class="docutils literal notranslate"><span class="pre">WaveDetector::checkBurst()</span></code></a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="cpp_modules.html#module-index">Module Index:</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="electrode_map.html"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="channel_window.html"><code class="docutils literal notranslate"><span class="pre">ChannelWindow</span></code></a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">WaveDetector</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#members">Members</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="controller.html"><code class="docutils literal notranslate"><span class="pre">Controller</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="nes.html"><code class="docutils literal notranslate"><span class="pre">NES</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="world_state.html"><code class="docutils literal notranslate"><span class="pre">WorldState</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="plotter_cpp.html"><code class="docutils literal notranslate"><span class="pre">Plotter</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="progress_bar.html"><code class="docutils literal notranslate"><span class="pre">ProgressBar</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="argparse.html"><code class="docutils literal notranslate"><span class="pre">argparse</span></code> Module</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="plotter_cpp.html"><code class="docutils literal notranslate"><span class="pre">Plotter</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="argparse.html">Argument Parser Module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="world_state.html"><code class="docutils literal notranslate"><span class="pre">WorldState</span></code> Class</a></li>
 </ul>
 </li>
 </ul>
@@ -103,59 +99,66 @@
              
   <section id="wavedetector">
 <h1><code class="docutils literal notranslate"><span class="pre">WaveDetector</span></code><a class="headerlink" href="#wavedetector" title="Link to this heading"></a></h1>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
 <div class="toggle docutils container">
 <div class="header docutils container">
 <p>Example closed-loop program</p>
 </div>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;maxlab.h&quot;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;hal.h&quot;</span>
-
-<span class="cp">#define SYS_START_BUFFER 50000</span>
-
-<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">argv</span><span class="p">[])</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">maxlab</span><span class="o">::</span><span class="n">verifyStatus</span><span class="p">(</span><span class="n">maxlab</span><span class="o">::</span><span class="n">DataStreamerFiltered_open</span><span class="p">(</span><span class="n">maxlab</span><span class="o">::</span><span class="n">FilterType</span><span class="o">::</span><span class="n">IIR</span><span class="p">));</span>
-
-<span class="w">    </span><span class="c1">// ignore system startup activity</span>
-<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">SYS_START_BUFFER</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">maxlab</span><span class="o">::</span><span class="n">FilteredFrameData</span><span class="w"> </span><span class="n">frameData</span><span class="p">;</span>
-<span class="w">        </span><span class="n">maxlab</span><span class="o">::</span><span class="n">Status</span><span class="w"> </span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">maxlab</span><span class="o">::</span><span class="n">DataStreamerFiltered_receiveNextFrame</span><span class="p">(</span><span class="o">&amp;</span><span class="n">frameData</span><span class="p">);</span>
-
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">status</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">maxlab</span><span class="o">::</span><span class="n">Status</span><span class="o">::</span><span class="n">MAXLAB_NO_FRAME</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="n">i</span><span class="o">--</span><span class="p">;</span>
-<span class="w">            </span><span class="k">continue</span><span class="p">;</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="w">    </span><span class="p">}</span>
-
-<span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">configPath</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;/home/mxwbio/config.cfg&quot;</span><span class="p">;</span>
-
-<span class="w">    </span><span class="n">WaveDetector</span><span class="w"> </span><span class="n">wd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">WaveDetector</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="w"> </span><span class="n">configPath</span><span class="p">,</span><span class="w"> </span><span class="mf">0.1</span><span class="p">,</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span><span class="w"> </span><span class="mi">10000</span><span class="p">);</span>
-
-<span class="w">    </span><span class="c1">// examine the culture for 20 seconds</span>
-<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">200000</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">maxlab</span><span class="o">::</span><span class="n">FilteredFrameData</span><span class="w"> </span><span class="n">frameData</span><span class="p">;</span>
-<span class="w">        </span><span class="n">maxlab</span><span class="o">::</span><span class="n">Status</span><span class="w"> </span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">maxlab</span><span class="o">::</span><span class="n">DataStreamerFiltered_receiveNextFrame</span><span class="p">(</span><span class="o">&amp;</span><span class="n">frameData</span><span class="p">);</span>
-
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">status</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">maxlab</span><span class="o">::</span><span class="n">Status</span><span class="o">::</span><span class="n">MAXLAB_NO_FRAME</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="n">i</span><span class="o">--</span><span class="p">;</span>
-<span class="w">            </span><span class="k">continue</span><span class="p">;</span>
-<span class="w">        </span><span class="p">}</span>
-
-<span class="w">        </span><span class="c1">// extend the window and check for burst waves</span>
-<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">val</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">wd</span><span class="p">.</span><span class="n">processFrame</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">200</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">SYS_START_BUFFER</span><span class="p">);</span>
-
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">val</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">Wave</span><span class="o">::</span><span class="n">leftToRight</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Culture bursted left to right!&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
-<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">val</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">Wave</span><span class="o">::</span><span class="n">rightToLeft</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Culture bursted right to left!&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="w">    </span><span class="p">}</span>
-
-<span class="w">    </span><span class="n">maxlab</span><span class="o">::</span><span class="n">verifyStatus</span><span class="p">(</span><span class="n">maxlab</span><span class="o">::</span><span class="n">DataStreamerFiltered_close</span><span class="p">());</span>
-<span class="p">}</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<span class="linenos"> 2</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;hal.h&quot;</span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span><span class="cp">#define SYS_START_BUFFER 50000</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">argv</span><span class="p">[])</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos"> 7</span><span class="w">    </span><span class="n">maxlab</span><span class="o">::</span><span class="n">verifyStatus</span><span class="p">(</span><span class="n">maxlab</span><span class="o">::</span><span class="n">DataStreamerFiltered_open</span><span class="p">(</span><span class="n">maxlab</span><span class="o">::</span><span class="n">FilterType</span><span class="o">::</span><span class="n">IIR</span><span class="p">));</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">sampleRate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10000</span><span class="p">;</span>
+<span class="linenos">10</span>
+<span class="linenos">11</span><span class="w">    </span><span class="c1">// ignore system startup activity</span>
+<span class="linenos">12</span><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">SYS_START_BUFFER</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">13</span><span class="w">        </span><span class="n">maxlab</span><span class="o">::</span><span class="n">FilteredFrameData</span><span class="w"> </span><span class="n">frameData</span><span class="p">;</span>
+<span class="linenos">14</span><span class="w">        </span><span class="n">maxlab</span><span class="o">::</span><span class="n">Status</span><span class="w"> </span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">maxlab</span><span class="o">::</span><span class="n">DataStreamerFiltered_receiveNextFrame</span><span class="p">(</span><span class="o">&amp;</span><span class="n">frameData</span><span class="p">);</span>
+<span class="linenos">15</span>
+<span class="linenos">16</span><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">status</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">maxlab</span><span class="o">::</span><span class="n">Status</span><span class="o">::</span><span class="n">MAXLAB_NO_FRAME</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">17</span><span class="w">            </span><span class="n">i</span><span class="o">--</span><span class="p">;</span>
+<span class="linenos">18</span><span class="w">            </span><span class="k">continue</span><span class="p">;</span>
+<span class="linenos">19</span><span class="w">        </span><span class="p">}</span>
+<span class="linenos">20</span><span class="w">    </span><span class="p">}</span>
+<span class="linenos">21</span>
+<span class="linenos">22</span><span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">configPath</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;/home/mxwbio/config.cfg&quot;</span><span class="p">;</span>
+<span class="linenos">23</span>
+<span class="linenos">24</span><span class="w">    </span><span class="c1">// window length, configuration path, burst threshold, min length, hz</span>
+<span class="linenos">25</span><span class="w">    </span><span class="n">WaveDetector</span><span class="w"> </span><span class="n">wd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">WaveDetector</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="w"> </span><span class="n">configPath</span><span class="p">,</span><span class="w"> </span><span class="mf">0.1</span><span class="p">,</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span><span class="w"> </span><span class="n">sampleRate</span><span class="p">);</span>
+<span class="linenos">26</span>
+<span class="linenos">27</span><span class="w">    </span><span class="c1">// examine the culture for 20 seconds</span>
+<span class="linenos">28</span><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">200000</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">29</span><span class="w">        </span><span class="n">maxlab</span><span class="o">::</span><span class="n">FilteredFrameData</span><span class="w"> </span><span class="n">frameData</span><span class="p">;</span>
+<span class="linenos">30</span><span class="w">        </span><span class="n">maxlab</span><span class="o">::</span><span class="n">Status</span><span class="w"> </span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">maxlab</span><span class="o">::</span><span class="n">DataStreamerFiltered_receiveNextFrame</span><span class="p">(</span><span class="o">&amp;</span><span class="n">frameData</span><span class="p">);</span>
+<span class="linenos">31</span>
+<span class="linenos">32</span><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">status</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">maxlab</span><span class="o">::</span><span class="n">Status</span><span class="o">::</span><span class="n">MAXLAB_NO_FRAME</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">33</span><span class="w">            </span><span class="n">i</span><span class="o">--</span><span class="p">;</span>
+<span class="linenos">34</span><span class="w">            </span><span class="k">continue</span><span class="p">;</span>
+<span class="linenos">35</span><span class="w">        </span><span class="p">}</span>
+<span class="linenos">36</span>
+<span class="linenos">37</span><span class="w">        </span><span class="c1">// extend the window and check for burst waves</span>
+<span class="linenos">38</span><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">val</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">wd</span><span class="p">.</span><span class="n">processFrame</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">200</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">SYS_START_BUFFER</span><span class="p">);</span>
+<span class="linenos">39</span>
+<span class="linenos">40</span><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">val</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">Wave</span><span class="o">::</span><span class="n">leftToRight</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">41</span><span class="w">            </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Culture bursted left to right!&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="linenos">42</span><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">val</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">Wave</span><span class="o">::</span><span class="n">rightToLeft</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">43</span><span class="w">            </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Culture bursted right to left!&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="linenos">44</span><span class="w">        </span><span class="p">}</span>
+<span class="linenos">45</span><span class="w">    </span><span class="p">}</span>
+<span class="linenos">46</span>
+<span class="linenos">47</span><span class="w">    </span><span class="n">maxlab</span><span class="o">::</span><span class="n">verifyStatus</span><span class="p">(</span><span class="n">maxlab</span><span class="o">::</span><span class="n">DataStreamerFiltered_close</span><span class="p">());</span>
+<span class="linenos">48</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
+</section>
+<section id="members">
+<h2>Members<a class="headerlink" href="#members" title="Link to this heading"></a></h2>
 <dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv412WaveDetector">
 <span id="_CPPv312WaveDetector"></span><span id="_CPPv212WaveDetector"></span><span id="WaveDetector"></span><span class="target" id="classWaveDetector"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">WaveDetector</span></span></span><a class="headerlink" href="#_CPPv412WaveDetector" title="Link to this definition"></a><br /></dt>
@@ -261,13 +264,14 @@
 </dd></dl>
 
 </section>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="controller.html" class="btn btn-neutral float-left" title="Controller Class" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="plotter_cpp.html" class="btn btn-neutral float-right" title="Plotter" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="channel_window.html" class="btn btn-neutral float-left" title="ChannelWindow" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="controller.html" class="btn btn-neutral float-right" title="Controller" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

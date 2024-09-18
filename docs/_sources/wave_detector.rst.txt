@@ -1,22 +1,27 @@
 ``WaveDetector``
 ================
 
+Overview 
+^^^^^^^^
+
 .. container:: toggle
 
     .. container:: header
 
         Example closed-loop program
     
-    .. code:: c
+    .. code-block:: c
+        :linenos:
 
         #include <iostream>
-        #include "maxlab.h"
         #include "hal.h"
 
         #define SYS_START_BUFFER 50000
 
         int main(int argc, char *argv[]) {
             maxlab::verifyStatus(maxlab::DataStreamerFiltered_open(maxlab::FilterType::IIR));
+
+            int sampleRate = 10000;
 
             // ignore system startup activity
             for (int i = 0; i < SYS_START_BUFFER; i++) {
@@ -31,7 +36,8 @@
 
             char *configPath = "/home/mxwbio/config.cfg";
 
-            WaveDetector wd = WaveDetector(200, configPath, 0.1, 1000, 10000);
+            // window length, configuration path, burst threshold, min length, hz
+            WaveDetector wd = WaveDetector(200, configPath, 0.1, 1000, sampleRate);
 
             // examine the culture for 20 seconds
             for (int i = 0; i < 200000; i++) {
@@ -56,5 +62,7 @@
             maxlab::verifyStatus(maxlab::DataStreamerFiltered_close());
         }
 
+Members 
+^^^^^^^
 .. doxygenclass:: WaveDetector
     :members:
