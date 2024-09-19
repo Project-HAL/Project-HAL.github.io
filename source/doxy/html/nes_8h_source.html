@@ -85,30 +85,30 @@ $(function() {
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="classNES.html">NES</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *csvName, <span class="keywordtype">float</span> spikePercentThreshold=0.03, <span class="keywordtype">float</span> zScoreThreshold=3);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="classNES.html">NES</a>(<span class="keywordtype">bool</span> maxtwo, <span class="keywordtype">int</span> windowLength, <span class="keyword">const</span> <span class="keywordtype">char</span> *AconfigPath, <span class="keyword">const</span> <span class="keywordtype">char</span> *BconfigPath, <span class="keyword">const</span> <span class="keywordtype">char</span> *csvName, <span class="keywordtype">float</span> spikePercentThreshold=0.03, <span class="keywordtype">float</span> zScoreThreshold=3);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        ~<a class="code" href="classNES.html">NES</a>();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordtype">int</span> checkButtons(<span class="keywordtype">int</span> frameNo);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="classNES.html">NES</a>(<span class="keywordtype">bool</span> maxtwo, <span class="keywordtype">int</span> windowLength, <span class="keyword">const</span> <span class="keywordtype">char</span> *AconfigPath, <span class="keyword">const</span> <span class="keywordtype">char</span> *BconfigPath, <span class="keyword">const</span> <span class="keywordtype">char</span> *csvName, <span class="keywordtype">float</span> spikePercentThreshold=0.03, <span class="keywordtype">float</span> zScoreThreshold=3);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        ~<a class="code" href="classNES.html">NES</a>();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordtype">int</span> checkButtons(<span class="keywordtype">int</span> frameNo);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        </div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordtype">int</span> currFrame = 0;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        std::fstream csv;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordtype">float</span> zThresh;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordtype">float</span> percentThresh;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordtype">bool</span> aReleased;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordtype">bool</span> bReleased;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordtype">float</span> zScore(<span class="keywordtype">float</span> value, <span class="keywordtype">float</span> avg, <span class="keywordtype">float</span> sd);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordtype">void</span> printValues(<span class="keywordtype">int</span> ab, <span class="keywordtype">int</span> frameNo, <span class="keywordtype">float</span> perA, <span class="keywordtype">float</span> valA, <span class="keywordtype">float</span> avgA, <span class="keywordtype">float</span> sdA, <span class="keywordtype">float</span> zA, <span class="keywordtype">float</span> perB, <span class="keywordtype">float</span> valB, <span class="keywordtype">float</span> avgB, <span class="keywordtype">float</span> sdB, <span class="keywordtype">float</span> zB);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;};</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordtype">int</span> currFrame = 0;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        std::fstream csv;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordtype">float</span> zThresh;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordtype">float</span> percentThresh;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordtype">bool</span> aReleased;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordtype">bool</span> bReleased;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordtype">float</span> zScore(<span class="keywordtype">float</span> value, <span class="keywordtype">float</span> avg, <span class="keywordtype">float</span> sd);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordtype">void</span> printValues(<span class="keywordtype">int</span> ab, <span class="keywordtype">int</span> frameNo, <span class="keywordtype">float</span> perA, <span class="keywordtype">float</span> valA, <span class="keywordtype">float</span> avgA, <span class="keywordtype">float</span> sdA, <span class="keywordtype">float</span> zA, <span class="keywordtype">float</span> perB, <span class="keywordtype">float</span> valB, <span class="keywordtype">float</span> avgB, <span class="keywordtype">float</span> sdB, <span class="keywordtype">float</span> zB);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;};</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassNES_html"><div class="ttname"><a href="classNES.html">NES</a></div><div class="ttdef"><b>Definition:</b> nes.h:20</div></div>
 <div class="ttc" id="acontroller_8h_html"><div class="ttname"><a href="controller_8h.html">controller.h</a></div><div class="ttdoc">Header file for the Controller Class.</div></div>

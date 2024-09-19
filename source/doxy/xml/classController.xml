@@ -152,10 +152,10 @@
 </simplesect>
 <parameterlist kind="exception"><parameteritem>
 <parameternamelist>
-<parametername>&lt;code&gt;std::out_of_range&lt;/code&gt;</parametername>
+<parametername>std::out_of_range</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>if there is not a button with the keTrevor Sullivan (<ulink url="mailto:trevor.sullivan@tufts.edu">trevor.sullivan@tufts.edu</ulink>)y <computeroutput>id</computeroutput> </para>
+<para>if there is not a button with the ke)y <computeroutput>id</computeroutput> </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
