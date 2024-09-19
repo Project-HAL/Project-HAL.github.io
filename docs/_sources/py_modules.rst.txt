@@ -1,11 +1,7 @@
+.. include:: links.rst
+
 Python Modules
 ==============
-
-Overview 
-^^^^^^^^
-
-Members 
-^^^^^^^
 
 .. toctree::
    :maxdepth: 4

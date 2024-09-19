@@ -1,3 +1,5 @@
+.. include:: links.rst
+
 ``WaveDetector``
 ================
 
@@ -64,5 +66,6 @@ Overview
 
 Members 
 ^^^^^^^
+
 .. doxygenclass:: WaveDetector
     :members:

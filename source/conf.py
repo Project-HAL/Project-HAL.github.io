@@ -19,7 +19,7 @@ def setup(app):
     app.add_css_file('custom.css')
 
 project = 'Project HAL'
-copyright = """2024, Wesley Clawson, Nathan Wu, Trevor Sullivan, and Viraj Chhajed.\n\n
+copyright = """2024, Wesley Clawson, Trevor Sullivan, Nathan Wu, and Viraj Chhajed.\n\n
 HAL was generously funded by the Air Force Office of Scientific Research (Grant ID: FA9550-22-1-0465)"""
 author = 'Wesley Clawson, Nathan Wu, Trevor Sullivan, and Viraj Chhajed'
 

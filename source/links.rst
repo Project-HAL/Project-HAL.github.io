@@ -1,4 +1,62 @@
+..
+    This file contains substitution definitions for all classes. This adds 
+    code (literal) style to the name of the text and makes it a hyperlink 
+    to the class page. To use in rst:
 
+        |CLASS|_
+    
+    Where "CLASS" is the name of the class.
+
+    To add more, follow the format of these substitutions.
+
+    To use these subtitutions in a new rst file, include this file using:
+
+        .. include:: links.rst
+
+    Sphinx doesn't have nested inline markup (i.e. there's no easy way to style 
+    references to other documents inherent to rst), and since Doxygen 
+    automatically creates links to classes. I added this to be consistent. 
+
+    NOTE that these links are hard-coded. If you click them on a local copy of 
+    this repo, it will take you to the actual website. There's no way to imbed 
+    the :doc: or :ref: directives in the substitution definitions.
+
+    Author: Trevor Sullivan
+    September 2024
+
+
+.. C++ CLASSES
+
+.. |ElectrodeMap| replace:: ``ElectrodeMap``
+.. _ElectrodeMap: https://project-hybrot.github.io/electrode_map.html
+
+.. |ChannelWindow| replace:: ``ChannelWindow``
+.. _ChannelWindow: https://project-hybrot.github.io/channel_window.html
+
+.. |WaveDetector| replace:: ``WaveDetector``
+.. _WaveDetector: https://project-hybrot.github.io/wave_detector.html
+
+.. |Controller| replace:: ``Controller``
+.. _Controller: https://project-hybrot.github.io/controller.html
 
 .. |NES| replace:: ``NES``
-.. _NES: https://project-hybrot.github.io/nes.html#_CPPv43NES
+.. _NES: https://project-hybrot.github.io/nes.html#
+
+.. |WorldState| replace:: ``WorldState``
+.. _WorldState: https://project-hybrot.github.io/world_state.html
+
+.. |Plotter| replace:: ``Plotter``
+.. _Plotter: https://project-hybrot.github.io/plotter_cpp.html
+
+.. |ProgressBar| replace:: ``ProgressBar``
+.. _ProgressBar: https://project-hybrot.github.io/progress_bar.html
+
+.. |argparse| replace:: ``argparse``
+.. _argparse: https://project-hybrot.github.io/argparse.html
+
+
+.. PYTHON CLASSES
+
+.. |Stimulation| replace:: ``Stimulation``
+.. _Stimulation: https://project-hybrot.github.io/stimulation.html
+

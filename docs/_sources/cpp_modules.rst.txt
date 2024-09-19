@@ -7,29 +7,21 @@ The HAL C++ modules come in two varieties:
 
     - **Experiment Logic**: these modules are used at the core of the data processing for the closed-loop experiments
 
-        - :doc:`electrode_map`
-        - :doc:`channel_window`
-        - :doc:`wave_detector`
-        - :doc:`controller`
-        - |NES|
-        - :doc:`world_state`
+        - |ElectrodeMap|_
+        - |ChannelWindow|_
+        - |WaveDetector|_
+        - |Controller|_
+        - |NES|_
+        - |WorldState|_
     - **General Purpose**: these modules were made to either simplify code or add useful visualizations
 
-        - :doc:`plotter_cpp`
-        - :doc:`progress_bar`
-        - :doc:`argparse`
-
-|NES|_
+        - |Plotter|_
+        - |ProgressBar|_
+        - |argparse|_ Module
 
 
-
-Here is an |emphasized hyperlink|_.
-
-.. |emphasized hyperlink| replace:: *emphasized hyperlink*
-.. _emphasized hyperlink: https://project-hybrot.github.io/nes.html#_CPPv43NES
-
-Module Index:
-^^^^^^^^^^^^^
+Index
+^^^^^
 
 .. toctree::   
     electrode_map

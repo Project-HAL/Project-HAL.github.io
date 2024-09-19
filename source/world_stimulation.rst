@@ -1,3 +1,5 @@
+.. include:: links.rst
+
 ``world_stimulation``
 =====================
 

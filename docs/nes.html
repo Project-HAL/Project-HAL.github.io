@@ -52,7 +52,7 @@
 <li class="toctree-l1"><a class="reference internal" href="results.html">Experiment Results</a></li>
 <li class="toctree-l1"><a class="reference internal" href="py_modules.html">Python Modules</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="cpp_modules.html">C++ Modules</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="cpp_modules.html#module-index">Module Index:</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="cpp_modules.html#index">Index</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="electrode_map.html"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="channel_window.html"><code class="docutils literal notranslate"><span class="pre">ChannelWindow</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="wave_detector.html"><code class="docutils literal notranslate"><span class="pre">WaveDetector</span></code></a></li>
@@ -97,16 +97,20 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="nes">
-<h1><code class="docutils literal notranslate"><span class="pre">NES</span></code><a class="headerlink" href="#nes" title="Link to this heading"></a></h1>
+  <section id="id1">
+<h1><code class="docutils literal notranslate"><span class="pre">NES</span></code><a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
-<p>The NES class is designed to detect button presses from 2 buttons (A and B). It
-inherits from the <code class="docutils literal notranslate"><span class="pre">Controller</span></code> class, allowing for manual button manipulation.</p>
+<p>The <a class="reference external" href="https://project-hybrot.github.io/nes.html#"><code class="docutils literal notranslate"><span class="pre">NES</span></code></a> class is designed to detect button presses from 2 buttons (A and B). It
+inherits from the <a class="reference external" href="https://project-hybrot.github.io/controller.html"><code class="docutils literal notranslate"><span class="pre">Controller</span></code></a> class, allowing for manual button manipulation.</p>
+<p>An <a class="reference external" href="https://project-hybrot.github.io/nes.html#"><code class="docutils literal notranslate"><span class="pre">NES</span></code></a> object compares the activity in two buttons: <code class="docutils literal notranslate"><span class="pre">A</span></code> and <code class="docutils literal notranslate"><span class="pre">B</span></code>. They can
+be created with one of the constructors, or can be added manually (e.g. if the buttons
+need to have different window lengths). Many buttons can be added to an <a class="reference external" href="https://project-hybrot.github.io/nes.html#"><code class="docutils literal notranslate"><span class="pre">NES</span></code></a> object;
+however, for now, it will <em>only</em> compare buttons with the names <code class="docutils literal notranslate"><span class="pre">A</span></code> and <code class="docutils literal notranslate"><span class="pre">B</span></code>.</p>
 <section id="csv-output">
-<h3><strong>CSV output</strong><a class="headerlink" href="#csv-output" title="Link to this heading"></a></h3>
-<p>The <code class="docutils literal notranslate"><span class="pre">NES</span></code> class will automatically create and update a csv during the
-experiment. There are 12 columns in the csv (<code class="docutils literal notranslate"><span class="pre">&lt;button&gt;</span></code> means that there is a
+<h3>CSV output<a class="headerlink" href="#csv-output" title="Link to this heading"></a></h3>
+<p>An <a class="reference external" href="https://project-hybrot.github.io/nes.html#"><code class="docutils literal notranslate"><span class="pre">NES</span></code></a> object will automatically create and update a csv during the
+experiment. There are 12 columns in the csv (<code class="docutils literal notranslate"><span class="pre">&lt;button&gt;</span></code> indicates that there is a
 column for each button):</p>
 <blockquote>
 <div><ul class="simple">

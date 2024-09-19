@@ -51,19 +51,19 @@
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="results.html">Experiment Results</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="py_modules.html">Python Modules</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="py_modules.html#overview">Overview</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="py_modules.html#members">Members</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="hal.html"><code class="docutils literal notranslate"><span class="pre">hal</span></code></a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">stimulation</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#overview">Overview</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#module-stimulation">Members</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hal.html"><code class="docutils literal notranslate"><span class="pre">hal</span></code></a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">stimulation</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-stimulation">Members</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#stimulation.ArbitraryStimulation"><code class="docutils literal notranslate"><span class="pre">ArbitraryStimulation</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#stimulation.Stimulation"><code class="docutils literal notranslate"><span class="pre">Stimulation</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="world_stimulation.html"><code class="docutils literal notranslate"><span class="pre">world_stimulation</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="config.html"><code class="docutils literal notranslate"><span class="pre">config</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="plotter_py.html"><code class="docutils literal notranslate"><span class="pre">plotter</span></code></a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="world_stimulation.html"><code class="docutils literal notranslate"><span class="pre">world_stimulation</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="config.html"><code class="docutils literal notranslate"><span class="pre">config</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotter_py.html"><code class="docutils literal notranslate"><span class="pre">plotter</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="cpp_modules.html">C++ Modules</a></li>
@@ -94,8 +94,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="stimulation">
-<h1><code class="docutils literal notranslate"><span class="pre">stimulation</span></code><a class="headerlink" href="#stimulation" title="Link to this heading"></a></h1>
+  <section id="id1">
+<h1><code class="docutils literal notranslate"><span class="pre">stimulation</span></code><a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
 </section>
@@ -178,22 +178,20 @@ If this is used, ensure that all stimulation units are powered off to begin with
 <dl class="py method">
 <dt class="sig sig-object py" id="stimulation.Stimulation.combine_stimuli">
 <em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">combine_stimuli</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stim1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stim2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#stimulation.ArbitraryStimulation" title="stimulation.ArbitraryStimulation"><span class="pre">ArbitraryStimulation</span></a></span></span><a class="headerlink" href="#stimulation.Stimulation.combine_stimuli" title="Link to this definition"></a></dt>
-<dd><dl class="simple">
-<dt>Combine two <code class="docutils literal notranslate"><span class="pre">Stimulation</span></code> objects into a sequence that runs them simultaneously.</dt><dd><p>NOTE: A more general version of this function may be written to support combining arbitrary stimuli, not just <code class="docutils literal notranslate"><span class="pre">Stimulation</span></code> objects.
+<dd><p>Combine two <a class="reference external" href="https://project-hybrot.github.io/stimulation.html"><code class="docutils literal notranslate"><span class="pre">Stimulation</span></code></a> objects into a sequence that runs them simultaneously.</p>
+<p>A more general version of this function may be written to support combining arbitrary stimuli, not just <a class="reference external" href="https://project-hybrot.github.io/stimulation.html"><code class="docutils literal notranslate"><span class="pre">Stimulation</span></code></a> objects.
 Currently, this code depends on <code class="docutils literal notranslate"><span class="pre">mx.Event</span></code> objects of a specific format to determine when stimuli start and end, making it inappropriate for general use.
 Not configured to deal with <code class="docutils literal notranslate"><span class="pre">mx.DelayCycles</span></code> objects.</p>
-</dd>
-</dl>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>stim1</strong> (<code class="docutils literal notranslate"><span class="pre">Self</span></code>) – The first <code class="docutils literal notranslate"><span class="pre">Stimulation</span></code> object.</p></li>
-<li><p><strong>stim2</strong> (<code class="docutils literal notranslate"><span class="pre">Self</span></code>) – The second <code class="docutils literal notranslate"><span class="pre">Stimulation</span></code> object.</p></li>
+<li><p><strong>stim1</strong> (<code class="docutils literal notranslate"><span class="pre">Self</span></code>) – The first <a class="reference external" href="https://project-hybrot.github.io/stimulation.html"><code class="docutils literal notranslate"><span class="pre">Stimulation</span></code></a> object.</p></li>
+<li><p><strong>stim2</strong> (<code class="docutils literal notranslate"><span class="pre">Self</span></code>) – The second <a class="reference external" href="https://project-hybrot.github.io/stimulation.html"><code class="docutils literal notranslate"><span class="pre">Stimulation</span></code></a> object.</p></li>
 <li><p><strong>token</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – The unique identifier token for the sequence.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>An ArbitraryStimulation object combining the two <code class="docutils literal notranslate"><span class="pre">Stimulation</span></code> objects.</p>
+<dd class="field-even"><p>An ArbitraryStimulation object combining the two <a class="reference external" href="https://project-hybrot.github.io/stimulation.html"><code class="docutils literal notranslate"><span class="pre">Stimulation</span></code></a> objects.</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">ArbitraryStimulation</span></code></p>
