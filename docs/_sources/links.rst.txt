@@ -28,35 +28,35 @@
 .. C++ CLASSES
 
 .. |ElectrodeMap| replace:: ``ElectrodeMap``
-.. _ElectrodeMap: https://project-hybrot.github.io/electrode_map.html
+.. _ElectrodeMap: https://project-hal.github.io/electrode_map.html
 
 .. |ChannelWindow| replace:: ``ChannelWindow``
-.. _ChannelWindow: https://project-hybrot.github.io/channel_window.html
+.. _ChannelWindow: https://project-hal.github.io/channel_window.html
 
 .. |WaveDetector| replace:: ``WaveDetector``
-.. _WaveDetector: https://project-hybrot.github.io/wave_detector.html
+.. _WaveDetector: https://project-hal.github.io/wave_detector.html
 
 .. |Controller| replace:: ``Controller``
-.. _Controller: https://project-hybrot.github.io/controller.html
+.. _Controller: https://project-hal.github.io/controller.html
 
 .. |NES| replace:: ``NES``
-.. _NES: https://project-hybrot.github.io/nes.html#
+.. _NES: https://project-hal.github.io/nes.html#
 
 .. |WorldState| replace:: ``WorldState``
-.. _WorldState: https://project-hybrot.github.io/world_state.html
+.. _WorldState: https://project-hal.github.io/world_state.html
 
 .. |Plotter| replace:: ``Plotter``
-.. _Plotter: https://project-hybrot.github.io/plotter_cpp.html
+.. _Plotter: https://project-hal.github.io/plotter_cpp.html
 
 .. |ProgressBar| replace:: ``ProgressBar``
-.. _ProgressBar: https://project-hybrot.github.io/progress_bar.html
+.. _ProgressBar: https://project-hal.github.io/progress_bar.html
 
 .. |argparse| replace:: ``argparse``
-.. _argparse: https://project-hybrot.github.io/argparse.html
+.. _argparse: https://project-hal.github.io/argparse.html
 
 
 .. PYTHON CLASSES
 
 .. |Stimulation| replace:: ``Stimulation``
-.. _Stimulation: https://project-hybrot.github.io/stimulation.html
+.. _Stimulation: https://project-hal.github.io/stimulation.html
 
