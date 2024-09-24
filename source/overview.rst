@@ -3,9 +3,4 @@
 Project Overview
 ================
 
-Intro
------
 
-
-Experiments
------------
