@@ -12,7 +12,12 @@ inherits from the |Controller|_ class, allowing for manual button manipulation.
 An |NES|_ object compares the activity in two buttons: ``A`` and ``B``. They can 
 be created with one of the constructors, or can be added manually (e.g. if the buttons 
 need to have different window lengths). Many buttons can be added to an |NES|_ object; 
-however, for now, it will *only* compare buttons with the names ``A`` and ``B``.
+however, for now, it will *only* compare buttons with the names ``A`` and ``B``. 
+
+Since it is a child of |Controller|_, |NES|_ can hold more than 2 buttons; however,
+it can only check for presses from ``A`` and ``B``.
+
+
 
 CSV output
 """"""""""

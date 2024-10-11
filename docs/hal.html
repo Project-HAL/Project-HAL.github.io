@@ -60,10 +60,12 @@
 <li class="toctree-l4"><a class="reference internal" href="#hal.get_file_names"><code class="docutils literal notranslate"><span class="pre">get_file_names()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#hal.init_well"><code class="docutils literal notranslate"><span class="pre">init_well()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#hal.make_trial_folders"><code class="docutils literal notranslate"><span class="pre">make_trial_folders()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hal.make_trial_folders_parallel"><code class="docutils literal notranslate"><span class="pre">make_trial_folders_parallel()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#hal.make_trial_folders_raw"><code class="docutils literal notranslate"><span class="pre">make_trial_folders_raw()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#hal.power_up_stim_units"><code class="docutils literal notranslate"><span class="pre">power_up_stim_units()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#hal.write_closed_loop_args"><code class="docutils literal notranslate"><span class="pre">write_closed_loop_args()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#hal.write_exp_description"><code class="docutils literal notranslate"><span class="pre">write_exp_description()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hal.write_exp_notes"><code class="docutils literal notranslate"><span class="pre">write_exp_notes()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#hal.write_stim_electrodes"><code class="docutils literal notranslate"><span class="pre">write_stim_electrodes()</span></code></a></li>
 </ul>
 </li>
@@ -179,7 +181,7 @@ defaults to 1</p></li>
 <dt class="sig sig-object py" id="hal.get_file_names">
 <span class="sig-prename descclassname"><span class="pre">hal.</span></span><span class="sig-name descname"><span class="pre">get_file_names</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">well_no</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">experiment_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trial_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hal.get_file_names" title="Link to this definition"></a></dt>
 <dd><p>Returns names and paths for recording directory, config, and 
-h5 file.</p>
+h5 file for sequential experiments.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -200,7 +202,7 @@ respectively</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="hal.init_well">
-<span class="sig-prename descclassname"><span class="pre">hal.</span></span><span class="sig-name descname"><span class="pre">init_well</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">well_no</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rec_elecs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stim_elecs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connect</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">power_up</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Array</span></span></span><a class="headerlink" href="#hal.init_well" title="Link to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">hal.</span></span><span class="sig-name descname"><span class="pre">init_well</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">well_no</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rec_elecs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stim_elecs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connect</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">power_up</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Array</span></span></span><a class="headerlink" href="#hal.init_well" title="Link to this definition"></a></dt>
 <dd><p>Initilizes the well recording electrodes and stimulation electrodes. 
 By default, it will connect the stimulation units and power them, but this 
 can be overridden by setting the last two arguments to False or by passing
@@ -209,11 +211,18 @@ stimulations to different DAC channels, since this function sets all
 stimulation electrodes to DAC 0 automatically. The stimulation electrodes 
 will also be selected for recording, so they don’t need to be in the 
 recording electrodes list.</p>
+<p><strong>Important Note:</strong> This function will pick recording electrodes by adding 
+<code class="docutils literal notranslate"><span class="pre">stim_elecs</span></code> and <code class="docutils literal notranslate"><span class="pre">rec_elecs</span></code>, meaning that <code class="docutils literal notranslate"><span class="pre">rec_elecs</span></code> does not have 
+to contain everything in <code class="docutils literal notranslate"><span class="pre">stim_elecs</span></code>. However, if the number of electrodes
+in both lists combined is greater than 1020, then some of the electrodes 
+<em>will not be chosen</em>. If that happens, <code class="docutils literal notranslate"><span class="pre">stim_elecs</span></code> will have preference 
+over <code class="docutils literal notranslate"><span class="pre">rec_elecs</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>well_no</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Well number</p></li>
-<li><p><strong>rec_elecs</strong> (<code class="docutils literal notranslate"><span class="pre">List[int]</span></code>) – Recording electrodes, as a list of electrode numbers</p></li>
+<li><p><strong>rec_elecs</strong> (<code class="docutils literal notranslate"><span class="pre">List[int]</span></code> | str) – Recording electrodes, as a list of electrode numbers OR as a
+full path to a MaxWell configuration file</p></li>
 <li><p><strong>stim_elecs</strong> (<code class="docutils literal notranslate"><span class="pre">List[int]</span></code>) – Stimulation electrodes, as a list of electrode numbers. 
 If empty, connecting and powering up will not be 
 attempted.</p></li>
@@ -252,8 +261,33 @@ experiment <code class="docutils literal notranslate"><span class="pre">json</sp
 </dd></dl>
 
 <dl class="py function">
+<dt class="sig sig-object py" id="hal.make_trial_folders_parallel">
+<span class="sig-prename descclassname"><span class="pre">hal.</span></span><span class="sig-name descname"><span class="pre">make_trial_folders_parallel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">experiment_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chip_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#hal.make_trial_folders_parallel" title="Link to this definition"></a></dt>
+<dd><blockquote>
+<div><p>Creates folders for saving data in the HAL specified folder format for 
+parallel experiments (i.e. when recording multiple wells at once; 
+see <a class="reference internal" href="getting_started.html#folder-structure"><span class="std std-ref">Folder Structure</span></a>).</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>parent_path</strong> (<code class="docutils literal notranslate"><span class="pre">string</span></code>) – full path of the parent folder</p></li>
+<li><p><strong>experiment_name</strong> (<code class="docutils literal notranslate"><span class="pre">string</span></code>) – name of experiment</p></li>
+<li><p><strong>chip_id</strong> (<code class="docutils literal notranslate"><span class="pre">string</span></code> | <code class="docutils literal notranslate"><span class="pre">int</span></code>) – chip id</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Returns the full path of the <em>trial folder</em></p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
 <dt class="sig sig-object py" id="hal.make_trial_folders_raw">
-<span class="sig-prename descclassname"><span class="pre">hal.</span></span><span class="sig-name descname"><span class="pre">make_trial_folders_raw</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">experiment_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chip_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wells</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hal.make_trial_folders_raw" title="Link to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">hal.</span></span><span class="sig-name descname"><span class="pre">make_trial_folders_raw</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">experiment_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chip_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wells</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#hal.make_trial_folders_raw" title="Link to this definition"></a></dt>
 <dd><p>Creates folders for saving data without using a dict, in the HAL 
 specified folder format (see <a class="reference internal" href="getting_started.html#folder-structure"><span class="std std-ref">Folder Structure</span></a>).</p>
 <dl class="field-list simple">
@@ -261,7 +295,7 @@ specified folder format (see <a class="reference internal" href="getting_started
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>parent_path</strong> (<code class="docutils literal notranslate"><span class="pre">string</span></code>) – full path of the parent folder</p></li>
 <li><p><strong>experiment_name</strong> (<code class="docutils literal notranslate"><span class="pre">string</span></code>) – name of experiment</p></li>
-<li><p><strong>chip_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – chip id</p></li>
+<li><p><strong>chip_id</strong> (<code class="docutils literal notranslate"><span class="pre">string</span></code> | <code class="docutils literal notranslate"><span class="pre">int</span></code>) – chip id</p></li>
 <li><p><strong>wells</strong> (<code class="docutils literal notranslate"><span class="pre">List[int]</span></code>) – list of wells that the experiment will run on</p></li>
 </ul>
 </dd>
@@ -310,6 +344,21 @@ under key “description”</p>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>s</strong> (<code class="docutils literal notranslate"><span class="pre">mx.Saving</span></code>) – Experiment to save the stimulation electrodes for</p></li>
 <li><p><strong>description</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – description of the experiment</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hal.write_exp_notes">
+<span class="sig-prename descclassname"><span class="pre">hal.</span></span><span class="sig-name descname"><span class="pre">write_exp_notes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Saving</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#hal.write_exp_notes" title="Link to this definition"></a></dt>
+<dd><p>Writes experiment notes as a property to the experiment h5 file
+under key “notes”</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>s</strong> (<code class="docutils literal notranslate"><span class="pre">mx.Saving</span></code>) – Experiment to save the stimulation electrodes for</p></li>
+<li><p><strong>notes</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – notes of the experiment</p></li>
 </ul>
 </dd>
 </dl>
