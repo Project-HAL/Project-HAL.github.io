@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['totalspikecount_74',['totalSpikeCount',['../classChannelWindow.html#a362798037f40a99650da61c877971517',1,'ChannelWindow']]]
+  ['totalspikecount_72',['totalSpikeCount',['../classChannelWindow.html#a362798037f40a99650da61c877971517',1,'ChannelWindow']]]
 ];

@@ -82,9 +82,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a856aab23dc9823f9cd1e725fc1f4b142"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChannelWindow.html#a856aab23dc9823f9cd1e725fc1f4b142">init</a> ()</td></tr>
 <tr class="memdesc:a856aab23dc9823f9cd1e725fc1f4b142"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the window.  <a href="classChannelWindow.html#a856aab23dc9823f9cd1e725fc1f4b142">More...</a><br /></td></tr>
 <tr class="separator:a856aab23dc9823f9cd1e725fc1f4b142"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6b05a45d1f682a31a0fa6b43f4b19f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChannelWindow.html#af6b05a45d1f682a31a0fa6b43f4b19f2">add</a> (maxlab::FilteredFrameData frame)</td></tr>
-<tr class="memdesc:af6b05a45d1f682a31a0fa6b43f4b19f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a data frame to the window.  <a href="classChannelWindow.html#af6b05a45d1f682a31a0fa6b43f4b19f2">More...</a><br /></td></tr>
-<tr class="separator:af6b05a45d1f682a31a0fa6b43f4b19f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac93750ea8c9a5cfc1412e430c3bd1e3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChannelWindow.html#ac93750ea8c9a5cfc1412e430c3bd1e3f">shift</a> (maxlab::FilteredFrameData frame)</td></tr>
 <tr class="memdesc:ac93750ea8c9a5cfc1412e430c3bd1e3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shifts window, appending new data frame to the end.  <a href="classChannelWindow.html#ac93750ea8c9a5cfc1412e430c3bd1e3f">More...</a><br /></td></tr>
 <tr class="separator:ac93750ea8c9a5cfc1412e430c3bd1e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -103,14 +100,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac118c7e60de090394f40e4f0fcfd6adc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classElectrodeMap.html">ElectrodeMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChannelWindow.html#ac118c7e60de090394f40e4f0fcfd6adc">electrodeMap</a> ()</td></tr>
 <tr class="memdesc:ac118c7e60de090394f40e4f0fcfd6adc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <code><a class="el" href="classElectrodeMap.html">ElectrodeMap</a></code>  <a href="classChannelWindow.html#ac118c7e60de090394f40e4f0fcfd6adc">More...</a><br /></td></tr>
 <tr class="separator:ac118c7e60de090394f40e4f0fcfd6adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b7604f6aa0b8fa271e237d39e9df3e0"><td class="memItemLeft" align="right" valign="top">vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChannelWindow.html#a3b7604f6aa0b8fa271e237d39e9df3e0">pastWindows</a> ()</td></tr>
-<tr class="memdesc:a3b7604f6aa0b8fa271e237d39e9df3e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a vectors containing the firing rates of all the past windows.  <a href="classChannelWindow.html#a3b7604f6aa0b8fa271e237d39e9df3e0">More...</a><br /></td></tr>
-<tr class="separator:a3b7604f6aa0b8fa271e237d39e9df3e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88ef58fe01f8b3a310e2f02d0ac0abc0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChannelWindow.html#a88ef58fe01f8b3a310e2f02d0ac0abc0">avgPastWindows</a> ()</td></tr>
-<tr class="memdesc:a88ef58fe01f8b3a310e2f02d0ac0abc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the average firing rate of all the past windows.  <a href="classChannelWindow.html#a88ef58fe01f8b3a310e2f02d0ac0abc0">More...</a><br /></td></tr>
+<tr class="memdesc:a88ef58fe01f8b3a310e2f02d0ac0abc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a vectors containing the firing rates of all the past windows.  <a href="classChannelWindow.html#a88ef58fe01f8b3a310e2f02d0ac0abc0">More...</a><br /></td></tr>
 <tr class="separator:a88ef58fe01f8b3a310e2f02d0ac0abc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90e47573e5079683dabe03e1aa66a36a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChannelWindow.html#a90e47573e5079683dabe03e1aa66a36a">getAvgX</a> ()</td></tr>
-<tr class="memdesc:a90e47573e5079683dabe03e1aa66a36a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the average x coordinate of all the spike events in the window.  <a href="classChannelWindow.html#a90e47573e5079683dabe03e1aa66a36a">More...</a><br /></td></tr>
+<tr class="memdesc:a90e47573e5079683dabe03e1aa66a36a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the average x coordinate of all the spike events in the window, counting each channel only once.  <a href="classChannelWindow.html#a90e47573e5079683dabe03e1aa66a36a">More...</a><br /></td></tr>
 <tr class="separator:a90e47573e5079683dabe03e1aa66a36a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6aecf5c946b9006ccd7590512244475"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classChannelWindow.html#ae6aecf5c946b9006ccd7590512244475">firingRateSD</a> ()</td></tr>
 <tr class="memdesc:ae6aecf5c946b9006ccd7590512244475"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the standard deviation of the firing rates of all past windows.  <a href="classChannelWindow.html#ae6aecf5c946b9006ccd7590512244475">More...</a><br /></td></tr>
@@ -222,34 +216,6 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="af6b05a45d1f682a31a0fa6b43f4b19f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af6b05a45d1f682a31a0fa6b43f4b19f2">&#9670;&nbsp;</a></span>add()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ChannelWindow::add </td>
-          <td>(</td>
-          <td class="paramtype">maxlab::FilteredFrameData&#160;</td>
-          <td class="paramname"><em>frame</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Adds a data frame to the window. </p>
-<p>Adds only the <code>maxlab::spikeEvents</code> that are found in the given config or <code><a class="el" href="classElectrodeMap.html">ElectrodeMap</a></code>, and increments the total spike sum accordingly.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">frame</td><td><code>maxlab::FilteredFrameData</code> struct to add to the window</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>None </dd></dl>
-
-</div>
-</div>
 <a id="a88ef58fe01f8b3a310e2f02d0ac0abc0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a88ef58fe01f8b3a310e2f02d0ac0abc0">&#9670;&nbsp;</a></span>avgPastWindows()</h2>
 
@@ -265,7 +231,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the average firing rate of all the past windows. </p>
+<p>Gets a vectors containing the firing rates of all the past windows. </p>
+<dl class="section return"><dt>Returns</dt><dd><code>vector&lt;float&gt;</code></dd></dl>
+<p>Returns the average firing rate of all the past windows</p>
 <dl class="section return"><dt>Returns</dt><dd><code>float</code> </dd></dl>
 
 </div>
@@ -399,7 +367,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Computes the average x coordinate of all the spike events in the window. </p>
+<p>Computes the average x coordinate of all the spike events in the window, counting each channel only once. </p>
 <dl class="section return"><dt>Returns</dt><dd><code>float</code> </dd></dl>
 
 </div>
@@ -464,26 +432,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3b7604f6aa0b8fa271e237d39e9df3e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b7604f6aa0b8fa271e237d39e9df3e0">&#9670;&nbsp;</a></span>pastWindows()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt;float&gt; ChannelWindow::pastWindows </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Gets a vectors containing the firing rates of all the past windows. </p>
-<dl class="section return"><dt>Returns</dt><dd><code>vector&lt;float&gt;</code> </dd></dl>
-
-</div>
-</div>
 <a id="a8a1cdbafbc9c7597446f38d20cf26ea8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8a1cdbafbc9c7597446f38d20cf26ea8">&#9670;&nbsp;</a></span>pastWindowsReady()</h2>
 
@@ -541,7 +489,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Shifts window, appending new data frame to the end. </p>
-<p>Shifts the window by removing the first frame, updating the total sum accordingly, and adding the new frame to the end. Similar to add, the sum will only be incremented for each channel in frame that exists in the electrode map. Note that it will only count the <code>maxlab::spikeEvents</code> that are found in the given config</p>
+<p>Shifts the window by removing the first frame, updating the total sum accordingly, and adding the new frame to the end. Similar to add, the sum will only be incremented for each channel in frame that exists in the electrode map. Note that it will only count the <code>maxlab::spikeEvents</code> that are found in the given config.</p>
+<p>If the window has no been initialized, this function will simply add the frame to the end of the window.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">frame</td><td><code>maxlab::FilteredFrameData</code> struct to add to the window </td></tr>

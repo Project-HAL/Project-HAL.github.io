@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="111" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" bodystart="111" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="104" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" bodystart="104" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -197,35 +197,6 @@
         </inbodydescription>
         <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="73" column="14"/>
       </memberdef>
-      <memberdef kind="function" id="classController_1ab9dc08ae3665712026e4f0aa63f86a19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void Controller::add</definition>
-        <argsstring>(maxlab::FilteredFrameData frame)</argsstring>
-        <name>add</name>
-        <param>
-          <type>maxlab::FilteredFrameData</type>
-          <declname>frame</declname>
-        </param>
-        <briefdescription>
-<para>Adds a data frame to all button windows. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>Note that this function will extend the window, not shift it</para>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>frame</parametername>
-</parameternamelist>
-<parameterdescription>
-<para><computeroutput>maxlab::FilteredFrameData</computeroutput> frame to add to each window </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="83" column="14"/>
-      </memberdef>
       <memberdef kind="function" id="classController_1a8716527dccd14db21d94e6f8a449627c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void Controller::shift</definition>
@@ -239,6 +210,7 @@
 <para>Shifts all button windows<ndash/>the first frame of each window will be removed, and a new one will be appended to the end. </para>
         </briefdescription>
         <detaileddescription>
+<para>For any window that has not been fully initialized, the first frame will not be removed.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>frame</parametername>
@@ -252,7 +224,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="92" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="85" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classController_1a14b2114e3be63d83feb319ce759293fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -282,7 +254,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="100" column="13"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="93" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classController_1a34a2a7c37f78cc365a3cf84722b9a224" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -312,7 +284,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="108" column="13"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="101" column="13"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -327,7 +299,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="113" column="13"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="106" column="13"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -346,9 +318,8 @@
         </childnode>
       </node>
     </inheritancegraph>
-    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="22" column="17" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" bodystart="22" bodyend="114"/>
+    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" line="22" column="17" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/controller.h" bodystart="22" bodyend="107"/>
     <listofallmembers>
-      <member refid="classController_1ab9dc08ae3665712026e4f0aa63f86a19" prot="public" virt="non-virtual"><scope>Controller</scope><name>add</name></member>
       <member refid="classController_1adf7f58c81479a59a7b24d5053560d7d9" prot="public" virt="non-virtual"><scope>Controller</scope><name>addButton</name></member>
       <member refid="classController_1a05438a228ffc4f1437693211c4ea00c6" prot="public" virt="non-virtual"><scope>Controller</scope><name>buttonExists</name></member>
       <member refid="classController_1ad0603549f0be34ad688c86a33cc6f040" prot="private" virt="non-virtual"><scope>Controller</scope><name>buttons</name></member>

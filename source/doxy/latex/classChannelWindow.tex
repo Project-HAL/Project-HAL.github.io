@@ -13,8 +13,6 @@
 \begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classChannelWindow_a856aab23dc9823f9cd1e725fc1f4b142}{init}} ()
 \begin{DoxyCompactList}\small\item\em Initialize the window. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classChannelWindow_af6b05a45d1f682a31a0fa6b43f4b19f2}{add}} (maxlab\+::\+Filtered\+Frame\+Data frame)
-\begin{DoxyCompactList}\small\item\em Adds a data frame to the window. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classChannelWindow_ac93750ea8c9a5cfc1412e430c3bd1e3f}{shift}} (maxlab\+::\+Filtered\+Frame\+Data frame)
 \begin{DoxyCompactList}\small\item\em Shifts window, appending new data frame to the end. \end{DoxyCompactList}\item 
 maxlab\+::\+Filtered\+Frame\+Data \mbox{\hyperlink{classChannelWindow_a8b1c18c40fa9e4f891eaf7221dd598b8}{get}} (int idx)
@@ -27,12 +25,10 @@ int \mbox{\hyperlink{classChannelWindow_ab76eef4dd3c205fce788cd44d9f7b550}{num\+
 \begin{DoxyCompactList}\small\item\em Returns the number of channels that the window tracks. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classElectrodeMap}{Electrode\+Map}} \mbox{\hyperlink{classChannelWindow_ac118c7e60de090394f40e4f0fcfd6adc}{electrode\+Map}} ()
 \begin{DoxyCompactList}\small\item\em Returns the {\ttfamily \mbox{\hyperlink{classElectrodeMap}{Electrode\+Map}}} \end{DoxyCompactList}\item 
-vector$<$ float $>$ \mbox{\hyperlink{classChannelWindow_a3b7604f6aa0b8fa271e237d39e9df3e0}{past\+Windows}} ()
-\begin{DoxyCompactList}\small\item\em Gets a vectors containing the firing rates of all the past windows. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{classChannelWindow_a88ef58fe01f8b3a310e2f02d0ac0abc0}{avg\+Past\+Windows}} ()
-\begin{DoxyCompactList}\small\item\em Returns the average firing rate of all the past windows. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gets a vectors containing the firing rates of all the past windows. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{classChannelWindow_a90e47573e5079683dabe03e1aa66a36a}{get\+AvgX}} ()
-\begin{DoxyCompactList}\small\item\em Computes the average x coordinate of all the spike events in the window. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Computes the average x coordinate of all the spike events in the window, counting each channel only once. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{classChannelWindow_ae6aecf5c946b9006ccd7590512244475}{firing\+Rate\+SD}} ()
 \begin{DoxyCompactList}\small\item\em Computes the standard deviation of the firing rates of all past windows. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{classChannelWindow_a11a10504b18341abe0eef53d6b02ea02}{firing\+Rate}} ()
@@ -94,26 +90,6 @@ Creates a new \mbox{\hyperlink{classChannelWindow}{Channel\+Window}} object
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classChannelWindow_af6b05a45d1f682a31a0fa6b43f4b19f2}\label{classChannelWindow_af6b05a45d1f682a31a0fa6b43f4b19f2}} 
-\index{ChannelWindow@{ChannelWindow}!add@{add}}
-\index{add@{add}!ChannelWindow@{ChannelWindow}}
-\doxysubsubsection{\texorpdfstring{add()}{add()}}
-{\footnotesize\ttfamily void Channel\+Window\+::add (\begin{DoxyParamCaption}\item[{maxlab\+::\+Filtered\+Frame\+Data}]{frame }\end{DoxyParamCaption})}
-
-
-
-Adds a data frame to the window. 
-
-Adds only the {\ttfamily maxlab\+::spike\+Events} that are found in the given config or {\ttfamily \mbox{\hyperlink{classElectrodeMap}{Electrode\+Map}}}, and increments the total spike sum accordingly.
-
-
-\begin{DoxyParams}{Parameters}
-{\em frame} & {\ttfamily maxlab\+::\+Filtered\+Frame\+Data} struct to add to the window\\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-None 
-\end{DoxyReturn}
 \mbox{\Hypertarget{classChannelWindow_a88ef58fe01f8b3a310e2f02d0ac0abc0}\label{classChannelWindow_a88ef58fe01f8b3a310e2f02d0ac0abc0}} 
 \index{ChannelWindow@{ChannelWindow}!avgPastWindows@{avgPastWindows}}
 \index{avgPastWindows@{avgPastWindows}!ChannelWindow@{ChannelWindow}}
@@ -122,7 +98,12 @@ None
 
 
 
-Returns the average firing rate of all the past windows. 
+Gets a vectors containing the firing rates of all the past windows. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily vector$<$float$>$}
+\end{DoxyReturn}
+Returns the average firing rate of all the past windows
 
 \begin{DoxyReturn}{Returns}
 {\ttfamily float} 
@@ -209,7 +190,7 @@ Gets a {\ttfamily maxlab\+::\+Filtered\+Frame\+Data} struct at the specified ind
 
 
 
-Computes the average x coordinate of all the spike events in the window. 
+Computes the average x coordinate of all the spike events in the window, counting each channel only once. 
 
 \begin{DoxyReturn}{Returns}
 {\ttfamily float} 
@@ -250,19 +231,6 @@ Returns the number of channels that the window tracks.
 \begin{DoxyReturn}{Returns}
 {\ttfamily int} 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classChannelWindow_a3b7604f6aa0b8fa271e237d39e9df3e0}\label{classChannelWindow_a3b7604f6aa0b8fa271e237d39e9df3e0}} 
-\index{ChannelWindow@{ChannelWindow}!pastWindows@{pastWindows}}
-\index{pastWindows@{pastWindows}!ChannelWindow@{ChannelWindow}}
-\doxysubsubsection{\texorpdfstring{pastWindows()}{pastWindows()}}
-{\footnotesize\ttfamily vector$<$float$>$ Channel\+Window\+::past\+Windows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Gets a vectors containing the firing rates of all the past windows. 
-
-\begin{DoxyReturn}{Returns}
-{\ttfamily vector$<$float$>$} 
-\end{DoxyReturn}
 \mbox{\Hypertarget{classChannelWindow_a8a1cdbafbc9c7597446f38d20cf26ea8}\label{classChannelWindow_a8a1cdbafbc9c7597446f38d20cf26ea8}} 
 \index{ChannelWindow@{ChannelWindow}!pastWindowsReady@{pastWindowsReady}}
 \index{pastWindowsReady@{pastWindowsReady}!ChannelWindow@{ChannelWindow}}
@@ -298,7 +266,9 @@ Prints the \mbox{\hyperlink{classChannelWindow}{Channel\+Window}}.
 
 Shifts window, appending new data frame to the end. 
 
-Shifts the window by removing the first frame, updating the total sum accordingly, and adding the new frame to the end. Similar to add, the sum will only be incremented for each channel in frame that exists in the electrode map. Note that it will only count the {\ttfamily maxlab\+::spike\+Events} that are found in the given config
+Shifts the window by removing the first frame, updating the total sum accordingly, and adding the new frame to the end. Similar to add, the sum will only be incremented for each channel in frame that exists in the electrode map. Note that it will only count the {\ttfamily maxlab\+::spike\+Events} that are found in the given config.
+
+If the window has no been initialized, this function will simply add the frame to the end of the window.
 
 
 \begin{DoxyParams}{Parameters}

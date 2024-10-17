@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['_7econtroller_155',['~Controller',['../classController.html#a0ab87934c4f7a266cfdb86e0f36bc1b5',1,'Controller']]],
-  ['_7enes_156',['~NES',['../classNES.html#a10056f30dbcb4a0ac24124faa81c9d03',1,'NES']]],
-  ['_7ewavedetector_157',['~WaveDetector',['../classWaveDetector.html#af493cc823e9388b83a3fc6bf8c48b159',1,'WaveDetector']]]
+  ['_7econtroller_153',['~Controller',['../classController.html#a0ab87934c4f7a266cfdb86e0f36bc1b5',1,'Controller']]],
+  ['_7enes_154',['~NES',['../classNES.html#a10056f30dbcb4a0ac24124faa81c9d03',1,'NES']]],
+  ['_7ewavedetector_155',['~WaveDetector',['../classWaveDetector.html#af493cc823e9388b83a3fc6bf8c48b159',1,'WaveDetector']]]
 ];

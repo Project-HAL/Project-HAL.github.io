@@ -446,7 +446,6 @@
     </collaborationgraph>
     <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/nes.h" line="20" column="28" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/nes.h" bodystart="20" bodyend="99"/>
     <listofallmembers>
-      <member refid="classController_1ab9dc08ae3665712026e4f0aa63f86a19" prot="public" virt="non-virtual"><scope>NES</scope><name>add</name></member>
       <member refid="classController_1adf7f58c81479a59a7b24d5053560d7d9" prot="public" virt="non-virtual"><scope>NES</scope><name>addButton</name></member>
       <member refid="classNES_1a7582c7e829926bcb71d5e45c2c9d82e5" prot="private" virt="non-virtual"><scope>NES</scope><name>aReleased</name></member>
       <member refid="classNES_1a7f0931161357b83b3bd0633937a6f6de" prot="private" virt="non-virtual"><scope>NES</scope><name>bReleased</name></member>

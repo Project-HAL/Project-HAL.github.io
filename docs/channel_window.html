@@ -152,25 +152,11 @@ same time.</p>
 </dd></dl>
 
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N13ChannelWindow3addEN6maxlab17FilteredFrameDataE">
-<span id="_CPPv3N13ChannelWindow3addEN6maxlab17FilteredFrameDataE"></span><span id="_CPPv2N13ChannelWindow3addEN6maxlab17FilteredFrameDataE"></span><span id="ChannelWindow::add__maxlab::FilteredFrameData"></span><span class="target" id="classChannelWindow_1af6b05a45d1f682a31a0fa6b43f4b19f2"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">add</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">maxlab</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">FilteredFrameData</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13ChannelWindow3addEN6maxlab17FilteredFrameDataE" title="Link to this definition"></a><br /></dt>
-<dd><p>Adds a data frame to the window. </p>
-<p>Adds only the <code class="docutils literal notranslate"><span class="pre">maxlab::spikeEvents</span></code> that are found in the given config or <code class="docutils literal notranslate"><a class="reference internal" href="electrode_map.html#classElectrodeMap"><span class="std std-ref"><span class="pre">ElectrodeMap</span></span></a></code>, and increments the total spike sum accordingly.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>frame</strong> – <code class="docutils literal notranslate"><span class="pre">maxlab::FilteredFrameData</span></code> struct to add to the window</p>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>None </p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N13ChannelWindow5shiftEN6maxlab17FilteredFrameDataE">
 <span id="_CPPv3N13ChannelWindow5shiftEN6maxlab17FilteredFrameDataE"></span><span id="_CPPv2N13ChannelWindow5shiftEN6maxlab17FilteredFrameDataE"></span><span id="ChannelWindow::shift__maxlab::FilteredFrameData"></span><span class="target" id="classChannelWindow_1ac93750ea8c9a5cfc1412e430c3bd1e3f"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">shift</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">maxlab</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">FilteredFrameData</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13ChannelWindow5shiftEN6maxlab17FilteredFrameDataE" title="Link to this definition"></a><br /></dt>
 <dd><p>Shifts window, appending new data frame to the end. </p>
-<p>Shifts the window by removing the first frame, updating the total sum accordingly, and adding the new frame to the end. Similar to add, the sum will only be incremented for each channel in frame that exists in the electrode map. Note that it will only count the <code class="docutils literal notranslate"><span class="pre">maxlab::spikeEvents</span></code> that are found in the given config</p>
+<p>Shifts the window by removing the first frame, updating the total sum accordingly, and adding the new frame to the end. Similar to add, the sum will only be incremented for each channel in frame that exists in the electrode map. Note that it will only count the <code class="docutils literal notranslate"><span class="pre">maxlab::spikeEvents</span></code> that are found in the given config.</p>
+<p>If the window has no been initialized, this function will simply add the frame to the end of the window.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>frame</strong> – <code class="docutils literal notranslate"><span class="pre">maxlab::FilteredFrameData</span></code> struct to add to the window </p>
@@ -237,23 +223,17 @@ same time.</p>
 </dd></dl>
 
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N13ChannelWindow11pastWindowsEv">
-<span id="_CPPv3N13ChannelWindow11pastWindowsEv"></span><span id="_CPPv2N13ChannelWindow11pastWindowsEv"></span><span id="ChannelWindow::pastWindows"></span><span class="target" id="classChannelWindow_1a3b7604f6aa0b8fa271e237d39e9df3e0"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">float</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pastWindows</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13ChannelWindow11pastWindowsEv" title="Link to this definition"></a><br /></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N13ChannelWindow14avgPastWindowsEv">
+<span id="_CPPv3N13ChannelWindow14avgPastWindowsEv"></span><span id="_CPPv2N13ChannelWindow14avgPastWindowsEv"></span><span id="ChannelWindow::avgPastWindows"></span><span class="target" id="classChannelWindow_1a88ef58fe01f8b3a310e2f02d0ac0abc0"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">avgPastWindows</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13ChannelWindow14avgPastWindowsEv" title="Link to this definition"></a><br /></dt>
 <dd><p>Gets a vectors containing the firing rates of all the past windows. </p>
+<p>
+Returns the average firing rate of all the past windows</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">vector&lt;float&gt;</span></code></p>
 </dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N13ChannelWindow14avgPastWindowsEv">
-<span id="_CPPv3N13ChannelWindow14avgPastWindowsEv"></span><span id="_CPPv2N13ChannelWindow14avgPastWindowsEv"></span><span id="ChannelWindow::avgPastWindows"></span><span class="target" id="classChannelWindow_1a88ef58fe01f8b3a310e2f02d0ac0abc0"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">avgPastWindows</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13ChannelWindow14avgPastWindowsEv" title="Link to this definition"></a><br /></dt>
-<dd><p>Returns the average firing rate of all the past windows. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">float</span></code></p>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">float</span></code></p>
 </dd>
 </dl>
 </dd></dl>
@@ -261,7 +241,7 @@ same time.</p>
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N13ChannelWindow7getAvgXEv">
 <span id="_CPPv3N13ChannelWindow7getAvgXEv"></span><span id="_CPPv2N13ChannelWindow7getAvgXEv"></span><span id="ChannelWindow::getAvgX"></span><span class="target" id="classChannelWindow_1a90e47573e5079683dabe03e1aa66a36a"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getAvgX</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13ChannelWindow7getAvgXEv" title="Link to this definition"></a><br /></dt>
-<dd><p>Computes the average x coordinate of all the spike events in the window. </p>
+<dd><p>Computes the average x coordinate of all the spike events in the window, counting each channel only once. </p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">float</span></code></p>

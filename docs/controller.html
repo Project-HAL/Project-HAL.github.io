@@ -104,8 +104,7 @@
 <p>The <a class="reference external" href="https://project-hal.github.io/controller.html"><code class="docutils literal notranslate"><span class="pre">Controller</span></code></a> class stores <a class="reference external" href="https://project-hal.github.io/channel_window.html"><code class="docutils literal notranslate"><span class="pre">ChannelWindow</span></code></a> objects as “buttons”, allowing
 for the user to automatically organize, initialize, update, and access many windows at once.
 For actual button-like detection from the window activity, see the subclass <a class="reference external" href="https://project-hal.github.io/nes.html#"><code class="docutils literal notranslate"><span class="pre">NES</span></code></a>.</p>
-<a class="reference internal image-reference" href="_images/controller-diagram.png"><img alt="_images/controller-diagram.png" src="_images/controller-diagram.png" style="width: 600px;" />
-</a>
+<a class="reference internal image-reference" href="_images/controller-diagram.png"><img alt="_images/controller-diagram.png" src="_images/controller-diagram.png" style="width: 600px;" /></a>
 </section>
 <section id="members">
 <h2>Members<a class="headerlink" href="#members" title="Link to this heading"></a></h2>
@@ -184,21 +183,10 @@ For actual button-like detection from the window activity, see the subclass <a c
 </dd></dl>
 
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N10Controller3addEN6maxlab17FilteredFrameDataE">
-<span id="_CPPv3N10Controller3addEN6maxlab17FilteredFrameDataE"></span><span id="_CPPv2N10Controller3addEN6maxlab17FilteredFrameDataE"></span><span id="Controller::add__maxlab::FilteredFrameData"></span><span class="target" id="classController_1ab9dc08ae3665712026e4f0aa63f86a19"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">add</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">maxlab</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">FilteredFrameData</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Controller3addEN6maxlab17FilteredFrameDataE" title="Link to this definition"></a><br /></dt>
-<dd><p>Adds a data frame to all button windows. </p>
-<p>Note that this function will extend the window, not shift it</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>frame</strong> – <code class="docutils literal notranslate"><span class="pre">maxlab::FilteredFrameData</span></code> frame to add to each window </p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N10Controller5shiftEN6maxlab17FilteredFrameDataE">
 <span id="_CPPv3N10Controller5shiftEN6maxlab17FilteredFrameDataE"></span><span id="_CPPv2N10Controller5shiftEN6maxlab17FilteredFrameDataE"></span><span id="Controller::shift__maxlab::FilteredFrameData"></span><span class="target" id="classController_1a8716527dccd14db21d94e6f8a449627c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">shift</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">maxlab</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">FilteredFrameData</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10Controller5shiftEN6maxlab17FilteredFrameDataE" title="Link to this definition"></a><br /></dt>
 <dd><p>Shifts all button windows&amp;#8212;the first frame of each window will be removed, and a new one will be appended to the end. </p>
+<p>For any window that has not been fully initialized, the first frame will not be removed.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>frame</strong> – <code class="docutils literal notranslate"><span class="pre">maxlab::FilteredFrameData</span></code> frame to add to each window </p>

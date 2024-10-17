@@ -19,8 +19,6 @@ void \mbox{\hyperlink{classController_a9904f7fc1d538558a197157c24d69478}{init}} 
 \begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classChannelWindow}{Channel\+Window}} of the specified button. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classController_a05438a228ffc4f1437693211c4ea00c6}{button\+Exists}} (string id)
 \begin{DoxyCompactList}\small\item\em checks if a button exists in the controller \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classController_ab9dc08ae3665712026e4f0aa63f86a19}{add}} (maxlab\+::\+Filtered\+Frame\+Data frame)
-\begin{DoxyCompactList}\small\item\em Adds a data frame to all button windows. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classController_a8716527dccd14db21d94e6f8a449627c}{shift}} (maxlab\+::\+Filtered\+Frame\+Data frame)
 \begin{DoxyCompactList}\small\item\em Shifts all button windows--the first frame of each window will be removed, and a new one will be appended to the end. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classController_a14b2114e3be63d83feb319ce759293fa}{num\+Channels}} (string id)
@@ -53,23 +51,6 @@ Destroy the \mbox{\hyperlink{classController}{Controller}} object.
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classController_ab9dc08ae3665712026e4f0aa63f86a19}\label{classController_ab9dc08ae3665712026e4f0aa63f86a19}} 
-\index{Controller@{Controller}!add@{add}}
-\index{add@{add}!Controller@{Controller}}
-\doxysubsubsection{\texorpdfstring{add()}{add()}}
-{\footnotesize\ttfamily void Controller\+::add (\begin{DoxyParamCaption}\item[{maxlab\+::\+Filtered\+Frame\+Data}]{frame }\end{DoxyParamCaption})}
-
-
-
-Adds a data frame to all button windows. 
-
-Note that this function will extend the window, not shift it
-
-
-\begin{DoxyParams}{Parameters}
-{\em frame} & {\ttfamily maxlab\+::\+Filtered\+Frame\+Data} frame to add to each window \\
-\hline
-\end{DoxyParams}
 \mbox{\Hypertarget{classController_adf7f58c81479a59a7b24d5053560d7d9}\label{classController_adf7f58c81479a59a7b24d5053560d7d9}} 
 \index{Controller@{Controller}!addButton@{addButton}}
 \index{addButton@{addButton}!Controller@{Controller}}
@@ -189,6 +170,8 @@ Gets the number of spikes in the window of a button.
 
 
 Shifts all button windows--the first frame of each window will be removed, and a new one will be appended to the end. 
+
+For any window that has not been fully initialized, the first frame will not be removed.
 
 
 \begin{DoxyParams}{Parameters}

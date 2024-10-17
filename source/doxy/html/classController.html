@@ -95,9 +95,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a05438a228ffc4f1437693211c4ea00c6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classController.html#a05438a228ffc4f1437693211c4ea00c6">buttonExists</a> (string id)</td></tr>
 <tr class="memdesc:a05438a228ffc4f1437693211c4ea00c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if a button exists in the controller  <a href="classController.html#a05438a228ffc4f1437693211c4ea00c6">More...</a><br /></td></tr>
 <tr class="separator:a05438a228ffc4f1437693211c4ea00c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9dc08ae3665712026e4f0aa63f86a19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classController.html#ab9dc08ae3665712026e4f0aa63f86a19">add</a> (maxlab::FilteredFrameData frame)</td></tr>
-<tr class="memdesc:ab9dc08ae3665712026e4f0aa63f86a19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a data frame to all button windows.  <a href="classController.html#ab9dc08ae3665712026e4f0aa63f86a19">More...</a><br /></td></tr>
-<tr class="separator:ab9dc08ae3665712026e4f0aa63f86a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8716527dccd14db21d94e6f8a449627c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classController.html#a8716527dccd14db21d94e6f8a449627c">shift</a> (maxlab::FilteredFrameData frame)</td></tr>
 <tr class="memdesc:a8716527dccd14db21d94e6f8a449627c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shifts all button windows&ndash;the first frame of each window will be removed, and a new one will be appended to the end.  <a href="classController.html#a8716527dccd14db21d94e6f8a449627c">More...</a><br /></td></tr>
 <tr class="separator:a8716527dccd14db21d94e6f8a449627c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,33 +145,6 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab9dc08ae3665712026e4f0aa63f86a19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9dc08ae3665712026e4f0aa63f86a19">&#9670;&nbsp;</a></span>add()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Controller::add </td>
-          <td>(</td>
-          <td class="paramtype">maxlab::FilteredFrameData&#160;</td>
-          <td class="paramname"><em>frame</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Adds a data frame to all button windows. </p>
-<p>Note that this function will extend the window, not shift it</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">frame</td><td><code>maxlab::FilteredFrameData</code> frame to add to each window </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="adf7f58c81479a59a7b24d5053560d7d9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adf7f58c81479a59a7b24d5053560d7d9">&#9670;&nbsp;</a></span>addButton()</h2>
 
@@ -378,6 +348,7 @@ false </dd></dl>
 </div><div class="memdoc">
 
 <p>Shifts all button windows&ndash;the first frame of each window will be removed, and a new one will be appended to the end. </p>
+<p>For any window that has not been fully initialized, the first frame will not be removed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">frame</td><td><code>maxlab::FilteredFrameData</code> frame to add to each window </td></tr>
