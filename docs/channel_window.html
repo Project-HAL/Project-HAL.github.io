@@ -101,8 +101,33 @@
 <h1><code class="docutils literal notranslate"><span class="pre">ChannelWindow</span></code><a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
-<p><a class="reference external" href="https://project-hal.github.io/channel_window.html"><code class="docutils literal notranslate"><span class="pre">ChannelWindow</span></code></a> stores past frames as a sequence so they can be processed at the
-same time.</p>
+<p><a class="reference external" href="https://project-hal.github.io/channel_window.html"><code class="docutils literal notranslate"><span class="pre">ChannelWindow</span></code></a> stores frames as a sequence so they can be processed at the
+same time. A <a class="reference external" href="https://project-hal.github.io/channel_window.html"><code class="docutils literal notranslate"><span class="pre">ChannelWindow</span></code></a> of length <code class="docutils literal notranslate"><span class="pre">N</span></code> is initialized with the first
+<code class="docutils literal notranslate"><span class="pre">N</span></code> frames of the experiment.</p>
+<img alt="_images/window.png" class="align-center" src="_images/window.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Chip activity data can be extracted from the window, such as the firing rate
+and the average x-position of the spikes. For each new frame added to the
+window, the oldest frame is removed.</p>
+<img alt="_images/window-change.png" class="align-center" src="_images/window-change.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>If specified, the <a class="reference external" href="https://project-hal.github.io/channel_window.html"><code class="docutils literal notranslate"><span class="pre">ChannelWindow</span></code></a> will save the data for <code class="docutils literal notranslate"><span class="pre">P</span></code> number of <em>past
+windows</em>. Data is saved for each <em>unique</em> window, which means that none of the
+frames in the current window are in the most recent past window.</p>
+<p>For example,
+if the window is 200 frames long, then frames 0 through 199 are saved as the
+first past window. The next window that will be saved will contain frames 200
+through 299, since that is the first set of frames where there is no overlap
+with the most recently saved window.</p>
+<p>Similar to how <a class="reference external" href="https://project-hal.github.io/channel_window.html"><code class="docutils literal notranslate"><span class="pre">ChannelWindow</span></code></a> deals with frames, when there are <code class="docutils literal notranslate"><span class="pre">P</span></code> past
+windows and a new window is saved, the oldest window will be removed.</p>
+<p>Currently, the only window data that is saved is the firing rate, but can
+easily be extended.</p>
+<img alt="_images/past-windows.png" src="_images/past-windows.png" />
 </section>
 <section id="members">
 <h2>Members<a class="headerlink" href="#members" title="Link to this heading"></a></h2>
