@@ -6,16 +6,17 @@
 Overview 
 ^^^^^^^^
 
-|ChannelWindow|_ stores frames as a sequence so they can be processed at the 
-same time. A |ChannelWindow|_ of length ``N`` is initialized with the first 
-``N`` frames of the experiment.
+|ChannelWindow|_ stores a sequence of MaxOne/Two data frames so they can be 
+all be processed together, as opposed to examing individual frames. A 
+|ChannelWindow|_ of length ``N`` is initialized with the first ``N`` frames of 
+the experiment.
 
 .. image:: images/window.png
     :align: center
 
 | 
-Chip activity data can be extracted from the window, such as the firing rate 
-and the average x-position of the spikes. For each new frame added to the 
+Useful chip activity data can be extracted from the window, such as the firing 
+rate and the average x-position of the spikes. For each new frame added to the 
 window, the oldest frame is removed.
 
 .. image:: images/window-change.png
@@ -38,8 +39,29 @@ windows and a new window is saved, the oldest window will be removed.
 Currently, the only window data that is saved is the firing rate, but can 
 easily be extended.
 
+Example:
 
-.. image:: images/past-windows.png
+.. image:: images/past-windows.gif
+
+.. container:: toggle
+
+    .. container:: header
+
+        Step-by-Step Example
+
+    .. image:: images/past1.png
+    |
+
+    .. image:: images/past2.png
+    |
+
+    .. image:: images/past3.png
+    |
+
+    .. image:: images/past4.png
+    |
+
+    .. image:: images/past5.png
 
 
 Members 

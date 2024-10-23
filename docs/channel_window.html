@@ -101,15 +101,16 @@
 <h1><code class="docutils literal notranslate"><span class="pre">ChannelWindow</span></code><a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
-<p><a class="reference external" href="https://project-hal.github.io/channel_window.html"><code class="docutils literal notranslate"><span class="pre">ChannelWindow</span></code></a> stores frames as a sequence so they can be processed at the
-same time. A <a class="reference external" href="https://project-hal.github.io/channel_window.html"><code class="docutils literal notranslate"><span class="pre">ChannelWindow</span></code></a> of length <code class="docutils literal notranslate"><span class="pre">N</span></code> is initialized with the first
-<code class="docutils literal notranslate"><span class="pre">N</span></code> frames of the experiment.</p>
+<p><a class="reference external" href="https://project-hal.github.io/channel_window.html"><code class="docutils literal notranslate"><span class="pre">ChannelWindow</span></code></a> stores a sequence of MaxOne/Two data frames so they can be
+all be processed together, as opposed to examing individual frames. A
+<a class="reference external" href="https://project-hal.github.io/channel_window.html"><code class="docutils literal notranslate"><span class="pre">ChannelWindow</span></code></a> of length <code class="docutils literal notranslate"><span class="pre">N</span></code> is initialized with the first <code class="docutils literal notranslate"><span class="pre">N</span></code> frames of
+the experiment.</p>
 <img alt="_images/window.png" class="align-center" src="_images/window.png" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Chip activity data can be extracted from the window, such as the firing rate
-and the average x-position of the spikes. For each new frame added to the
+<p>Useful chip activity data can be extracted from the window, such as the firing
+rate and the average x-position of the spikes. For each new frame added to the
 window, the oldest frame is removed.</p>
 <img alt="_images/window-change.png" class="align-center" src="_images/window-change.png" />
 <div class="line-block">
@@ -127,7 +128,30 @@ with the most recently saved window.</p>
 windows and a new window is saved, the oldest window will be removed.</p>
 <p>Currently, the only window data that is saved is the firing rate, but can
 easily be extended.</p>
-<img alt="_images/past-windows.png" src="_images/past-windows.png" />
+<p>Example:</p>
+<img alt="_images/past-windows.gif" src="_images/past-windows.gif" />
+<div class="toggle docutils container">
+<div class="header docutils container">
+<p>Step-by-Step Example</p>
+</div>
+<img alt="_images/past1.png" src="_images/past1.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<img alt="_images/past2.png" src="_images/past2.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<img alt="_images/past3.png" src="_images/past3.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<img alt="_images/past4.png" src="_images/past4.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<img alt="_images/past5.png" src="_images/past5.png" />
+</div>
 </section>
 <section id="members">
 <h2>Members<a class="headerlink" href="#members" title="Link to this heading"></a></h2>
