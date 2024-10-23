@@ -118,40 +118,52 @@ window, the oldest frame is removed.</p>
 </div>
 <p>If specified, the <a class="reference external" href="https://project-hal.github.io/channel_window.html"><code class="docutils literal notranslate"><span class="pre">ChannelWindow</span></code></a> will save the data for <code class="docutils literal notranslate"><span class="pre">P</span></code> number of <em>past
 windows</em>. Data is saved for each <em>unique</em> window, which means that none of the
-frames in the current window are in the most recent past window.</p>
+frames in the current window are in the most recently saved window.</p>
 <p>For example,
 if the window is 200 frames long, then frames 0 through 199 are saved as the
 first past window. The next window that will be saved will contain frames 200
 through 299, since that is the first set of frames where there is no overlap
 with the most recently saved window.</p>
-<p>Similar to how <a class="reference external" href="https://project-hal.github.io/channel_window.html"><code class="docutils literal notranslate"><span class="pre">ChannelWindow</span></code></a> deals with frames, when there are <code class="docutils literal notranslate"><span class="pre">P</span></code> past
+<p>Similar to how <a class="reference external" href="https://project-hal.github.io/channel_window.html"><code class="docutils literal notranslate"><span class="pre">ChannelWindow</span></code></a> handles frames, when there are <code class="docutils literal notranslate"><span class="pre">P</span></code> past
 windows and a new window is saved, the oldest window will be removed.</p>
-<p>Currently, the only window data that is saved is the firing rate, but can
+<p>Currently, the only window data that is saved is the firing rate, but this can
 easily be extended.</p>
 <p>Example:</p>
-<img alt="_images/past-windows.gif" src="_images/past-windows.gif" />
 <div class="toggle docutils container">
 <div class="header docutils container">
-<p>Step-by-Step Example</p>
+<p>Step-by-Step</p>
 </div>
+<p>This example assumes that <code class="docutils literal notranslate"><span class="pre">P</span></code> = 2, meaning that up to 2 past windows will
+be saved. The first instance of the window is unique, so its firing rate is
+saved.</p>
 <img alt="_images/past1.png" src="_images/past1.png" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
+<p>The window progresses.</p>
 <img alt="_images/past2.png" src="_images/past2.png" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
+<p>As soon as the window does not overlap with the most recently saved window,
+its firing rate is saved.</p>
 <img alt="_images/past3.png" src="_images/past3.png" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
+<p>The window progresses.</p>
 <img alt="_images/past4.png" src="_images/past4.png" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
+<p>If there are <code class="docutils literal notranslate"><span class="pre">P</span></code> (2 in this case) past windows, then the oldest one is
+removed whenever a new one is saved.</p>
 <img alt="_images/past5.png" src="_images/past5.png" />
 </div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<img alt="_images/past-windows.gif" src="_images/past-windows.gif" />
 </section>
 <section id="members">
 <h2>Members<a class="headerlink" href="#members" title="Link to this heading"></a></h2>
