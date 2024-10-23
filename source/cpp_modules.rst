@@ -9,9 +9,9 @@ The HAL C++ modules come in two varieties:
 
         - |ElectrodeMap|_
         - |ChannelWindow|_
-        - |WaveDetector|_
         - |Controller|_
         - |NES|_
+        - |WaveDetector|_
         - |WorldState|_
     - **General Purpose**: these modules were made to either simplify code or add useful visualizations
 
@@ -26,9 +26,9 @@ Index
 .. toctree::   
     electrode_map
     channel_window
-    wave_detector
     controller
     nes
+    wave_detector
     world_state
     plotter_cpp
     progress_bar

@@ -77,6 +77,11 @@ Example:
 |
 
 .. image:: images/past-windows.gif
+|
+
+|ChannelWindow|_ uses |ElectrodeMap|_ to filter out any unwanted frames; this 
+behaviour is particularly helpful if there are multiple windows in an experiment,
+where each window represents a different part of the chip. 
 
 
 Members 
