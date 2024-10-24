@@ -15,7 +15,7 @@ need to have different window lengths). Many buttons can be added to an |NES|_ o
 however, for now, it will *only* compare buttons with the names ``A`` and ``B``. 
 
 Since it is a child of |Controller|_, |NES|_ can hold more than 2 buttons; however,
-it can only check for presses from ``A`` and ``B``.
+it will only check for presses from ``A`` and ``B``.
 
 
 

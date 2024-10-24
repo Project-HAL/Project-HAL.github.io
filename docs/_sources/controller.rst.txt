@@ -11,7 +11,7 @@ for the user to automatically organize, initialize, update, and access many wind
 Instead of adding a frame to each window, the |Controller|_ will add it to all
 windows. 
 
-For actual button-like detection from the window activity, see the subclass |NES|_.
+For button-like detection from the window activity, see the subclass |NES|_.
 
 
 .. image:: images/controller-diagram.png

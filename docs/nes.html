@@ -23,7 +23,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="WorldState" href="world_state.html" />
+    <link rel="next" title="WaveDetector" href="wave_detector.html" />
     <link rel="prev" title="Controller" href="controller.html" /> 
 </head>
 
@@ -55,13 +55,13 @@
 <li class="toctree-l2 current"><a class="reference internal" href="cpp_modules.html#index">Index</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="electrode_map.html"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="channel_window.html"><code class="docutils literal notranslate"><span class="pre">ChannelWindow</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="wave_detector.html"><code class="docutils literal notranslate"><span class="pre">WaveDetector</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="controller.html"><code class="docutils literal notranslate"><span class="pre">Controller</span></code></a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">NES</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#overview">Overview</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#members">Members</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="wave_detector.html"><code class="docutils literal notranslate"><span class="pre">WaveDetector</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="world_state.html"><code class="docutils literal notranslate"><span class="pre">WorldState</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="plotter_cpp.html"><code class="docutils literal notranslate"><span class="pre">Plotter</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="progress_bar.html"><code class="docutils literal notranslate"><span class="pre">ProgressBar</span></code></a></li>
@@ -108,7 +108,7 @@ be created with one of the constructors, or can be added manually (e.g. if the b
 need to have different window lengths). Many buttons can be added to an <a class="reference external" href="https://project-hal.github.io/nes.html#"><code class="docutils literal notranslate"><span class="pre">NES</span></code></a> object;
 however, for now, it will <em>only</em> compare buttons with the names <code class="docutils literal notranslate"><span class="pre">A</span></code> and <code class="docutils literal notranslate"><span class="pre">B</span></code>.</p>
 <p>Since it is a child of <a class="reference external" href="https://project-hal.github.io/controller.html"><code class="docutils literal notranslate"><span class="pre">Controller</span></code></a>, <a class="reference external" href="https://project-hal.github.io/nes.html#"><code class="docutils literal notranslate"><span class="pre">NES</span></code></a> can hold more than 2 buttons; however,
-it can only check for presses from <code class="docutils literal notranslate"><span class="pre">A</span></code> and <code class="docutils literal notranslate"><span class="pre">B</span></code>.</p>
+it will only check for presses from <code class="docutils literal notranslate"><span class="pre">A</span></code> and <code class="docutils literal notranslate"><span class="pre">B</span></code>.</p>
 <section id="csv-output">
 <h3>CSV output<a class="headerlink" href="#csv-output" title="Link to this heading"></a></h3>
 <p>An <a class="reference external" href="https://project-hal.github.io/nes.html#"><code class="docutils literal notranslate"><span class="pre">NES</span></code></a> object will automatically create and update a csv during the
@@ -213,7 +213,7 @@ column for each button):</p>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="controller.html" class="btn btn-neutral float-left" title="Controller" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="world_state.html" class="btn btn-neutral float-right" title="WorldState" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="wave_detector.html" class="btn btn-neutral float-right" title="WaveDetector" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
