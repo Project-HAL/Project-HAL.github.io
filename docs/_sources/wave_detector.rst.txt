@@ -66,6 +66,12 @@ Overview
 
 Members 
 ^^^^^^^
-
 .. doxygenclass:: WaveDetector
     :members:
+    
+.. doxygenstruct:: WaveMetadata
+    :members:
+
+.. doxygenenum:: Wave
+    :project: HAL
+

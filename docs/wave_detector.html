@@ -23,8 +23,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Controller" href="controller.html" />
-    <link rel="prev" title="ChannelWindow" href="channel_window.html" /> 
+    <link rel="next" title="WorldState" href="world_state.html" />
+    <link rel="prev" title="NES" href="nes.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -55,13 +55,13 @@
 <li class="toctree-l2 current"><a class="reference internal" href="cpp_modules.html#index">Index</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="electrode_map.html"><code class="docutils literal notranslate"><span class="pre">ElectrodeMap</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="channel_window.html"><code class="docutils literal notranslate"><span class="pre">ChannelWindow</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="controller.html"><code class="docutils literal notranslate"><span class="pre">Controller</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="nes.html"><code class="docutils literal notranslate"><span class="pre">NES</span></code></a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">WaveDetector</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#overview">Overview</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#members">Members</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="controller.html"><code class="docutils literal notranslate"><span class="pre">Controller</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="nes.html"><code class="docutils literal notranslate"><span class="pre">NES</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="world_state.html"><code class="docutils literal notranslate"><span class="pre">WorldState</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="plotter_cpp.html"><code class="docutils literal notranslate"><span class="pre">Plotter</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="progress_bar.html"><code class="docutils literal notranslate"><span class="pre">ProgressBar</span></code></a></li>
@@ -208,11 +208,11 @@
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N12WaveDetector11getMetadataEv">
-<span id="_CPPv3N12WaveDetector11getMetadataEv"></span><span id="_CPPv2N12WaveDetector11getMetadataEv"></span><span id="WaveDetector::getMetadata"></span><span class="target" id="classWaveDetector_1a87a66c6a4abba427c2826e80ca7b7444"></span><span class="n"><span class="pre">WaveMetadata</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getMetadata</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12WaveDetector11getMetadataEv" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv3N12WaveDetector11getMetadataEv"></span><span id="_CPPv2N12WaveDetector11getMetadataEv"></span><span id="WaveDetector::getMetadata"></span><span class="target" id="classWaveDetector_1a87a66c6a4abba427c2826e80ca7b7444"></span><a class="reference internal" href="#_CPPv412WaveMetadata" title="WaveMetadata"><span class="n"><span class="pre">WaveMetadata</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getMetadata</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12WaveDetector11getMetadataEv" title="Link to this definition"></a><br /></dt>
 <dd><p>Gets metadata of the Wave Detector. </p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">WaveMetadata</span></code> struct </p>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><a class="reference internal" href="#structWaveMetadata"><span class="std std-ref"><span class="pre">WaveMetadata</span></span></a></code> struct </p>
 </dd>
 </dl>
 </dd></dl>
@@ -263,6 +263,124 @@
 </div>
 </dd></dl>
 
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv412WaveMetadata">
+<span id="_CPPv312WaveMetadata"></span><span id="_CPPv212WaveMetadata"></span><span id="WaveMetadata"></span><span class="target" id="structWaveMetadata"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">WaveMetadata</span></span></span><a class="headerlink" href="#_CPPv412WaveMetadata" title="Link to this definition"></a><br /></dt>
+<dd><p>Wave metadata struct. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveMetadata14firstBurstDoneE">
+<span id="_CPPv3N12WaveMetadata14firstBurstDoneE"></span><span id="_CPPv2N12WaveMetadata14firstBurstDoneE"></span><span id="WaveMetadata::firstBurstDone__b"></span><span class="target" id="structWaveMetadata_1a43a936bf37b698240e83c73819247b9d"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">firstBurstDone</span></span></span><a class="headerlink" href="#_CPPv4N12WaveMetadata14firstBurstDoneE" title="Link to this definition"></a><br /></dt>
+<dd><p>indicates first burst is done </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveMetadata8burstingE">
+<span id="_CPPv3N12WaveMetadata8burstingE"></span><span id="_CPPv2N12WaveMetadata8burstingE"></span><span id="WaveMetadata::bursting__b"></span><span class="target" id="structWaveMetadata_1ab09b017cfcc62db1c282c262ee3cd1d3"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">bursting</span></span></span><a class="headerlink" href="#_CPPv4N12WaveMetadata8burstingE" title="Link to this definition"></a><br /></dt>
+<dd><p>indicates if currently bursting </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveMetadata15spikeFrameCountE">
+<span id="_CPPv3N12WaveMetadata15spikeFrameCountE"></span><span id="_CPPv2N12WaveMetadata15spikeFrameCountE"></span><span id="WaveMetadata::spikeFrameCount__i"></span><span class="target" id="structWaveMetadata_1a857e1700fe32cab15307c18d4cf499f2"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">spikeFrameCount</span></span></span><a class="headerlink" href="#_CPPv4N12WaveMetadata15spikeFrameCountE" title="Link to this definition"></a><br /></dt>
+<dd><p>number of frames since the total spike count was below the threshold </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveMetadata17noSpikeFrameCountE">
+<span id="_CPPv3N12WaveMetadata17noSpikeFrameCountE"></span><span id="_CPPv2N12WaveMetadata17noSpikeFrameCountE"></span><span id="WaveMetadata::noSpikeFrameCount__i"></span><span class="target" id="structWaveMetadata_1a377df28397310e46bd25375c4f89aabc"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">noSpikeFrameCount</span></span></span><a class="headerlink" href="#_CPPv4N12WaveMetadata17noSpikeFrameCountE" title="Link to this definition"></a><br /></dt>
+<dd><p>number of frames since the total spike count went over the threshold </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveMetadata18burstStartLocationE">
+<span id="_CPPv3N12WaveMetadata18burstStartLocationE"></span><span id="_CPPv2N12WaveMetadata18burstStartLocationE"></span><span id="WaveMetadata::burstStartLocation__i"></span><span class="target" id="structWaveMetadata_1aec901b9f2e38c055ec36b9bec7bcdd64"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">burstStartLocation</span></span></span><a class="headerlink" href="#_CPPv4N12WaveMetadata18burstStartLocationE" title="Link to this definition"></a><br /></dt>
+<dd><p>starting location of the current or most recent burst </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveMetadata20burstStartSpikeCountE">
+<span id="_CPPv3N12WaveMetadata20burstStartSpikeCountE"></span><span id="_CPPv2N12WaveMetadata20burstStartSpikeCountE"></span><span id="WaveMetadata::burstStartSpikeCount__i"></span><span class="target" id="structWaveMetadata_1a9745a6c8ee53db6c94b5ff097631fe13"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">burstStartSpikeCount</span></span></span><a class="headerlink" href="#_CPPv4N12WaveMetadata20burstStartSpikeCountE" title="Link to this definition"></a><br /></dt>
+<dd><p>starting spike count of the current or most recent burst </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveMetadata15burstStartFrameE">
+<span id="_CPPv3N12WaveMetadata15burstStartFrameE"></span><span id="_CPPv2N12WaveMetadata15burstStartFrameE"></span><span id="WaveMetadata::burstStartFrame__i"></span><span class="target" id="structWaveMetadata_1a6b0f00082439f4d29b65e8c317e3cfad"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">burstStartFrame</span></span></span><a class="headerlink" href="#_CPPv4N12WaveMetadata15burstStartFrameE" title="Link to this definition"></a><br /></dt>
+<dd><p>starting frame of the current or most recent burst </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveMetadata8burstEndE">
+<span id="_CPPv3N12WaveMetadata8burstEndE"></span><span id="_CPPv2N12WaveMetadata8burstEndE"></span><span id="WaveMetadata::burstEnd__i"></span><span class="target" id="structWaveMetadata_1a469255c7ca660587882cbe3596924d3e"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">burstEnd</span></span></span><a class="headerlink" href="#_CPPv4N12WaveMetadata8burstEndE" title="Link to this definition"></a><br /></dt>
+<dd><p>frame when the last burst ended </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveMetadata9maxSpikesE">
+<span id="_CPPv3N12WaveMetadata9maxSpikesE"></span><span id="_CPPv2N12WaveMetadata9maxSpikesE"></span><span id="WaveMetadata::maxSpikes__i"></span><span class="target" id="structWaveMetadata_1af3825d5da4ee2e0bc8de5c7bb4851131"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">maxSpikes</span></span></span><a class="headerlink" href="#_CPPv4N12WaveMetadata9maxSpikesE" title="Link to this definition"></a><br /></dt>
+<dd><p>spike count of the peak of the burst (or most recent peak within the burst) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveMetadata14maxSpikesFrameE">
+<span id="_CPPv3N12WaveMetadata14maxSpikesFrameE"></span><span id="_CPPv2N12WaveMetadata14maxSpikesFrameE"></span><span id="WaveMetadata::maxSpikesFrame__i"></span><span class="target" id="structWaveMetadata_1afb0a2e151d03d4b71fffc98d8adddfa7"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">maxSpikesFrame</span></span></span><a class="headerlink" href="#_CPPv4N12WaveMetadata14maxSpikesFrameE" title="Link to this definition"></a><br /></dt>
+<dd><p>frame number where the peak of the burst occured (or most recent peak within the burst) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12WaveMetadata12maxSpikesLocE">
+<span id="_CPPv3N12WaveMetadata12maxSpikesLocE"></span><span id="_CPPv2N12WaveMetadata12maxSpikesLocE"></span><span id="WaveMetadata::maxSpikesLoc__float"></span><span class="target" id="structWaveMetadata_1ad98b293bc7abfa090b8c89fa9651d165"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">maxSpikesLoc</span></span></span><a class="headerlink" href="#_CPPv4N12WaveMetadata12maxSpikesLocE" title="Link to this definition"></a><br /></dt>
+<dd><p>locatin on the chpi of the peak of the burst (or most recent peak within the burst) </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv44Wave">
+<span id="_CPPv34Wave"></span><span id="_CPPv24Wave"></span><span class="target" id="waveDetector_8h_1adb931b2f752b7879df254a7fd9d17e90"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Wave</span></span></span><a class="headerlink" href="#_CPPv44Wave" title="Link to this definition"></a><br /></dt>
+<dd><p>Wave enum. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N4Wave7noBurstE">
+<span id="_CPPv3N4Wave7noBurstE"></span><span id="_CPPv2N4Wave7noBurstE"></span><span class="target" id="waveDetector_8h_1adb931b2f752b7879df254a7fd9d17e90aed3e913024f0dd06e150c3e04eded410"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">noBurst</span></span></span><a class="headerlink" href="#_CPPv4N4Wave7noBurstE" title="Link to this definition"></a><br /></dt>
+<dd><p>culture is not currently bursting </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N4Wave8burstingE">
+<span id="_CPPv3N4Wave8burstingE"></span><span id="_CPPv2N4Wave8burstingE"></span><span class="target" id="waveDetector_8h_1adb931b2f752b7879df254a7fd9d17e90a590d959e2e18444c852747822a47a1f9"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">bursting</span></span></span><a class="headerlink" href="#_CPPv4N4Wave8burstingE" title="Link to this definition"></a><br /></dt>
+<dd><p>culture is currently bursting </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N4Wave10burstStartE">
+<span id="_CPPv3N4Wave10burstStartE"></span><span id="_CPPv2N4Wave10burstStartE"></span><span class="target" id="waveDetector_8h_1adb931b2f752b7879df254a7fd9d17e90aaba695c45d766bcb0a224a8a6f77fdb2"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">burstStart</span></span></span><a class="headerlink" href="#_CPPv4N4Wave10burstStartE" title="Link to this definition"></a><br /></dt>
+<dd><p>burst just started </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N4Wave13endShortBurstE">
+<span id="_CPPv3N4Wave13endShortBurstE"></span><span id="_CPPv2N4Wave13endShortBurstE"></span><span class="target" id="waveDetector_8h_1adb931b2f752b7879df254a7fd9d17e90ac53776c020338580a82b74d9388904d2"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">endShortBurst</span></span></span><a class="headerlink" href="#_CPPv4N4Wave13endShortBurstE" title="Link to this definition"></a><br /></dt>
+<dd><p>burst ended, but it was too short to be significant </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N4Wave11leftToRightE">
+<span id="_CPPv3N4Wave11leftToRightE"></span><span id="_CPPv2N4Wave11leftToRightE"></span><span class="target" id="waveDetector_8h_1adb931b2f752b7879df254a7fd9d17e90ad28df94fbab5be1b7294fe32d78ad9d6"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">leftToRight</span></span></span><a class="headerlink" href="#_CPPv4N4Wave11leftToRightE" title="Link to this definition"></a><br /></dt>
+<dd><p>burst ended, and it went left to right </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N4Wave11rightToLeftE">
+<span id="_CPPv3N4Wave11rightToLeftE"></span><span id="_CPPv2N4Wave11rightToLeftE"></span><span class="target" id="waveDetector_8h_1adb931b2f752b7879df254a7fd9d17e90aff8288c3ef5ab9740210753e6c762c3f"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">rightToLeft</span></span></span><a class="headerlink" href="#_CPPv4N4Wave11rightToLeftE" title="Link to this definition"></a><br /></dt>
+<dd><p>burst ended, and it went right to left </p>
+</dd></dl>
+
+</dd></dl>
+
 </section>
 </section>
 
@@ -270,8 +388,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="channel_window.html" class="btn btn-neutral float-left" title="ChannelWindow" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="controller.html" class="btn btn-neutral float-right" title="Controller" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="nes.html" class="btn btn-neutral float-left" title="NES" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="world_state.html" class="btn btn-neutral float-right" title="WorldState" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
