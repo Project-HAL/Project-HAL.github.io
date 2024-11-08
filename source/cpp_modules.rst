@@ -11,6 +11,7 @@ The HAL C++ modules come in two varieties:
         - |ChannelWindow|_
         - |Controller|_
         - |NES|_
+        - |StimVector|_
         - |WaveDetector|_
         - |WorldState|_
     - **General Purpose**: these modules were made to either simplify code or add useful visualizations

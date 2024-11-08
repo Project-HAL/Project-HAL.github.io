@@ -42,6 +42,9 @@
 .. |NES| replace:: ``NES``
 .. _NES: https://project-hal.github.io/nes.html#
 
+.. |StimVector| replace:: ``StimVector``
+.. _StimVector: https://project-hal.github.io/stim_vector.html
+
 .. |WorldState| replace:: ``WorldState``
 .. _WorldState: https://project-hal.github.io/world_state.html
 
