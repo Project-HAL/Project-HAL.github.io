@@ -66,9 +66,10 @@ Overview
 
 Members 
 ^^^^^^^
+
 .. doxygenclass:: WaveDetector
     :members:
-    
+
 .. doxygenstruct:: WaveMetadata
     :members:
 

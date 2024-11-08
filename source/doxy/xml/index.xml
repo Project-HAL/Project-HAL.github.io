@@ -104,6 +104,12 @@
     <member refid="classProgressBar_1aaef0833b42b385e45d872b8bda9cfd37" kind="function"><name>initVars</name></member>
     <member refid="classProgressBar_1a795a22379fa7581cf8ce701b4b509156" kind="function"><name>countDigits</name></member>
   </compound>
+  <compound refid="classStimVector" kind="class"><name>StimVector</name>
+    <member refid="classStimVector_1aea9fb09d6e907cd5a0d2f145ef6f6930" kind="variable"><name>type</name></member>
+    <member refid="classStimVector_1aca96fd39c852f72017827250c6b6ec91" kind="variable"><name>stimsPS</name></member>
+    <member refid="classStimVector_1a78d8e1f841eba42b13b78f1f7951acb7" kind="variable"><name>stims</name></member>
+    <member refid="classStimVector_1aa2fe8f4496a8d57cdb91a101e14b4087" kind="function"><name>StimVector</name></member>
+  </compound>
   <compound refid="classWaveDetector" kind="class"><name>WaveDetector</name>
     <member refid="classWaveDetector_1a1b03f5ba903e44a002b8c38cb7d28880" kind="variable"><name>window</name></member>
     <member refid="classWaveDetector_1a3956713b66b71c3b9b38fc3349c23423" kind="variable"><name>metadata</name></member>
@@ -178,6 +184,8 @@
   <compound refid="plotter_8h" kind="file"><name>plotter.h</name>
   </compound>
   <compound refid="progressBar_8h" kind="file"><name>progressBar.h</name>
+  </compound>
+  <compound refid="stimVector_8h" kind="file"><name>stimVector.h</name>
   </compound>
   <compound refid="waveDetector_8h" kind="file"><name>waveDetector.h</name>
     <member refid="waveDetector_8h_1adb931b2f752b7879df254a7fd9d17e90" kind="enum"><name>Wave</name></member>

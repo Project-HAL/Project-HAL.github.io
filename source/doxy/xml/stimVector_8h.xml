@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="stimVector_8h" kind="file" language="C++">
+    <compoundname>stimVector.h</compoundname>
+    <includedby refid="hal_8h" local="yes">/home/mxwbio/Desktop/HAL/bin/lib/include/hal.h</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/mxwbio/Desktop/HAL/bin/lib/include/hal.h</label>
+        <link refid="hal_8h"/>
+      </node>
+      <node id="1">
+        <label>/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h</label>
+        <link refid="stimVector_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classStimVector" prot="public">StimVector</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="classStimVector" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classStimVector" kindref="compound">StimVector</ref><sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classStimVector_1aa2fe8f4496a8d57cdb91a101e14b4087" kindref="member">StimVector</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type=1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stimRate=5,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>maxtwo=</highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>interval=0.001,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>shuffleFrequency=5);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stimsPS;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*stims;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h"/>
+  </compounddef>
+</doxygen>

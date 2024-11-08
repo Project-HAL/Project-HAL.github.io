@@ -29,6 +29,7 @@ Index
     channel_window
     controller
     nes
+    stim_vector
     wave_detector
     world_state
     plotter_cpp

@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classStimVector" kind="class" language="C++" prot="public">
+    <compoundname>StimVector</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classStimVector_1aea9fb09d6e907cd5a0d2f145ef6f6930" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int StimVector::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" line="26" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classStimVector_1aca96fd39c852f72017827250c6b6ec91" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int StimVector::stimsPS</definition>
+        <argsstring></argsstring>
+        <name>stimsPS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" line="27" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classStimVector_1a78d8e1f841eba42b13b78f1f7951acb7" prot="private" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* StimVector::stims</definition>
+        <argsstring></argsstring>
+        <name>stims</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" line="28" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classStimVector_1aa2fe8f4496a8d57cdb91a101e14b4087" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>StimVector::StimVector</definition>
+        <argsstring>(int type=1, int stimRate=5, bool maxtwo=false, float interval=0.001, float shuffleFrequency=5)</argsstring>
+        <name>StimVector</name>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stimRate</declname>
+          <defval>5</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>maxtwo</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>interval</declname>
+          <defval>0.001</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>shuffleFrequency</declname>
+          <defval>5</defval>
+        </param>
+        <briefdescription>
+<para>Construct a new Stim Vector object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>int</computeroutput> vector type: 0 for regular, and and anything else for random, default <computeroutput>1</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stimRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>int</computeroutput> stimulation rate in stimulations per second; must be &gt;= 0 and &lt;= FPS, default <computeroutput>5</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxtwo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>bool</computeroutput> indicates if the program is running on the maxtwo, default <computeroutput>false</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>interval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>float</computeroutput> space between &quot;bins&quot; for shuffling, in seconds, defaul <computeroutput>0.001</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>shuffleFrequency</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>float</computeroutput> length of shuffle window, in seconds, default <computeroutput>5</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" line="22" column="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" line="4" column="17" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" bodystart="4" bodyend="29"/>
+    <listofallmembers>
+      <member refid="classStimVector_1a78d8e1f841eba42b13b78f1f7951acb7" prot="private" virt="non-virtual"><scope>StimVector</scope><name>stims</name></member>
+      <member refid="classStimVector_1aca96fd39c852f72017827250c6b6ec91" prot="private" virt="non-virtual"><scope>StimVector</scope><name>stimsPS</name></member>
+      <member refid="classStimVector_1aa2fe8f4496a8d57cdb91a101e14b4087" prot="public" virt="non-virtual"><scope>StimVector</scope><name>StimVector</name></member>
+      <member refid="classStimVector_1aea9fb09d6e907cd5a0d2f145ef6f6930" prot="private" virt="non-virtual"><scope>StimVector</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

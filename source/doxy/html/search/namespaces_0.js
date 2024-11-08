@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['argparse_94',['argparse',['../namespaceargparse.html',1,'']]]
+  ['argparse_96',['argparse',['../namespaceargparse.html',1,'']]]
 ];
