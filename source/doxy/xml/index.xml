@@ -105,10 +105,19 @@
     <member refid="classProgressBar_1a795a22379fa7581cf8ce701b4b509156" kind="function"><name>countDigits</name></member>
   </compound>
   <compound refid="classStimVector" kind="class"><name>StimVector</name>
-    <member refid="classStimVector_1aea9fb09d6e907cd5a0d2f145ef6f6930" kind="variable"><name>type</name></member>
-    <member refid="classStimVector_1aca96fd39c852f72017827250c6b6ec91" kind="variable"><name>stimsPS</name></member>
+    <member refid="classStimVector_1a246e95d06174d182229d5026332d900b" kind="variable"><name>fps</name></member>
+    <member refid="classStimVector_1a5086d4001de7f4a848dbaea85df63805" kind="variable"><name>random</name></member>
+    <member refid="classStimVector_1a441e32da37fe5b37b1254d66eb9a8622" kind="variable"><name>stimsPerSec</name></member>
+    <member refid="classStimVector_1a63d2b03c7974cd57351531357c3ae243" kind="variable"><name>framesPerStim</name></member>
+    <member refid="classStimVector_1a157f75bab78c474b72f6d47c65fe563d" kind="variable"><name>intvl</name></member>
+    <member refid="classStimVector_1a9872b7e4a13a13c47a1f3c9c55403954" kind="variable"><name>length</name></member>
     <member refid="classStimVector_1a78d8e1f841eba42b13b78f1f7951acb7" kind="variable"><name>stims</name></member>
-    <member refid="classStimVector_1aa2fe8f4496a8d57cdb91a101e14b4087" kind="function"><name>StimVector</name></member>
+    <member refid="classStimVector_1a6166c081d07692121233dbeef640d2f7" kind="variable"><name>stimIdxs</name></member>
+    <member refid="classStimVector_1ad4417bd3223a7b5a9b271837d5ba197d" kind="variable"><name>leftover</name></member>
+    <member refid="classStimVector_1a35ed97316286ab538b09f51385c0a0b2" kind="function"><name>StimVector</name></member>
+    <member refid="classStimVector_1a83b38d628a8748b199c2857d9cbb8447" kind="function"><name>~StimVector</name></member>
+    <member refid="classStimVector_1a706027fd834083dd42cbe6f23ae2303e" kind="function"><name>stimulate</name></member>
+    <member refid="classStimVector_1a0b4250f768cbe39bbea6424033ce9822" kind="function"><name>generateRandom</name></member>
   </compound>
   <compound refid="classWaveDetector" kind="class"><name>WaveDetector</name>
     <member refid="classWaveDetector_1a1b03f5ba903e44a002b8c38cb7d28880" kind="variable"><name>window</name></member>

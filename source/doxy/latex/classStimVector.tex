@@ -3,16 +3,19 @@
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classStimVector_aa2fe8f4496a8d57cdb91a101e14b4087}{Stim\+Vector}} (int type=1, int stim\+Rate=5, bool maxtwo=false, float interval=0.\+001, float shuffle\+Frequency=5)
-\begin{DoxyCompactList}\small\item\em Construct a new Stim Vector object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\mbox{\hyperlink{classStimVector_a35ed97316286ab538b09f51385c0a0b2}{Stim\+Vector}} (bool is\+Random=true, int stim\+Rate=5, bool maxtwo=false, float interval=0.\+001, float shuffle\+Frequency=5)
+\begin{DoxyCompactList}\small\item\em Construct a new Stim Vector object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classStimVector_a706027fd834083dd42cbe6f23ae2303e}\label{classStimVector_a706027fd834083dd42cbe6f23ae2303e}} 
+int {\bfseries stimulate} (int frame)
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classStimVector_aa2fe8f4496a8d57cdb91a101e14b4087}\label{classStimVector_aa2fe8f4496a8d57cdb91a101e14b4087}} 
+\mbox{\Hypertarget{classStimVector_a35ed97316286ab538b09f51385c0a0b2}\label{classStimVector_a35ed97316286ab538b09f51385c0a0b2}} 
 \index{StimVector@{StimVector}!StimVector@{StimVector}}
 \index{StimVector@{StimVector}!StimVector@{StimVector}}
 \doxysubsubsection{\texorpdfstring{StimVector()}{StimVector()}}
-{\footnotesize\ttfamily Stim\+Vector\+::\+Stim\+Vector (\begin{DoxyParamCaption}\item[{int}]{type = {\ttfamily 1},  }\item[{int}]{stim\+Rate = {\ttfamily 5},  }\item[{bool}]{maxtwo = {\ttfamily false},  }\item[{float}]{interval = {\ttfamily 0.001},  }\item[{float}]{shuffle\+Frequency = {\ttfamily 5} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Stim\+Vector\+::\+Stim\+Vector (\begin{DoxyParamCaption}\item[{bool}]{is\+Random = {\ttfamily true},  }\item[{int}]{stim\+Rate = {\ttfamily 5},  }\item[{bool}]{maxtwo = {\ttfamily false},  }\item[{float}]{interval = {\ttfamily 0.001},  }\item[{float}]{shuffle\+Frequency = {\ttfamily 5} }\end{DoxyParamCaption})}
 
 
 
@@ -20,13 +23,13 @@ Construct a new Stim Vector object.
 
 
 \begin{DoxyParams}{Parameters}
-{\em type} & {\ttfamily int} vector type\+: 0 for regular, and and anything else for random, default {\ttfamily 1} \\
+{\em is\+Random} & {\ttfamily bool} indicates whether the object should simulate a random or regular stimulation pattern \\
 \hline
 {\em stim\+Rate} & {\ttfamily int} stimulation rate in stimulations per second; must be $>$= 0 and $<$= F\+PS, default {\ttfamily 5} \\
 \hline
 {\em maxtwo} & {\ttfamily bool} indicates if the program is running on the maxtwo, default {\ttfamily false} \\
 \hline
-{\em interval} & {\ttfamily float} space between \char`\"{}bins\char`\"{} for shuffling, in seconds, defaul {\ttfamily 0.\+001} \\
+{\em interval} & {\ttfamily float} space between \char`\"{}bins\char`\"{} for shuffling, in seconds, default {\ttfamily 0.\+001} \\
 \hline
 {\em shuffle\+Frequency} & {\ttfamily float} length of shuffle window, in seconds, default {\ttfamily 5} \\
 \hline

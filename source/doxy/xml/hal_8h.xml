@@ -131,6 +131,8 @@
       <node id="18">
         <label>stimVector.h</label>
         <link refid="stimVector_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
       </node>
       <node id="11">
         <label>iostream</label>
