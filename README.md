@@ -31,14 +31,32 @@ repo, respectively.
 
 ## Classes/Modules
 
-When referencing a HAL class or module, please use the following: 
+For formatting class names in text, the following feature is available: 
 
     .. include links.rst
     
     |CLASS|_
     
-Where `CLASS` is the name of the class. This will automatically add the `literal` format to the name and link to its page. To add this feature for more classes, see 
+Where `CLASS` is the name of the class/module. This will automatically add the `literal` format to the name and link to its page. To add this feature for more classes and modules, see 
 `source/links.rst`. 
+
+This file can also be used for commonly linked words, such as [MaxWell](https://www.mxwbio.com/).
+
+## Toggleable Dropdown Bar
+
+This repo features a custom toggleable dropdown bar, as used in `channel_window.rst`
+and `wave_detector.rst`. The implementation can be found in `source/_templates/page.html`
+and `source/_static/custom.css`.
+
+Example usage:
+
+    .. container:: toggle
+
+        .. container:: header
+
+            Dropdown Header
+
+        contents of dropdown
 
 
 ## Dependencies
