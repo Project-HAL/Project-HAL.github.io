@@ -54,6 +54,7 @@
 <li class="toctree-l2 current"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">hal</span></code></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#overview">Overview</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#module-hal">Members</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#hal.build_frequency_list"><code class="docutils literal notranslate"><span class="pre">build_frequency_list()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#hal.build_training_sequences"><code class="docutils literal notranslate"><span class="pre">build_training_sequences()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#hal.connect_stim_units_to_stim_electrodes"><code class="docutils literal notranslate"><span class="pre">connect_stim_units_to_stim_electrodes()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#hal.get_electrode_square"><code class="docutils literal notranslate"><span class="pre">get_electrode_square()</span></code></a></li>
@@ -66,6 +67,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#hal.write_closed_loop_args"><code class="docutils literal notranslate"><span class="pre">write_closed_loop_args()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#hal.write_exp_description"><code class="docutils literal notranslate"><span class="pre">write_exp_description()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#hal.write_exp_notes"><code class="docutils literal notranslate"><span class="pre">write_exp_notes()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hal.write_frequency_list"><code class="docutils literal notranslate"><span class="pre">write_frequency_list()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#hal.write_stim_electrodes"><code class="docutils literal notranslate"><span class="pre">write_stim_electrodes()</span></code></a></li>
 </ul>
 </li>
@@ -113,6 +115,29 @@
 </section>
 <section id="module-hal">
 <span id="members"></span><h2>Members<a class="headerlink" href="#module-hal" title="Link to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="hal.build_frequency_list">
+<span class="sig-prename descclassname"><span class="pre">hal.</span></span><span class="sig-name descname"><span class="pre">build_frequency_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_levels</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lower</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">upper</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#hal.build_frequency_list" title="Link to this definition"></a></dt>
+<dd><p>creates a list of stimulation frequencies for frequency game. Given the 
+inclusive bounds and the number of levels, it automatically generates 
+a list of floats with corresponding frequencies.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_levels</strong> (<em>int</em>) – number of frequencies to generate</p></li>
+<li><p><strong>lower</strong> (<em>float</em>) – lower bound, in Hz</p></li>
+<li><p><strong>upper</strong> (<em>float</em>) – upper bound, in Hz</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>list of frequencies</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[float]</p>
+</dd>
+</dl>
+</dd></dl>
+
 <dl class="py function">
 <dt class="sig sig-object py" id="hal.build_training_sequences">
 <span class="sig-prename descclassname"><span class="pre">hal.</span></span><span class="sig-name descname"><span class="pre">build_training_sequences</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">well_no</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hal.build_training_sequences" title="Link to this definition"></a></dt>
@@ -359,6 +384,21 @@ under key “notes”</p>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>s</strong> (<code class="docutils literal notranslate"><span class="pre">mx.Saving</span></code>) – Experiment to save the stimulation electrodes for</p></li>
 <li><p><strong>notes</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – notes of the experiment</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hal.write_frequency_list">
+<span class="sig-prename descclassname"><span class="pre">hal.</span></span><span class="sig-name descname"><span class="pre">write_frequency_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequencies</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hal.write_frequency_list" title="Link to this definition"></a></dt>
+<dd><p>Writes a list of floats, representing stimulation frequency levels for 
+frequency game, to a file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>file_path</strong> (<em>str</em>) – Path of file to write to</p></li>
+<li><p><strong>frequencies</strong> (<em>List</em><em>[</em><em>float</em><em>]</em>) – List of frequencies</p></li>
 </ul>
 </dd>
 </dl>

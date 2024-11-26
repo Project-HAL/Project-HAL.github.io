@@ -1,6 +1,6 @@
 ..
     This file contains substitution definitions for all classes. This adds 
-    code (literal) style to the name of the text and makes it a hyperlink 
+    literal (code) style to the name of the text and makes it a hyperlink 
     to the class page. To use in rst:
 
         |CLASS|_
@@ -14,18 +14,25 @@
         .. include:: links.rst
 
     Sphinx doesn't have nested inline markup (i.e. there's no easy way to style 
-    references to other documents inherent to rst), and since Doxygen 
-    automatically creates links to classes. I added this to be consistent. 
+    references to other documents inherent to rst) and Doxygen 
+    automatically creates links to classes in this format, so I added this to 
+    be consistent. It also just looks nice. 
 
     NOTE that these links are hard-coded. If you click them on a local copy of 
     this repo, it will take you to the actual website. There's no way to imbed 
-    the :doc: or :ref: directives in the substitution definitions.
+    the :doc: or :ref: directives in the substitution definitions. If the link 
+    for a class, module or other changes, then these links will fail.
 
     Author: Trevor Sullivan
     September 2024
 
+.. General Purpose Links
 
-.. C++ CLASSES
+.. |mxwbio| replace:: MaxWell Biosystems
+.. _mxwbio: https://www.mxwbio.com/
+
+
+.. C++ Classes and Modules
 
 .. |ElectrodeMap| replace:: ``ElectrodeMap``
 .. _ElectrodeMap: https://project-hal.github.io/electrode_map.html
@@ -58,7 +65,7 @@
 .. _argparse: https://project-hal.github.io/argparse.html
 
 
-.. PYTHON CLASSES
+.. Python Classes and Modules
 
 .. |Stimulation| replace:: ``Stimulation``
 .. _Stimulation: https://project-hal.github.io/stimulation.html

@@ -9,8 +9,5 @@ creating and running closed-loop experiments on the |mxwbio|_ MaxOne
 and MaxTwo. To do this, HAL uses and augments the MaxWell API (both Python and C++) for the MaxOne/Two.
 
 
-
 .. links
 
-.. |mxwbio| replace:: MaxWell Biosystems
-.. _mxwbio: https://www.mxwbio.com/
