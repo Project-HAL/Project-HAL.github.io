@@ -75,12 +75,12 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWaveDetector.html#a9dc0fec49023ac3a388568180575ee7d">WaveDetector</a> ()</td></tr>
 <tr class="memdesc:a9dc0fec49023ac3a388568180575ee7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new Wave Detector object. <br /></td></tr>
 <tr class="separator:a9dc0fec49023ac3a388568180575ee7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac49842bb930f2bbb174b60855c17aa1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWaveDetector.html#aac49842bb930f2bbb174b60855c17aa1">WaveDetector</a> (int windowLength, const char *configPath, float threshold, int minFrames, int frameHz, float firstBurstThreshold, float burstDoneThreshold)</td></tr>
-<tr class="memdesc:aac49842bb930f2bbb174b60855c17aa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new Wave Detector object and inititalizes the window.  <a href="classWaveDetector.html#aac49842bb930f2bbb174b60855c17aa1">More...</a><br /></td></tr>
-<tr class="separator:aac49842bb930f2bbb174b60855c17aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7be163020b3650568415ce2bb11753fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWaveDetector.html#a7be163020b3650568415ce2bb11753fc">WaveDetector</a> (int windowLength, const char *configPath, int framesPerSec, float burst_size_threshold, int burst_dur_threshold, int BurstFinishedThreshold)</td></tr>
+<tr class="memdesc:a7be163020b3650568415ce2bb11753fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new Wave Detector object and initializes the window.  <a href="classWaveDetector.html#a7be163020b3650568415ce2bb11753fc">More...</a><br /></td></tr>
+<tr class="separator:a7be163020b3650568415ce2bb11753fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af493cc823e9388b83a3fc6bf8c48b159"><td class="memItemLeft" align="right" valign="top"><a id="af493cc823e9388b83a3fc6bf8c48b159"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWaveDetector.html#af493cc823e9388b83a3fc6bf8c48b159">~WaveDetector</a> ()</td></tr>
-<tr class="memdesc:af493cc823e9388b83a3fc6bf8c48b159"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the Wave Detector Object. <br /></td></tr>
+<tr class="memdesc:af493cc823e9388b83a3fc6bf8c48b159"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the Wave Detector object. <br /></td></tr>
 <tr class="separator:af493cc823e9388b83a3fc6bf8c48b159"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab85b28fe6599e109456d3e0da0e4306b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classChannelWindow.html">ChannelWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWaveDetector.html#ab85b28fe6599e109456d3e0da0e4306b">getWindow</a> ()</td></tr>
 <tr class="memdesc:ab85b28fe6599e109456d3e0da0e4306b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the window.  <a href="classWaveDetector.html#ab85b28fe6599e109456d3e0da0e4306b">More...</a><br /></td></tr>
@@ -99,8 +99,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a91b522b3335c62a1b498f5a4d09d1820"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aac49842bb930f2bbb174b60855c17aa1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac49842bb930f2bbb174b60855c17aa1">&#9670;&nbsp;</a></span>WaveDetector()</h2>
+<a id="a7be163020b3650568415ce2bb11753fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7be163020b3650568415ce2bb11753fc">&#9670;&nbsp;</a></span>WaveDetector()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -120,32 +120,26 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>framesPerSec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>threshold</em>, </td>
+          <td class="paramname"><em>burst_size_threshold</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>minFrames</em>, </td>
+          <td class="paramname"><em>burst_dur_threshold</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>frameHz</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>firstBurstThreshold</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>burstDoneThreshold</em>&#160;</td>
+          <td class="paramname"><em>BurstFinishedThreshold</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -155,16 +149,15 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Constructs a new Wave Detector object and inititalizes the window. </p>
+<p>Constructs a new Wave Detector object and initializes the window. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">windowLength</td><td><code>int</code> length of the window </td></tr>
     <tr><td class="paramname">configPath</td><td>c-style string containing the full path of the electrode config </td></tr>
-    <tr><td class="paramname">threshold</td><td><code>float</code> threshold used to check the total spike count against </td></tr>
-    <tr><td class="paramname">minFrames</td><td><code>int</code> minimum number of frames during which the window must be over the spike threshold in order to be considered a burst </td></tr>
-    <tr><td class="paramname">frameHz</td><td><code>int</code> framerate, defaults to <code>10000</code>. It shoud be <code>10000</code> for the MaxTwo, and <code>20000</code> for the MaxOne </td></tr>
-    <tr><td class="paramname">firstBurstThreshold</td><td><code>float</code> the amount of time (in seconds) during which the total spike count of the window cannot go over the threshold in order for the first birst to be considered done. </td></tr>
-    <tr><td class="paramname">burstDoneThreshold</td><td><code>float</code> the amount of time (in seconds) during which the total spike count of the window cannot go over the threshold in order for the entire birst to be considered done. </td></tr>
+    <tr><td class="paramname">framesPerSec</td><td><code>int</code> sampling rate in frames per second </td></tr>
+    <tr><td class="paramname">burst_size_threshold</td><td><code>float</code> fraction of active electrodes needed to start a burst </td></tr>
+    <tr><td class="paramname">burst_dur_threshold</td><td><code>int</code> minimum burst duration (in seconds) </td></tr>
+    <tr><td class="paramname">BurstFinishedThreshold</td><td><code>int</code> minimum time (in seconds) of low activity to confirm burst ended </td></tr>
   </table>
   </dd>
 </dl>
@@ -215,7 +208,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets metadata of the Wave Detector. </p>
-<dl class="section return"><dt>Returns</dt><dd><code><a class="el" href="structWaveMetadata.html" title="Wave metadata struct.">WaveMetadata</a></code> struct </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code><a class="el" href="structWaveMetadata.html" title="Metadata tracking the state of a neural burst event.">WaveMetadata</a></code> struct </dd></dl>
 
 </div>
 </div>

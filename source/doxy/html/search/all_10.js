@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['wave_74',['Wave',['../waveDetector_8h.html#adb931b2f752b7879df254a7fd9d17e90',1,'waveDetector.h']]],
-  ['wavedetector_75',['WaveDetector',['../classWaveDetector.html',1,'WaveDetector'],['../classWaveDetector.html#a9dc0fec49023ac3a388568180575ee7d',1,'WaveDetector::WaveDetector()'],['../classWaveDetector.html#aac49842bb930f2bbb174b60855c17aa1',1,'WaveDetector::WaveDetector(int windowLength, const char *configPath, float threshold, int minFrames, int frameHz, float firstBurstThreshold, float burstDoneThreshold)']]],
-  ['wavedetector_2eh_76',['waveDetector.h',['../waveDetector_8h.html',1,'']]],
-  ['wavemetadata_77',['WaveMetadata',['../structWaveMetadata.html',1,'']]],
-  ['windowdata_78',['WindowData',['../structWindowData.html',1,'']]],
-  ['worldstate_79',['WorldState',['../classWorldState.html',1,'WorldState'],['../classWorldState.html#a207af80e9bba9e24195891abddf67df7',1,'WorldState::WorldState()']]],
-  ['worldstate_2eh_80',['worldstate.h',['../worldstate_8h.html',1,'']]]
+  ['_7econtroller_81',['~Controller',['../classController.html#a0ab87934c4f7a266cfdb86e0f36bc1b5',1,'Controller']]],
+  ['_7enes_82',['~NES',['../classNES.html#a10056f30dbcb4a0ac24124faa81c9d03',1,'NES']]],
+  ['_7estimvector_83',['~StimVector',['../classStimVector.html#a83b38d628a8748b199c2857d9cbb8447',1,'StimVector']]],
+  ['_7ewavedetector_84',['~WaveDetector',['../classWaveDetector.html#af493cc823e9388b83a3fc6bf8c48b159',1,'WaveDetector']]]
 ];

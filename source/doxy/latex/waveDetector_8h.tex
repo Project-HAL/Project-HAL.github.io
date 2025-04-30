@@ -15,14 +15,8 @@ This graph shows which files directly or indirectly include this file\+:
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{structWaveMetadata}{Wave\+Metadata}}
-\begin{DoxyCompactList}\small\item\em Wave metadata struct. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Metadata tracking the state of a neural burst event. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classWaveDetector}{Wave\+Detector}}
-\end{DoxyCompactItemize}
-\doxysubsection*{Typedefs}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{waveDetector_8h_a02a71c18140ce67db4454eb9902e73c6}\label{waveDetector_8h_a02a71c18140ce67db4454eb9902e73c6}} 
-typedef struct \mbox{\hyperlink{structWaveMetadata}{Wave\+Metadata}} {\bfseries Wave\+Metadata}
 \end{DoxyCompactItemize}
 \doxysubsection*{Enumerations}
 \begin{DoxyCompactItemize}
@@ -33,8 +27,8 @@ enum \mbox{\hyperlink{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90}{Wave}} 
 \mbox{\hyperlink{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90aaba695c45d766bcb0a224a8a6f77fdb2}{burst\+Start}}, 
 \mbox{\hyperlink{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90ac53776c020338580a82b74d9388904d2}{end\+Short\+Burst}}, 
 \newline
-\mbox{\hyperlink{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90ad28df94fbab5be1b7294fe32d78ad9d6}{left\+To\+Right}}, 
-\mbox{\hyperlink{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90aff8288c3ef5ab9740210753e6c762c3f}{right\+To\+Left}}
+\mbox{\hyperlink{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90a0d11291fb5bb0eb8a1a42a15de46c64e}{burst\+On\+Left}}, 
+\mbox{\hyperlink{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90a3a2358bdcaf151ffcf6078569ec094e0}{burst\+On\+Right}}
  \}
 \begin{DoxyCompactList}\small\item\em Wave enum. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -43,16 +37,16 @@ enum \mbox{\hyperlink{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90}{Wave}} 
 Header file for the \mbox{\hyperlink{classWaveDetector}{Wave\+Detector}} Class. 
 
 \begin{DoxyAuthor}{Author}
-Trevor Sullivan (\href{mailto:trevor.sullivan@tufts.edu}{\texttt{ trevor.\+sullivan@tufts.\+edu}}) 
+Wesley Clawson (\href{mailto:wesley.clawson@tufts.edu}{\texttt{ wesley.\+clawson@tufts.\+edu}}). Previous by\+: Trevor Sullivan (\href{mailto:trevor.sullivan@tufts.edu}{\texttt{ trevor.\+sullivan@tufts.\+edu}}) 
 \end{DoxyAuthor}
 \begin{DoxyVersion}{Version}
-0.\+1 
+1.\+0 
 \end{DoxyVersion}
 \begin{DoxyDate}{Date}
-2024-\/09-\/18
+2025-\/04-\/29
 \end{DoxyDate}
 \begin{DoxyCopyright}{Copyright}
-Copyright (c) 2024 
+Copyright (c) 2025 
 \end{DoxyCopyright}
 
 
@@ -69,27 +63,27 @@ Wave enum.
 
 \begin{DoxyEnumFields}{Enumerator}
 \raisebox{\heightof{T}}[0pt][0pt]{\index{noBurst@{noBurst}!waveDetector.h@{waveDetector.h}}\index{waveDetector.h@{waveDetector.h}!noBurst@{noBurst}}}\mbox{\Hypertarget{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90aed3e913024f0dd06e150c3e04eded410}\label{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90aed3e913024f0dd06e150c3e04eded410}} 
-no\+Burst&culture is not currently bursting \\
+no\+Burst&Culture is not currently bursting \\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{bursting@{bursting}!waveDetector.h@{waveDetector.h}}\index{waveDetector.h@{waveDetector.h}!bursting@{bursting}}}\mbox{\Hypertarget{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90a590d959e2e18444c852747822a47a1f9}\label{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90a590d959e2e18444c852747822a47a1f9}} 
-bursting&culture is currently bursting \\
+bursting&Culture is currently bursting \\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{burstStart@{burstStart}!waveDetector.h@{waveDetector.h}}\index{waveDetector.h@{waveDetector.h}!burstStart@{burstStart}}}\mbox{\Hypertarget{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90aaba695c45d766bcb0a224a8a6f77fdb2}\label{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90aaba695c45d766bcb0a224a8a6f77fdb2}} 
-burst\+Start&burst just started \\
+burst\+Start&Burst just started \\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{endShortBurst@{endShortBurst}!waveDetector.h@{waveDetector.h}}\index{waveDetector.h@{waveDetector.h}!endShortBurst@{endShortBurst}}}\mbox{\Hypertarget{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90ac53776c020338580a82b74d9388904d2}\label{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90ac53776c020338580a82b74d9388904d2}} 
-end\+Short\+Burst&burst ended, but it was too short to be significant \\
+end\+Short\+Burst&Burst ended but was too short to be significant \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{leftToRight@{leftToRight}!waveDetector.h@{waveDetector.h}}\index{waveDetector.h@{waveDetector.h}!leftToRight@{leftToRight}}}\mbox{\Hypertarget{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90ad28df94fbab5be1b7294fe32d78ad9d6}\label{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90ad28df94fbab5be1b7294fe32d78ad9d6}} 
-left\+To\+Right&burst ended, and it went left to right \\
+\raisebox{\heightof{T}}[0pt][0pt]{\index{burstOnLeft@{burstOnLeft}!waveDetector.h@{waveDetector.h}}\index{waveDetector.h@{waveDetector.h}!burstOnLeft@{burstOnLeft}}}\mbox{\Hypertarget{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90a0d11291fb5bb0eb8a1a42a15de46c64e}\label{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90a0d11291fb5bb0eb8a1a42a15de46c64e}} 
+burst\+On\+Left&Burst ended, and it started on the Left \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{rightToLeft@{rightToLeft}!waveDetector.h@{waveDetector.h}}\index{waveDetector.h@{waveDetector.h}!rightToLeft@{rightToLeft}}}\mbox{\Hypertarget{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90aff8288c3ef5ab9740210753e6c762c3f}\label{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90aff8288c3ef5ab9740210753e6c762c3f}} 
-right\+To\+Left&burst ended, and it went right to left \\
+\raisebox{\heightof{T}}[0pt][0pt]{\index{burstOnRight@{burstOnRight}!waveDetector.h@{waveDetector.h}}\index{waveDetector.h@{waveDetector.h}!burstOnRight@{burstOnRight}}}\mbox{\Hypertarget{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90a3a2358bdcaf151ffcf6078569ec094e0}\label{waveDetector_8h_adb931b2f752b7879df254a7fd9d17e90a3a2358bdcaf151ffcf6078569ec094e0}} 
+burst\+On\+Right&Burst ended, and it started on the Right \\
 \hline
 
 \end{DoxyEnumFields}

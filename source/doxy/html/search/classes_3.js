@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['plotter_89',['Plotter',['../classPlotter.html',1,'']]],
-  ['progressbar_90',['ProgressBar',['../classProgressBar.html',1,'']]]
+  ['plotter_90',['Plotter',['../classPlotter.html',1,'']]],
+  ['progressbar_91',['ProgressBar',['../classProgressBar.html',1,'']]]
 ];

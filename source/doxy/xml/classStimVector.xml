@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
   <compounddef id="classStimVector" kind="class" language="C++" prot="public">
     <compoundname>StimVector</compoundname>
+    <includes refid="stimVector_8h" local="no">stimVector.h</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classStimVector_1a246e95d06174d182229d5026332d900b" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -14,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" line="32" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" bodystart="32" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" line="53" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" bodystart="53" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classStimVector_1a5086d4001de7f4a848dbaea85df63805" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -27,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" line="35" column="14" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" bodystart="35" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" line="56" column="14" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" bodystart="56" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classStimVector_1a441e32da37fe5b37b1254d66eb9a8622" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -40,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" line="38" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" bodystart="38" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" line="59" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" bodystart="59" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classStimVector_1a63d2b03c7974cd57351531357c3ae243" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -53,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" line="41" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" bodystart="41" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" line="62" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" bodystart="62" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classStimVector_1a157f75bab78c474b72f6d47c65fe563d" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -66,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" line="44" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" bodystart="44" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" line="65" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" bodystart="65" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classStimVector_1a9872b7e4a13a13c47a1f3c9c55403954" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -79,11 +80,24 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" line="47" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" bodystart="47" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" line="68" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" bodystart="68" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classStimVector_1a78d8e1f841eba42b13b78f1f7951acb7" prot="private" static="no" mutable="no">
-        <type>int *</type>
-        <definition>int* StimVector::stims</definition>
+      <memberdef kind="variable" id="classStimVector_1a1941a71cc8099904c2dc2693ef20bfb3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int StimVector::framesUntilNextShuffle</definition>
+        <argsstring></argsstring>
+        <name>framesUntilNextShuffle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" line="71" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classStimVector_1aae57d7b297f98fc6ab36e9e0a18bd886" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; bool &gt;</type>
+        <definition>std::vector&lt;bool&gt; StimVector::stims</definition>
         <argsstring></argsstring>
         <name>stims</name>
         <briefdescription>
@@ -92,11 +106,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" line="50" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" bodystart="50" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" line="74" column="21" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" bodystart="74" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classStimVector_1a6166c081d07692121233dbeef640d2f7" prot="private" static="no" mutable="no">
-        <type>map&lt; int, bool &gt;</type>
-        <definition>map&lt;int, bool&gt; StimVector::stimIdxs</definition>
+      <memberdef kind="variable" id="classStimVector_1a6c25576fe9425e108463cad6a697f026" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; int, bool &gt;</type>
+        <definition>std::unordered_map&lt;int, bool&gt; StimVector::stimIdxs</definition>
         <argsstring></argsstring>
         <name>stimIdxs</name>
         <briefdescription>
@@ -105,20 +119,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" line="54" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" bodystart="54" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" line="77" column="28" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" bodystart="77" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classStimVector_1ad4417bd3223a7b5a9b271837d5ba197d" prot="private" static="no" mutable="no">
-        <type>int</type>
-        <definition>int StimVector::leftover</definition>
+      <memberdef kind="variable" id="classStimVector_1a429e643d16ab4cf613e682ede3f0dbe5" prot="private" static="no" mutable="no">
+        <type>std::mt19937</type>
+        <definition>std::mt19937 StimVector::randomEngine</definition>
         <argsstring></argsstring>
-        <name>leftover</name>
+        <name>randomEngine</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" line="56" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" bodystart="56" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" line="80" column="22" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" bodystart="80" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -161,7 +175,7 @@
 <parametername>isRandom</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><computeroutput>bool</computeroutput> indicates whether the object should simulate a random or regular stimulation pattern </para>
+<para><computeroutput>bool</computeroutput> If true, generates randomized stimulations. </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -169,7 +183,7 @@
 <parametername>stimRate</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><computeroutput>int</computeroutput> stimulation rate in stimulations per second; must be &gt;= 0 and &lt;= FPS, default <computeroutput>5</computeroutput> </para>
+<para><computeroutput>int</computeroutput> Stimulations per second; must be &gt;= 0. </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -177,7 +191,7 @@
 <parametername>maxtwo</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><computeroutput>bool</computeroutput> indicates if the program is running on the maxtwo, default <computeroutput>false</computeroutput> </para>
+<para><computeroutput>bool</computeroutput> True if running on MaxTwo (10kHz), false for MaxOne (20kHz). </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -185,7 +199,7 @@
 <parametername>interval</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><computeroutput>float</computeroutput> space between &quot;bins&quot; for shuffling, in seconds, default <computeroutput>0.001</computeroutput> </para>
+<para><computeroutput>float</computeroutput> Duration of a randomization bin, in seconds (default 0.001s). </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -193,7 +207,7 @@
 <parametername>shuffleFrequency</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><computeroutput>float</computeroutput> length of shuffle window, in seconds, default <computeroutput>5</computeroutput> </para>
+<para><computeroutput>float</computeroutput> How often (in seconds) to refresh the random stimulation pattern (default 5s). </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -201,7 +215,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" line="24" column="9"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" line="30" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classStimVector_1a83b38d628a8748b199c2857d9cbb8447" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -209,16 +223,17 @@
         <argsstring>()</argsstring>
         <name>~StimVector</name>
         <briefdescription>
+<para>Destroy the Stim Vector object. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" line="26" column="9"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" line="35" column="9"/>
       </memberdef>
-      <memberdef kind="function" id="classStimVector_1a706027fd834083dd42cbe6f23ae2303e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int StimVector::stimulate</definition>
+      <memberdef kind="function" id="classStimVector_1ac87becc5e6eeec78c8f32d67f24315db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool StimVector::stimulate</definition>
         <argsstring>(int frame)</argsstring>
         <name>stimulate</name>
         <param>
@@ -226,12 +241,25 @@
           <declname>frame</declname>
         </param>
         <briefdescription>
+<para>Determines whether a pulse should be sent at the given frame. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>int</computeroutput> The current frame index. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>bool</computeroutput> True if a stimulation pulse should occur, false otherwise. </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" line="28" column="13"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" line="43" column="14"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -241,31 +269,35 @@
         <argsstring>()</argsstring>
         <name>generateRandom</name>
         <briefdescription>
+<para>Internal helper to generate or regenerate random stimulation pattern. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" line="58" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" line="50" column="14"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Manages the logic for generating stimulation patterns (random or regular). </para>
     </briefdescription>
     <detaileddescription>
+<para>Supports regular evenly-spaced stimulations or randomized stimulations, including automatic refreshing of random patterns over long experiments. </para>
     </detaileddescription>
-    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" line="6" column="17" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" bodystart="6" bodyend="59"/>
+    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" line="17" column="17" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/stimVector.h" bodystart="17" bodyend="81"/>
     <listofallmembers>
       <member refid="classStimVector_1a246e95d06174d182229d5026332d900b" prot="private" virt="non-virtual"><scope>StimVector</scope><name>fps</name></member>
       <member refid="classStimVector_1a63d2b03c7974cd57351531357c3ae243" prot="private" virt="non-virtual"><scope>StimVector</scope><name>framesPerStim</name></member>
+      <member refid="classStimVector_1a1941a71cc8099904c2dc2693ef20bfb3" prot="private" virt="non-virtual"><scope>StimVector</scope><name>framesUntilNextShuffle</name></member>
       <member refid="classStimVector_1a0b4250f768cbe39bbea6424033ce9822" prot="private" virt="non-virtual"><scope>StimVector</scope><name>generateRandom</name></member>
       <member refid="classStimVector_1a157f75bab78c474b72f6d47c65fe563d" prot="private" virt="non-virtual"><scope>StimVector</scope><name>intvl</name></member>
-      <member refid="classStimVector_1ad4417bd3223a7b5a9b271837d5ba197d" prot="private" virt="non-virtual"><scope>StimVector</scope><name>leftover</name></member>
       <member refid="classStimVector_1a9872b7e4a13a13c47a1f3c9c55403954" prot="private" virt="non-virtual"><scope>StimVector</scope><name>length</name></member>
       <member refid="classStimVector_1a5086d4001de7f4a848dbaea85df63805" prot="private" virt="non-virtual"><scope>StimVector</scope><name>random</name></member>
-      <member refid="classStimVector_1a6166c081d07692121233dbeef640d2f7" prot="private" virt="non-virtual"><scope>StimVector</scope><name>stimIdxs</name></member>
-      <member refid="classStimVector_1a78d8e1f841eba42b13b78f1f7951acb7" prot="private" virt="non-virtual"><scope>StimVector</scope><name>stims</name></member>
+      <member refid="classStimVector_1a429e643d16ab4cf613e682ede3f0dbe5" prot="private" virt="non-virtual"><scope>StimVector</scope><name>randomEngine</name></member>
+      <member refid="classStimVector_1a6c25576fe9425e108463cad6a697f026" prot="private" virt="non-virtual"><scope>StimVector</scope><name>stimIdxs</name></member>
+      <member refid="classStimVector_1aae57d7b297f98fc6ab36e9e0a18bd886" prot="private" virt="non-virtual"><scope>StimVector</scope><name>stims</name></member>
       <member refid="classStimVector_1a441e32da37fe5b37b1254d66eb9a8622" prot="private" virt="non-virtual"><scope>StimVector</scope><name>stimsPerSec</name></member>
-      <member refid="classStimVector_1a706027fd834083dd42cbe6f23ae2303e" prot="public" virt="non-virtual"><scope>StimVector</scope><name>stimulate</name></member>
+      <member refid="classStimVector_1ac87becc5e6eeec78c8f32d67f24315db" prot="public" virt="non-virtual"><scope>StimVector</scope><name>stimulate</name></member>
       <member refid="classStimVector_1a35ed97316286ab538b09f51385c0a0b2" prot="public" virt="non-virtual"><scope>StimVector</scope><name>StimVector</name></member>
       <member refid="classStimVector_1a83b38d628a8748b199c2857d9cbb8447" prot="public" virt="non-virtual"><scope>StimVector</scope><name>~StimVector</name></member>
     </listofallmembers>

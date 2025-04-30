@@ -6,11 +6,11 @@
 \mbox{\Hypertarget{classWaveDetector_a9dc0fec49023ac3a388568180575ee7d}\label{classWaveDetector_a9dc0fec49023ac3a388568180575ee7d}} 
 \mbox{\hyperlink{classWaveDetector_a9dc0fec49023ac3a388568180575ee7d}{Wave\+Detector}} ()
 \begin{DoxyCompactList}\small\item\em Constructs a new Wave Detector object. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classWaveDetector_aac49842bb930f2bbb174b60855c17aa1}{Wave\+Detector}} (int window\+Length, const char $\ast$config\+Path, float threshold, int min\+Frames, int frame\+Hz, float first\+Burst\+Threshold, float burst\+Done\+Threshold)
-\begin{DoxyCompactList}\small\item\em Constructs a new Wave Detector object and inititalizes the window. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classWaveDetector_a7be163020b3650568415ce2bb11753fc}{Wave\+Detector}} (int window\+Length, const char $\ast$config\+Path, int frames\+Per\+Sec, float burst\+\_\+size\+\_\+threshold, int burst\+\_\+dur\+\_\+threshold, int Burst\+Finished\+Threshold)
+\begin{DoxyCompactList}\small\item\em Constructs a new Wave Detector object and initializes the window. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classWaveDetector_af493cc823e9388b83a3fc6bf8c48b159}\label{classWaveDetector_af493cc823e9388b83a3fc6bf8c48b159}} 
 \mbox{\hyperlink{classWaveDetector_af493cc823e9388b83a3fc6bf8c48b159}{$\sim$\+Wave\+Detector}} ()
-\begin{DoxyCompactList}\small\item\em Destroys the Wave Detector Object. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Destroys the Wave Detector object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classChannelWindow}{Channel\+Window}} $\ast$ \mbox{\hyperlink{classWaveDetector_ab85b28fe6599e109456d3e0da0e4306b}{get\+Window}} ()
 \begin{DoxyCompactList}\small\item\em Returns the window. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structWaveMetadata}{Wave\+Metadata}} \mbox{\hyperlink{classWaveDetector_a87a66c6a4abba427c2826e80ca7b7444}{get\+Metadata}} ()
@@ -24,15 +24,15 @@ int \mbox{\hyperlink{classWaveDetector_a91b522b3335c62a1b498f5a4d09d1820}{check\
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classWaveDetector_aac49842bb930f2bbb174b60855c17aa1}\label{classWaveDetector_aac49842bb930f2bbb174b60855c17aa1}} 
+\mbox{\Hypertarget{classWaveDetector_a7be163020b3650568415ce2bb11753fc}\label{classWaveDetector_a7be163020b3650568415ce2bb11753fc}} 
 \index{WaveDetector@{WaveDetector}!WaveDetector@{WaveDetector}}
 \index{WaveDetector@{WaveDetector}!WaveDetector@{WaveDetector}}
 \doxysubsubsection{\texorpdfstring{WaveDetector()}{WaveDetector()}}
-{\footnotesize\ttfamily Wave\+Detector\+::\+Wave\+Detector (\begin{DoxyParamCaption}\item[{int}]{window\+Length,  }\item[{const char $\ast$}]{config\+Path,  }\item[{float}]{threshold,  }\item[{int}]{min\+Frames,  }\item[{int}]{frame\+Hz,  }\item[{float}]{first\+Burst\+Threshold,  }\item[{float}]{burst\+Done\+Threshold }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Wave\+Detector\+::\+Wave\+Detector (\begin{DoxyParamCaption}\item[{int}]{window\+Length,  }\item[{const char $\ast$}]{config\+Path,  }\item[{int}]{frames\+Per\+Sec,  }\item[{float}]{burst\+\_\+size\+\_\+threshold,  }\item[{int}]{burst\+\_\+dur\+\_\+threshold,  }\item[{int}]{Burst\+Finished\+Threshold }\end{DoxyParamCaption})}
 
 
 
-Constructs a new Wave Detector object and inititalizes the window. 
+Constructs a new Wave Detector object and initializes the window. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -40,15 +40,13 @@ Constructs a new Wave Detector object and inititalizes the window.
 \hline
 {\em config\+Path} & c-\/style string containing the full path of the electrode config \\
 \hline
-{\em threshold} & {\ttfamily float} threshold used to check the total spike count against \\
+{\em frames\+Per\+Sec} & {\ttfamily int} sampling rate in frames per second \\
 \hline
-{\em min\+Frames} & {\ttfamily int} minimum number of frames during which the window must be over the spike threshold in order to be considered a burst \\
+{\em burst\+\_\+size\+\_\+threshold} & {\ttfamily float} fraction of active electrodes needed to start a burst \\
 \hline
-{\em frame\+Hz} & {\ttfamily int} framerate, defaults to {\ttfamily 10000}. It shoud be {\ttfamily 10000} for the Max\+Two, and {\ttfamily 20000} for the Max\+One \\
+{\em burst\+\_\+dur\+\_\+threshold} & {\ttfamily int} minimum burst duration (in seconds) \\
 \hline
-{\em first\+Burst\+Threshold} & {\ttfamily float} the amount of time (in seconds) during which the total spike count of the window cannot go over the threshold in order for the first birst to be considered done. \\
-\hline
-{\em burst\+Done\+Threshold} & {\ttfamily float} the amount of time (in seconds) during which the total spike count of the window cannot go over the threshold in order for the entire birst to be considered done. \\
+{\em Burst\+Finished\+Threshold} & {\ttfamily int} minimum time (in seconds) of low activity to confirm burst ended \\
 \hline
 \end{DoxyParams}
 

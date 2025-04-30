@@ -1,14 +1,30 @@
 \hypertarget{classStimVector}{}\doxysection{Stim\+Vector Class Reference}
 \label{classStimVector}\index{StimVector@{StimVector}}
+
+
+Manages the logic for generating stimulation patterns (random or regular).  
+
+
+
+
+{\ttfamily \#include $<$stim\+Vector.\+h$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classStimVector_a35ed97316286ab538b09f51385c0a0b2}{Stim\+Vector}} (bool is\+Random=true, int stim\+Rate=5, bool maxtwo=false, float interval=0.\+001, float shuffle\+Frequency=5)
 \begin{DoxyCompactList}\small\item\em Construct a new Stim Vector object. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classStimVector_a706027fd834083dd42cbe6f23ae2303e}\label{classStimVector_a706027fd834083dd42cbe6f23ae2303e}} 
-int {\bfseries stimulate} (int frame)
-\end{DoxyCompactItemize}
+\mbox{\Hypertarget{classStimVector_a83b38d628a8748b199c2857d9cbb8447}\label{classStimVector_a83b38d628a8748b199c2857d9cbb8447}} 
+\mbox{\hyperlink{classStimVector_a83b38d628a8748b199c2857d9cbb8447}{$\sim$\+Stim\+Vector}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the Stim Vector object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classStimVector_ac87becc5e6eeec78c8f32d67f24315db}{stimulate}} (int frame)
+\begin{DoxyCompactList}\small\item\em Determines whether a pulse should be sent at the given frame. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Manages the logic for generating stimulation patterns (random or regular). 
+
+Supports regular evenly-\/spaced stimulations or randomized stimulations, including automatic refreshing of random patterns over long experiments. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classStimVector_a35ed97316286ab538b09f51385c0a0b2}\label{classStimVector_a35ed97316286ab538b09f51385c0a0b2}} 
@@ -23,17 +39,38 @@ Construct a new Stim Vector object.
 
 
 \begin{DoxyParams}{Parameters}
-{\em is\+Random} & {\ttfamily bool} indicates whether the object should simulate a random or regular stimulation pattern \\
+{\em is\+Random} & {\ttfamily bool} If true, generates randomized stimulations. \\
 \hline
-{\em stim\+Rate} & {\ttfamily int} stimulation rate in stimulations per second; must be $>$= 0 and $<$= F\+PS, default {\ttfamily 5} \\
+{\em stim\+Rate} & {\ttfamily int} Stimulations per second; must be $>$= 0. \\
 \hline
-{\em maxtwo} & {\ttfamily bool} indicates if the program is running on the maxtwo, default {\ttfamily false} \\
+{\em maxtwo} & {\ttfamily bool} True if running on Max\+Two (10k\+Hz), false for Max\+One (20k\+Hz). \\
 \hline
-{\em interval} & {\ttfamily float} space between \char`\"{}bins\char`\"{} for shuffling, in seconds, default {\ttfamily 0.\+001} \\
+{\em interval} & {\ttfamily float} Duration of a randomization bin, in seconds (default 0.\+001s). \\
 \hline
-{\em shuffle\+Frequency} & {\ttfamily float} length of shuffle window, in seconds, default {\ttfamily 5} \\
+{\em shuffle\+Frequency} & {\ttfamily float} How often (in seconds) to refresh the random stimulation pattern (default 5s). \\
 \hline
 \end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classStimVector_ac87becc5e6eeec78c8f32d67f24315db}\label{classStimVector_ac87becc5e6eeec78c8f32d67f24315db}} 
+\index{StimVector@{StimVector}!stimulate@{stimulate}}
+\index{stimulate@{stimulate}!StimVector@{StimVector}}
+\doxysubsubsection{\texorpdfstring{stimulate()}{stimulate()}}
+{\footnotesize\ttfamily bool Stim\+Vector\+::stimulate (\begin{DoxyParamCaption}\item[{int}]{frame }\end{DoxyParamCaption})}
+
+
+
+Determines whether a pulse should be sent at the given frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & {\ttfamily int} The current frame index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily bool} True if a stimulation pulse should occur, false otherwise. 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

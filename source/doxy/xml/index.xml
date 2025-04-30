@@ -111,25 +111,25 @@
     <member refid="classStimVector_1a63d2b03c7974cd57351531357c3ae243" kind="variable"><name>framesPerStim</name></member>
     <member refid="classStimVector_1a157f75bab78c474b72f6d47c65fe563d" kind="variable"><name>intvl</name></member>
     <member refid="classStimVector_1a9872b7e4a13a13c47a1f3c9c55403954" kind="variable"><name>length</name></member>
-    <member refid="classStimVector_1a78d8e1f841eba42b13b78f1f7951acb7" kind="variable"><name>stims</name></member>
-    <member refid="classStimVector_1a6166c081d07692121233dbeef640d2f7" kind="variable"><name>stimIdxs</name></member>
-    <member refid="classStimVector_1ad4417bd3223a7b5a9b271837d5ba197d" kind="variable"><name>leftover</name></member>
+    <member refid="classStimVector_1a1941a71cc8099904c2dc2693ef20bfb3" kind="variable"><name>framesUntilNextShuffle</name></member>
+    <member refid="classStimVector_1aae57d7b297f98fc6ab36e9e0a18bd886" kind="variable"><name>stims</name></member>
+    <member refid="classStimVector_1a6c25576fe9425e108463cad6a697f026" kind="variable"><name>stimIdxs</name></member>
+    <member refid="classStimVector_1a429e643d16ab4cf613e682ede3f0dbe5" kind="variable"><name>randomEngine</name></member>
     <member refid="classStimVector_1a35ed97316286ab538b09f51385c0a0b2" kind="function"><name>StimVector</name></member>
     <member refid="classStimVector_1a83b38d628a8748b199c2857d9cbb8447" kind="function"><name>~StimVector</name></member>
-    <member refid="classStimVector_1a706027fd834083dd42cbe6f23ae2303e" kind="function"><name>stimulate</name></member>
+    <member refid="classStimVector_1ac87becc5e6eeec78c8f32d67f24315db" kind="function"><name>stimulate</name></member>
     <member refid="classStimVector_1a0b4250f768cbe39bbea6424033ce9822" kind="function"><name>generateRandom</name></member>
   </compound>
   <compound refid="classWaveDetector" kind="class"><name>WaveDetector</name>
     <member refid="classWaveDetector_1a1b03f5ba903e44a002b8c38cb7d28880" kind="variable"><name>window</name></member>
     <member refid="classWaveDetector_1a3956713b66b71c3b9b38fc3349c23423" kind="variable"><name>metadata</name></member>
     <member refid="classWaveDetector_1a9517f06ddc7b8f0e2973b12097170986" kind="variable"><name>framesPerSec</name></member>
-    <member refid="classWaveDetector_1ae3598ac880a5f71a318f215124bc98ed" kind="variable"><name>minFrames</name></member>
-    <member refid="classWaveDetector_1abb6f03715b1a0d64537b089397a70c05" kind="variable"><name>threshold</name></member>
     <member refid="classWaveDetector_1afdc4ad4814343b23503411dd6d7d49d1" kind="variable"><name>totalElectrodes</name></member>
-    <member refid="classWaveDetector_1a1e0436c40195f6574ca3c2df5b9f5f4c" kind="variable"><name>firstBurstThreshold</name></member>
-    <member refid="classWaveDetector_1a006b51609f6cfa1646a8b048b645fa8e" kind="variable"><name>burstDoneThreshold</name></member>
+    <member refid="classWaveDetector_1af5fb15b487b0903ac6f687db89e791d5" kind="variable"><name>burst_size_threshold</name></member>
+    <member refid="classWaveDetector_1a68ca8daa80322d2ac37573f27a457d16" kind="variable"><name>burst_dur_threshold</name></member>
+    <member refid="classWaveDetector_1a9cab09e1a3e5412f8e46cd121af133e0" kind="variable"><name>BurstFinishedThreshold</name></member>
     <member refid="classWaveDetector_1a9dc0fec49023ac3a388568180575ee7d" kind="function"><name>WaveDetector</name></member>
-    <member refid="classWaveDetector_1aac49842bb930f2bbb174b60855c17aa1" kind="function"><name>WaveDetector</name></member>
+    <member refid="classWaveDetector_1a7be163020b3650568415ce2bb11753fc" kind="function"><name>WaveDetector</name></member>
     <member refid="classWaveDetector_1af493cc823e9388b83a3fc6bf8c48b159" kind="function"><name>~WaveDetector</name></member>
     <member refid="classWaveDetector_1ab85b28fe6599e109456d3e0da0e4306b" kind="function"><name>getWindow</name></member>
     <member refid="classWaveDetector_1a87a66c6a4abba427c2826e80ca7b7444" kind="function"><name>getMetadata</name></member>
@@ -138,17 +138,16 @@
     <member refid="classWaveDetector_1a91b522b3335c62a1b498f5a4d09d1820" kind="function"><name>checkBurst</name></member>
   </compound>
   <compound refid="structWaveMetadata" kind="struct"><name>WaveMetadata</name>
-    <member refid="structWaveMetadata_1a43a936bf37b698240e83c73819247b9d" kind="variable"><name>firstBurstDone</name></member>
+    <member refid="structWaveMetadata_1a5a3304ee8e64f9bdf4dc3d4d018f1b82" kind="variable"><name>burstOnsetComplete</name></member>
     <member refid="structWaveMetadata_1ab09b017cfcc62db1c282c262ee3cd1d3" kind="variable"><name>bursting</name></member>
-    <member refid="structWaveMetadata_1a857e1700fe32cab15307c18d4cf499f2" kind="variable"><name>spikeFrameCount</name></member>
-    <member refid="structWaveMetadata_1a377df28397310e46bd25375c4f89aabc" kind="variable"><name>noSpikeFrameCount</name></member>
-    <member refid="structWaveMetadata_1aec901b9f2e38c055ec36b9bec7bcdd64" kind="variable"><name>burstStartLocation</name></member>
-    <member refid="structWaveMetadata_1a9745a6c8ee53db6c94b5ff097631fe13" kind="variable"><name>burstStartSpikeCount</name></member>
     <member refid="structWaveMetadata_1a6b0f00082439f4d29b65e8c317e3cfad" kind="variable"><name>burstStartFrame</name></member>
-    <member refid="structWaveMetadata_1a469255c7ca660587882cbe3596924d3e" kind="variable"><name>burstEnd</name></member>
+    <member refid="structWaveMetadata_1a9745a6c8ee53db6c94b5ff097631fe13" kind="variable"><name>burstStartSpikeCount</name></member>
+    <member refid="structWaveMetadata_1a48c9ef47e6e5623401ef933b789b0cae" kind="variable"><name>burstStartLocation</name></member>
     <member refid="structWaveMetadata_1af3825d5da4ee2e0bc8de5c7bb4851131" kind="variable"><name>maxSpikes</name></member>
     <member refid="structWaveMetadata_1afb0a2e151d03d4b71fffc98d8adddfa7" kind="variable"><name>maxSpikesFrame</name></member>
     <member refid="structWaveMetadata_1ad98b293bc7abfa090b8c89fa9651d165" kind="variable"><name>maxSpikesLoc</name></member>
+    <member refid="structWaveMetadata_1a94e0e07a4345fcf2a8dc506ebdddb99c" kind="variable"><name>framesAboveThreshold</name></member>
+    <member refid="structWaveMetadata_1a377df28397310e46bd25375c4f89aabc" kind="variable"><name>noSpikeFrameCount</name></member>
   </compound>
   <compound refid="structWindowData" kind="struct"><name>WindowData</name>
     <member refid="structWindowData_1a79aa01fa4e73f2d77ad9b312c2a4a20a" kind="variable"><name>firingRate</name></member>
@@ -202,9 +201,8 @@
     <member refid="waveDetector_8h_1adb931b2f752b7879df254a7fd9d17e90a590d959e2e18444c852747822a47a1f9" kind="enumvalue"><name>bursting</name></member>
     <member refid="waveDetector_8h_1adb931b2f752b7879df254a7fd9d17e90aaba695c45d766bcb0a224a8a6f77fdb2" kind="enumvalue"><name>burstStart</name></member>
     <member refid="waveDetector_8h_1adb931b2f752b7879df254a7fd9d17e90ac53776c020338580a82b74d9388904d2" kind="enumvalue"><name>endShortBurst</name></member>
-    <member refid="waveDetector_8h_1adb931b2f752b7879df254a7fd9d17e90ad28df94fbab5be1b7294fe32d78ad9d6" kind="enumvalue"><name>leftToRight</name></member>
-    <member refid="waveDetector_8h_1adb931b2f752b7879df254a7fd9d17e90aff8288c3ef5ab9740210753e6c762c3f" kind="enumvalue"><name>rightToLeft</name></member>
-    <member refid="waveDetector_8h_1a02a71c18140ce67db4454eb9902e73c6" kind="typedef"><name>WaveMetadata</name></member>
+    <member refid="waveDetector_8h_1adb931b2f752b7879df254a7fd9d17e90a0d11291fb5bb0eb8a1a42a15de46c64e" kind="enumvalue"><name>burstOnLeft</name></member>
+    <member refid="waveDetector_8h_1adb931b2f752b7879df254a7fd9d17e90a3a2358bdcaf151ffcf6078569ec094e0" kind="enumvalue"><name>burstOnRight</name></member>
   </compound>
   <compound refid="worldstate_8h" kind="file"><name>worldstate.h</name>
   </compound>

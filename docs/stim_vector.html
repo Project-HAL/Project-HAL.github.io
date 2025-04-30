@@ -108,7 +108,9 @@
 <dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv410StimVector">
 <span id="_CPPv310StimVector"></span><span id="_CPPv210StimVector"></span><span id="StimVector"></span><span class="target" id="classStimVector"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">StimVector</span></span></span><a class="headerlink" href="#_CPPv410StimVector" title="Link to this definition"></a><br /></dt>
-<dd><div class="breathe-sectiondef docutils container">
+<dd><p>Manages the logic for generating stimulation patterns (random or regular). </p>
+<p>Supports regular evenly-spaced stimulations or randomized stimulations, including automatic refreshing of random patterns over long experiments. </p>
+<div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N10StimVector10StimVectorEbibff">
@@ -117,12 +119,32 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>isRandom</strong> – <code class="docutils literal notranslate"><span class="pre">bool</span></code> indicates whether the object should simulate a random or regular stimulation pattern </p></li>
-<li><p><strong>stimRate</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> stimulation rate in stimulations per second; must be &gt;= 0 and &lt;= FPS, default <code class="docutils literal notranslate"><span class="pre">5</span></code></p></li>
-<li><p><strong>maxtwo</strong> – <code class="docutils literal notranslate"><span class="pre">bool</span></code> indicates if the program is running on the maxtwo, default <code class="docutils literal notranslate"><span class="pre">false</span></code></p></li>
-<li><p><strong>interval</strong> – <code class="docutils literal notranslate"><span class="pre">float</span></code> space between “bins” for shuffling, in seconds, default <code class="docutils literal notranslate"><span class="pre">0.001</span></code></p></li>
-<li><p><strong>shuffleFrequency</strong> – <code class="docutils literal notranslate"><span class="pre">float</span></code> length of shuffle window, in seconds, default <code class="docutils literal notranslate"><span class="pre">5</span></code></p></li>
+<li><p><strong>isRandom</strong> – <code class="docutils literal notranslate"><span class="pre">bool</span></code> If true, generates randomized stimulations. </p></li>
+<li><p><strong>stimRate</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> Stimulations per second; must be &gt;= 0. </p></li>
+<li><p><strong>maxtwo</strong> – <code class="docutils literal notranslate"><span class="pre">bool</span></code> True if running on MaxTwo (10kHz), false for MaxOne (20kHz). </p></li>
+<li><p><strong>interval</strong> – <code class="docutils literal notranslate"><span class="pre">float</span></code> Duration of a randomization bin, in seconds (default 0.001s). </p></li>
+<li><p><strong>shuffleFrequency</strong> – <code class="docutils literal notranslate"><span class="pre">float</span></code> How often (in seconds) to refresh the random stimulation pattern (default 5s). </p></li>
 </ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N10StimVectorD0Ev">
+<span id="_CPPv3N10StimVectorD0Ev"></span><span id="_CPPv2N10StimVectorD0Ev"></span><span id="StimVector::~StimVector"></span><span class="target" id="classStimVector_1a83b38d628a8748b199c2857d9cbb8447"></span><span class="sig-name descname"><span class="n"><span class="pre">~StimVector</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10StimVectorD0Ev" title="Link to this definition"></a><br /></dt>
+<dd><p>Destroy the Stim Vector object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N10StimVector9stimulateEi">
+<span id="_CPPv3N10StimVector9stimulateEi"></span><span id="_CPPv2N10StimVector9stimulateEi"></span><span id="StimVector::stimulate__i"></span><span class="target" id="classStimVector_1ac87becc5e6eeec78c8f32d67f24315db"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">stimulate</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10StimVector9stimulateEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Determines whether a pulse should be sent at the given frame. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>frame</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> The current frame index. </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">bool</span></code> True if a stimulation pulse should occur, false otherwise. </p>
 </dd>
 </dl>
 </dd></dl>

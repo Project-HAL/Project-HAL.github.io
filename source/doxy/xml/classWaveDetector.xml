@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="162" column="23" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="162" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="125" column="23" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="125" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classWaveDetector_1a3956713b66b71c3b9b38fc3349c23423" prot="private" static="no" mutable="no">
         <type><ref refid="structWaveMetadata" kindref="compound">WaveMetadata</ref> *</type>
@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="164" column="22" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="164" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="127" column="22" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="127" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classWaveDetector_1a9517f06ddc7b8f0e2973b12097170986" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -40,33 +40,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="165" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="165" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classWaveDetector_1ae3598ac880a5f71a318f215124bc98ed" prot="private" static="no" mutable="no">
-        <type>int</type>
-        <definition>int WaveDetector::minFrames</definition>
-        <argsstring></argsstring>
-        <name>minFrames</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="166" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="166" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classWaveDetector_1abb6f03715b1a0d64537b089397a70c05" prot="private" static="no" mutable="no">
-        <type>float</type>
-        <definition>float WaveDetector::threshold</definition>
-        <argsstring></argsstring>
-        <name>threshold</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="167" column="15" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="167" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="128" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="128" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classWaveDetector_1afdc4ad4814343b23503411dd6d7d49d1" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -79,33 +53,46 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="168" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="168" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="129" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="129" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classWaveDetector_1a1e0436c40195f6574ca3c2df5b9f5f4c" prot="private" static="no" mutable="no">
+      <memberdef kind="variable" id="classWaveDetector_1af5fb15b487b0903ac6f687db89e791d5" prot="private" static="no" mutable="no">
         <type>float</type>
-        <definition>float WaveDetector::firstBurstThreshold</definition>
+        <definition>float WaveDetector::burst_size_threshold</definition>
         <argsstring></argsstring>
-        <name>firstBurstThreshold</name>
+        <name>burst_size_threshold</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="169" column="15" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="169" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="130" column="15" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="130" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classWaveDetector_1a006b51609f6cfa1646a8b048b645fa8e" prot="private" static="no" mutable="no">
-        <type>float</type>
-        <definition>float WaveDetector::burstDoneThreshold</definition>
+      <memberdef kind="variable" id="classWaveDetector_1a68ca8daa80322d2ac37573f27a457d16" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int WaveDetector::burst_dur_threshold</definition>
         <argsstring></argsstring>
-        <name>burstDoneThreshold</name>
+        <name>burst_dur_threshold</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="170" column="15" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="170" bodyend="-1"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="131" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWaveDetector_1a9cab09e1a3e5412f8e46cd121af133e0" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int WaveDetector::BurstFinishedThreshold</definition>
+        <argsstring></argsstring>
+        <name>BurstFinishedThreshold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="132" column="13" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="132" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -121,12 +108,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="82" column="9"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="59" column="9"/>
       </memberdef>
-      <memberdef kind="function" id="classWaveDetector_1aac49842bb930f2bbb174b60855c17aa1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classWaveDetector_1a7be163020b3650568415ce2bb11753fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>WaveDetector::WaveDetector</definition>
-        <argsstring>(int windowLength, const char *configPath, float threshold, int minFrames, int frameHz, float firstBurstThreshold, float burstDoneThreshold)</argsstring>
+        <argsstring>(int windowLength, const char *configPath, int framesPerSec, float burst_size_threshold, int burst_dur_threshold, int BurstFinishedThreshold)</argsstring>
         <name>WaveDetector</name>
         <param>
           <type>int</type>
@@ -137,27 +124,23 @@
           <declname>configPath</declname>
         </param>
         <param>
+          <type>int</type>
+          <declname>framesPerSec</declname>
+        </param>
+        <param>
           <type>float</type>
-          <declname>threshold</declname>
+          <declname>burst_size_threshold</declname>
         </param>
         <param>
           <type>int</type>
-          <declname>minFrames</declname>
+          <declname>burst_dur_threshold</declname>
         </param>
         <param>
           <type>int</type>
-          <declname>frameHz</declname>
-        </param>
-        <param>
-          <type>float</type>
-          <declname>firstBurstThreshold</declname>
-        </param>
-        <param>
-          <type>float</type>
-          <declname>burstDoneThreshold</declname>
+          <declname>BurstFinishedThreshold</declname>
         </param>
         <briefdescription>
-<para>Constructs a new Wave Detector object and inititalizes the window. </para>
+<para>Constructs a new Wave Detector object and initializes the window. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -178,42 +161,34 @@
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>threshold</parametername>
+<parametername>framesPerSec</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><computeroutput>float</computeroutput> threshold used to check the total spike count against </para>
+<para><computeroutput>int</computeroutput> sampling rate in frames per second </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>minFrames</parametername>
+<parametername>burst_size_threshold</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><computeroutput>int</computeroutput> minimum number of frames during which the window must be over the spike threshold in order to be considered a burst </para>
+<para><computeroutput>float</computeroutput> fraction of active electrodes needed to start a burst </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>frameHz</parametername>
+<parametername>burst_dur_threshold</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><computeroutput>int</computeroutput> framerate, defaults to <computeroutput>10000</computeroutput>. It shoud be <computeroutput>10000</computeroutput> for the MaxTwo, and <computeroutput>20000</computeroutput> for the MaxOne </para>
+<para><computeroutput>int</computeroutput> minimum burst duration (in seconds) </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>firstBurstThreshold</parametername>
+<parametername>BurstFinishedThreshold</parametername>
 </parameternamelist>
 <parameterdescription>
-<para><computeroutput>float</computeroutput> the amount of time (in seconds) during which the total spike count of the window cannot go over the threshold in order for the first birst to be considered done. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>burstDoneThreshold</parametername>
-</parameternamelist>
-<parameterdescription>
-<para><computeroutput>float</computeroutput> the amount of time (in seconds) during which the total spike count of the window cannot go over the threshold in order for the entire birst to be considered done. </para>
+<para><computeroutput>int</computeroutput> minimum time (in seconds) of low activity to confirm burst ended </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -221,7 +196,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="110" column="9"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="73" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classWaveDetector_1af493cc823e9388b83a3fc6bf8c48b159" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -229,13 +204,13 @@
         <argsstring>()</argsstring>
         <name>~WaveDetector</name>
         <briefdescription>
-<para>Destroys the Wave Detector Object. </para>
+<para>Destroys the Wave Detector object. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="115" column="9"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="78" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classWaveDetector_1ab85b28fe6599e109456d3e0da0e4306b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classChannelWindow" kindref="compound">ChannelWindow</ref> *</type>
@@ -252,7 +227,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="122" column="23"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="85" column="23"/>
       </memberdef>
       <memberdef kind="function" id="classWaveDetector_1a87a66c6a4abba427c2826e80ca7b7444" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structWaveMetadata" kindref="compound">WaveMetadata</ref></type>
@@ -269,7 +244,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="129" column="22"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="92" column="22"/>
       </memberdef>
       <memberdef kind="function" id="classWaveDetector_1aaa4806eeb2950412dbd779635a2f5667" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -297,7 +272,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="137" column="14"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="100" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classWaveDetector_1adc15bccbffc715f743bb9c7f0d27d5f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -340,7 +315,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="150" column="13"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="113" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classWaveDetector_1a91b522b3335c62a1b498f5a4d09d1820" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -370,29 +345,28 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="159" column="13"/>
+        <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="122" column="13"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="76" column="19" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="76" bodyend="172"/>
+    <location file="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" line="53" column="19" bodyfile="/home/mxwbio/Desktop/HAL/bin/lib/include/waveDetector.h" bodystart="53" bodyend="133"/>
     <listofallmembers>
-      <member refid="classWaveDetector_1a006b51609f6cfa1646a8b048b645fa8e" prot="private" virt="non-virtual"><scope>WaveDetector</scope><name>burstDoneThreshold</name></member>
+      <member refid="classWaveDetector_1a68ca8daa80322d2ac37573f27a457d16" prot="private" virt="non-virtual"><scope>WaveDetector</scope><name>burst_dur_threshold</name></member>
+      <member refid="classWaveDetector_1af5fb15b487b0903ac6f687db89e791d5" prot="private" virt="non-virtual"><scope>WaveDetector</scope><name>burst_size_threshold</name></member>
+      <member refid="classWaveDetector_1a9cab09e1a3e5412f8e46cd121af133e0" prot="private" virt="non-virtual"><scope>WaveDetector</scope><name>BurstFinishedThreshold</name></member>
       <member refid="classWaveDetector_1a91b522b3335c62a1b498f5a4d09d1820" prot="public" virt="non-virtual"><scope>WaveDetector</scope><name>checkBurst</name></member>
-      <member refid="classWaveDetector_1a1e0436c40195f6574ca3c2df5b9f5f4c" prot="private" virt="non-virtual"><scope>WaveDetector</scope><name>firstBurstThreshold</name></member>
       <member refid="classWaveDetector_1a9517f06ddc7b8f0e2973b12097170986" prot="private" virt="non-virtual"><scope>WaveDetector</scope><name>framesPerSec</name></member>
       <member refid="classWaveDetector_1a87a66c6a4abba427c2826e80ca7b7444" prot="public" virt="non-virtual"><scope>WaveDetector</scope><name>getMetadata</name></member>
       <member refid="classWaveDetector_1ab85b28fe6599e109456d3e0da0e4306b" prot="public" virt="non-virtual"><scope>WaveDetector</scope><name>getWindow</name></member>
       <member refid="classWaveDetector_1a3956713b66b71c3b9b38fc3349c23423" prot="private" virt="non-virtual"><scope>WaveDetector</scope><name>metadata</name></member>
-      <member refid="classWaveDetector_1ae3598ac880a5f71a318f215124bc98ed" prot="private" virt="non-virtual"><scope>WaveDetector</scope><name>minFrames</name></member>
       <member refid="classWaveDetector_1adc15bccbffc715f743bb9c7f0d27d5f8" prot="public" virt="non-virtual"><scope>WaveDetector</scope><name>processFrame</name></member>
       <member refid="classWaveDetector_1aaa4806eeb2950412dbd779635a2f5667" prot="public" virt="non-virtual"><scope>WaveDetector</scope><name>shiftWindow</name></member>
-      <member refid="classWaveDetector_1abb6f03715b1a0d64537b089397a70c05" prot="private" virt="non-virtual"><scope>WaveDetector</scope><name>threshold</name></member>
       <member refid="classWaveDetector_1afdc4ad4814343b23503411dd6d7d49d1" prot="private" virt="non-virtual"><scope>WaveDetector</scope><name>totalElectrodes</name></member>
       <member refid="classWaveDetector_1a9dc0fec49023ac3a388568180575ee7d" prot="public" virt="non-virtual"><scope>WaveDetector</scope><name>WaveDetector</name></member>
-      <member refid="classWaveDetector_1aac49842bb930f2bbb174b60855c17aa1" prot="public" virt="non-virtual"><scope>WaveDetector</scope><name>WaveDetector</name></member>
+      <member refid="classWaveDetector_1a7be163020b3650568415ce2bb11753fc" prot="public" virt="non-virtual"><scope>WaveDetector</scope><name>WaveDetector</name></member>
       <member refid="classWaveDetector_1a1b03f5ba903e44a002b8c38cb7d28880" prot="private" virt="non-virtual"><scope>WaveDetector</scope><name>window</name></member>
       <member refid="classWaveDetector_1af493cc823e9388b83a3fc6bf8c48b159" prot="public" virt="non-virtual"><scope>WaveDetector</scope><name>~WaveDetector</name></member>
     </listofallmembers>

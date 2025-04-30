@@ -67,7 +67,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">waveDetector.h File Reference</div>  </div>
@@ -96,16 +95,10 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWaveMetadata.html">WaveMetadata</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wave metadata struct.  <a href="structWaveMetadata.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metadata tracking the state of a neural burst event.  <a href="structWaveMetadata.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWaveDetector.html">WaveDetector</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a02a71c18140ce67db4454eb9902e73c6"><td class="memItemLeft" align="right" valign="top"><a id="a02a71c18140ce67db4454eb9902e73c6"></a>
-typedef struct <a class="el" href="structWaveMetadata.html">WaveMetadata</a>&#160;</td><td class="memItemRight" valign="bottom"><b>WaveMetadata</b></td></tr>
-<tr class="separator:a02a71c18140ce67db4454eb9902e73c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -115,8 +108,8 @@ Enumerations</h2></td></tr>
 <a class="el" href="waveDetector_8h.html#adb931b2f752b7879df254a7fd9d17e90aaba695c45d766bcb0a224a8a6f77fdb2">burstStart</a>, 
 <a class="el" href="waveDetector_8h.html#adb931b2f752b7879df254a7fd9d17e90ac53776c020338580a82b74d9388904d2">endShortBurst</a>, 
 <br />
-&#160;&#160;<a class="el" href="waveDetector_8h.html#adb931b2f752b7879df254a7fd9d17e90ad28df94fbab5be1b7294fe32d78ad9d6">leftToRight</a>, 
-<a class="el" href="waveDetector_8h.html#adb931b2f752b7879df254a7fd9d17e90aff8288c3ef5ab9740210753e6c762c3f">rightToLeft</a>
+&#160;&#160;<a class="el" href="waveDetector_8h.html#adb931b2f752b7879df254a7fd9d17e90a0d11291fb5bb0eb8a1a42a15de46c64e">burstOnLeft</a>, 
+<a class="el" href="waveDetector_8h.html#adb931b2f752b7879df254a7fd9d17e90a3a2358bdcaf151ffcf6078569ec094e0">burstOnRight</a>
 <br />
  }</td></tr>
 <tr class="memdesc:adb931b2f752b7879df254a7fd9d17e90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wave enum.  <a href="waveDetector_8h.html#adb931b2f752b7879df254a7fd9d17e90">More...</a><br /></td></tr>
@@ -124,10 +117,10 @@ Enumerations</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Header file for the <a class="el" href="classWaveDetector.html">WaveDetector</a> Class. </p>
-<dl class="section author"><dt>Author</dt><dd>Trevor Sullivan (<a href="#" onclick="location.href='mai'+'lto:'+'tre'+'vo'+'r.s'+'ul'+'liv'+'an'+'@tu'+'ft'+'s.e'+'du'; return false;">trevo<span style="display: none;">.nosp@m.</span>r.su<span style="display: none;">.nosp@m.</span>lliva<span style="display: none;">.nosp@m.</span>n@tu<span style="display: none;">.nosp@m.</span>fts.e<span style="display: none;">.nosp@m.</span>du</a>) </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2024-09-18</dd></dl>
-<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2024 </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Wesley Clawson (<a href="#" onclick="location.href='mai'+'lto:'+'wes'+'le'+'y.c'+'la'+'wso'+'n@'+'tuf'+'ts'+'.ed'+'u'; return false;">wesle<span style="display: none;">.nosp@m.</span>y.cl<span style="display: none;">.nosp@m.</span>awson<span style="display: none;">.nosp@m.</span>@tuf<span style="display: none;">.nosp@m.</span>ts.ed<span style="display: none;">.nosp@m.</span>u</a>). Previous by: Trevor Sullivan (<a href="#" onclick="location.href='mai'+'lto:'+'tre'+'vo'+'r.s'+'ul'+'liv'+'an'+'@tu'+'ft'+'s.e'+'du'; return false;">trevo<span style="display: none;">.nosp@m.</span>r.su<span style="display: none;">.nosp@m.</span>lliva<span style="display: none;">.nosp@m.</span>n@tu<span style="display: none;">.nosp@m.</span>fts.e<span style="display: none;">.nosp@m.</span>du</a>) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2025-04-29</dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2025 </dd></dl>
 </div><h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="adb931b2f752b7879df254a7fd9d17e90"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adb931b2f752b7879df254a7fd9d17e90">&#9670;&nbsp;</a></span>Wave</h2>
@@ -143,17 +136,17 @@ Enumerations</h2></td></tr>
 
 <p>Wave enum. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="adb931b2f752b7879df254a7fd9d17e90aed3e913024f0dd06e150c3e04eded410"></a>noBurst&#160;</td><td class="fielddoc"><p>culture is not currently bursting </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="adb931b2f752b7879df254a7fd9d17e90aed3e913024f0dd06e150c3e04eded410"></a>noBurst&#160;</td><td class="fielddoc"><p>Culture is not currently bursting </p>
 </td></tr>
-<tr><td class="fieldname"><a id="adb931b2f752b7879df254a7fd9d17e90a590d959e2e18444c852747822a47a1f9"></a>bursting&#160;</td><td class="fielddoc"><p>culture is currently bursting </p>
+<tr><td class="fieldname"><a id="adb931b2f752b7879df254a7fd9d17e90a590d959e2e18444c852747822a47a1f9"></a>bursting&#160;</td><td class="fielddoc"><p>Culture is currently bursting </p>
 </td></tr>
-<tr><td class="fieldname"><a id="adb931b2f752b7879df254a7fd9d17e90aaba695c45d766bcb0a224a8a6f77fdb2"></a>burstStart&#160;</td><td class="fielddoc"><p>burst just started </p>
+<tr><td class="fieldname"><a id="adb931b2f752b7879df254a7fd9d17e90aaba695c45d766bcb0a224a8a6f77fdb2"></a>burstStart&#160;</td><td class="fielddoc"><p>Burst just started </p>
 </td></tr>
-<tr><td class="fieldname"><a id="adb931b2f752b7879df254a7fd9d17e90ac53776c020338580a82b74d9388904d2"></a>endShortBurst&#160;</td><td class="fielddoc"><p>burst ended, but it was too short to be significant </p>
+<tr><td class="fieldname"><a id="adb931b2f752b7879df254a7fd9d17e90ac53776c020338580a82b74d9388904d2"></a>endShortBurst&#160;</td><td class="fielddoc"><p>Burst ended but was too short to be significant </p>
 </td></tr>
-<tr><td class="fieldname"><a id="adb931b2f752b7879df254a7fd9d17e90ad28df94fbab5be1b7294fe32d78ad9d6"></a>leftToRight&#160;</td><td class="fielddoc"><p>burst ended, and it went left to right </p>
+<tr><td class="fieldname"><a id="adb931b2f752b7879df254a7fd9d17e90a0d11291fb5bb0eb8a1a42a15de46c64e"></a>burstOnLeft&#160;</td><td class="fielddoc"><p>Burst ended, and it started on the Left </p>
 </td></tr>
-<tr><td class="fieldname"><a id="adb931b2f752b7879df254a7fd9d17e90aff8288c3ef5ab9740210753e6c762c3f"></a>rightToLeft&#160;</td><td class="fielddoc"><p>burst ended, and it went right to left </p>
+<tr><td class="fieldname"><a id="adb931b2f752b7879df254a7fd9d17e90a3a2358bdcaf151ffcf6078569ec094e0"></a>burstOnRight&#160;</td><td class="fielddoc"><p>Burst ended, and it started on the Right </p>
 </td></tr>
 </table>
 

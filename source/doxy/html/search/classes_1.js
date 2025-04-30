@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['electrodecoords_86',['electrodeCoords',['../structelectrodeCoords.html',1,'']]],
-  ['electrodemap_87',['ElectrodeMap',['../classElectrodeMap.html',1,'']]]
+  ['electrodecoords_87',['electrodeCoords',['../structelectrodeCoords.html',1,'']]],
+  ['electrodemap_88',['ElectrodeMap',['../classElectrodeMap.html',1,'']]]
 ];

@@ -69,54 +69,37 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Wave metadata struct.  
+<p>Metadata tracking the state of a neural burst event.  
  <a href="structWaveMetadata.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="waveDetector_8h_source.html">waveDetector.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a43a936bf37b698240e83c73819247b9d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWaveMetadata.html#a43a936bf37b698240e83c73819247b9d">firstBurstDone</a></td></tr>
-<tr class="separator:a43a936bf37b698240e83c73819247b9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a3304ee8e64f9bdf4dc3d4d018f1b82"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWaveMetadata.html#a5a3304ee8e64f9bdf4dc3d4d018f1b82">burstOnsetComplete</a></td></tr>
+<tr class="separator:a5a3304ee8e64f9bdf4dc3d4d018f1b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab09b017cfcc62db1c282c262ee3cd1d3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWaveMetadata.html#ab09b017cfcc62db1c282c262ee3cd1d3">bursting</a></td></tr>
 <tr class="separator:ab09b017cfcc62db1c282c262ee3cd1d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a857e1700fe32cab15307c18d4cf499f2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWaveMetadata.html#a857e1700fe32cab15307c18d4cf499f2">spikeFrameCount</a></td></tr>
-<tr class="separator:a857e1700fe32cab15307c18d4cf499f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a377df28397310e46bd25375c4f89aabc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWaveMetadata.html#a377df28397310e46bd25375c4f89aabc">noSpikeFrameCount</a></td></tr>
-<tr class="separator:a377df28397310e46bd25375c4f89aabc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec901b9f2e38c055ec36b9bec7bcdd64"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWaveMetadata.html#aec901b9f2e38c055ec36b9bec7bcdd64">burstStartLocation</a></td></tr>
-<tr class="separator:aec901b9f2e38c055ec36b9bec7bcdd64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9745a6c8ee53db6c94b5ff097631fe13"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWaveMetadata.html#a9745a6c8ee53db6c94b5ff097631fe13">burstStartSpikeCount</a></td></tr>
-<tr class="separator:a9745a6c8ee53db6c94b5ff097631fe13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b0f00082439f4d29b65e8c317e3cfad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWaveMetadata.html#a6b0f00082439f4d29b65e8c317e3cfad">burstStartFrame</a></td></tr>
 <tr class="separator:a6b0f00082439f4d29b65e8c317e3cfad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a469255c7ca660587882cbe3596924d3e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWaveMetadata.html#a469255c7ca660587882cbe3596924d3e">burstEnd</a></td></tr>
-<tr class="separator:a469255c7ca660587882cbe3596924d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9745a6c8ee53db6c94b5ff097631fe13"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWaveMetadata.html#a9745a6c8ee53db6c94b5ff097631fe13">burstStartSpikeCount</a></td></tr>
+<tr class="separator:a9745a6c8ee53db6c94b5ff097631fe13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48c9ef47e6e5623401ef933b789b0cae"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWaveMetadata.html#a48c9ef47e6e5623401ef933b789b0cae">burstStartLocation</a></td></tr>
+<tr class="separator:a48c9ef47e6e5623401ef933b789b0cae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3825d5da4ee2e0bc8de5c7bb4851131"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWaveMetadata.html#af3825d5da4ee2e0bc8de5c7bb4851131">maxSpikes</a></td></tr>
 <tr class="separator:af3825d5da4ee2e0bc8de5c7bb4851131"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb0a2e151d03d4b71fffc98d8adddfa7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWaveMetadata.html#afb0a2e151d03d4b71fffc98d8adddfa7">maxSpikesFrame</a></td></tr>
 <tr class="separator:afb0a2e151d03d4b71fffc98d8adddfa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad98b293bc7abfa090b8c89fa9651d165"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWaveMetadata.html#ad98b293bc7abfa090b8c89fa9651d165">maxSpikesLoc</a></td></tr>
 <tr class="separator:ad98b293bc7abfa090b8c89fa9651d165"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94e0e07a4345fcf2a8dc506ebdddb99c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWaveMetadata.html#a94e0e07a4345fcf2a8dc506ebdddb99c">framesAboveThreshold</a></td></tr>
+<tr class="separator:a94e0e07a4345fcf2a8dc506ebdddb99c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a377df28397310e46bd25375c4f89aabc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWaveMetadata.html#a377df28397310e46bd25375c4f89aabc">noSpikeFrameCount</a></td></tr>
+<tr class="separator:a377df28397310e46bd25375c4f89aabc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Wave metadata struct. </p>
+<div class="textblock"><p>Metadata tracking the state of a neural burst event. </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="a469255c7ca660587882cbe3596924d3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a469255c7ca660587882cbe3596924d3e">&#9670;&nbsp;</a></span>burstEnd</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int WaveMetadata::burstEnd</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>frame when the last burst ended </p>
-
-</div>
-</div>
 <a id="ab09b017cfcc62db1c282c262ee3cd1d3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab09b017cfcc62db1c282c262ee3cd1d3">&#9670;&nbsp;</a></span>bursting</h2>
 
@@ -128,7 +111,22 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>indicates if currently bursting </p>
+<p>True while a burst is active </p>
+
+</div>
+</div>
+<a id="a5a3304ee8e64f9bdf4dc3d4d018f1b82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a3304ee8e64f9bdf4dc3d4d018f1b82">&#9670;&nbsp;</a></span>burstOnsetComplete</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WaveMetadata::burstOnsetComplete</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>True once the burst has peaked and started to fall </p>
 
 </div>
 </div>
@@ -143,22 +141,22 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>starting frame of the current or most recent burst </p>
+<p>Frame when the burst started </p>
 
 </div>
 </div>
-<a id="aec901b9f2e38c055ec36b9bec7bcdd64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec901b9f2e38c055ec36b9bec7bcdd64">&#9670;&nbsp;</a></span>burstStartLocation</h2>
+<a id="a48c9ef47e6e5623401ef933b789b0cae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48c9ef47e6e5623401ef933b789b0cae">&#9670;&nbsp;</a></span>burstStartLocation</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int WaveMetadata::burstStartLocation</td>
+          <td class="memname">float WaveMetadata::burstStartLocation</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>starting location of the current or most recent burst </p>
+<p>X-location of onset of burst </p>
 
 </div>
 </div>
@@ -173,22 +171,22 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>starting spike count of the current or most recent burst </p>
+<p>Spike count when burst started </p>
 
 </div>
 </div>
-<a id="a43a936bf37b698240e83c73819247b9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43a936bf37b698240e83c73819247b9d">&#9670;&nbsp;</a></span>firstBurstDone</h2>
+<a id="a94e0e07a4345fcf2a8dc506ebdddb99c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94e0e07a4345fcf2a8dc506ebdddb99c">&#9670;&nbsp;</a></span>framesAboveThreshold</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool WaveMetadata::firstBurstDone</td>
+          <td class="memname">int WaveMetadata::framesAboveThreshold</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>indicates first burst is done </p>
+<p>Number of frames the spike count stayed above threshold </p>
 
 </div>
 </div>
@@ -203,7 +201,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>spike count of the peak of the burst (or most recent peak within the burst) </p>
+<p>Peak spike count observed during burst </p>
 
 </div>
 </div>
@@ -218,7 +216,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>frame number where the peak of the burst occured (or most recent peak within the burst) </p>
+<p>Frame when peak spike count occurred </p>
 
 </div>
 </div>
@@ -233,7 +231,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>locatin on the chpi of the peak of the burst (or most recent peak within the burst) </p>
+<p>X-location where peak spike count occurred </p>
 
 </div>
 </div>
@@ -248,22 +246,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>number of frames since the total spike count went over the threshold </p>
-
-</div>
-</div>
-<a id="a857e1700fe32cab15307c18d4cf499f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a857e1700fe32cab15307c18d4cf499f2">&#9670;&nbsp;</a></span>spikeFrameCount</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int WaveMetadata::spikeFrameCount</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>number of frames since the total spike count was below the threshold </p>
+<p>Number of frames spike count stayed below threshold </p>
 
 </div>
 </div>

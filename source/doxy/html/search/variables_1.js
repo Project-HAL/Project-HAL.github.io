@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['firstburstdone_164',['firstBurstDone',['../structWaveMetadata.html#a43a936bf37b698240e83c73819247b9d',1,'WaveMetadata']]]
+  ['framesabovethreshold_167',['framesAboveThreshold',['../structWaveMetadata.html#a94e0e07a4345fcf2a8dc506ebdddb99c',1,'WaveMetadata']]]
 ];

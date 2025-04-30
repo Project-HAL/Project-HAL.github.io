@@ -68,17 +68,29 @@ $(function() {
 <div class="title">StimVector Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Manages the logic for generating stimulation patterns (random or regular).  
+ <a href="classStimVector.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="stimVector_8h_source.html">stimVector.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a35ed97316286ab538b09f51385c0a0b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStimVector.html#a35ed97316286ab538b09f51385c0a0b2">StimVector</a> (bool isRandom=true, int stimRate=5, bool maxtwo=false, float interval=0.001, float shuffleFrequency=5)</td></tr>
 <tr class="memdesc:a35ed97316286ab538b09f51385c0a0b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Stim Vector object.  <a href="classStimVector.html#a35ed97316286ab538b09f51385c0a0b2">More...</a><br /></td></tr>
 <tr class="separator:a35ed97316286ab538b09f51385c0a0b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a706027fd834083dd42cbe6f23ae2303e"><td class="memItemLeft" align="right" valign="top"><a id="a706027fd834083dd42cbe6f23ae2303e"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>stimulate</b> (int frame)</td></tr>
-<tr class="separator:a706027fd834083dd42cbe6f23ae2303e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83b38d628a8748b199c2857d9cbb8447"><td class="memItemLeft" align="right" valign="top"><a id="a83b38d628a8748b199c2857d9cbb8447"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStimVector.html#a83b38d628a8748b199c2857d9cbb8447">~StimVector</a> ()</td></tr>
+<tr class="memdesc:a83b38d628a8748b199c2857d9cbb8447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the Stim Vector object. <br /></td></tr>
+<tr class="separator:a83b38d628a8748b199c2857d9cbb8447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac87becc5e6eeec78c8f32d67f24315db"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStimVector.html#ac87becc5e6eeec78c8f32d67f24315db">stimulate</a> (int frame)</td></tr>
+<tr class="memdesc:ac87becc5e6eeec78c8f32d67f24315db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether a pulse should be sent at the given frame.  <a href="classStimVector.html#ac87becc5e6eeec78c8f32d67f24315db">More...</a><br /></td></tr>
+<tr class="separator:ac87becc5e6eeec78c8f32d67f24315db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Manages the logic for generating stimulation patterns (random or regular). </p>
+<p>Supports regular evenly-spaced stimulations or randomized stimulations, including automatic refreshing of random patterns over long experiments. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a35ed97316286ab538b09f51385c0a0b2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a35ed97316286ab538b09f51385c0a0b2">&#9670;&nbsp;</a></span>StimVector()</h2>
 
@@ -126,14 +138,42 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>stimulate</b> (int fra
 <p>Construct a new Stim Vector object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">isRandom</td><td><code>bool</code> indicates whether the object should simulate a random or regular stimulation pattern </td></tr>
-    <tr><td class="paramname">stimRate</td><td><code>int</code> stimulation rate in stimulations per second; must be &gt;= 0 and &lt;= FPS, default <code>5</code> </td></tr>
-    <tr><td class="paramname">maxtwo</td><td><code>bool</code> indicates if the program is running on the maxtwo, default <code>false</code> </td></tr>
-    <tr><td class="paramname">interval</td><td><code>float</code> space between "bins" for shuffling, in seconds, default <code>0.001</code> </td></tr>
-    <tr><td class="paramname">shuffleFrequency</td><td><code>float</code> length of shuffle window, in seconds, default <code>5</code> </td></tr>
+    <tr><td class="paramname">isRandom</td><td><code>bool</code> If true, generates randomized stimulations. </td></tr>
+    <tr><td class="paramname">stimRate</td><td><code>int</code> Stimulations per second; must be &gt;= 0. </td></tr>
+    <tr><td class="paramname">maxtwo</td><td><code>bool</code> True if running on MaxTwo (10kHz), false for MaxOne (20kHz). </td></tr>
+    <tr><td class="paramname">interval</td><td><code>float</code> Duration of a randomization bin, in seconds (default 0.001s). </td></tr>
+    <tr><td class="paramname">shuffleFrequency</td><td><code>float</code> How often (in seconds) to refresh the random stimulation pattern (default 5s). </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac87becc5e6eeec78c8f32d67f24315db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac87becc5e6eeec78c8f32d67f24315db">&#9670;&nbsp;</a></span>stimulate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool StimVector::stimulate </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determines whether a pulse should be sent at the given frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame</td><td><code>int</code> The current frame index. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>bool</code> True if a stimulation pulse should occur, false otherwise. </dd></dl>
 
 </div>
 </div>
