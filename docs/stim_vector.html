@@ -59,7 +59,11 @@
 <li class="toctree-l3"><a class="reference internal" href="nes.html"><code class="docutils literal notranslate"><span class="pre">NES</span></code></a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">StimVector</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#overview">Overview</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#members">Members</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#timeline-behavior">Timeline Behavior</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#usage-notes">Usage Notes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#integration">Integration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#see-also">See Also</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#documentation-note">Documentation note</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="wave_detector.html"><code class="docutils literal notranslate"><span class="pre">WaveDetector</span></code></a></li>
@@ -102,56 +106,67 @@
 <h1><code class="docutils literal notranslate"><span class="pre">StimVector</span></code><a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
-</section>
-<section id="members">
-<h2>Members<a class="headerlink" href="#members" title="Link to this heading"></a></h2>
-<dl class="cpp class">
-<dt class="sig sig-object cpp" id="_CPPv410StimVector">
-<span id="_CPPv310StimVector"></span><span id="_CPPv210StimVector"></span><span id="StimVector"></span><span class="target" id="classStimVector"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">StimVector</span></span></span><a class="headerlink" href="#_CPPv410StimVector" title="Link to this definition"></a><br /></dt>
-<dd><p>Manages the logic for generating stimulation patterns (random or regular). </p>
-<p>Supports regular evenly-spaced stimulations or randomized stimulations, including automatic refreshing of random patterns over long experiments. </p>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N10StimVector10StimVectorEbibff">
-<span id="_CPPv3N10StimVector10StimVectorEbibff"></span><span id="_CPPv2N10StimVector10StimVectorEbibff"></span><span id="StimVector::StimVector__b.i.b.float.float"></span><span class="target" id="classStimVector_1a35ed97316286ab538b09f51385c0a0b2"></span><span class="sig-name descname"><span class="n"><span class="pre">StimVector</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">isRandom</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">true</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">stimRate</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">5</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">maxtwo</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">interval</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.001</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">shuffleFrequency</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">5</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10StimVector10StimVectorEbibff" title="Link to this definition"></a><br /></dt>
-<dd><p>Construct a new Stim Vector object. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>isRandom</strong> – <code class="docutils literal notranslate"><span class="pre">bool</span></code> If true, generates randomized stimulations. </p></li>
-<li><p><strong>stimRate</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> Stimulations per second; must be &gt;= 0. </p></li>
-<li><p><strong>maxtwo</strong> – <code class="docutils literal notranslate"><span class="pre">bool</span></code> True if running on MaxTwo (10kHz), false for MaxOne (20kHz). </p></li>
-<li><p><strong>interval</strong> – <code class="docutils literal notranslate"><span class="pre">float</span></code> Duration of a randomization bin, in seconds (default 0.001s). </p></li>
-<li><p><strong>shuffleFrequency</strong> – <code class="docutils literal notranslate"><span class="pre">float</span></code> How often (in seconds) to refresh the random stimulation pattern (default 5s). </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N10StimVectorD0Ev">
-<span id="_CPPv3N10StimVectorD0Ev"></span><span id="_CPPv2N10StimVectorD0Ev"></span><span id="StimVector::~StimVector"></span><span class="target" id="classStimVector_1a83b38d628a8748b199c2857d9cbb8447"></span><span class="sig-name descname"><span class="n"><span class="pre">~StimVector</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10StimVectorD0Ev" title="Link to this definition"></a><br /></dt>
-<dd><p>Destroy the Stim Vector object. </p>
-</dd></dl>
-
-<dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N10StimVector9stimulateEi">
-<span id="_CPPv3N10StimVector9stimulateEi"></span><span id="_CPPv2N10StimVector9stimulateEi"></span><span id="StimVector::stimulate__i"></span><span class="target" id="classStimVector_1ac87becc5e6eeec78c8f32d67f24315db"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">stimulate</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">frame</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10StimVector9stimulateEi" title="Link to this definition"></a><br /></dt>
-<dd><p>Determines whether a pulse should be sent at the given frame. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>frame</strong> – <code class="docutils literal notranslate"><span class="pre">int</span></code> The current frame index. </p>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">bool</span></code> True if a stimulation pulse should occur, false otherwise. </p>
-</dd>
-</dl>
-</dd></dl>
-
+<p><a class="reference external" href="https://project-hal.github.io/stim_vector.html"><code class="docutils literal notranslate"><span class="pre">StimVector</span></code></a> is a class designed to generate either regular or random stimulation patterns, which can be queried on a frame-by-frame basis. The purpose is to control stimulation delivery during closed-loop experiments depending on system state (e.g. burst detected).</p>
+<p>The stimulation pattern is defined over <strong>a fixed-length window of time</strong> and subdivided into <strong>time bins</strong> (e.g. 1 ms), with either <cite>True</cite> or <cite>False</cite> flags denoting whether a stimulation should occur at each bin.</p>
+<p>The pattern is:
+- <strong>Regular</strong>: evenly spaced stimulations (e.g. at 5 Hz)
+- <strong>Random</strong>: stimulation bins selected randomly, respecting the average frequency</p>
+<div class="line-block">
+<div class="line"><br /></div>
 </div>
-</dd></dl>
-
+</section>
+<section id="timeline-behavior">
+<h2>Timeline Behavior<a class="headerlink" href="#timeline-behavior" title="Link to this heading"></a></h2>
+<p>Below is a conceptual timeline of how stimulation decisions are made using <cite>StimVector</cite>.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Frame #:     0    10   20   30   40   50   60   70   80   90   100  ...
+Bins:       |    |    |    |    |    |    |    |    |    |    |
+            [ ]  [X]  [ ]  [ ]  [ ]  [X]  [ ]  [ ]  [ ]  [X]  [ ]   ← random mode
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Bins are spaced based on the interval (e.g. 0.001 sec × fps = 10 frames)</p></li>
+<li><p>Every <cite>shuffleFrequency</cite> seconds (e.g. 5s), a new random pattern is generated</p></li>
+<li><p>If in regular mode, stimulation occurs every <cite>framesPerStim</cite> frames</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="usage-notes">
+<h2>Usage Notes<a class="headerlink" href="#usage-notes" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><cite>stimulate(frame)</cite> should be called every frame</p></li>
+<li><p>In <strong>random</strong> mode, it returns <cite>true</cite> if the current frame aligns with a bin and that bin is marked as <cite>true</cite></p></li>
+<li><p>In <strong>regular</strong> mode, it returns <cite>true</cite> every <cite>N</cite> frames, where <cite>N</cite> is derived from the desired frequency</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="integration">
+<h2>Integration<a class="headerlink" href="#integration" title="Link to this heading"></a></h2>
+<p><cite>StimVector</cite> is typically used in experiments in conjunction with burst detectors. For example:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">previousBurst</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">stimulate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rightStim</span><span class="p">.</span><span class="n">stimulate</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="see-also">
+<h2>See Also<a class="headerlink" href="#see-also" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><span class="xref std std-doc">WaveDetector</span> — used to determine when and where bursts occur</p></li>
+<li><p><span class="xref std std-doc">BurstTrainer</span> — full experiment loop integration</p></li>
+</ul>
+</section>
+<section id="documentation-note">
+<h2>Documentation note<a class="headerlink" href="#documentation-note" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>These were initially generated by AI and then edited by hand by Wesley Clawson.</p></li>
+</ul>
 </section>
 </section>
 

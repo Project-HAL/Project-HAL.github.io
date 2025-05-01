@@ -60,7 +60,14 @@
 <li class="toctree-l3"><a class="reference internal" href="stim_vector.html"><code class="docutils literal notranslate"><span class="pre">StimVector</span></code></a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">WaveDetector</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#conceptual-timeline">Conceptual Timeline</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#key-features">Key Features</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#typical-usage">Typical Usage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#burst-detection-parameters">Burst Detection Parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#return-values">Return Values</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#members">Members</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#old-example">Old Example</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#see-also">See Also</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="world_state.html"><code class="docutils literal notranslate"><span class="pre">WorldState</span></code></a></li>
@@ -102,61 +109,97 @@
 <h1><code class="docutils literal notranslate"><span class="pre">WaveDetector</span></code><a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
-<div class="toggle docutils container">
-<div class="header docutils container">
-<p>Example closed-loop program</p>
+<p><a class="reference external" href="https://project-hal.github.io/wave_detector.html"><code class="docutils literal notranslate"><span class="pre">WaveDetector</span></code></a> is a burst detection class designed to operate on a streaming sequence of spike frames. It identifies periods of coordinated neural activity (bursts), tracks where in space the burst began (on the chip), and estimates the time and direction of the burst propagation.</p>
+<div class="line-block">
+<div class="line"><br /></div>
 </div>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
-<span class="linenos"> 2</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;hal.h&quot;</span>
-<span class="linenos"> 3</span>
-<span class="linenos"> 4</span><span class="cp">#define SYS_START_BUFFER 50000</span>
-<span class="linenos"> 5</span>
-<span class="linenos"> 6</span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">argv</span><span class="p">[])</span><span class="w"> </span><span class="p">{</span>
-<span class="linenos"> 7</span><span class="w">    </span><span class="n">maxlab</span><span class="o">::</span><span class="n">verifyStatus</span><span class="p">(</span><span class="n">maxlab</span><span class="o">::</span><span class="n">DataStreamerFiltered_open</span><span class="p">(</span><span class="n">maxlab</span><span class="o">::</span><span class="n">FilterType</span><span class="o">::</span><span class="n">IIR</span><span class="p">));</span>
-<span class="linenos"> 8</span>
-<span class="linenos"> 9</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">sampleRate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10000</span><span class="p">;</span>
-<span class="linenos">10</span>
-<span class="linenos">11</span><span class="w">    </span><span class="c1">// ignore system startup activity</span>
-<span class="linenos">12</span><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">SYS_START_BUFFER</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="linenos">13</span><span class="w">        </span><span class="n">maxlab</span><span class="o">::</span><span class="n">FilteredFrameData</span><span class="w"> </span><span class="n">frameData</span><span class="p">;</span>
-<span class="linenos">14</span><span class="w">        </span><span class="n">maxlab</span><span class="o">::</span><span class="n">Status</span><span class="w"> </span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">maxlab</span><span class="o">::</span><span class="n">DataStreamerFiltered_receiveNextFrame</span><span class="p">(</span><span class="o">&amp;</span><span class="n">frameData</span><span class="p">);</span>
-<span class="linenos">15</span>
-<span class="linenos">16</span><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">status</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">maxlab</span><span class="o">::</span><span class="n">Status</span><span class="o">::</span><span class="n">MAXLAB_NO_FRAME</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="linenos">17</span><span class="w">            </span><span class="n">i</span><span class="o">--</span><span class="p">;</span>
-<span class="linenos">18</span><span class="w">            </span><span class="k">continue</span><span class="p">;</span>
-<span class="linenos">19</span><span class="w">        </span><span class="p">}</span>
-<span class="linenos">20</span><span class="w">    </span><span class="p">}</span>
-<span class="linenos">21</span>
-<span class="linenos">22</span><span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">configPath</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;/home/mxwbio/config.cfg&quot;</span><span class="p">;</span>
-<span class="linenos">23</span>
-<span class="linenos">24</span><span class="w">    </span><span class="c1">// window length, configuration path, burst threshold, min length, hz</span>
-<span class="linenos">25</span><span class="w">    </span><span class="n">WaveDetector</span><span class="w"> </span><span class="n">wd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">WaveDetector</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="w"> </span><span class="n">configPath</span><span class="p">,</span><span class="w"> </span><span class="mf">0.1</span><span class="p">,</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span><span class="w"> </span><span class="n">sampleRate</span><span class="p">);</span>
-<span class="linenos">26</span>
-<span class="linenos">27</span><span class="w">    </span><span class="c1">// examine the culture for 20 seconds</span>
-<span class="linenos">28</span><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">200000</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="linenos">29</span><span class="w">        </span><span class="n">maxlab</span><span class="o">::</span><span class="n">FilteredFrameData</span><span class="w"> </span><span class="n">frameData</span><span class="p">;</span>
-<span class="linenos">30</span><span class="w">        </span><span class="n">maxlab</span><span class="o">::</span><span class="n">Status</span><span class="w"> </span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">maxlab</span><span class="o">::</span><span class="n">DataStreamerFiltered_receiveNextFrame</span><span class="p">(</span><span class="o">&amp;</span><span class="n">frameData</span><span class="p">);</span>
-<span class="linenos">31</span>
-<span class="linenos">32</span><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">status</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">maxlab</span><span class="o">::</span><span class="n">Status</span><span class="o">::</span><span class="n">MAXLAB_NO_FRAME</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="linenos">33</span><span class="w">            </span><span class="n">i</span><span class="o">--</span><span class="p">;</span>
-<span class="linenos">34</span><span class="w">            </span><span class="k">continue</span><span class="p">;</span>
-<span class="linenos">35</span><span class="w">        </span><span class="p">}</span>
-<span class="linenos">36</span>
-<span class="linenos">37</span><span class="w">        </span><span class="c1">// extend the window and check for burst waves</span>
-<span class="linenos">38</span><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">val</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">wd</span><span class="p">.</span><span class="n">processFrame</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">200</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">SYS_START_BUFFER</span><span class="p">);</span>
-<span class="linenos">39</span>
-<span class="linenos">40</span><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">val</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">Wave</span><span class="o">::</span><span class="n">leftToRight</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="linenos">41</span><span class="w">            </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Culture bursted left to right!&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
-<span class="linenos">42</span><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">val</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">Wave</span><span class="o">::</span><span class="n">rightToLeft</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="linenos">43</span><span class="w">            </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Culture bursted right to left!&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
-<span class="linenos">44</span><span class="w">        </span><span class="p">}</span>
-<span class="linenos">45</span><span class="w">    </span><span class="p">}</span>
-<span class="linenos">46</span>
-<span class="linenos">47</span><span class="w">    </span><span class="n">maxlab</span><span class="o">::</span><span class="n">verifyStatus</span><span class="p">(</span><span class="n">maxlab</span><span class="o">::</span><span class="n">DataStreamerFiltered_close</span><span class="p">());</span>
-<span class="linenos">48</span><span class="p">}</span>
+<p>This detection is <strong>frame-by-frame</strong>, updating internal metadata as the system evolves. Bursts are determined based on a thresholded spike count that must be exceeded for a minimum duration.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="conceptual-timeline">
+<h2>Conceptual Timeline<a class="headerlink" href="#conceptual-timeline" title="Link to this heading"></a></h2>
+<p>A conceptual example showing spike counts and thresholds over time:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Time (frames)  →
+Spike Count    ──────────────────────────────────────────────
+                 ___        ___________
+                /  ↑\      /           \
+               /   | \____/             \___
+              ↑    |                     ↑
+              |    |                     |
+       burstStart   burstPeak         burstEnd
+                    (maxSpikes)
 </pre></div>
 </div>
+<div class="line-block">
+<div class="line"><br /></div>
 </div>
+</section>
+<section id="key-features">
+<h2>Key Features<a class="headerlink" href="#key-features" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Detects bursts that exceed a <strong>spike count threshold</strong></p></li>
+<li><p>Tracks:
+- When the burst starts
+- Where on the chip it starts (<cite>burstStartLocation</cite>)
+- Where the peak occurs (<cite>maxSpikesLoc</cite>)
+- How long the burst lasts</p></li>
+<li><p>Determines direction:
+- If peak is <strong>right of start</strong>, <cite>burstOnLeft</cite> is returned
+- If peak is <strong>left of start</strong>, <cite>burstOnRight</cite> is returned</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="typical-usage">
+<h2>Typical Usage<a class="headerlink" href="#typical-usage" title="Link to this heading"></a></h2>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">WaveDetector</span><span class="w"> </span><span class="nf">sensor</span><span class="p">(</span><span class="n">WINDOW</span><span class="p">,</span><span class="w"> </span><span class="n">configPath</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span><span class="w"> </span><span class="n">framesPerSec</span><span class="p">,</span>
+<span class="w">                    </span><span class="n">burst_size_threshold</span><span class="p">,</span><span class="w"> </span><span class="n">burst_dur_threshold</span><span class="p">,</span><span class="w"> </span><span class="mf">0.5</span><span class="p">);</span>
+<span class="n">ChannelWindow</span><span class="w"> </span><span class="o">*</span><span class="n">window</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sensor</span><span class="p">.</span><span class="n">getWindow</span><span class="p">();</span>
+
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">total_frames</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">maxlab</span><span class="o">::</span><span class="n">FilteredFrameData</span><span class="w"> </span><span class="n">frameData</span><span class="p">;</span>
+<span class="w">    </span><span class="k">auto</span><span class="w"> </span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">maxlab</span><span class="o">::</span><span class="n">DataStreamerFiltered_receiveNextFrame</span><span class="p">(</span><span class="o">&amp;</span><span class="n">frameData</span><span class="p">);</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">status</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">maxlab</span><span class="o">::</span><span class="n">Status</span><span class="o">::</span><span class="n">MAXLAB_OK</span><span class="p">)</span><span class="w"> </span><span class="k">continue</span><span class="p">;</span>
+
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">waveVal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sensor</span><span class="p">.</span><span class="n">processFrame</span><span class="p">(</span><span class="n">frameData</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="p">);</span>
+
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">waveVal</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">Wave</span><span class="o">::</span><span class="n">burstOnLeft</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">waveVal</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">Wave</span><span class="o">::</span><span class="n">burstOnRight</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">WaveMetadata</span><span class="w"> </span><span class="n">metadata</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sensor</span><span class="p">.</span><span class="n">getMetadata</span><span class="p">();</span>
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Burst started at: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">metadata</span><span class="p">.</span><span class="n">burstStartFrame</span>
+<span class="w">                  </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;, Peak location: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">metadata</span><span class="p">.</span><span class="n">maxSpikesLoc</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="burst-detection-parameters">
+<h2>Burst Detection Parameters<a class="headerlink" href="#burst-detection-parameters" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><cite>burst_size_threshold</cite>: percentage of active electrodes that must spike</p></li>
+<li><p><cite>burst_dur_threshold</cite>: minimum duration (in seconds) above threshold</p></li>
+<li><p><cite>BurstFinishedThreshold</cite>: time (in seconds) system must be quiet before the burst is considered over</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="return-values">
+<h2>Return Values<a class="headerlink" href="#return-values" title="Link to this heading"></a></h2>
+<p>From <cite>processFrame()</cite> / <cite>checkBurst()</cite>:</p>
+<ul class="simple">
+<li><p><cite>Wave::noBurst</cite>: no burst activity detected</p></li>
+<li><p><cite>Wave::burstStart</cite>: new burst detected</p></li>
+<li><p><cite>Wave::bursting</cite>: mid-burst</p></li>
+<li><p><cite>Wave::burstOnLeft</cite>: completed burst with left-to-right propagation</p></li>
+<li><p><cite>Wave::burstOnRight</cite>: completed burst with right-to-left propagation</p></li>
+<li><p><cite>Wave::endShortBurst</cite>: detected activity that did not meet burst duration threshold</p></li>
+</ul>
 </section>
 <section id="members">
 <h2>Members<a class="headerlink" href="#members" title="Link to this heading"></a></h2>
@@ -375,6 +418,72 @@
 
 </dd></dl>
 
+</section>
+<section id="old-example">
+<h2>Old Example<a class="headerlink" href="#old-example" title="Link to this heading"></a></h2>
+<p>Someone should change this (me).</p>
+<div class="toggle docutils container">
+<div class="header docutils container">
+<p>Example closed-loop program</p>
+</div>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<span class="linenos"> 2</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;hal.h&quot;</span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span><span class="cp">#define SYS_START_BUFFER 50000</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">argv</span><span class="p">[])</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos"> 7</span><span class="w">    </span><span class="n">maxlab</span><span class="o">::</span><span class="n">verifyStatus</span><span class="p">(</span><span class="n">maxlab</span><span class="o">::</span><span class="n">DataStreamerFiltered_open</span><span class="p">(</span><span class="n">maxlab</span><span class="o">::</span><span class="n">FilterType</span><span class="o">::</span><span class="n">IIR</span><span class="p">));</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">sampleRate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10000</span><span class="p">;</span>
+<span class="linenos">10</span>
+<span class="linenos">11</span><span class="w">    </span><span class="c1">// ignore system startup activity</span>
+<span class="linenos">12</span><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">SYS_START_BUFFER</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">13</span><span class="w">        </span><span class="n">maxlab</span><span class="o">::</span><span class="n">FilteredFrameData</span><span class="w"> </span><span class="n">frameData</span><span class="p">;</span>
+<span class="linenos">14</span><span class="w">        </span><span class="n">maxlab</span><span class="o">::</span><span class="n">Status</span><span class="w"> </span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">maxlab</span><span class="o">::</span><span class="n">DataStreamerFiltered_receiveNextFrame</span><span class="p">(</span><span class="o">&amp;</span><span class="n">frameData</span><span class="p">);</span>
+<span class="linenos">15</span>
+<span class="linenos">16</span><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">status</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">maxlab</span><span class="o">::</span><span class="n">Status</span><span class="o">::</span><span class="n">MAXLAB_NO_FRAME</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">17</span><span class="w">            </span><span class="n">i</span><span class="o">--</span><span class="p">;</span>
+<span class="linenos">18</span><span class="w">            </span><span class="k">continue</span><span class="p">;</span>
+<span class="linenos">19</span><span class="w">        </span><span class="p">}</span>
+<span class="linenos">20</span><span class="w">    </span><span class="p">}</span>
+<span class="linenos">21</span>
+<span class="linenos">22</span><span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">configPath</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;/home/mxwbio/config.cfg&quot;</span><span class="p">;</span>
+<span class="linenos">23</span>
+<span class="linenos">24</span><span class="w">    </span><span class="c1">// window length, configuration path, burst threshold, min length, hz</span>
+<span class="linenos">25</span><span class="w">    </span><span class="n">WaveDetector</span><span class="w"> </span><span class="n">wd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">WaveDetector</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="w"> </span><span class="n">configPath</span><span class="p">,</span><span class="w"> </span><span class="mf">0.1</span><span class="p">,</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span><span class="w"> </span><span class="n">sampleRate</span><span class="p">);</span>
+<span class="linenos">26</span>
+<span class="linenos">27</span><span class="w">    </span><span class="c1">// examine the culture for 20 seconds</span>
+<span class="linenos">28</span><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">200000</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">29</span><span class="w">        </span><span class="n">maxlab</span><span class="o">::</span><span class="n">FilteredFrameData</span><span class="w"> </span><span class="n">frameData</span><span class="p">;</span>
+<span class="linenos">30</span><span class="w">        </span><span class="n">maxlab</span><span class="o">::</span><span class="n">Status</span><span class="w"> </span><span class="n">status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">maxlab</span><span class="o">::</span><span class="n">DataStreamerFiltered_receiveNextFrame</span><span class="p">(</span><span class="o">&amp;</span><span class="n">frameData</span><span class="p">);</span>
+<span class="linenos">31</span>
+<span class="linenos">32</span><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">status</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">maxlab</span><span class="o">::</span><span class="n">Status</span><span class="o">::</span><span class="n">MAXLAB_NO_FRAME</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">33</span><span class="w">            </span><span class="n">i</span><span class="o">--</span><span class="p">;</span>
+<span class="linenos">34</span><span class="w">            </span><span class="k">continue</span><span class="p">;</span>
+<span class="linenos">35</span><span class="w">        </span><span class="p">}</span>
+<span class="linenos">36</span>
+<span class="linenos">37</span><span class="w">        </span><span class="c1">// extend the window and check for burst waves</span>
+<span class="linenos">38</span><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">val</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">wd</span><span class="p">.</span><span class="n">processFrame</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">200</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">SYS_START_BUFFER</span><span class="p">);</span>
+<span class="linenos">39</span>
+<span class="linenos">40</span><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">val</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">Wave</span><span class="o">::</span><span class="n">leftToRight</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">41</span><span class="w">            </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Culture bursted left to right!&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="linenos">42</span><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">val</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">Wave</span><span class="o">::</span><span class="n">rightToLeft</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">43</span><span class="w">            </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Culture bursted right to left!&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="linenos">44</span><span class="w">        </span><span class="p">}</span>
+<span class="linenos">45</span><span class="w">    </span><span class="p">}</span>
+<span class="linenos">46</span>
+<span class="linenos">47</span><span class="w">    </span><span class="n">maxlab</span><span class="o">::</span><span class="n">verifyStatus</span><span class="p">(</span><span class="n">maxlab</span><span class="o">::</span><span class="n">DataStreamerFiltered_close</span><span class="p">());</span>
+<span class="linenos">48</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="see-also">
+<h2>See Also<a class="headerlink" href="#see-also" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><span class="xref std std-doc">ChannelWindow</span> — window of frames used to calculate spike rate</p></li>
+<li><p><span class="xref std std-doc">StimVector</span> — delivers stimulations based on burst direction</p></li>
+</ul>
 </section>
 </section>
 
